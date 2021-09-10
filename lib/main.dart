@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextButton(
                   onPressed: () {},
                   child: const Text(
-                    'Início',
+                    'teste',
                     style: TextStyle(
                       fontFamily: 'Georama',
                       color: Color(0xFFE5E5E5),
