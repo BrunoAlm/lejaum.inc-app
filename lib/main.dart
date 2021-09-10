@@ -115,11 +115,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Container(
-          color: const Color(0xFF2C394B),
-          // child: Image.asset(
-          //   'assets/images/backgroundlejaum.png',
-          //   fit: BoxFit.fill,
-          // ),
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/first_page_bg.png"),
+            ),
+          ),
         ),
       ),
     );
