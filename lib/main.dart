@@ -116,6 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Container(
           decoration: const BoxDecoration(
+            color: Color(0xFF2C394B),
             image: DecorationImage(
               image: AssetImage("assets/images/first_page_bg.png"),
               fit: BoxFit.cover,
