@@ -77,6 +77,8 @@ flutter:
     - family: Georama
       fonts:
         - asset: assets/fonts/Georama/Georama-Regular.ttf
+        - asset: assets/fonts/Georama/Georama-Italic.ttf
+          style: italic
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
