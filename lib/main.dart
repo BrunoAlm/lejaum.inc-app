@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             const Text(
-              "lejaum.me",
+              "lejaum",
               style: TextStyle(
                 fontFamily: 'Georama',
                 color: Color(0xFFE5E5E5),
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextButton(
                   onPressed: () {},
                   child: const Text(
-                    'teste',
+                    'teste2',
                     style: TextStyle(
                       fontFamily: 'Georama',
                       color: Color(0xFFE5E5E5),
