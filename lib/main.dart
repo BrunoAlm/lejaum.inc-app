@@ -118,6 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/images/first_page_bg.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
