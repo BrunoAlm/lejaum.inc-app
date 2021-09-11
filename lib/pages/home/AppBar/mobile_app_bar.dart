@@ -9,7 +9,6 @@ class MobileAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: laranjaum),
-      iconTheme: IconThemeData(),
       backgroundColor: laranjaum,
       title: Row(
         children: [
