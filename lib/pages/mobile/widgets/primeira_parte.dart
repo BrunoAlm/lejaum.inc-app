@@ -15,7 +15,7 @@ class PrimeiraParte extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25.0, top: 50, right: 25.0),
+      padding: const EdgeInsets.only(left: 20.0, top: 50, right: 20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -27,10 +27,11 @@ class PrimeiraParte extends StatelessWidget {
             'NÓS ENTREGAMOS SOLUÇÕES!',
             style: Styles.tituloExtraBold,
           ),
-          BotaoSaibaMais(),
-          BoxSino(),
           BoxMao(),
+          BoxCoracao(),
+          BoxSino(),
           BoxGrafico(),
+          BotaoSaibaMais(),
           Text(
             'Nós somos a solução certa\npara você e sua empresa!',
             style: Styles.subtitulo,

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/botao_saiba_mais.dart';
-import 'package:lejaum/pages/mobile/widgets/boxes.dart';
 import 'package:lejaum/pages/mobile/widgets/portfolio.dart';
 import 'package:lejaum/pages/mobile/widgets/primeira_parte.dart';
-import 'package:lejaum/pages/services/styles.dart';
 
 class MobilePage extends StatelessWidget {
   MobilePage({Key? key}) : super(key: key);
