@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, contraints) {
         return Scaffold(
+          
           appBar: contraints.maxWidth < 800
               ? PreferredSize(
                   child: MobileAppBar(),

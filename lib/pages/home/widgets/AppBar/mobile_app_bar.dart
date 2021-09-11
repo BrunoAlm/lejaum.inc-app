@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileAppBar extends StatelessWidget {
-  const MobileAppBar({Key? key}) : super(key: key);
+  final Color laranjaum = Color(0xFFFF5400);
+  MobileAppBar({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: laranjaum),
       iconTheme: IconThemeData(),
-      backgroundColor: Color(0xFFFF5400),
+      backgroundColor: laranjaum,
       title: Row(
         children: [
           // Image.asset("assets/images/logo_icon.png"),
