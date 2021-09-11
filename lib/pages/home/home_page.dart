@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'widgets/AppBar/mobile_app_bar.dart';
+import '../home/AppBar/mobile_app_bar.dart';
+import '../home/AppBar/web_app_bar.dart';
 import '../mobile/mobile_page.dart';
-import 'widgets/AppBar/web_app_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,7 +11,6 @@ class HomePage extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, contraints) {
         return Scaffold(
-          
           appBar: contraints.maxWidth < 800
               ? PreferredSize(
                   child: MobileAppBar(),
