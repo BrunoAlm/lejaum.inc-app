@@ -21,7 +21,7 @@ class Styles {
 
   static const subtitulo = TextStyle(
     color: Colors.white,
-    fontSize: 20,
+    fontSize: 23,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w600,
     height: 1.2,
