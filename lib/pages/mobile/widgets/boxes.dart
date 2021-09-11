@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CardMao extends StatelessWidget {
+class BoxMao extends StatelessWidget {
   final String font = 'Georama';
   final Color laranjaum = Color(0xFFFF5400);
   final Color quaseWhite = Color(0xFFF4F4F4);
-  CardMao({Key? key}) : super(key: key);
+  BoxMao({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,11 +42,11 @@ class CardMao extends StatelessWidget {
   }
 }
 
-class CardSino extends StatelessWidget {
+class BoxSino extends StatelessWidget {
   final String font = 'Georama';
   final Color laranjaum = Color(0xFFFF5400);
   final Color quaseWhite = Color(0xFFF4F4F4);
-  CardSino({Key? key}) : super(key: key);
+  BoxSino({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -84,11 +84,11 @@ class CardSino extends StatelessWidget {
   }
 }
 
-class CardGrafico extends StatelessWidget {
+class BoxGrafico extends StatelessWidget {
   final String font = 'Georama';
   final Color laranjaum = Color(0xFFFF5400);
   final Color quaseWhite = Color(0xFFF4F4F4);
-  CardGrafico({Key? key}) : super(key: key);
+  BoxGrafico({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileAppBar extends StatelessWidget {
   const MobileAppBar({Key? key}) : super(key: key);
@@ -9,7 +10,8 @@ class MobileAppBar extends StatelessWidget {
       backgroundColor: Color(0xFFFF5400),
       title: Row(
         children: [
-          Image.asset("assets/images/logo_icon.png"),
+          // Image.asset("assets/images/logo_icon.png"),
+          SvgPicture.asset("assets/images/logo_icon.svg"),
           const SizedBox(width: 3),
           Text(
             'lejaum',
