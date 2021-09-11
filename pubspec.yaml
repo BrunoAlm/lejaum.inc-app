@@ -24,9 +24,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/icons
-    - assets/images/boxes
-    - assets/images/carrossel
+    - assets/images/
   fonts:
     - family: Georama
       fonts:
