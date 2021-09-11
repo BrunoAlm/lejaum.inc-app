@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           onSurface: quaseWhite,
           onBackground: laranjaum,
           onError: Colors.red,
-          brightness: MediaQuery.platformBrightnessOf(context),
+          brightness: Brightness.dark,
         ),
         iconTheme: IconThemeData(color: quaseWhite),
       ),

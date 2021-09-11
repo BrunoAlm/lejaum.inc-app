@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/services/styles.dart';
+
+import 'botao_saiba_mais.dart';
+import 'boxes.dart';
 
 class PrimeiraParte extends StatelessWidget {
   final String font = 'Georama';
@@ -11,30 +15,25 @@ class PrimeiraParte extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20.0, top: 50),
+      padding: const EdgeInsets.only(left: 25.0, top: 50, right: 25.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             'NÃO VENDEMOS SERVIÇOS,',
-            style: TextStyle(
-              color: laranjaum,
-              fontFamily: font,
-              fontWeight: FontWeight.w400,
-              fontSize: size,
-              height: height,
-              decoration: TextDecoration.lineThrough,
-            ),
+            style: Styles.tituloFinoLinethrough,
           ),
           Text(
             'NÓS ENTREGAMOS SOLUÇÕES!',
-            style: TextStyle(
-              color: laranjaum,
-              fontFamily: font,
-              fontWeight: FontWeight.w900,
-              fontSize: size,
-              height: height,
-            ),
+            style: Styles.tituloExtraBold,
+          ),
+          BotaoSaibaMais(),
+          BoxSino(),
+          BoxMao(),
+          BoxGrafico(),
+          Text(
+            'Nós somos a solução certa\npara você e sua empresa!',
+            style: Styles.subtitulo,
           ),
         ],
       ),

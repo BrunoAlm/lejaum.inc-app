@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class BotaoSaibaMais extends StatelessWidget {
-  final String font = 'Georama';
   final Color laranjaum = Color(0xFFFF5400);
   BotaoSaibaMais({Key? key}) : super(key: key);
 
@@ -11,7 +10,7 @@ class BotaoSaibaMais extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 20, top: 25, bottom: 50),
+          padding: const EdgeInsets.only(top: 25, bottom: 50),
           child: GestureDetector(
             onTap: () {},
             child: Container(
@@ -22,7 +21,7 @@ class BotaoSaibaMais extends StatelessWidget {
                 borderRadius: BorderRadius.circular(50),
                 boxShadow: [
                   BoxShadow(
-                    color: laranjaum.withOpacity(0.5),
+                    color: laranjaum,
                     blurRadius: 35,
                     offset: Offset(0, 2),
                   ),
@@ -38,7 +37,6 @@ class BotaoSaibaMais extends StatelessWidget {
                     'Saber Mais',
                     style: TextStyle(
                       color: Colors.white,
-                      fontFamily: font,
                       fontSize: 18,
                     ),
                   ),
