@@ -23,7 +23,7 @@ class BoxMao extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 9, 0),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(width: 14),
                     Image.asset(
@@ -76,7 +76,7 @@ class BoxCoracao extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 7, 9, 7),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(width: 14),
                     Image.asset('assets/images/boxes/like_insta_icon.png'),
@@ -123,7 +123,7 @@ class BoxSino extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 7, 9, 7),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(width: 14),
                     Image.asset('assets/images/boxes/sino_icon.png'),
@@ -173,7 +173,7 @@ class BoxGrafico extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 7, 9, 7),
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(width: 14),
                     Image.asset('assets/images/boxes/grafico_icon.png'),

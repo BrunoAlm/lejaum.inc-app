@@ -6,11 +6,21 @@ class Porfolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(top: 49, left: 25),
-      child: Text(
-        'Portfólio',
-        style: Styles.tituloExtraBold,
+    return Container(
+      child: Padding(
+        padding: EdgeInsets.only(top: 49, left: 25),
+        child: Column(
+          children: [
+            Text(
+              'Portfólio',
+              style: Styles.tituloExtraBold,
+            ),
+            Text(
+              'Nós somos a solução certa\npara você e sua empresa!',
+              style: Styles.subtitulo,
+            ),
+          ],
+        ),
       ),
     );
   }

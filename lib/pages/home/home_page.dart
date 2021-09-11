@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, contraints) {
         return Scaffold(
+          backgroundColor: Color(0xFF1A1918),
           appBar: contraints.maxWidth < 800
               ? PreferredSize(
                   child: MobileAppBar(),
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
                 ),
           endDrawer: contraints.maxWidth < 800 ? Drawer() : null,
           body: Container(
+            
             child: contraints.maxWidth < 800 ? MobilePage() : null,
           ),
         );

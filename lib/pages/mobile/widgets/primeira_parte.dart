@@ -14,29 +14,35 @@ class PrimeiraParte extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 20.0, top: 50, right: 20.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'NÃO VENDEMOS SERVIÇOS,',
-            style: Styles.tituloFinoLinethrough,
-          ),
-          Text(
-            'NÓS ENTREGAMOS SOLUÇÕES!',
-            style: Styles.tituloExtraBold,
-          ),
-          BoxMao(),
-          BoxCoracao(),
-          BoxSino(),
-          BoxGrafico(),
-          BotaoSaibaMais(),
-          Text(
-            'Nós somos a solução certa\npara você e sua empresa!',
-            style: Styles.subtitulo,
-          ),
-        ],
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/images/first_page_bg.png"),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.only(
+            left: 20.0, top: 50.0, right: 20.0, bottom: 30.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'NÃO VENDEMOS SERVIÇOS,',
+              style: Styles.tituloFinoLinethrough,
+            ),
+            Text(
+              'NÓS ENTREGAMOS SOLUÇÕES!',
+              style: Styles.tituloExtraBold,
+            ),
+            BoxMao(),
+            BoxCoracao(),
+            BoxSino(),
+            BoxGrafico(),
+            BotaoSaibaMais(),
+            
+          ],
+        ),
       ),
     );
   }
