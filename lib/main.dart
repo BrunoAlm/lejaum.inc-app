@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        iconTheme: IconThemeData(
+          color: Color(0xFFE5E5E5),
+        ),
       ),
       home: const HomePage(),
     );

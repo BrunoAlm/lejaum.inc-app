@@ -24,11 +24,17 @@ flutter:
 
   assets:
     - assets/images/
-
   fonts:
     - family: Georama
       fonts:
         - asset: assets/fonts/Georama/Georama-Regular.ttf
-          style: normal
+          weight: 400
         - asset: assets/fonts/Georama/Georama-MediumItalic.ttf
+          weight: 500
           style: italic
+        - asset: assets/fonts/Georama/Georama-Black.ttf
+          weight: 900
+
+    - family: Georama-Black
+      fonts:
+        - asset: assets/fonts/Georama/Georama-Black.ttf
