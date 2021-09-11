@@ -10,9 +10,9 @@ class MobileAppBar extends StatelessWidget {
         'lejaum',
         style: TextStyle(
           color: Color(0xFFE5E5E5),
-          fontSize: 30,
           fontFamily: 'Georama',
           fontStyle: FontStyle.italic,
+          fontSize: 30,
         ),
       ),
       
