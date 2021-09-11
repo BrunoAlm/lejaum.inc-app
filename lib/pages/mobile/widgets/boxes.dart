@@ -27,7 +27,7 @@ class BoxMao extends StatelessWidget {
                   children: [
                     const SizedBox(width: 14),
                     Image.asset(
-                      'assets/images/mao_icon.png',
+                      'assets/images/boxes/mao_icon.png',
                       fit: BoxFit.cover,
                       height: 60,
                     ),
@@ -79,7 +79,7 @@ class BoxCoracao extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(width: 14),
-                    Image.asset('assets/images/like_insta_icon.png'),
+                    Image.asset('assets/images/boxes/like_insta_icon.png'),
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
@@ -126,7 +126,7 @@ class BoxSino extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(width: 14),
-                    Image.asset('assets/images/sino_icon.png'),
+                    Image.asset('assets/images/boxes/sino_icon.png'),
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
@@ -176,7 +176,7 @@ class BoxGrafico extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(width: 14),
-                    Image.asset('assets/images/grafico_icon.png'),
+                    Image.asset('assets/images/boxes/grafico_icon.png'),
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
