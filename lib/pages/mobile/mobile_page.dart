@@ -10,15 +10,23 @@ class MobilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF1A1918),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            PrimeiraParte(),
-            BotaoSaibaMais(),
-            BoxSino(),
-            BoxMao(),
-            BoxGrafico(),
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/first_page_bg.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              PrimeiraParte(),
+              BotaoSaibaMais(),
+              BoxSino(),
+              BoxMao(),
+              BoxGrafico(),
+            ],
+          ),
         ),
       ),
     );
