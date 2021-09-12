@@ -95,7 +95,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         activeIndex: activeIndex,
         count: urlImages.length,
         onDotClicked: animateToSlide,
-        effect: JumpingDotEffect(
+        effect: ExpandingDotsEffect(
           activeDotColor: laranjaum,
           dotColor: quaseWhite,
           dotHeight: 10,
