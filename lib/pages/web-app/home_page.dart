@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../mobile/widgets/appbar/mobile_app_bar.dart';
+import 'package:lejaum/pages/mobile/widgets/AppBar/mobile_app_bar.dart';
 import '../mobile/mobile_page.dart';
 import 'AppBar/web_app_bar.dart';
 
@@ -23,7 +23,6 @@ class HomePage extends StatelessWidget {
                 ),
           endDrawer: contraints.maxWidth < 800 ? Drawer() : null,
           body: Container(
-
             child: contraints.maxWidth < 800 ? MobilePage() : null,
           ),
         );
