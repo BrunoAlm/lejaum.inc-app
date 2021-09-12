@@ -13,7 +13,7 @@ class MobileAppBar extends StatelessWidget {
       title: Row(
         children: [
           // Image.asset("assets/images/logo_icon.png"),
-          SvgPicture.asset("assets/images/logo_icon.svg"),
+          SvgPicture.asset("assets/images/icons/logo_icon.svg"),
           const SizedBox(width: 3),
           Text(
             'lejaum',

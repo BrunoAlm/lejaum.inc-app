@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/portfolio.dart';
-import 'package:lejaum/pages/mobile/widgets/primeira_parte.dart';
+import 'widgets/portfolio/portfolio.dart';
+import 'widgets/primeira_parte/primeira_parte.dart';
 
 class MobilePage extends StatelessWidget {
   MobilePage({Key? key}) : super(key: key);
@@ -14,7 +13,7 @@ class MobilePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             PrimeiraParte(),
-            Porfolio(),
+            Portfolio(),
           ],
         ),
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../home/AppBar/mobile_app_bar.dart';
-import '../home/AppBar/web_app_bar.dart';
+import '../mobile/widgets/appbar/mobile_app_bar.dart';
 import '../mobile/mobile_page.dart';
+import 'AppBar/web_app_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
                 ),
           endDrawer: contraints.maxWidth < 800 ? Drawer() : null,
           body: Container(
-            
+
             child: contraints.maxWidth < 800 ? MobilePage() : null,
           ),
         );

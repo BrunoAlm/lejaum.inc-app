@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/services/styles.dart';
-
+import 'package:lejaum/services/styles.dart';
 import 'botao_saiba_mais.dart';
 import 'boxes.dart';
 
@@ -40,7 +39,6 @@ class PrimeiraParte extends StatelessWidget {
             BoxSino(),
             BoxGrafico(),
             BotaoSaibaMais(),
-            
           ],
         ),
       ),

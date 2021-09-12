@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/services/styles.dart';
+import 'package:lejaum/services/styles.dart';
 
 class BoxMao extends StatelessWidget {
   final String font = 'Georama';
