@@ -61,12 +61,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         margin: EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.grey,
+          // color: Colors.grey,
         ),
         child: Image.asset(
           urlImage,
-          // centerSlice:
-          //     Rect.fromCenter(center: Offset(0, 0), width: 270, height: 400),
+          centerSlice:
+              Rect.fromCenter(center: Offset(0, 0), width: 270, height: 400),
           repeat: ImageRepeat.noRepeat,
           // fit: BoxFit.cover,
         ),
