@@ -12,10 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color laranjaum = Color(0xFFFF5400);
     final Color quaseWhite = Color(0xFFF4F4F4);
+    final Color quaseBlack = Color(0xFF201F1E);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        backgroundColor: quaseBlack,
         fontFamily: 'Georama',
         colorScheme: ColorScheme(
           primary: laranjaum,

@@ -34,7 +34,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           const SizedBox(height: 30),
           buildIndicator(),
           const SizedBox(height: 30),
-          buildButtons()
+          // buildButtons()
         ],
       ),
     );
@@ -79,7 +79,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 215.98, left: 7.34, right: 10.04, bottom: 11.21),
+                  top: 215.98, bottom: 11.21, right: 12.21),
               child: buildBlur(
                 borderRadius: BorderRadius.circular(7),
                 child: Container(
@@ -90,7 +90,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                     color: Colors.white.withOpacity(0.2),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 13.66, top: 13),
+                    padding: const EdgeInsets.only(left: 12.48, top: 13),
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
