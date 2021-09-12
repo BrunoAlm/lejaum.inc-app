@@ -1,5 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:lejaum/services/styles.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class CarrosselPortfolio extends StatefulWidget {
@@ -30,6 +33,8 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           buildImageSlider(),
           const SizedBox(height: 30),
           buildIndicator(),
+          const SizedBox(height: 30),
+          buildButtons()
         ],
       ),
     );
@@ -37,7 +42,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
 
   Widget buildImageSlider() => CarouselSlider.builder(
         options: CarouselOptions(
-          height: 400,
+          height: 338,
           autoPlay: false,
           autoPlayInterval: Duration(seconds: 1),
           aspectRatio: 16 / 9,
@@ -48,6 +53,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           enlargeStrategy: CenterPageEnlargeStrategy.height,
           onPageChanged: (index, reason) => setState(() => activeIndex = index),
         ),
+        carouselController: _controller,
         itemCount: urlImages.length,
         itemBuilder: (context, index, realIndex) {
           final urlImage = urlImages[index];
@@ -57,18 +63,80 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
       );
 
   Widget buildImage(String urlImage, int index) => Container(
-        margin: EdgeInsets.symmetric(horizontal: 12),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          // color: Colors.grey,
-        ),
-        child: Image.asset(
-          urlImage,
+      margin: EdgeInsets.symmetric(horizontal: 12),
+      height: 338,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        // color: Colors.grey,
+      ),
+      child: Stack(
+        children: [
+          Image.asset(
+            urlImage,
+            repeat: ImageRepeat.noRepeat,
+            fit: BoxFit.cover,
+          ),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.only(
+                  top: 215.98, left: 7.34, right: 10.04, bottom: 11.21),
+              child: buildBlur(
+                borderRadius: BorderRadius.circular(7),
+                child: Container(
+                  height: 110,
+                  width: 252,
+                  decoration: BoxDecoration(
+                    // borderRadius: BorderRadius.circular(7),
+                    color: Colors.white.withOpacity(0.2),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 13.66, top: 13),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Social Media',
+                            style: Styles.carrosselTextTitulo,
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            'Franquia Café Flor do Grão',
+                            style: Styles.carrosselTextSubtitulo,
+                          ),
+                          const SizedBox(height: 10),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              shape: MaterialStateProperty.all(StadiumBorder()),
+                            ),
+                            child: Text(
+                              'Ver Mais',
+                              style: Styles.carrosselTextButton,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ));
 
-          // centerSlice:
-          //     Rect.fromCenter(center: Offset(0, 0), width: 270, height: 400),
-          repeat: ImageRepeat.noRepeat,
-          fit: BoxFit.cover,
+  Widget buildBlur({
+    required BorderRadius borderRadius,
+    required Widget child,
+    double sigmaX = 10,
+    double sigmaY = 10,
+  }) =>
+      ClipRRect(
+        borderRadius: borderRadius,
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: sigmaX, sigmaY: sigmaY),
+          child: child,
         ),
       );
 
@@ -82,6 +150,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             onPressed: previous,
             child: Icon(Icons.keyboard_arrow_left_rounded, size: 32),
           ),
+          const SizedBox(width: 30),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 10),
@@ -106,7 +175,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
 
   animateToSlide(int index) => _controller.animateToPage(index);
 
-  void previous() => _controller.nextPage();
+  void previous() => _controller.previousPage();
 
-  void next() => _controller.previousPage();
+  void next() => _controller.nextPage();
 }
