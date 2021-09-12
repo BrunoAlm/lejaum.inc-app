@@ -1,5 +1,5 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class CarrosselPortfolio extends StatefulWidget {
@@ -12,7 +12,7 @@ class CarrosselPortfolio extends StatefulWidget {
 class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
   final Color quaseWhite = Color(0xFFF4F4F4);
   final Color laranjaum = Color(0xFFFF5400);
-  final controller = CarouselController();
+  final CarouselController _controller = CarouselController();
   int activeIndex = 0;
   final urlImages = [
     'assets/images/carrossel/azardi_shop.png',
@@ -26,22 +26,20 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          carrossel(),
-          const SizedBox(height: 10),
+          buildImageSlider(),
+          const SizedBox(height: 30),
           buildIndicator(),
-          const SizedBox(height: 10),
-          buildButtons(),
         ],
       ),
     );
   }
 
-  Widget carrossel() => CarouselSlider.builder(
+  Widget buildImageSlider() => CarouselSlider.builder(
         options: CarouselOptions(
           height: 400,
-          autoPlay: true,
+          autoPlay: false,
+          autoPlayInterval: Duration(seconds: 1),
           aspectRatio: 16 / 9,
           viewportFraction: 0.8,
           scrollDirection: Axis.horizontal,
@@ -53,6 +51,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         itemCount: urlImages.length,
         itemBuilder: (context, index, realIndex) {
           final urlImage = urlImages[index];
+
           return buildImage(urlImage, index);
         },
       );
@@ -61,7 +60,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         margin: EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.grey,
+          // color: Colors.grey,
         ),
         child: Image.asset(
           urlImage,
@@ -105,9 +104,9 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         ),
       );
 
-  animateToSlide(int index) => controller.animateToPage(index);
+  animateToSlide(int index) => _controller.animateToPage(index);
 
-  void previous() => controller.nextPage(duration: Duration(milliseconds: 500));
+  void previous() => _controller.nextPage();
 
-  void next() => controller.previousPage(duration: Duration(milliseconds: 500));
+  void next() => _controller.previousPage();
 }

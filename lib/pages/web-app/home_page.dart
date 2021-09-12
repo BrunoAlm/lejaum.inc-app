@@ -3,9 +3,14 @@ import 'package:lejaum/pages/mobile/widgets/AppBar/mobile_app_bar.dart';
 import '../mobile/mobile_page.dart';
 import 'AppBar/web_app_bar.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
