@@ -42,12 +42,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         options: CarouselOptions(
           height: 400,
           autoPlay: true,
+          aspectRatio: 16 / 9,
+          viewportFraction: 0.8,
+          scrollDirection: Axis.horizontal,
+          enableInfiniteScroll: true,
           enlargeCenterPage: true,
           enlargeStrategy: CenterPageEnlargeStrategy.height,
-          enableInfiniteScroll: false,
-          // pageSnapping: false,
-          // autoPlayInterval: Duration(seconds: 2),
-
           onPageChanged: (index, reason) => setState(() => activeIndex = index),
         ),
         itemCount: urlImages.length,
@@ -58,15 +58,15 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
       );
 
   Widget buildImage(String urlImage, int index) => Container(
-        margin: EdgeInsets.symmetric(horizontal: 2),
+        margin: EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          // color: Colors.grey,
+          color: Colors.grey,
         ),
         child: Image.asset(
           urlImage,
-          centerSlice:
-              Rect.fromCenter(center: Offset(0, 0), width: 270, height: 400),
+          // centerSlice:
+          //     Rect.fromCenter(center: Offset(0, 0), width: 270, height: 400),
           repeat: ImageRepeat.noRepeat,
           // fit: BoxFit.cover,
         ),
