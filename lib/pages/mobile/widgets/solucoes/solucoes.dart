@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/portfolio/carrossel.dart';
 import 'package:lejaum/services/styles.dart';
 
-class Portfolio extends StatefulWidget {
-  const Portfolio({Key? key}) : super(key: key);
+class Solucoes extends StatelessWidget {
+  const Solucoes({Key? key}) : super(key: key);
 
-  @override
-  State<Portfolio> createState() => _PortfolioState();
-}
-
-class _PortfolioState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,16 +13,19 @@ class _PortfolioState extends State<Portfolio> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Portfólio',
+              'Soluções',
               style: Styles.tituloExtraBold,
             ),
             const SizedBox(height: 10),
             Text(
-              'Veja abaixo alguns serviços de clientes satisfeitos:',
+              'Veja abaixo algumas das soluções que nós podemos oferecer:',
               style: Styles.subtitulo,
             ),
             const SizedBox(height: 30),
-            CarrosselPortfolio(),
+            Text(
+              'Nós somos a solução certa\npara você e sua empresa!',
+              style: Styles.subtituloBoldao,
+            ),
           ],
         ),
       ),

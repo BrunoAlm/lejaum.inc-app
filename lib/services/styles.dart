@@ -21,7 +21,18 @@ class Styles {
     height: 1.28,
   );
 
+  // subtitulo que fica em baixo dos titulos
   static const subtitulo = TextStyle(
+    color: Colors.white,
+    fontFamily: 'Georama',
+    fontSize: 14,
+    fontStyle: FontStyle.italic,
+    fontWeight: FontWeight.w500,
+    height: 1.2,
+  );
+
+  // Subtitulo bold no final da tela
+  static const subtituloBoldao = TextStyle(
     color: Colors.white,
     fontFamily: 'Georama',
     fontSize: 23,

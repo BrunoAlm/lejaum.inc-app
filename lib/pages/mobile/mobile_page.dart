@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/widgets/solucoes/solucoes.dart';
 import 'widgets/portfolio/portfolio.dart';
 import 'widgets/primeira_parte/primeira_parte.dart';
 
@@ -19,6 +20,7 @@ class _MobilePageState extends State<MobilePage> {
           children: [
             PrimeiraParte(),
             Portfolio(),
+            Solucoes(),
           ],
         ),
       ),
