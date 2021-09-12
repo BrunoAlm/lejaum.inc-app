@@ -28,31 +28,34 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CarouselSlider.builder(
-            options: CarouselOptions(
-              height: 400,
-              autoPlay: true,
-              enlargeCenterPage: true,
-              enlargeStrategy: CenterPageEnlargeStrategy.height,
-              enableInfiniteScroll: false,
-              // pageSnapping: false,
-              // autoPlayInterval: Duration(seconds: 2),
-
-              onPageChanged: (index, reason) =>
-                  setState(() => activeIndex = index),
-            ),
-            itemCount: urlImages.length,
-            itemBuilder: (context, index, realIndex) {
-              final urlImage = urlImages[index];
-              return buildImage(urlImage, index);
-            },
-          ),
+          carrossel(),
           const SizedBox(height: 10),
           buildIndicator(),
+          const SizedBox(height: 10),
+          buildButtons(),
         ],
       ),
     );
   }
+
+  Widget carrossel() => CarouselSlider.builder(
+        options: CarouselOptions(
+          height: 400,
+          autoPlay: true,
+          enlargeCenterPage: true,
+          enlargeStrategy: CenterPageEnlargeStrategy.height,
+          enableInfiniteScroll: false,
+          // pageSnapping: false,
+          // autoPlayInterval: Duration(seconds: 2),
+
+          onPageChanged: (index, reason) => setState(() => activeIndex = index),
+        ),
+        itemCount: urlImages.length,
+        itemBuilder: (context, index, realIndex) {
+          final urlImage = urlImages[index];
+          return buildImage(urlImage, index);
+        },
+      );
 
   Widget buildImage(String urlImage, int index) => Container(
         margin: EdgeInsets.symmetric(horizontal: 2),
@@ -68,9 +71,30 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
         ),
       );
 
+  Widget buildButtons({bool stretch = false}) => Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 10),
+            ),
+            onPressed: previous,
+            child: Icon(Icons.keyboard_arrow_left_rounded, size: 32),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 10),
+            ),
+            onPressed: next,
+            child: Icon(Icons.keyboard_arrow_right_rounded, size: 32),
+          ),
+        ],
+      );
+
   buildIndicator() => AnimatedSmoothIndicator(
         activeIndex: activeIndex,
         count: urlImages.length,
+        onDotClicked: animateToSlide,
         effect: JumpingDotEffect(
           activeDotColor: laranjaum,
           dotColor: quaseWhite,
@@ -78,4 +102,10 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           dotWidth: 10,
         ),
       );
+
+  animateToSlide(int index) => controller.animateToPage(index);
+
+  void previous() => controller.nextPage(duration: Duration(milliseconds: 500));
+
+  void next() => controller.previousPage(duration: Duration(milliseconds: 500));
 }
