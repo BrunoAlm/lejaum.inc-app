@@ -67,6 +67,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           urlImage,
           centerSlice:
               Rect.fromCenter(center: Offset(0, 0), width: 270, height: 400),
+          repeat: ImageRepeat.noRepeat,
           // fit: BoxFit.cover,
         ),
       );
