@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lejaum/services/styles.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 class BoxMao extends StatelessWidget {
   final String font = 'Georama';
@@ -19,7 +19,7 @@ class BoxMao extends StatelessWidget {
           Expanded(
             child: Container(
               width: MediaQuery.of(context).size.width * 0.9,
-              decoration: Styles.boxesDecoration,
+              decoration: StylesMobile.boxesDecoration,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 0, 9, 0),
                 child: Row(
@@ -34,13 +34,13 @@ class BoxMao extends StatelessWidget {
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
-                        style: Styles.boxesStyle,
+                        style: StylesMobile.boxesStyle,
                         children: [
                           TextSpan(text: 'Seja reconhecido pelos seus\n'),
                           TextSpan(text: 'clientes e fidelize eles com\n'),
                           TextSpan(
                               text: 'identidade visual',
-                              style: Styles.boxesStyleBold),
+                              style: StylesMobile.boxesStyleBold),
                         ],
                       ),
                     ),
@@ -72,7 +72,7 @@ class BoxCoracao extends StatelessWidget {
           Expanded(
             child: Container(
               width: MediaQuery.of(context).size.width * 0.9,
-              decoration: Styles.boxesDecoration,
+              decoration: StylesMobile.boxesDecoration,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 7, 9, 7),
                 child: Row(
@@ -83,13 +83,13 @@ class BoxCoracao extends StatelessWidget {
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
-                        style: Styles.boxesStyle,
+                        style: StylesMobile.boxesStyle,
                         children: [
                           TextSpan(text: 'Crie relacionamento com seu\n'),
                           TextSpan(text: 'público com '),
                           TextSpan(
                               text: 'social media',
-                              style: Styles.boxesStyleBold),
+                              style: StylesMobile.boxesStyleBold),
                         ],
                       ),
                     ),
@@ -119,7 +119,7 @@ class BoxSino extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              decoration: Styles.boxesDecoration,
+              decoration: StylesMobile.boxesDecoration,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 7, 9, 7),
                 child: Row(
@@ -130,14 +130,14 @@ class BoxSino extends StatelessWidget {
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
-                        style: Styles.boxesStyle,
+                        style: StylesMobile.boxesStyle,
                         children: [
                           TextSpan(text: 'Apareça no digital para a\n'),
                           TextSpan(text: 'pessoa certa e no momento\n'),
                           TextSpan(text: 'certo com '),
                           TextSpan(
                               text: 'tráfego pago',
-                              style: Styles.boxesStyleBold),
+                              style: StylesMobile.boxesStyleBold),
                         ],
                       ),
                     ),
@@ -169,7 +169,7 @@ class BoxGrafico extends StatelessWidget {
           Expanded(
             child: Container(
               width: MediaQuery.of(context).size.width * 0.9,
-              decoration: Styles.boxesDecoration,
+              decoration: StylesMobile.boxesDecoration,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 7, 9, 7),
                 child: Row(
@@ -180,12 +180,12 @@ class BoxGrafico extends StatelessWidget {
                     const SizedBox(width: 15),
                     RichText(
                       text: TextSpan(
-                        style: Styles.boxesStyle,
+                        style: StylesMobile.boxesStyle,
                         children: [
                           TextSpan(text: 'Transforme seus Leads em\n'),
                           TextSpan(text: 'Vendas com '),
                           TextSpan(
-                              text: 'marketing', style: Styles.boxesStyleBold),
+                              text: 'marketing', style: StylesMobile.boxesStyleBold),
                         ],
                       ),
                     ),

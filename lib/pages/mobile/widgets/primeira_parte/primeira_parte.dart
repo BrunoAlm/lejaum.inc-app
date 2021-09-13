@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/services/styles.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'botao_saiba_mais.dart';
 import 'boxes.dart';
 
-class PrimeiraParte extends StatelessWidget {
+class PrimeiraParteMobile extends StatelessWidget {
   final String font = 'Georama';
   final Color laranjaum = Color(0xFFFF5400);
   final double size = 38;
   final double height = 1.28;
   final Color textoMeioCinza = Color(0xFFC4C4C4);
-  PrimeiraParte({Key? key}) : super(key: key);
+  PrimeiraParteMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +28,11 @@ class PrimeiraParte extends StatelessWidget {
           children: [
             Text(
               'NÃO VENDEMOS SERVIÇOS,',
-              style: Styles.tituloFinoLinethrough,
+              style: StylesMobile.tituloFinoLinethrough,
             ),
             Text(
               'NÓS ENTREGAMOS SOLUÇÕES!',
-              style: Styles.tituloExtraBold,
+              style: StylesMobile.tituloExtraBold,
             ),
             BoxMao(),
             BoxCoracao(),

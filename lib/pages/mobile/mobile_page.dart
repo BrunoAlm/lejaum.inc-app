@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/widgets/solucoes/solucoes.dart';
 import 'widgets/portfolio/portfolio.dart';
 import 'widgets/primeira_parte/primeira_parte.dart';
 
-class MobilePage extends StatelessWidget {
+class MobilePage extends StatefulWidget {
   MobilePage({Key? key}) : super(key: key);
 
+  @override
+  State<MobilePage> createState() => _MobilePageState();
+}
+
+class _MobilePageState extends State<MobilePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,8 +18,9 @@ class MobilePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            PrimeiraParte(),
+            PrimeiraParteMobile(),
             Portfolio(),
+            Solucoes(),
           ],
         ),
       ),
