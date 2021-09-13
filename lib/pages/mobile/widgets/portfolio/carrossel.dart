@@ -18,11 +18,11 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
   final CarouselController _controller = CarouselController();
   int activeIndex = 0;
   final urlImages = [
+    'assets/images/carrossel/milky_cream.png',
+    'assets/images/carrossel/quarta_chopp.png',
     'assets/images/carrossel/azardi_shop.png',
     'assets/images/carrossel/bortolotti.png',
     'assets/images/carrossel/cafe_sovertinho.png',
-    'assets/images/carrossel/milky_cream.png',
-    'assets/images/carrossel/quarta_chopp.png',
   ];
 
   @override
@@ -42,6 +42,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
 
   Widget buildImageSlider() => CarouselSlider.builder(
         options: CarouselOptions(
+          initialPage: 0,
           height: 338,
           autoPlay: false,
           autoPlayInterval: Duration(seconds: 1),
@@ -89,36 +90,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                     // borderRadius: BorderRadius.circular(7),
                     color: Colors.white.withOpacity(0.2),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 12.48, top: 13),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Social Media',
-                            style: Styles.carrosselTextTitulo,
-                          ),
-                          const SizedBox(height: 6),
-                          Text(
-                            'Franquia Café Flor do Grão',
-                            style: Styles.carrosselTextSubtitulo,
-                          ),
-                          const SizedBox(height: 10),
-                          ElevatedButton(
-                            onPressed: () {},
-                            style: ButtonStyle(
-                              shape: MaterialStateProperty.all(StadiumBorder()),
-                            ),
-                            child: Text(
-                              'Ver Mais',
-                              style: Styles.carrosselTextButton,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  child: cardTransparente(index),
                 ),
               ),
             ),
@@ -172,6 +144,166 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           dotWidth: 10,
         ),
       );
+
+  Widget cardTransparente(int index) {
+    if (index == 0) {
+      return Padding(
+        padding: const EdgeInsets.only(left: 12.48, top: 13),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Social Media',
+                style: Styles.carrosselTextTitulo,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Franquia Café Flor do Grão',
+                style: Styles.carrosselTextSubtitulo,
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all(StadiumBorder()),
+                ),
+                child: Text(
+                  'Ver Mais',
+                  style: Styles.carrosselTextButton,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    } else if (index == 1) {
+      return Padding(
+        padding: const EdgeInsets.only(left: 12.48, top: 13),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Social Media',
+                style: Styles.carrosselTextTitulo,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                '2° Restaurante da Brahma',
+                style: Styles.carrosselTextSubtitulo,
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all(StadiumBorder()),
+                ),
+                child: Text(
+                  'Ver Mais',
+                  style: Styles.carrosselTextButton,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    } else if (index == 2) {
+      return Padding(
+        padding: const EdgeInsets.only(left: 12.48, top: 13),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Identidade Visual',
+                style: Styles.carrosselTextTitulo,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Azardi Shop',
+                style: Styles.carrosselTextSubtitulo,
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all(StadiumBorder()),
+                ),
+                child: Text(
+                  'Ver Mais',
+                  style: Styles.carrosselTextButton,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    } else if (index == 3) {
+      return Padding(
+        padding: const EdgeInsets.only(left: 12.48, top: 13),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Identidade Visual',
+                style: Styles.carrosselTextTitulo,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Italo Bortolotti - Trader Profisisonal',
+                style: Styles.carrosselTextSubtitulo,
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all(StadiumBorder()),
+                ),
+                child: Text(
+                  'Ver Mais',
+                  style: Styles.carrosselTextButton,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    } else if (index == 4) {
+      return Padding(
+        padding: const EdgeInsets.only(left: 12.48, top: 13),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Social Media',
+                style: Styles.carrosselTextTitulo,
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Franquia Café Flor do Grão',
+                style: Styles.carrosselTextSubtitulo,
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all(StadiumBorder()),
+                ),
+                child: Text(
+                  'Ver Mais',
+                  style: Styles.carrosselTextButton,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+    return Container();
+  }
 
   animateToSlide(int index) => _controller.animateToPage(index);
 
