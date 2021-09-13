@@ -84,7 +84,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
               child: buildBlur(
                 borderRadius: BorderRadius.circular(7),
                 child: Container(
-                  height: 120,
+                  height: 150,
                   width: 252,
                   decoration: BoxDecoration(
                     // borderRadius: BorderRadius.circular(7),
