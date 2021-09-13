@@ -80,7 +80,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 215.98, bottom: 11.21, right: 12.21),
+                  top: 205.98, bottom: 11.21, right: 12.21),
               child: buildBlur(
                 borderRadius: BorderRadius.circular(7),
                 child: Container(
