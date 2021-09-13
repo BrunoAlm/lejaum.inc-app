@@ -11,38 +11,51 @@ class BotaoSaibaMais extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 25, bottom: 50),
-          child: GestureDetector(
-            onTap: () {},
-            child: Container(
-              height: 37,
-              width: 138,
-              decoration: BoxDecoration(
-                color: laranjaum,
-                borderRadius: BorderRadius.circular(50),
-                boxShadow: [
-                  BoxShadow(
-                    color: laranjaum,
-                    blurRadius: 35,
-                    offset: Offset(0, 2),
-                  ),
-                ],
+          child: Container(
+            height: 37,
+            width: 145,
+            decoration: BoxDecoration(
+              color: laranjaum,
+              borderRadius: BorderRadius.circular(50),
+              boxShadow: [
+                BoxShadow(
+                  color: laranjaum,
+                  spreadRadius: 2,
+                  blurRadius: 14,
+                  offset: Offset(0, 2),
+                ),
+              ],
+            ),
+            child: ElevatedButton.icon(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all(StadiumBorder()),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Icon(Icons.arrow_circle_down_outlined),
-                  const SizedBox(width: 5),
-                  Text(
-                    'Saber Mais',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ],
+              onPressed: () {},
+              icon: Icon(Icons.arrow_circle_down_outlined),
+              label: Text(
+                'Saber Mais',
+                style: TextStyle(
+                  fontFamily: 'Georama',
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
               ),
             ),
+            //  Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   crossAxisAlignment: CrossAxisAlignment.center,
+            //   children: [
+            //     Icon(Icons.arrow_circle_down_outlined),
+            //     const SizedBox(width: 5),
+            //     Text(
+            //       'Saber Mais',
+            //       style: TextStyle(
+            //         color: Colors.white,
+            //         fontSize: 18,
+            //       ),
+            //     ),
+            //   ],
+            // ),
           ),
         ),
       ],

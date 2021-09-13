@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/services/styles.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 class Solucoes extends StatelessWidget {
   const Solucoes({Key? key}) : super(key: key);
@@ -14,17 +14,17 @@ class Solucoes extends StatelessWidget {
           children: [
             Text(
               'Soluções',
-              style: Styles.tituloExtraBold,
+              style: StylesMobile.tituloExtraBold,
             ),
             const SizedBox(height: 10),
             Text(
               'Veja abaixo algumas das soluções que nós podemos oferecer:',
-              style: Styles.subtitulo,
+              style: StylesMobile.subtitulo,
             ),
             const SizedBox(height: 30),
             Text(
               'Nós somos a solução certa\npara você e sua empresa!',
-              style: Styles.subtituloBoldao,
+              style: StylesMobile.subtituloBoldao,
             ),
           ],
         ),

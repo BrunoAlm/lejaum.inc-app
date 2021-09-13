@@ -18,7 +18,7 @@ class _MobilePageState extends State<MobilePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            PrimeiraParte(),
+            PrimeiraParteMobile(),
             Portfolio(),
             Solucoes(),
           ],

@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:lejaum/services/styles.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class CarrosselPortfolio extends StatefulWidget {
@@ -84,7 +84,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
               child: buildBlur(
                 borderRadius: BorderRadius.circular(7),
                 child: Container(
-                  height: 110,
+                  height: 120,
                   width: 252,
                   decoration: BoxDecoration(
                     // borderRadius: BorderRadius.circular(7),
@@ -155,12 +155,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             children: [
               Text(
                 'Social Media',
-                style: Styles.carrosselTextTitulo,
+                style: StylesMobile.carrosselTextTitulo,
               ),
               const SizedBox(height: 6),
               Text(
                 'Franquia Café Flor do Grão',
-                style: Styles.carrosselTextSubtitulo,
+                style: StylesMobile.carrosselTextSubtitulo,
               ),
               const SizedBox(height: 10),
               ElevatedButton(
@@ -170,7 +170,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                 ),
                 child: Text(
                   'Ver Mais',
-                  style: Styles.carrosselTextButton,
+                  style: StylesMobile.carrosselTextButton,
                 ),
               ),
             ],
@@ -186,12 +186,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             children: [
               Text(
                 'Social Media',
-                style: Styles.carrosselTextTitulo,
+                style: StylesMobile.carrosselTextTitulo,
               ),
               const SizedBox(height: 6),
               Text(
                 '2° Restaurante da Brahma',
-                style: Styles.carrosselTextSubtitulo,
+                style: StylesMobile.carrosselTextSubtitulo,
               ),
               const SizedBox(height: 10),
               ElevatedButton(
@@ -201,7 +201,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                 ),
                 child: Text(
                   'Ver Mais',
-                  style: Styles.carrosselTextButton,
+                  style: StylesMobile.carrosselTextButton,
                 ),
               ),
             ],
@@ -217,12 +217,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             children: [
               Text(
                 'Identidade Visual',
-                style: Styles.carrosselTextTitulo,
+                style: StylesMobile.carrosselTextTitulo,
               ),
               const SizedBox(height: 6),
               Text(
                 'Azardi Shop',
-                style: Styles.carrosselTextSubtitulo,
+                style: StylesMobile.carrosselTextSubtitulo,
               ),
               const SizedBox(height: 10),
               ElevatedButton(
@@ -232,7 +232,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                 ),
                 child: Text(
                   'Ver Mais',
-                  style: Styles.carrosselTextButton,
+                  style: StylesMobile.carrosselTextButton,
                 ),
               ),
             ],
@@ -248,12 +248,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             children: [
               Text(
                 'Identidade Visual',
-                style: Styles.carrosselTextTitulo,
+                style: StylesMobile.carrosselTextTitulo,
               ),
               const SizedBox(height: 6),
               Text(
                 'Italo Bortolotti - Trader Profisisonal',
-                style: Styles.carrosselTextSubtitulo,
+                style: StylesMobile.carrosselTextSubtitulo,
               ),
               const SizedBox(height: 10),
               ElevatedButton(
@@ -263,7 +263,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                 ),
                 child: Text(
                   'Ver Mais',
-                  style: Styles.carrosselTextButton,
+                  style: StylesMobile.carrosselTextButton,
                 ),
               ),
             ],
@@ -279,12 +279,12 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             children: [
               Text(
                 'Social Media',
-                style: Styles.carrosselTextTitulo,
+                style: StylesMobile.carrosselTextTitulo,
               ),
               const SizedBox(height: 6),
               Text(
                 'Franquia Café Flor do Grão',
-                style: Styles.carrosselTextSubtitulo,
+                style: StylesMobile.carrosselTextSubtitulo,
               ),
               const SizedBox(height: 10),
               ElevatedButton(
@@ -294,7 +294,7 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
                 ),
                 child: Text(
                   'Ver Mais',
-                  style: Styles.carrosselTextButton,
+                  style: StylesMobile.carrosselTextButton,
                 ),
               ),
             ],

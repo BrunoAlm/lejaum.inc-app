@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Styles {
+class StylesMobile {
   static const Color quaseBlack = Color(0xFF201F1E);
   static const Color quaseWhite = Color(0xFFF4F4F4);
   static const Color laranjaum = Color(0xFFFF5400);
