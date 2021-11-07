@@ -77,21 +77,19 @@ class _CarrosselPortfolioState extends State<CarrosselPortfolio> {
             repeat: ImageRepeat.noRepeat,
             fit: BoxFit.cover,
           ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(
-                  top: 205.98, bottom: 11.21, right: 12.21),
-              child: buildBlur(
-                borderRadius: BorderRadius.circular(7),
-                child: Container(
-                  height: 150,
-                  width: 252,
-                  decoration: BoxDecoration(
-                    // borderRadius: BorderRadius.circular(7),
-                    color: Colors.white.withOpacity(0.2),
-                  ),
-                  child: cardTransparente(index),
+          Padding(
+            padding: const EdgeInsets.only(
+                top: 205.98, bottom: 11.21, right: 12.21, left: 0),
+            child: buildBlur(
+              borderRadius: BorderRadius.circular(7),
+              child: Container(
+                height: 150,
+                width: 252,
+                decoration: BoxDecoration(
+                  // borderRadius: BorderRadius.circular(7),
+                  color: Colors.white.withOpacity(0.2),
                 ),
+                child: cardTransparente(index),
               ),
             ),
           ),
