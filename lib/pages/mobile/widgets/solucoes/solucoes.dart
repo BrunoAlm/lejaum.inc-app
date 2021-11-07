@@ -25,11 +25,44 @@ class Solucoes extends StatelessWidget {
             const SizedBox(height: 30),
             Row(
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.white),
+                CircleAvatar(
+                  radius: 34,
+                  backgroundColor: Colors.white,
                   child: CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Color(0xFF1A1918),
+                    child: SvgPicture.asset("/svgs/1.svg"),
+                  ),
+                ),
+                Column(
+                  children: [],
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                CircleAvatar(
+                  radius: 34,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Color(0xFF1A1918),
+                    child: SvgPicture.asset("/svgs/1.svg"),
+                  ),
+                ),
+                Column(
+                  children: [],
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                CircleAvatar(
+                  radius: 34,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Color(0xFF1A1918),
                     child: SvgPicture.asset("/svgs/1.svg"),
                   ),
                 ),
