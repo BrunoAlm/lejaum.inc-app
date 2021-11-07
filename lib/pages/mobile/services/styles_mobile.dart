@@ -5,6 +5,7 @@ class StylesMobile {
   static const Color quaseBlack = Color(0xFF201F1E);
   static const Color quaseWhite = Color(0xFFF4F4F4);
   static const Color laranjaum = Color(0xFFFF5400);
+  static const Color cinzou = Color(0xFF7D7D7D);
   static const String fonte = 'Georama';
 
   static const tituloFinoLinethrough = TextStyle(
@@ -33,6 +34,26 @@ class StylesMobile {
     fontSize: 14,
     fontStyle: FontStyle.italic,
     fontWeight: FontWeight.w500,
+    height: 1.2,
+  );
+
+// Titulos das Soluções
+  static const tituloSolucao = TextStyle(
+    color: quaseWhite,
+    fontFamily: fonte,
+    fontSize: 20,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w600,
+    height: 1.2,
+  );
+
+  // Subtitulos das Soluções
+  static const subtituloSolucao = TextStyle(
+    color: cinzou,
+    fontFamily: fonte,
+    fontSize: 11,
+    fontStyle: FontStyle.italic,
+    fontWeight: FontWeight.w600,
     height: 1.2,
   );
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 class Solucoes extends StatelessWidget {
@@ -20,6 +21,22 @@ class Solucoes extends StatelessWidget {
             Text(
               'Veja abaixo algumas das soluções que nós podemos oferecer:',
               style: StylesMobile.subtitulo,
+            ),
+            const SizedBox(height: 30),
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white),
+                  child: CircleAvatar(
+                    child: SvgPicture.asset("/svgs/1.svg"),
+                  ),
+                ),
+                Column(
+                  children: [],
+                ),
+              ],
             ),
             const SizedBox(height: 30),
             Text(
