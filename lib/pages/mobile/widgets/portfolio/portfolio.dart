@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/widgets/portfolio/carrossel.dart';
+import 'package:lejaum/pages/mobile/widgets/portfolio/galeria/galeria.dart';
 
 class Portfolio extends StatefulWidget {
   const Portfolio({Key? key}) : super(key: key);
@@ -28,7 +28,8 @@ class _PortfolioState extends State<Portfolio> {
               style: StylesMobile.subtitulo,
             ),
             const SizedBox(height: 30),
-            CarrosselPortfolio(),
+            // CarrosselPortfolio(),
+            Galeria(),
           ],
         ),
       ),

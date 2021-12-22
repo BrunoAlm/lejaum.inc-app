@@ -21,9 +21,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Georama',
         colorScheme: ColorScheme(
           primary: laranjaum,
-          primaryVariant: quaseWhite,
           secondary: quaseWhite,
-          secondaryVariant: quaseWhite,
           surface: Colors.white,
           background: quaseWhite,
           error: laranjaum,
