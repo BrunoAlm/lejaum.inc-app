@@ -9,9 +9,10 @@ Widget logo_airsoft() => Container(
       color: Colors.white,
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(logo_image),
-            BotaoSaibaMais(texto: "Ver Mais")
+            // BotaoSaibaMais(texto: "Ver Mais")
           ],
         ),
       ),

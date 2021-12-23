@@ -12,7 +12,7 @@ Widget logo() => Container(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(logo_image),
-            BotaoSaibaMais(texto: "Ver Mais"),
+            // BotaoSaibaMais(texto: "Ver Mais"),
           ],
         ),
       ),
