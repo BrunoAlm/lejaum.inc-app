@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class BotaoSaibaMais extends StatelessWidget {
   final Color laranjaum = Color(0xFFFF5400);
-  BotaoSaibaMais({Key? key}) : super(key: key);
-
+  BotaoSaibaMais({Key? key, this.texto}) : super(key: key);
+  String? texto;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -33,7 +33,7 @@ class BotaoSaibaMais extends StatelessWidget {
               onPressed: () {},
               icon: Icon(Icons.arrow_circle_down_outlined),
               label: Text(
-                'Saber Mais',
+                texto!,
                 style: TextStyle(
                   fontFamily: 'Georama',
                   color: Colors.white,

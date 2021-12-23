@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/widgets/portfolio/galeria/galeria.dart';
+
+import 'galeria/galeria.dart';
+// import 'package:lejaum/pages/mobile/widgets/portfolio/galeria/galeria.dart';
 
 class Portfolio extends StatefulWidget {
   const Portfolio({Key? key}) : super(key: key);

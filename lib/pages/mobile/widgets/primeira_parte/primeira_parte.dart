@@ -38,7 +38,7 @@ class PrimeiraParteMobile extends StatelessWidget {
             BoxCoracao(),
             BoxSino(),
             BoxGrafico(),
-            BotaoSaibaMais(),
+            BotaoSaibaMais(texto: "Saiba Mais"),
           ],
         ),
       ),

@@ -31,7 +31,8 @@ flutter:
     - assets/images/boxes/
     - assets/images/carrossel/
     - assets/images/icons/
-    - assets/svgs/
+    - assets/images/galeria/
+
   fonts:
     - family: Georama
       fonts:
