@@ -16,14 +16,19 @@ class _MobilePageState extends State<MobilePage> {
   Widget build(BuildContext context) {
     var altura = MediaQuery.of(context).size.height;
     var largura = MediaQuery.of(context).size.width;
+    PageController _pageController = PageController();
 
     return SingleChildScrollView(
       child: Container(
         height: altura,
         width: largura,
         child: PageView(
+          controller: _pageController,
           children: [
-            PrimeiraParteMobile(),
+            PrimeiraParteMobile(
+              pressionou: () => _pageController.nextPage(
+                  duration: Duration(milliseconds: 500), curve: Curves.easeIn),
+            ),
             Padding(
               padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
               child: Column(

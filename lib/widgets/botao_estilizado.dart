@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class BotaoEstilizado extends StatelessWidget {
   final Color laranjaum = Color(0xFFFF5400);
-  BotaoEstilizado({Key? key, this.texto}) : super(key: key);
+  BotaoEstilizado({Key? key, this.texto, this.pressionado}) : super(key: key);
   final String? texto;
+  final Function()? pressionado;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -30,7 +31,7 @@ class BotaoEstilizado extends StatelessWidget {
               style: ButtonStyle(
                 shape: MaterialStateProperty.all(StadiumBorder()),
               ),
-              onPressed: () {},
+              onPressed: pressionado,
               icon: Icon(Icons.arrow_circle_down_outlined),
               label: Text(
                 texto!,

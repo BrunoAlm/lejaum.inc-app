@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import '../../../../widgets/botao_estilizado.dart';
-import 'boxes.dart';
 
 class PrimeiraParteMobile extends StatelessWidget {
   final String font = 'Georama';
@@ -9,8 +8,9 @@ class PrimeiraParteMobile extends StatelessWidget {
   final double size = 38;
   final double height = 1.28;
   final Color textoMeioCinza = Color(0xFFC4C4C4);
-  PrimeiraParteMobile({Key? key}) : super(key: key);
 
+  PrimeiraParteMobile({Key? key, this.pressionou}) : super(key: key);
+  final Function()? pressionou;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +40,7 @@ class PrimeiraParteMobile extends StatelessWidget {
             // BoxCoracao(),
             // BoxSino(),
             // BoxGrafico(),
-            BotaoEstilizado(texto: "Saiba Mais"),
+            BotaoEstilizado(texto: "Saber Mais", pressionado: pressionou),
           ],
         ),
       ),

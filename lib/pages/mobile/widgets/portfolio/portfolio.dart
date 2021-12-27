@@ -18,14 +18,20 @@ class _PortfolioState extends State<Portfolio> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Portfólio',
-            style: StylesMobile.tituloExtraBold,
+          Padding(
+            padding: const EdgeInsets.only(left: 25),
+            child: Text(
+              'Portfólio',
+              style: StylesMobile.tituloExtraBold,
+            ),
           ),
           const SizedBox(height: 10),
-          Text(
-            'Veja abaixo alguns serviços de clientes satisfeitos:',
-            style: StylesMobile.subtitulo,
+          Padding(
+            padding: const EdgeInsets.only(left: 25),
+            child: Text(
+              'Veja abaixo alguns serviços de clientes satisfeitos:',
+              style: StylesMobile.subtitulo,
+            ),
           ),
           const SizedBox(height: 30),
           // CarrosselPortfolio(),
