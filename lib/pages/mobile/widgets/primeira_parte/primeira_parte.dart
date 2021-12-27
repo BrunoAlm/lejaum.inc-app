@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'botao_saiba_mais.dart';
+import '../../../../widgets/botao_estilizado.dart';
 import 'boxes.dart';
 
 class PrimeiraParteMobile extends StatelessWidget {
@@ -25,6 +25,7 @@ class PrimeiraParteMobile extends StatelessWidget {
             left: 20.0, top: 50.0, right: 20.0, bottom: 30.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'NÃO VENDEMOS SERVIÇOS,',
@@ -34,11 +35,12 @@ class PrimeiraParteMobile extends StatelessWidget {
               'NÓS ENTREGAMOS SOLUÇÕES!',
               style: StylesMobile.tituloExtraBold,
             ),
-            BoxMao(),
-            BoxCoracao(),
-            BoxSino(),
-            BoxGrafico(),
-            BotaoSaibaMais(texto: "Saiba Mais"),
+            const SizedBox(height: 30),
+            // BoxMao(),
+            // BoxCoracao(),
+            // BoxSino(),
+            // BoxGrafico(),
+            BotaoEstilizado(texto: "Saiba Mais"),
           ],
         ),
       ),

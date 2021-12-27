@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/primeira_parte/botao_saiba_mais.dart';
+import 'package:lejaum/widgets/botao_estilizado.dart';
 
 String logo_image = "assets/images/galeria/airsoft_logo.png";
 

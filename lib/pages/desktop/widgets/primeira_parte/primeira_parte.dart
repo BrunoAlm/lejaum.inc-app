@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
-import 'package:lejaum/pages/mobile/widgets/primeira_parte/botao_saiba_mais.dart';
+import 'package:lejaum/widgets/botao_estilizado.dart';
 
 class PrimeiraParteDesktop extends StatelessWidget {
   const PrimeiraParteDesktop({Key? key}) : super(key: key);
@@ -59,7 +59,7 @@ class PrimeiraParteDesktop extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 107),
-            BotaoSaibaMais(),
+            BotaoEstilizado(),
           ],
         ),
       ),
