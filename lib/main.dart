@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/solucoes/solucoes.dart';
 import 'pages/home_page_logic.dart';
 
 void main() {
@@ -38,7 +37,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/home/solucoes': (context) => const Solucoes(),
       },
     );
   }
