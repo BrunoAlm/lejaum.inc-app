@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart';
+import 'package:lejaum/widgets/botao_estilizado.dart';
 
 class FlorDoGrao extends StatelessWidget {
   const FlorDoGrao({Key? key}) : super(key: key);
@@ -58,21 +59,37 @@ class Azardi extends StatelessWidget {
   }
 }
 
-class Janfie extends StatelessWidget {
+class Janfie extends StatefulWidget {
   const Janfie({Key? key}) : super(key: key);
 
   @override
+  State<Janfie> createState() => _JanfieState();
+}
+
+class _JanfieState extends State<Janfie> {
+  @override
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
-    return SizedBox(
-      height: 250,
-      width: largura,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        physics: const ScrollPhysics(), // this for snapping
-        itemCount: janfie_list.length,
-        itemBuilder: (_, index) => janfie_list[index],
-      ),
+    return Row(
+      children: [
+        SizedBox(
+          height: 250,
+          width: largura,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            physics: const ScrollPhysics(), // this for snapping
+            itemCount: janfie_list.length,
+            itemBuilder: (context, index) => janfie_list[index],
+          ),
+        ),
+        // Container(
+        //   height: 300,
+        //   child: SingleChildScrollView(
+        //     physics: NeverScrollableScrollPhysics(),
+        //     child: BotaoEstilizado(),
+        //   ),
+        // ),
+      ],
     );
   }
 }

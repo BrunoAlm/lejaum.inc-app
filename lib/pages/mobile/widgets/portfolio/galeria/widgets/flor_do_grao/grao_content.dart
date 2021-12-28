@@ -19,10 +19,10 @@ Widget logo_flor_do_grao() => Container(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(_logo_image, width: 130),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: BotaoEstilizado(texto: "Ver Mais", pressionado: () {}),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.only(left: 10),
+            //   child: BotaoEstilizado(texto: "Ver Mais", pressionado: () {}),
+            // ),
           ],
         ),
       ),

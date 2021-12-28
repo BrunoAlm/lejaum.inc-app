@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/widgets/pdf_view/pdf.dart';
+import 'package:lejaum/widgets/botao_estilizado.dart';
 
 String _logo_image = "assets/images/galeria/janfie/logo.png";
 String _img1 = "assets/images/galeria/janfie/img1.png";
@@ -35,9 +37,14 @@ Widget janfie3() => Container(
       height: 198.79,
       child: Image.asset(_img3, fit: BoxFit.fill),
     );
-Widget janfie4() => Container(
+Widget janfie4(BuildContext context) => Container(
       width: 186.47,
       height: 198.79,
       color: Colors.white,
-      child: Image.asset(_img4, fit: BoxFit.fill),
+      child: Column(
+        children: [
+          Image.asset(_img4, fit: BoxFit.fill),
+          BotaoEstilizado(pressionado: () => Navigator.pushNamed(context, 'routeName')),
+        ],
+      ),
     );

@@ -18,6 +18,8 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   video_player: ^2.2.10
   native_webview: ^1.2.0
+  native_pdf_view: ^5.0.0
+  fleva_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -38,6 +40,7 @@ flutter:
     - assets/images/galeria/azardi/
     - assets/images/galeria/janfie/
     - assets/videos/
+    - assets/pdf/
 
   fonts:
     - family: Georama

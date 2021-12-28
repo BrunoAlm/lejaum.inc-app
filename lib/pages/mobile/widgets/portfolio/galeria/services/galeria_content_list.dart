@@ -36,5 +36,4 @@ List<Widget> janfie_list = [
   janfie1(),
   janfie2(),
   janfie3(),
-  janfie4(),
 ];
