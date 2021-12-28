@@ -15,7 +15,7 @@ class _VideoState extends State<Video> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4')
+        "https://player.vimeo.com/video/660728077?h=f885777a13&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479")
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});

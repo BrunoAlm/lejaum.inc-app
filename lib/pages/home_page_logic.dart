@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           appBar: contraints.maxWidth < 800
               ? PreferredSize(
                   child: MobileAppBar(),
-                  preferredSize: Size(double.infinity, 56),
+                  preferredSize: Size(double.infinity, 70),
                 )
               : PreferredSize(
                   child: DesktopAppBar(),

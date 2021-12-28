@@ -19,9 +19,12 @@ class MobileAppBar extends StatelessWidget {
         ],
       ),
       child: AppBar(
+        toolbarHeight: 70,
         systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: laranjaum),
         backgroundColor: laranjaum,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Image.asset("assets/images/logo_icon.png"),
             SvgPicture.asset("assets/images/icons/logo_icon.svg"),
