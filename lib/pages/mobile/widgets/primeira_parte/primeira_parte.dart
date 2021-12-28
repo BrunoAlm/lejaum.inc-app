@@ -23,7 +23,7 @@ class PrimeiraParteMobile extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.only(
-              left: 20.0, top: 0, right: 20.0, bottom: 70),
+              left: 20.0, top: 0, right: 20.0, bottom: 200),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -43,8 +43,8 @@ class PrimeiraParteMobile extends StatelessWidget {
               // BoxGrafico(),
               BotaoEstilizado(
                 texto: "Saber Mais",
-                altura: 32,
-                largura: 145,
+                altura: 40,
+                largura: 160,
                 pressionado: pressionou!,
               ),
             ],
