@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-String logo_image = "assets/images/galeria/flor_do_grao_logo.png";
+String logo_image = "assets/images/galeria/azardi_logo.png";
 
-Widget logo_flor_do_grao() => Container(
+Widget logo_azardi() => Container(
       width: 200,
       height: 200,
       color: Colors.white,
@@ -11,32 +11,32 @@ Widget logo_flor_do_grao() => Container(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(logo_image),
-            // BotaoSaibaMais(texto: "Ver Mais"),
+            // BotaoSaibaMais(texto: "Ver Mais")
           ],
         ),
       ),
     );
-Widget grao2() => Container(
+Widget azardi2() => Container(
       width: 200,
       height: 200,
       color: Colors.green,
     );
-Widget grao3() => Container(
+Widget azardi3() => Container(
       width: 200,
       height: 200,
       color: Colors.pink,
     );
-Widget grao4() => Container(
+Widget azardi4() => Container(
       width: 200,
       height: 200,
       color: Colors.purple,
     );
-Widget grao5() => Container(
+Widget azardi5() => Container(
       width: 200,
       height: 200,
       color: Colors.blue[100],
     );
-Widget grao6() => Container(
+Widget azardi6() => Container(
       width: 200,
       height: 200,
       color: Colors.yellow,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 import 'galeria/galeria.dart';
-// import 'package:lejaum/pages/mobile/widgets/portfolio/galeria/galeria.dart';
 
 class Portfolio extends StatefulWidget {
   const Portfolio({Key? key}) : super(key: key);
@@ -15,8 +14,10 @@ class _PortfolioState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(top: 49),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 25),

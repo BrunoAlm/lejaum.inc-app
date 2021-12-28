@@ -16,3 +16,19 @@ class Galeria extends StatelessWidget {
     );
   }
 }
+
+class Galeria2 extends StatelessWidget {
+  const Galeria2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Azardi(),
+        const SizedBox(height: 20),
+        Janfie(),
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+}
