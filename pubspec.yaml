@@ -16,6 +16,7 @@ dependencies:
   hovering: ^1.0.4
   carousel_slider: ^4.0.0
   smooth_page_indicator: ^1.0.0+2
+  video_player: ^2.2.10
 
 dev_dependencies:
   flutter_test:
@@ -35,6 +36,7 @@ flutter:
     - assets/images/galeria/airsoft/
     - assets/images/galeria/azardi/
     - assets/images/galeria/janfie/
+    - assets/videos/
 
   fonts:
     - family: Georama

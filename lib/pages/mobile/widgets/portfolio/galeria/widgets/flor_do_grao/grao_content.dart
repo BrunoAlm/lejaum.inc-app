@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/widgets/botao_estilizado.dart';
 
 String _logo_image = "assets/images/galeria/flor_do_grao/logo.png";
 String _img1 = "assets/images/galeria/flor_do_grao/img1.png";
 String _img2 = "assets/images/galeria/flor_do_grao/img2.png";
 String _img3 = "assets/images/galeria/flor_do_grao/img3.png";
 String _img4 = "assets/images/galeria/flor_do_grao/img4.png";
-String _img5 = "assets/images/galeria/flor_do_grao/img5.png";
-String _img6 = "assets/images/galeria/flor_do_grao/img6.png";
+String _img5 = "assets/images/galeria/flor_do_grao/img5.jpg";
+String _img6 = "assets/images/galeria/flor_do_grao/img6.jpg";
 
 Widget logo_flor_do_grao() => Container(
       width: 186.47,
@@ -14,10 +15,14 @@ Widget logo_flor_do_grao() => Container(
       color: Colors.white,
       child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(_logo_image),
-            // BotaoSaibaMais(texto: "Ver Mais"),
+            Image.asset(_logo_image, width: 130),
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: BotaoEstilizado(texto: "Ver Mais", pressionado: () {}),
+            ),
           ],
         ),
       ),

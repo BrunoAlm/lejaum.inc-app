@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 String logo_image = "assets/images/galeria/azardi/logo.png";
-String _img1 = "assets/images/galeria/azardi/img1.png";
-String _img2 = "assets/images/galeria/azardi/img2.png";
-String _img3 = "assets/images/galeria/azardi/img3.png";
+String _img1 = "assets/images/galeria/azardi/img1.jpg";
+String _img2 = "assets/images/galeria/azardi/img2.jpg";
+String _img3 = "assets/images/galeria/azardi/img3.jpg";
 String _img4 = "assets/images/galeria/azardi/img4.png";
 
 Widget logo_azardi() => Container(
