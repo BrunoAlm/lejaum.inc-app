@@ -41,10 +41,16 @@ Widget janfie4() => Container(
       width: 186.47,
       height: 198.79,
       color: Colors.white,
-      child: BotaoEstilizado(
-        texto: "Clica",
-        altura: 100,
-        largura: 100,
-        pressionado: () => Get.toNamed('/janfie-info'),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Image.asset(_logo_image),
+          BotaoEstilizado(
+            texto: "Saber Mais",
+            altura: 40,
+            largura: 160,
+            pressionado: () => Get.toNamed('/janfie-info'),
+          ),
+        ],
       ),
     );

@@ -23,7 +23,7 @@ class _PdfJanfieState extends State<PdfJanfie> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Syncfusion Flutter PdfViewer'),
+        title: Text('Janfie PDF'),
         actions: <Widget>[
           IconButton(
             icon: Icon(
