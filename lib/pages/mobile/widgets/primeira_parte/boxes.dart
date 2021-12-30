@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
@@ -150,6 +152,8 @@ class TodasBoxes extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text('O que nós oferecemos:', style: StylesMobile.subtituloBoldao),
+            SizedBox(height: 22),
             SizedBox(
               width: 310,
               child: Column(

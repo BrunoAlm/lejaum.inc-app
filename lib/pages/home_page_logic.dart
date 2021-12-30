@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/desktop/desktop_page.dart';
 import 'package:lejaum/pages/mobile/widgets/AppBar/mobile_app_bar.dart';
+import 'package:lejaum/pages/mobile/widgets/drawer/drawerzin.dart';
 import 'desktop/widgets/AppBar/desktop_app_bar.dart';
 import 'mobile/mobile_page.dart';
 
@@ -27,7 +28,7 @@ class _HomePageState extends State<HomePage> {
                   child: DesktopAppBar(),
                   preferredSize: Size(double.infinity, 70),
                 ),
-          endDrawer: contraints.maxWidth < 800 ? Drawer() : null,
+          endDrawer: contraints.maxWidth < 800 ? DrawerLejaum() : null,
           body: Container(
             child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
           ),

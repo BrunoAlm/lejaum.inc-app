@@ -16,7 +16,7 @@ dependencies:
   google_fonts: ^2.1.0
 
   # Pacote de icones
-  fleva_icons: ^1.0.2
+  # fleva_icons: ^1.0.2
 
   # Roda svg
   flutter_svg: ^0.22.0
@@ -35,6 +35,7 @@ dependencies:
 
   # Roda video
   video_player: ^2.2.10
+  carousel_slider: ^4.0.0
 
   # smooth_page_indicator: ^1.0.0+2
   # carousel_slider: ^4.0.0
