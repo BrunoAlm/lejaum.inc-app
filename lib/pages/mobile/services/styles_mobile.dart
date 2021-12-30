@@ -72,7 +72,8 @@ class StylesMobile {
     fontFamily: fonte,
     fontWeight: FontWeight.w500,
     fontSize: 17,
-    color: laranjaum,
+    // color: laranjaum,
+    color: quaseWhite,
   );
 
   // box text style bold
@@ -80,11 +81,13 @@ class StylesMobile {
     fontFamily: fonte,
     fontWeight: FontWeight.w900,
     fontSize: 17,
-    color: laranjaum,
+    // color: laranjaum,
+    color: quaseWhite,
   );
 
   static final boxesDecoration = BoxDecoration(
-    color: Color(0xFFF4F4F4),
+    
+    // color: Color(0xFFF4F4F4),
     borderRadius: BorderRadius.circular(10),
     border: Border.all(width: 2, color: laranjaum),
   );

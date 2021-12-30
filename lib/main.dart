@@ -33,6 +33,8 @@ class MyApp extends StatelessWidget {
           onBackground: laranjaum,
           onError: Colors.red,
           brightness: Brightness.dark,
+          primaryVariant: laranjaum,
+          secondaryVariant: quaseBlack,
         ),
         iconTheme: IconThemeData(color: quaseWhite),
       ),

@@ -11,15 +11,33 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+
+  # Pacote de fontes
   google_fonts: ^2.1.0
-  flutter_svg: ^0.22.0
-  hovering: ^1.0.4
-  carousel_slider: ^4.0.0
-  smooth_page_indicator: ^1.0.0+2
-  video_player: ^2.2.10
+
+  # Pacote de icones
   fleva_icons: ^1.0.2
+
+  # Roda svg
+  flutter_svg: ^0.22.0
+
+  # Hover nos botões da appBar
+  hovering: ^1.0.4
+
+  # State management
   get: ^4.6.1
+
+  # Abre os pdf 
   syncfusion_flutter_pdfviewer:
+
+  # Responsividade
+  responsive_sizer: ^3.0.5+1
+
+  # Roda video
+  video_player: ^2.2.10
+
+  # smooth_page_indicator: ^1.0.0+2
+  # carousel_slider: ^4.0.0
 
 dev_dependencies:
   flutter_test:

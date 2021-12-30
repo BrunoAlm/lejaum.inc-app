@@ -2,13 +2,19 @@ import 'package:flutter/material.dart';
 
 class BotaoEstilizado extends StatelessWidget {
   final Color laranjaum = Color(0xFFFF5400);
-  BotaoEstilizado(
-      {Key? key, this.texto, this.altura, this.largura, this.pressionado})
-      : super(key: key);
+
+  BotaoEstilizado({
+    Key? key,
+    this.texto,
+    this.altura,
+    this.largura,
+    this.pressionado,
+  }) : super(key: key);
+
   final String? texto;
   final Function()? pressionado;
-  final double? largura;
-  final double? altura;
+  final double? largura, altura;
+
   @override
   Widget build(BuildContext context) {
     return Container(

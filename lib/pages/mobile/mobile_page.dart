@@ -28,24 +28,15 @@ class _MobilePageState extends State<MobilePage> {
           children: [
             PrimeiraParteMobile(
               pressionou: () => _pageController.nextPage(
-                  duration: Duration(milliseconds: 500), curve: Curves.easeIn),
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeInOutQuart),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  BoxMao(),
-                  BoxCoracao(),
-                  BoxSino(),
-                  BoxGrafico(),
-                ],
-              ),
+            // todasBoxesMaisBotao(pressionuou),
+            TodasBoxes(
+              pressionou: () => _pageController.nextPage(
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeInOutQuart),
             ),
-            // Padding(
-            //   padding: const EdgeInsets.all(8.0),
-            //   child: Video(),
-            // ),
             Portfolio(),
             Portfolio2(),
             Solucoes(),
