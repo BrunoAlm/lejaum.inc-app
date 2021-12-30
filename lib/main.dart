@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:lejaum/pages/mobile/widgets/teste_pdf/pdf.dart';
 import 'pages/home_page_logic.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     final Color quaseWhite = Color(0xFFF4F4F4);
     final Color quaseBlack = Color(0xFF201F1E);
 
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         backgroundColor: quaseBlack,
@@ -37,6 +39,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
+        '/janfie-info': (context) => const PdfJanfie(),
       },
     );
   }

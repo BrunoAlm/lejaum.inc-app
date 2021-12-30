@@ -18,8 +18,8 @@ class Galeria extends StatelessWidget {
 }
 
 class Galeria2 extends StatelessWidget {
-  const Galeria2({Key? key}) : super(key: key);
-
+  const Galeria2({Key? key, this.teste}) : super(key: key);
+  final BuildContext? teste;
   @override
   Widget build(BuildContext context) {
     return Column(

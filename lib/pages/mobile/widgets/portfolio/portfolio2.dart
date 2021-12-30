@@ -10,9 +10,14 @@ class Portfolio2 extends StatefulWidget {
 }
 
 class _Portfolio2State extends State<Portfolio2> {
+  passaTelaTeste(String name, String address, context) {
+    Navigator.pushNamed(context, '/login');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
+
       margin: EdgeInsets.only(top: 49),
       child: Galeria2(),
     );

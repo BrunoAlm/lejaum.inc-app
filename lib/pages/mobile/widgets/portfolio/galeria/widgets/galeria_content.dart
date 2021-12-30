@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart';
-import 'package:lejaum/widgets/botao_estilizado.dart';
 
 class FlorDoGrao extends StatelessWidget {
   const FlorDoGrao({Key? key}) : super(key: key);

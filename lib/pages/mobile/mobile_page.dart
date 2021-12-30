@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/widgets/portfolio/portfolio2.dart';
 import 'package:lejaum/pages/mobile/widgets/primeira_parte/boxes.dart';
 import 'package:lejaum/pages/mobile/widgets/solucoes/solucoes.dart';
-import 'package:lejaum/pages/mobile/widgets/teste_videos/video.dart';
 import 'widgets/portfolio/portfolio.dart';
 import 'widgets/primeira_parte/primeira_parte.dart';
 
@@ -43,10 +42,10 @@ class _MobilePageState extends State<MobilePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Video(),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Video(),
+            // ),
             Portfolio(),
             Portfolio2(),
             Solucoes(),

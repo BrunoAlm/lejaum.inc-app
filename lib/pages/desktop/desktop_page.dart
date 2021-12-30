@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lejaum/pages/desktop/widgets/primeira_parte/primeira_parte.dart';
-import 'package:lejaum/pages/mobile/widgets/teste_videos/video.dart';
 
 class DesktopPage extends StatefulWidget {
   const DesktopPage({Key? key}) : super(key: key);
@@ -18,7 +18,11 @@ class _DesktopPageState extends State<DesktopPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             PrimeiraParteDesktop(),
-            Video(),
+            ElevatedButton(
+              onPressed: () => Get.toNamed('/janfie-info'),
+              child: Text('Clica ai no pdf'),
+            ),
+            // Video(),
           ],
         ),
       ),

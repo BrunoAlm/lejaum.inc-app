@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/widgets/botao_estilizado.dart';
 
 String _logo_image = "assets/images/galeria/flor_do_grao/logo.png";
 String _img1 = "assets/images/galeria/flor_do_grao/img1.png";
