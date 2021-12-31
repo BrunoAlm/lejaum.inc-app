@@ -24,10 +24,11 @@ Widget logo_janfie() => Container(
             textColor: Colors.white,
             cor: StylesMobile.laranjaum,
             texto: 'Ver projeto',
+            altura: 40,
             pressionado: () => Get.toNamed('/janfie-info'),
             icone: Icons.search,
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 20),
         ],
       ),
     );

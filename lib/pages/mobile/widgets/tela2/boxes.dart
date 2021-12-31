@@ -131,8 +131,6 @@ Widget boxGrafico() => Row(
       ],
     );
 
-// Widget todasBoxesMaisBotao(Function()? pressionado) =>
-
 class TodasBoxes extends StatelessWidget {
   const TodasBoxes({Key? key, this.portifolio}) : super(key: key);
   final Function()? portifolio;
@@ -152,7 +150,6 @@ class TodasBoxes extends StatelessWidget {
               child: Column(
                 children: [
                   boxMao(),
-                  // BoxMao(),
                   SizedBox(height: 22),
                   boxCoracao(),
                   SizedBox(height: 22),
