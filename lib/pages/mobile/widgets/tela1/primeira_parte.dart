@@ -12,6 +12,7 @@ class PrimeiraParteMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     var _altura = MediaQuery.of(context).size.height;
     return Container(
+      padding: EdgeInsets.only(bottom: 120),
       height: _altura,
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -19,71 +20,77 @@ class PrimeiraParteMobile extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 0, 0, 120),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'NÃO VENDEMOS SERVIÇOS,',
-              style: StylesMobile.tituloFinoLinethrough,
-            ),
-            Text(
-              'NÓS ENTREGAMOS SOLUÇÕES!',
-              style: StylesMobile.tituloExtraBold,
-            ),
-            const SizedBox(height: 30),
-            Row(
-              // mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                BotaoEstilizado(
-                  textColor: Colors.white,
-                  texto: "Saber Mais",
-                  altura: 40,
-                  largura: 160,
-                  pressionado: segundaTela!,
-                  icone: Icons.arrow_circle_down_outlined,
-                  cor: StylesMobile.lowBlueGray,
-                ),
-                SizedBox(width: 20),
-                BotaoEstilizado(
-                  textColor: StylesMobile.blackText,
-                  texto: "Portfólio",
-                  altura: 40,
-                  largura: 160,
-                  pressionado: portfolio!,
-                  icone: Icons.arrow_circle_down_outlined,
-                  cor: StylesMobile.mareloMostarda,
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Row(
-              // mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                BotaoEstilizado(
-                  textColor: Colors.white,
-                  cor: StylesMobile.laranjaum,
-                  texto: "Ver Planos",
-                  altura: 40,
-                  largura: 160,
-                  pressionado: () {},
-                  icone: Icons.credit_card,
-                ),
-                SizedBox(width: 20),
-                BotaoEstilizado(
-                  textColor: Colors.white,
-                  cor: StylesMobile.verdeGood,
-                  texto: "Whatsapp",
-                  altura: 40,
-                  largura: 160,
-                  pressionado: () {},
-                  icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
-                ),
-              ],
-            ),
-          ],
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            'NÃO VENDEMOS',
+            style: StylesMobile.tituloFinoLinethrough,
+          ),
+          Text(
+            'SERVIÇOS,',
+            style: StylesMobile.tituloFinoLinethrough,
+          ),
+          Text(
+            'NÓS ENTREGAMOS',
+            style: StylesMobile.tituloExtraBold,
+          ),
+          Text(
+            'SOLUÇÕES!',
+            style: StylesMobile.tituloExtraBold,
+          ),
+          const SizedBox(height: 35),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              BotaoEstilizado(
+                textColor: Colors.white,
+                texto: "Saber Mais",
+                altura: 40,
+                largura: 160,
+                pressionado: segundaTela!,
+                icone: Icons.arrow_circle_down_outlined,
+                cor: StylesMobile.lowBlueGray,
+              ),
+              SizedBox(width: 20),
+              BotaoEstilizado(
+                textColor: StylesMobile.blackText,
+                texto: "Portfólio",
+                altura: 40,
+                largura: 160,
+                pressionado: portfolio!,
+                icone: Icons.arrow_circle_down_outlined,
+                cor: StylesMobile.mareloMostarda,
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              BotaoEstilizado(
+                textColor: Colors.white,
+                cor: StylesMobile.laranjaum,
+                texto: "Ver Planos",
+                altura: 40,
+                largura: 160,
+                pressionado: () {},
+                icone: Icons.credit_card,
+              ),
+              SizedBox(width: 20),
+              BotaoEstilizado(
+                textColor: Colors.white,
+                cor: StylesMobile.verdeGood,
+                texto: "Whatsapp",
+                altura: 40,
+                largura: 160,
+                pressionado: () {},
+                icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
