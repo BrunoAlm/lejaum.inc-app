@@ -37,6 +37,7 @@ class BotaoEstilizado extends StatelessWidget {
       ),
       child: ElevatedButton.icon(
         style: ButtonStyle(
+          elevation: MaterialStateProperty.all(0),
           backgroundColor: MaterialStateProperty.all(cor!),
           shape: MaterialStateProperty.all(StadiumBorder()),
         ),
