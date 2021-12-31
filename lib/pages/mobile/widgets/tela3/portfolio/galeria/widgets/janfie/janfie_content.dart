@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
+import 'package:get/get.dart';
 
 String _logo_image = "assets/images/galeria/janfie/logo_nova.png";
 String _img1 = "assets/images/galeria/janfie/img1.png";
@@ -23,7 +24,7 @@ Widget logo_janfie() => Container(
             textColor: Colors.white,
             cor: StylesMobile.laranjaum,
             texto: 'Ver projeto',
-            pressionado: () {},
+            pressionado: () => Get.toNamed('/janfie-info'),
             icone: Icons.search,
           ),
           SizedBox(height: 30),
