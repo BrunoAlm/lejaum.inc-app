@@ -5,11 +5,11 @@
     "display": "standalone",
     "background_color": "#FF5400",
     "theme_color": "#FF5400",
-    "description": "Lejaum Inc. - A melhor empresa de Marketing no Futuro!",
+    "description": "lejaum Inc. - A melhor empresa de Marketing no Futuro!",
     "orientation": "portrait-primary",
+    
     "prefer_related_applications": false,
-    "icons": [
-        {
+    "icons": [{
             "src": "icons/Icon-192.png",
             "sizes": "192x192",
             "type": "image/png"

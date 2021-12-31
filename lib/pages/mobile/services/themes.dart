@@ -20,11 +20,11 @@ class Themes {
       primaryVariant: StylesMobile.laranjaum,
       secondaryVariant: StylesMobile.quaseWhite,
     ),
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(StylesMobile.laranjaum),
-      ),
-    ),
+    // elevatedButtonTheme: ElevatedButtonThemeData(
+    //   style: ButtonStyle(
+    //     backgroundColor: MaterialStateProperty.all(StylesMobile.laranjaum),
+    //   ),
+    // ),
   );
   static final dark = ThemeData.dark().copyWith(
     backgroundColor: StylesMobile.quaseBlack,

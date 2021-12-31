@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 
 class StylesMobile {
   static const Color quaseBlack = Color(0xFF201F1E);
+  static const Color blackText = Color(0xFF1A1918);
   static const Color quaseWhite = Color(0xFFF4F4F4);
   static const Color laranjaum = Color(0xFFFF5400);
   static const Color cinzou = Color(0xFF7D7D7D);
+  static const Color lowBlueGray = Color(0xFF334756);
+  static const Color mareloMostarda = Color(0xFFFA9905);
+  static const Color verdeGood = Color(0xFF25D366);
   static const String fonte = 'Georama';
 
   static const tituloFinoLinethrough = TextStyle(
@@ -26,6 +30,14 @@ class StylesMobile {
     fontWeight: FontWeight.w900,
     height: 1.28,
   );
+  static const tituloExtraBoldMenor = TextStyle(
+    color: laranjaum,
+    fontFamily: fonte,
+    fontSize: 30,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w900,
+    height: 1.28,
+  );
 
   // subtitulo que fica em baixo dos titulos
   static const subtitulo = TextStyle(
@@ -38,7 +50,7 @@ class StylesMobile {
   );
 
 // Titulos das Soluções
-  static const tituloSolucao = TextStyle(
+  static const tituloBold = TextStyle(
     color: quaseWhite,
     fontFamily: fonte,
     fontSize: 20,
@@ -86,7 +98,6 @@ class StylesMobile {
   );
 
   static final boxesDecoration = BoxDecoration(
-    
     // color: Color(0xFFF4F4F4),
     borderRadius: BorderRadius.circular(10),
     border: Border.all(width: 2, color: laranjaum),

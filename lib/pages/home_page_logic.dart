@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/desktop/desktop_page.dart';
-import 'package:lejaum/pages/mobile/widgets/AppBar/mobile_app_bar.dart';
-import 'package:lejaum/pages/mobile/widgets/drawer/drawerzin.dart';
 import 'desktop/widgets/AppBar/desktop_app_bar.dart';
 import 'mobile/mobile_page.dart';
+import 'mobile/widgets/tela1/AppBar/mobile_app_bar.dart';
+import 'mobile/widgets/tela1/drawer/drawerzin.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

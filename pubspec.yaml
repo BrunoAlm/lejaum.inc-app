@@ -36,6 +36,7 @@ dependencies:
   # Roda video
   video_player: ^2.2.10
   carousel_slider: ^4.0.0
+  font_awesome_flutter: ^9.2.0
 
   # smooth_page_indicator: ^1.0.0+2
   # carousel_slider: ^4.0.0
@@ -52,14 +53,14 @@ flutter:
   assets:
     - assets/images/first_page_bg.png
     - assets/images/boxes/
-    - assets/images/carrossel/
     - assets/images/icons/
     - assets/images/galeria/flor_do_grao/
     - assets/images/galeria/airsoft/
     - assets/images/galeria/azardi/
     - assets/images/galeria/janfie/
-    - assets/videos/
     - assets/pdf/
+    - assets/svgs/
+    - assets/videos/
 
   fonts:
     - family: Georama

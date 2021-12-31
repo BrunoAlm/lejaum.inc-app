@@ -1,31 +1,34 @@
 import 'package:flutter/material.dart';
 
 class BotaoEstilizado extends StatelessWidget {
-  final Color laranjaum = Color(0xFFFF5400);
-
   BotaoEstilizado({
     Key? key,
-    this.texto,
+    required this.texto,
     this.altura,
     this.largura,
-    this.pressionado,
+    required this.pressionado,
+    required this.icone,
+    required this.cor,
+    required this.textColor,
   }) : super(key: key);
 
   final String? texto;
   final Function()? pressionado;
   final double? largura, altura;
-
+  final IconData? icone;
+  final Color? cor;
+  final Color? textColor;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: altura,
       width: largura,
       decoration: BoxDecoration(
-        color: laranjaum,
+        color: cor!,
         borderRadius: BorderRadius.circular(50),
         boxShadow: [
           BoxShadow(
-            color: laranjaum,
+            color: cor!,
             spreadRadius: 2,
             blurRadius: 14,
             offset: Offset(0, 2),
@@ -34,15 +37,16 @@ class BotaoEstilizado extends StatelessWidget {
       ),
       child: ElevatedButton.icon(
         style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(cor!),
           shape: MaterialStateProperty.all(StadiumBorder()),
         ),
-        onPressed: pressionado,
-        icon: Icon(Icons.arrow_circle_down_outlined),
+        onPressed: pressionado!,
+        icon: Icon(icone, color: textColor!),
         label: Text(
           texto!,
           style: TextStyle(
             fontFamily: 'Georama',
-            color: Colors.white,
+            color: textColor!,
             fontSize: 18,
           ),
         ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/portfolio/portfolio2.dart';
-import 'package:lejaum/pages/mobile/widgets/primeira_parte/boxes.dart';
-import 'package:lejaum/pages/mobile/widgets/solucoes/solucoes.dart';
-import 'widgets/portfolio/portfolio.dart';
-import 'widgets/primeira_parte/primeira_parte.dart';
+import 'widgets/tela2/boxes.dart';
+import 'widgets/tela1/primeira_parte.dart';
+import 'widgets/tela3/portfolio/portfolioIDV.dart';
+import 'widgets/tela3/portfolio/portfolioSM.dart';
+import 'widgets/tela4/solucoes/solucoes.dart';
 
 class MobilePage extends StatefulWidget {
   MobilePage({Key? key}) : super(key: key);
@@ -27,18 +27,22 @@ class _MobilePageState extends State<MobilePage> {
           controller: _pageController,
           children: [
             PrimeiraParteMobile(
-              pressionou: () => _pageController.nextPage(
-                  duration: Duration(milliseconds: 500),
-                  curve: Curves.easeInOutQuart),
-            ),
-            // todasBoxesMaisBotao(pressionuou),
+                segundaTela: () => _pageController.nextPage(
+                      duration: Duration(milliseconds: 500),
+                      curve: Curves.easeInOutQuart,
+                    ),
+                portfolio: () => _pageController.animateToPage(
+                      2,
+                      duration: Duration(milliseconds: 500),
+                      curve: Curves.easeInOutQuart,
+                    )),
             TodasBoxes(
-              pressionou: () => _pageController.nextPage(
+              portifolio: () => _pageController.nextPage(
                   duration: Duration(milliseconds: 500),
                   curve: Curves.easeInOutQuart),
             ),
-            Portfolio(),
-            Portfolio2(),
+            PortfolioSM(),
+            PortfolioIDV(),
             Solucoes(),
           ],
           scrollDirection: Axis.vertical,
