@@ -28,7 +28,8 @@ class _HomePageState extends State<HomePage> {
                   child: DesktopAppBar(),
                   preferredSize: Size(double.infinity, 70),
                 ),
-          endDrawer: contraints.maxWidth < 800 ? DrawerLejaum() : null,
+          endDrawer:
+              contraints.maxWidth < 800 ? DrawerLejaum() : DrawerLejaum(),
           body: Container(
             child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
           ),

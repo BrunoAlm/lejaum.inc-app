@@ -1,3 +1,5 @@
+import 'dart:io';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -67,7 +69,12 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
             const SizedBox(height: 20),
             BotaoDrawer(texto: 'Ver Planos', pressionado: () {}),
             const SizedBox(height: 20),
-            BotaoDrawer(texto: 'Whatsapp', pressionado: () {}),
+            BotaoDrawer(
+              texto: 'Whatsapp',
+              pressionado: () {
+                abrirWhatsApp();
+              },
+            ),
             const SizedBox(height: 55),
             GetBuilder<ThemeController>(
               builder: (controller) => Text(
@@ -94,4 +101,48 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
       ),
     );
   }
+
+  abrirWhatsApp() async {
+    var whatsappUrl =
+        "whatsapp://send?phone=+5569993510094&text=Oi! Vi o seu site e preciso de ajuda";
+    var url_web = 'https://wa.link/hwu2yd';
+    if (Platform.isAndroid) {
+      if (await canLaunch(whatsappUrl)) {
+        await launch(whatsappUrl);
+      } else {
+        throw 'Could not launch $whatsappUrl';
+      }
+    } else {
+      if (await canLaunch(url_web)) {
+        await launch(url_web);
+      } else {
+        throw 'Could not launch $url_web';
+      }
+    }
+  }
+
+  // openWhatsApp() async {
+  //   var numero = "+919144040888";
+  //   var mensagem = 'teste testado';
+  //   var whatsappURl_android =
+  //       "whatsapp://send?phone=" + numero + "&text=$mensagem";
+  //   var whatappURL_ios = "https://wa.me/$numero?text=${Uri.parse("$mensagem")}";
+  //   if (Platform.isIOS) {
+  //     // for iOS phone only
+  //     if (await canLaunch(whatappURL_ios)) {
+  //       await launch(whatappURL_ios, forceSafariVC: false);
+  //     } else {
+  //       ScaffoldMessenger.of(context)
+  //           .showSnackBar(SnackBar(content: new Text("whatsapp no installed")));
+  //     }
+  //   } else {
+  //     // android , web
+  //     if (await canLaunch(whatsappURl_android)) {
+  //       await launch(whatsappURl_android);
+  //     } else {
+  //       ScaffoldMessenger.of(context)
+  //           .showSnackBar(SnackBar(content: new Text("whatsapp no installed")));
+  //     }
+  //   }
+  // }
 }
