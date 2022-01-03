@@ -103,22 +103,27 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
   }
 
   abrirWhatsApp() async {
-    var whatsappUrl =
-        "whatsapp://send?phone=+5569993510094&text=Oi! Vi o seu site e preciso de ajuda";
+    // var whatsappUrl =
+    //     "whatsapp://send?phone=+5569993510094&text=Oi! Vi o seu site e preciso de ajuda";
     var url_web = 'https://wa.link/hwu2yd';
-    if (Platform.isAndroid) {
-      if (await canLaunch(whatsappUrl)) {
-        await launch(whatsappUrl);
-      } else {
-        throw 'Could not launch $whatsappUrl';
-      }
+    if (await canLaunch(url_web)) {
+      await launch(url_web);
     } else {
-      if (await canLaunch(url_web)) {
-        await launch(url_web);
-      } else {
-        throw 'Could not launch $url_web';
-      }
+      throw 'Could not launch $url_web';
     }
+    // if (Platform.isAndroid) {
+    //   if (await canLaunch(whatsappUrl)) {
+    //     await launch(whatsappUrl);
+    //   } else {
+    //     throw 'Could not launch $whatsappUrl';
+    //   }
+    // } else {
+    //   if (await canLaunch(url_web)) {
+    //     await launch(url_web);
+    //   } else {
+    //     throw 'Could not launch $url_web';
+    //   }
+    // }
   }
 
   // openWhatsApp() async {
