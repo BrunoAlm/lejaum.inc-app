@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -8,6 +6,7 @@ import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/darkmode_button.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/lightmode_button.dart';
+import 'package:lejaum/pages/services/abrir_whatsapp.dart';
 
 class DrawerLejaum extends StatefulWidget {
   const DrawerLejaum({Key? key}) : super(key: key);
@@ -100,30 +99,6 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
         ),
       ),
     );
-  }
-
-  abrirWhatsApp() async {
-    // var whatsappUrl =
-    //     "whatsapp://send?phone=+5569993510094&text=Oi! Vi o seu site e preciso de ajuda";
-    var url_web = 'https://wa.link/hwu2yd';
-    if (await canLaunch(url_web)) {
-      await launch(url_web);
-    } else {
-      throw 'Could not launch $url_web';
-    }
-    // if (Platform.isAndroid) {
-    //   if (await canLaunch(whatsappUrl)) {
-    //     await launch(whatsappUrl);
-    //   } else {
-    //     throw 'Could not launch $whatsappUrl';
-    //   }
-    // } else {
-    //   if (await canLaunch(url_web)) {
-    //     await launch(url_web);
-    //   } else {
-    //     throw 'Could not launch $url_web';
-    //   }
-    // }
   }
 
   // openWhatsApp() async {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+import 'package:lejaum/pages/services/abrir_whatsapp.dart';
 import '../../../../widgets/botao_estilizado.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -85,7 +86,7 @@ class PrimeiraParteMobile extends StatelessWidget {
                 texto: "Whatsapp",
                 altura: 40,
                 largura: 160,
-                pressionado: () {},
+                pressionado: abrirWhatsApp,
                 icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
               ),
             ],

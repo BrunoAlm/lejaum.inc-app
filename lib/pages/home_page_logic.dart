@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                   preferredSize: Size(double.infinity, 70),
                 ),
           endDrawer:
-              contraints.maxWidth < 800 ? DrawerLejaum() : DrawerLejaum(),
+              contraints.maxWidth < 800 ? DrawerLejaum() : null,
           body: Container(
             child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
           ),
