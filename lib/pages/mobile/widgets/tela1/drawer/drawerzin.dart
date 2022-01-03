@@ -28,27 +28,27 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
         children: [
           //
           Container(
-            height: 50,
-            width: 50,
+            height: 70,
+            width: 70,
             decoration: BoxDecoration(
               color: StylesMobile.laranjaum,
               borderRadius: BorderRadius.circular(8),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(2.0),
+              padding: const EdgeInsets.all(8.0),
               child: SvgPicture.asset('assets/images/icons/logo_icon.svg'),
             ),
           ),
           const SizedBox(height: 55),
-          BotaoDrawer(texto: 'Home'),
-          const SizedBox(height: 25),
-          BotaoDrawer(texto: 'Sobre'),
-          const SizedBox(height: 25),
-          BotaoDrawer(texto: 'Portfólio'),
-          const SizedBox(height: 25),
-          BotaoDrawer(texto: 'Ver Planos'),
-          const SizedBox(height: 25),
-          BotaoDrawer(texto: 'Whatsapp'),
+          BotaoDrawer(texto: 'Home', pressionado: () {}),
+          const SizedBox(height: 20),
+          BotaoDrawer(texto: 'Sobre', pressionado: () {}),
+          const SizedBox(height: 20),
+          BotaoDrawer(texto: 'Portfólio', pressionado: () {}),
+          const SizedBox(height: 20),
+          BotaoDrawer(texto: 'Ver Planos', pressionado: () {}),
+          const SizedBox(height: 20),
+          BotaoDrawer(texto: 'Whatsapp', pressionado: () {}),
           const SizedBox(height: 55),
           GetBuilder<ThemeController>(
             builder: (controller) => Text(

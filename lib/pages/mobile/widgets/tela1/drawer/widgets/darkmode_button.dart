@@ -16,6 +16,7 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
     Get.put(ThemeController());
     return GetBuilder<ThemeController>(
       builder: (controller) => Container(
+        width: 110,
         decoration: BoxDecoration(
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(50),
