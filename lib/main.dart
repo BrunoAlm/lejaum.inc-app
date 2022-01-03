@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'pages/home_page_logic.dart';
-import 'pages/mobile/widgets/tela3/teste_pdf/pdf.dart';
+// import 'pages/mobile/widgets/tela3/teste_pdf/pdf.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -21,12 +21,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
       theme: Themes.light,
       darkTheme: Themes.dark,
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/janfie-info': (context) => const PdfJanfie(),
+        // '/janfie-info': (context) => const PdfJanfie(),
       },
     );
   }
