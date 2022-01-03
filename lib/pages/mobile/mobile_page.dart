@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'widgets/tela2/boxes.dart';
 import 'widgets/tela1/primeira_parte.dart';
 import 'widgets/tela3/portfolio/portfolioIDV.dart';
@@ -15,38 +17,40 @@ class MobilePage extends StatefulWidget {
 class _MobilePageState extends State<MobilePage> {
   @override
   Widget build(BuildContext context) {
+    // PageController _pageController = PageController();
     var altura = MediaQuery.of(context).size.height;
     var largura = MediaQuery.of(context).size.width;
-    PageController _pageController = PageController();
-
+Get.put(TestController());
     return SingleChildScrollView(
       child: Container(
         height: altura,
         width: largura,
-        child: PageView(
-          controller: _pageController,
-          children: [
-            PrimeiraParteMobile(
-                segundaTela: () => _pageController.nextPage(
-                      duration: Duration(milliseconds: 500),
-                      curve: Curves.easeInOutQuart,
-                    ),
-                portfolio: () => _pageController.animateToPage(
-                      2,
-                      duration: Duration(milliseconds: 500),
-                      curve: Curves.easeInOutQuart,
-                    )),
-            TodasBoxes(
-              portifolio: () => _pageController.nextPage(
-                  duration: Duration(milliseconds: 500),
-                  curve: Curves.easeInOutQuart),
-            ),
-            PortfolioSM(),
-            PortfolioIDV(),
-            Solucoes(),
-          ],
-          scrollDirection: Axis.vertical,
-        ),
+        child: GetBuilder<TestController>(builder: (context) {
+          return PageView(
+            controller: context.controller,
+            children: [
+              PrimeiraParteMobile(
+                  segundaTela: () => context.controller.nextPage(
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInOutQuart,
+                      ),
+                  portfolio: () => context.controller.animateToPage(
+                        2,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInOutQuart,
+                      )),
+              TodasBoxes(
+                portifolio: () => context.controller.nextPage(
+                    duration: Duration(milliseconds: 500),
+                    curve: Curves.easeInOutQuart),
+              ),
+              PortfolioSM(),
+              PortfolioIDV(),
+              Solucoes(),
+            ],
+            scrollDirection: Axis.vertical,
+          );
+        }),
       ),
     );
   }

@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -8,7 +6,6 @@ import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/darkmode_button.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/lightmode_button.dart';
-import 'package:lejaum/widgets/botao_estilizado.dart';
 
 class DrawerLejaum extends StatefulWidget {
   const DrawerLejaum({Key? key}) : super(key: key);
@@ -20,85 +17,80 @@ class DrawerLejaum extends StatefulWidget {
 class _DrawerLejaumState extends State<DrawerLejaum> {
   @override
   Widget build(BuildContext context) {
+    Get.put(TestController());
     Get.put(ThemeController());
     return Drawer(
       backgroundColor: context.theme.colorScheme.background,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          //
-          Container(
-            height: 70,
-            width: 70,
-            decoration: BoxDecoration(
-              color: StylesMobile.laranjaum,
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SvgPicture.asset('assets/images/icons/logo_icon.svg'),
-            ),
-          ),
-          const SizedBox(height: 55),
-          BotaoDrawer(texto: 'Home', pressionado: () {}),
-          const SizedBox(height: 20),
-          BotaoDrawer(texto: 'Sobre', pressionado: () {}),
-          const SizedBox(height: 20),
-          BotaoDrawer(texto: 'Portfólio', pressionado: () {}),
-          const SizedBox(height: 20),
-          BotaoDrawer(texto: 'Ver Planos', pressionado: () {}),
-          const SizedBox(height: 20),
-          BotaoDrawer(texto: 'Whatsapp', pressionado: () {}),
-          const SizedBox(height: 55),
-          GetBuilder<ThemeController>(
-            builder: (controller) => Text(
-              'Alterar tema:',
-              style: StylesMobile.subtituloBoldao.copyWith(
-                fontSize: 18,
-                color: controller.isDarkMode
-                    ? StylesMobile.quaseBlack
-                    : StylesMobile.quaseWhite,
+      child: GetBuilder<TestController>(
+        builder: (_pageController) => Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            //
+            Container(
+              height: 70,
+              width: 70,
+              decoration: BoxDecoration(
+                color: StylesMobile.laranjaum,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset('assets/images/icons/logo_icon.svg'),
               ),
             ),
-          ),
-          const SizedBox(height: 15),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              BotaoDarkMode(),
-              const SizedBox(width: 30),
-              BotaoLightMode(),
-            ],
-          )
-          // Container(
-          //   decoration: BoxDecoration(
-          //     color: context.theme.colorScheme.background,
-          //     borderRadius: BorderRadius.circular(50),
-          //     border: Border.all(color: StylesMobile.laranjaum, width: 2.0),
-          //   ),
-          //   child: GetBuilder<ThemeController>(
-          //     builder: (controller) => TextButton.icon(
-          //       icon: Icon(
-          //         controller.isDarkMode ? Icons.dark_mode : Icons.light_mode,
-          //       ),
-          //       onPressed: () => controller.ativaModoDark(),
-          //       label: Text('controller.texto'),
-          //     ),
-          //   ),
-          // ),
-          // IconButton(
-          //   onPressed: () {
-          //     Get.isDarkMode
-          //         ? Get.changeThemeMode(ThemeMode.light)
-          //         : Get.changeThemeMode(ThemeMode.dark);
-          //   },
-          //   icon: Icon(
-          //     Get.isDarkMode
-          //         ? Icons.mode_night_outlined
-          //         : Icons.light_mode_outlined,
-          //   ),
-          // ),
-        ],
+            const SizedBox(height: 55),
+            BotaoDrawer(texto: 'Home', pressionado: () => Get.offAllNamed('/')),
+            const SizedBox(height: 20),
+            BotaoDrawer(
+              texto: 'Sobre',
+              pressionado: () {
+                _pageController.controller.animateToPage(
+                  1,
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeInOutQuart,
+                );
+                Navigator.of(context).pop();
+              },
+            ),
+            const SizedBox(height: 20),
+            BotaoDrawer(
+              texto: 'Portfólio',
+              pressionado: () {
+                _pageController.controller.animateToPage(
+                  2,
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeInOutQuart,
+                );
+                Navigator.of(context).pop();
+              },
+            ),
+            const SizedBox(height: 20),
+            BotaoDrawer(texto: 'Ver Planos', pressionado: () {}),
+            const SizedBox(height: 20),
+            BotaoDrawer(texto: 'Whatsapp', pressionado: () {}),
+            const SizedBox(height: 55),
+            GetBuilder<ThemeController>(
+              builder: (controller) => Text(
+                'Alterar tema:',
+                style: StylesMobile.subtituloBoldao.copyWith(
+                  fontSize: 18,
+                  color: controller.isDarkMode
+                      ? StylesMobile.quaseBlack
+                      : StylesMobile.quaseWhite,
+                ),
+              ),
+            ),
+            const SizedBox(height: 15),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                BotaoDarkMode(),
+                const SizedBox(width: 30),
+                BotaoLightMode(),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

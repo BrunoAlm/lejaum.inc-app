@@ -62,3 +62,9 @@ class ThemeController extends GetxController {
     update();
   }
 }
+
+class TestController extends GetxController {
+  var controller = PageController();
+
+
+}
