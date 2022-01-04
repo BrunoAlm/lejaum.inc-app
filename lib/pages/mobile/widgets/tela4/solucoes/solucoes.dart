@@ -19,25 +19,34 @@ class _SolucoesState extends State<Solucoes> {
 
     return Container(
       child: Padding(
-        padding: EdgeInsets.only(top: 49, left: 25),
+        padding: EdgeInsets.only(top: 49),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Soluções',
-              style: StylesMobile.tituloExtraBold,
+            Padding(
+              padding: const EdgeInsets.only(left: 25),
+              child: Text(
+                'Soluções',
+                style: StylesMobile.tituloExtraBold,
+              ),
             ),
             const SizedBox(height: 10),
-            Text(
-              'Veja abaixo algumas das soluções que nós podemos oferecer:',
-              style: StylesMobile.subtitulo,
+            Padding(
+              padding: const EdgeInsets.only(left: 25),
+              child: Text(
+                'Veja abaixo algumas das soluções que nós podemos oferecer:',
+                style: StylesMobile.subtitulo,
+              ),
             ),
             const SizedBox(height: 10),
             EsseVai(),
             const SizedBox(height: 30),
-            Text(
-              'Nós somos a solução certa\npara você e sua empresa!',
-              style: StylesMobile.subtituloBoldao,
+            Padding(
+              padding: const EdgeInsets.only(left: 25),
+              child: Text(
+                'Nós somos a solução certa\npara você e sua empresa!',
+                style: StylesMobile.subtituloBoldao,
+              ),
             ),
           ],
         ),
