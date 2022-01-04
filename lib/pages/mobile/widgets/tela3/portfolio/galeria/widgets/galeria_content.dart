@@ -87,3 +87,49 @@ class _JanfieState extends State<Janfie> {
     );
   }
 }
+
+class Italo extends StatelessWidget {
+  const Italo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var largura = MediaQuery.of(context).size.width;
+    return Row(
+      children: [
+        SizedBox(
+          height: 250,
+          width: largura,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(), // this for snapping
+            itemCount: italo_list.length,
+            itemBuilder: (context, index) => italo_list[index],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class Lejaum extends StatelessWidget {
+  const Lejaum({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var largura = MediaQuery.of(context).size.width;
+    return Row(
+      children: [
+        SizedBox(
+          height: 250,
+          width: largura,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(), // this for snapping
+            itemCount: lejaum_list.length,
+            itemBuilder: (context, index) => lejaum_list[index],
+          ),
+        ),
+      ],
+    );
+  }
+}

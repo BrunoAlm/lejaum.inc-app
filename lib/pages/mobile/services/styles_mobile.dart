@@ -69,6 +69,38 @@ class StylesMobile {
     height: 1.2,
   );
 
+  static const tituloIconTextSolucao = TextStyle(
+    color: quaseWhite,
+    fontFamily: fonte,
+    fontSize: 23,
+    fontStyle: FontStyle.normal,
+    // fontWeight: FontWeight.w600,
+    height: 1.2,
+  );
+  static const subtituloIconTextSolucao = TextStyle(
+    color: cinzou,
+    fontFamily: fonte,
+    fontSize: 9,
+    fontStyle: FontStyle.italic,
+    // fontWeight: FontWeight.w600,
+    height: 1.2,
+  );
+
+  static const textoPretoSemFrescura = TextStyle(
+    color: quaseBlack,
+    fontFamily: fonte,
+    fontSize: 17,
+    fontWeight: FontWeight.w700,
+  );
+
+  static const textoBrancoSemFrescura = TextStyle(
+    color: quaseWhite,
+    fontFamily: fonte,
+    fontSize: 23,
+    fontStyle: FontStyle.normal,
+    height: 1.2,
+  );
+
   // Subtitulo bold no final da tela
   static const subtituloBoldao = TextStyle(
     color: quaseWhite,

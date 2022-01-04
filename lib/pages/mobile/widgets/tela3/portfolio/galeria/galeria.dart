@@ -33,3 +33,19 @@ class GaleriaIDV extends StatelessWidget {
     );
   }
 }
+
+class GaleriaWB extends StatelessWidget {
+  const GaleriaWB({Key? key, this.teste}) : super(key: key);
+  final BuildContext? teste;
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Italo(),
+        const SizedBox(height: 20),
+        Lejaum(),
+        // const SizedBox(height: 20),
+      ],
+    );
+  }
+}

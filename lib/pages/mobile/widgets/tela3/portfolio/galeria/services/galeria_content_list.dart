@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/galeria/widgets/italo/italo_content.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/galeria/widgets/lejaum/lejaum_content.dart';
 
 import '../widgets/airsoft/airsoft_content.dart';
 import '../widgets/azardi/azardi_content.dart';
@@ -37,4 +39,11 @@ List<Widget> janfie_list = [
   janfie2(),
   janfie3()
   // janfie4()
+];
+
+List<Widget> italo_list = [
+  logo_italo(),
+];
+List<Widget> lejaum_list = [
+  logo_lejaum(),
 ];

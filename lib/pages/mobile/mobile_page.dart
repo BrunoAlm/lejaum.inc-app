@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/portfolioWB.dart';
 import 'widgets/tela2/boxes.dart';
 import 'widgets/tela1/primeira_parte.dart';
 import 'widgets/tela3/portfolio/portfolioIDV.dart';
@@ -20,7 +21,7 @@ class _MobilePageState extends State<MobilePage> {
     // PageController _pageController = PageController();
     var altura = MediaQuery.of(context).size.height;
     var largura = MediaQuery.of(context).size.width;
-Get.put(TestController());
+    Get.put(TestController());
     return SingleChildScrollView(
       child: Container(
         height: altura,
@@ -46,6 +47,7 @@ Get.put(TestController());
               ),
               PortfolioSM(),
               PortfolioIDV(),
+              PortifolioWB(),
               Solucoes(),
             ],
             scrollDirection: Axis.vertical,

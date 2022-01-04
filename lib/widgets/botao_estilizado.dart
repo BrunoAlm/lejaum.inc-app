@@ -29,8 +29,8 @@ class BotaoEstilizado extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: cor!,
-            spreadRadius: 2,
-            blurRadius: 14,
+            spreadRadius: 1,
+            blurRadius: 8,
             offset: Offset(0, 2),
           ),
         ],

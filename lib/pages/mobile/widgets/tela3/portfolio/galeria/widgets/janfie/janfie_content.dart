@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:get/get.dart';
@@ -26,7 +27,7 @@ Widget logo_janfie() => Container(
             texto: 'Ver projeto',
             altura: 40,
             pressionado: () => Get.toNamed('/janfie-info'),
-            icone: Icons.search,
+            icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
           ),
           SizedBox(height: 20),
         ],

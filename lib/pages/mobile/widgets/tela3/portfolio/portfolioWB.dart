@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/galeria/galeria.dart';
 
-import 'galeria/galeria.dart';
-
-class PortfolioIDV extends StatefulWidget {
-  const PortfolioIDV({Key? key}) : super(key: key);
+class PortifolioWB extends StatefulWidget {
+  const PortifolioWB({Key? key}) : super(key: key);
 
   @override
-  State<PortfolioIDV> createState() => _PortfolioIDVState();
+  _PortifolioWBState createState() => _PortifolioWBState();
 }
 
-class _PortfolioIDVState extends State<PortfolioIDV> {
-
+class _PortifolioWBState extends State<PortifolioWB> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,12 +21,12 @@ class _PortfolioIDVState extends State<PortfolioIDV> {
           Padding(
             padding: const EdgeInsets.only(left: 25),
             child: Text(
-              'Portfólio - Id. Visual',
+              'Portfólio - Web Design',
               style: StylesMobile.tituloExtraBoldMenor,
             ),
           ),
           const SizedBox(height: 10),
-          GaleriaIDV(),
+          GaleriaWB(),
         ],
       ),
     );
