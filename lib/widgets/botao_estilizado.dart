@@ -10,6 +10,8 @@ class BotaoEstilizado extends StatelessWidget {
     required this.icone,
     required this.cor,
     required this.textColor,
+    this.tamanho_fonte,
+    this.tamanho_icone,
   }) : super(key: key);
 
   final String? texto;
@@ -18,6 +20,8 @@ class BotaoEstilizado extends StatelessWidget {
   final IconData? icone;
   final Color? cor;
   final Color? textColor;
+  final double? tamanho_fonte;
+  final double? tamanho_icone;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -42,13 +46,13 @@ class BotaoEstilizado extends StatelessWidget {
           shape: MaterialStateProperty.all(StadiumBorder()),
         ),
         onPressed: pressionado!,
-        icon: Icon(icone, color: textColor!),
+        icon: Icon(icone, color: textColor!, size: tamanho_icone),
         label: Text(
           texto!,
           style: TextStyle(
             fontFamily: 'Georama',
             color: textColor!,
-            fontSize: 18,
+            fontSize: tamanho_fonte,
           ),
         ),
       ),

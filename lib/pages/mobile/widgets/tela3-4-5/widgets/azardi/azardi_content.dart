@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
@@ -25,8 +26,11 @@ Widget logo_azardi() => Container(
             cor: StylesMobile.laranjaum,
             textColor: Colors.white,
             texto: 'Ver projeto',
-            pressionado: () {},
-            altura: 40,
+            pressionado: () => Get.toNamed('/janfie-info'),
+            altura: 25,
+            largura: 103.91,
+            tamanho_fonte: 10,
+            tamanho_icone: 10,
             icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
           ),
           SizedBox(height: 20),
