@@ -3,14 +3,14 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela4/services/lista_de_textos.dart';
 
-class EsseVai extends StatefulWidget {
-  EsseVai({Key? key}) : super(key: key);
+class Expansivelzada extends StatefulWidget {
+  Expansivelzada({Key? key}) : super(key: key);
 
   @override
-  _EsseVaiState createState() => _EsseVaiState();
+  _ExpansivelzadaState createState() => _ExpansivelzadaState();
 }
 
-class _EsseVaiState extends State<EsseVai> {
+class _ExpansivelzadaState extends State<Expansivelzada> {
   // selected's value = 0. For default first item is open.
   int selected = 0; //attention
   bool mudaIcone = true;

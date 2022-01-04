@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/widgets/tela4/widgets/custom_bagulho_que_expande.dart';
 import 'package:get/get.dart';
-import 'package:lejaum/pages/mobile/widgets/tela4/widgets/esse_tem_que_ir.dart';
+import 'package:lejaum/pages/mobile/widgets/tela4/widgets/expansivelzada.dart';
 import '../../../services/themes.dart';
 
 class Solucoes extends StatefulWidget {
@@ -39,7 +38,7 @@ class _SolucoesState extends State<Solucoes> {
               ),
             ),
             const SizedBox(height: 10),
-            EsseVai(),
+            Expansivelzada(),
             const SizedBox(height: 30),
             Padding(
               padding: const EdgeInsets.only(left: 25),
