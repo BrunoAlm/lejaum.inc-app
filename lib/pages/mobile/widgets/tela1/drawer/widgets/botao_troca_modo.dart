@@ -29,7 +29,8 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
         ),
         child: IconButton(
           onPressed: controller.trocaModo,
-          icon: Icon(Icons.light_mode),
+          icon:
+              Icon(controller.isDarkMode ? Icons.dark_mode : Icons.light_mode),
           constraints: BoxConstraints.expand(),
           splashRadius: 20,
         ),
