@@ -17,6 +17,7 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
     return GetBuilder<ThemeController>(
       builder: (controller) => Container(
         width: 110,
+        height: 40,
         decoration: BoxDecoration(
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(50),
@@ -26,17 +27,25 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
                   : StylesMobile.quaseWhite,
               width: 2.0),
         ),
-        child: TextButton.icon(
-          icon: Icon(Icons.dark_mode),
-          onPressed: controller.ativaModoEscuro,
-          label: Text('escuro'),
-          style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all(
-            controller.isDarkMode
-                ? StylesMobile.quaseBlack
-                : StylesMobile.quaseWhite,
-          )),
+        child: IconButton(
+          onPressed: controller.trocaModo,
+          icon: Icon(Icons.light_mode),
+          constraints: BoxConstraints.expand(),
+          splashRadius: 20,
         ),
+
+        // TextButton.icon(
+        //   icon:
+        //       Icon(controller.isDarkMode ? Icons.dark_mode : Icons.light_mode),
+        //   onPressed: controller.trocaModo,
+        //   label: Text(''),
+        //   style: ButtonStyle(
+        //       foregroundColor: MaterialStateProperty.all(
+        //     controller.isDarkMode
+        //         ? StylesMobile.quaseBlack
+        //         : StylesMobile.quaseWhite,
+        //   )),
+        // ),
       ),
     );
   }

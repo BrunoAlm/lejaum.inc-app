@@ -4,8 +4,7 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart';
-import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/darkmode_button.dart';
-import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/lightmode_button.dart';
+import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/botao_troca_modo.dart';
 import 'package:lejaum/pages/services/abrir_whatsapp.dart';
 
 class DrawerLejaum extends StatefulWidget {
@@ -77,7 +76,8 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
             const SizedBox(height: 55),
             GetBuilder<ThemeController>(
               builder: (controller) => Text(
-                'Alterar tema:',
+                'Alterar tema para: ' +
+                    '${controller.isDarkMode ? 'escuro' : 'claro'}',
                 style: StylesMobile.subtituloBoldao.copyWith(
                   fontSize: 18,
                   color: controller.isDarkMode
@@ -87,14 +87,15 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
               ),
             ),
             const SizedBox(height: 15),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                BotaoDarkMode(),
-                const SizedBox(width: 30),
-                BotaoLightMode(),
-              ],
-            )
+            BotaoDarkMode(),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     BotaoDarkMode(),
+            //     // const SizedBox(width: 30),
+            //     // BotaoLightMode(),
+            //   ],
+            // )
           ],
         ),
       ),

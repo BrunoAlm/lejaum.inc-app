@@ -17,8 +17,8 @@ class Themes {
       onBackground: StylesMobile.laranjaum,
       onError: Colors.red,
       brightness: Brightness.light,
-      // primaryVariant: StylesMobile.laranjaum,
-      // secondaryVariant: StylesMobile.quaseWhite,
+      primaryVariant: StylesMobile.laranjaum,
+      secondaryVariant: StylesMobile.quaseWhite,
     ),
     // elevatedButtonTheme: ElevatedButtonThemeData(
     //   style: ButtonStyle(
@@ -40,8 +40,8 @@ class Themes {
       onBackground: StylesMobile.laranjaum,
       onError: Colors.red,
       brightness: Brightness.dark,
-      // primaryVariant: StylesMobile.laranjaum,
-      // secondaryVariant: StylesMobile.quaseBlack,
+      primaryVariant: StylesMobile.laranjaum,
+      secondaryVariant: StylesMobile.quaseBlack,
     ),
     iconTheme: IconThemeData(color: StylesMobile.quaseWhite),
   );
@@ -49,6 +49,15 @@ class Themes {
 
 class ThemeController extends GetxController {
   bool isDarkMode = false;
+
+  void trocaModo() {
+
+    isDarkMode = !isDarkMode;
+    isDarkMode
+        ? Get.changeThemeMode(ThemeMode.light)
+        : Get.changeThemeMode(ThemeMode.dark);
+    update();
+  }
 
   void ativaModoClaro() {
     isDarkMode = true;
