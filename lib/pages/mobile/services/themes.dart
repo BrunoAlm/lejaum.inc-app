@@ -51,7 +51,6 @@ class ThemeController extends GetxController {
   bool isDarkMode = false;
 
   void trocaModo() {
-
     isDarkMode = !isDarkMode;
     isDarkMode
         ? Get.changeThemeMode(ThemeMode.light)
@@ -72,6 +71,15 @@ class ThemeController extends GetxController {
   }
 }
 
-class TestController extends GetxController {
+class TestPageController extends GetxController {
   var controller = PageController();
+}
+
+class TestTileController extends GetxController {
+  bool expandiu = false;
+
+  void expande() {
+    expandiu = !expandiu;
+    update();
+  }
 }

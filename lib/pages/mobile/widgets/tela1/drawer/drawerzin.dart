@@ -17,11 +17,11 @@ class DrawerLejaum extends StatefulWidget {
 class _DrawerLejaumState extends State<DrawerLejaum> {
   @override
   Widget build(BuildContext context) {
-    Get.put(TestController());
+    Get.put(TestPageController());
     Get.put(ThemeController());
     return Drawer(
       backgroundColor: context.theme.colorScheme.background,
-      child: GetBuilder<TestController>(
+      child: GetBuilder<TestPageController>(
         builder: (_pageController) => Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -21,12 +21,12 @@ class _MobilePageState extends State<MobilePage> {
     // PageController _pageController = PageController();
     var altura = MediaQuery.of(context).size.height;
     var largura = MediaQuery.of(context).size.width;
-    Get.put(TestController());
+    Get.put(TestPageController());
     return SingleChildScrollView(
       child: Container(
         height: altura,
         width: largura,
-        child: GetBuilder<TestController>(builder: (context) {
+        child: GetBuilder<TestPageController>(builder: (context) {
           return PageView(
             controller: context.controller,
             children: [
