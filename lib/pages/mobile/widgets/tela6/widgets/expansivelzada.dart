@@ -21,7 +21,6 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
         child: Column(children: [
           ListView.builder(
             key: Key('builder ${selected.toString()}'), //attention
-
             padding: EdgeInsets.only(left: 13.0, right: 13.0, bottom: 25.0),
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
@@ -52,6 +51,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                           style: StylesMobile.subtituloIconTextSolucao,
                         ),
                       ),
+                      const SizedBox(height: 5),
                     ],
                     onExpansionChanged: ((newState) {
                       if (newState)
