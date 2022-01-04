@@ -80,7 +80,7 @@ class StylesMobile {
   static const subtituloIconTextSolucao = TextStyle(
     color: cinzou,
     fontFamily: fonte,
-    fontSize: 9,
+    fontSize: 15,
     fontStyle: FontStyle.italic,
     // fontWeight: FontWeight.w600,
     height: 1.2,
