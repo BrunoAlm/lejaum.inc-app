@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'pages/home_page_logic.dart';
-import 'pages/mobile/widgets/tela3/teste_pdf/pdf.dart';
+import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

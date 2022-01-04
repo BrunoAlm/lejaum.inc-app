@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/widgets/tela4/services/lista_de_textos.dart';
+import '../services/lista_de_textos.dart';
 
 class Expansivelzada extends StatefulWidget {
   Expansivelzada({Key? key}) : super(key: key);

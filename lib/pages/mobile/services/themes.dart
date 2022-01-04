@@ -74,12 +74,3 @@ class ThemeController extends GetxController {
 class TestPageController extends GetxController {
   var controller = PageController();
 }
-
-class TestTileController extends GetxController {
-  bool expandiu = false;
-
-  void expande() {
-    expandiu = !expandiu;
-    update();
-  }
-}

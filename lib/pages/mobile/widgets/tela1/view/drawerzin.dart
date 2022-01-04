@@ -3,9 +3,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart';
-import 'package:lejaum/pages/mobile/widgets/tela1/drawer/widgets/botao_troca_modo.dart';
-import 'package:lejaum/pages/services/abrir_whatsapp.dart';
+import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
+
+import '../widgets/botao_texto.dart';
+import '../widgets/botao_troca_modo.dart';
 
 class DrawerLejaum extends StatefulWidget {
   const DrawerLejaum({Key? key}) : super(key: key);
@@ -65,7 +66,17 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
               },
             ),
             const SizedBox(height: 20),
-            BotaoDrawer(texto: 'Ver Planos', pressionado: () {}),
+            BotaoDrawer(
+              texto: 'Ver Planos',
+              pressionado: () {
+                _pageController.controller.animateToPage(
+                  6,
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeInOutQuart,
+                );
+                Navigator.of(context).pop();
+              },
+            ),
             const SizedBox(height: 20),
             BotaoDrawer(
               texto: 'Whatsapp',
@@ -87,14 +98,6 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
             ),
             const SizedBox(height: 15),
             BotaoDarkMode(),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.center,
-            //   children: [
-            //     BotaoDarkMode(),
-            //     // const SizedBox(width: 30),
-            //     // BotaoLightMode(),
-            //   ],
-            // )
           ],
         ),
       ),

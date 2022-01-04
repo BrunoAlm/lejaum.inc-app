@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/galeria/services/galeria_content_list.dart';
+
+import '../services/galeria_content_list.dart';
 
 var altura = 250;
 

@@ -27,17 +27,4 @@ abrirWhatsApp() async {
       }
     }
   }
-  // if (Platform.isAndroid) {
-  //   if (await canLaunch(whatsappUrl)) {
-  //     await launch(whatsappUrl);
-  //   } else {
-  //     throw 'Could not launch $whatsappUrl';
-  //   }
-  // } else {
-  //   if (await canLaunch(url_web)) {
-  //     await launch(url_web);
-  //   } else {
-  //     throw 'Could not launch $url_web';
-  //   }
-  // }
 }

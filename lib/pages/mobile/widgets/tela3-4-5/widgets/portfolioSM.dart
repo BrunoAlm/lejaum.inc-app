@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
-import 'galeria/galeria.dart';
+import '../view/galeria.dart';
 
 class PortfolioSM extends StatefulWidget {
   const PortfolioSM({Key? key}) : super(key: key);
@@ -11,15 +11,6 @@ class PortfolioSM extends StatefulWidget {
 }
 
 class _PortfolioSMState extends State<PortfolioSM> {
-  // @override
-  // void initState() async {
-  //   print('renderizou');
-  //   Duration(seconds: 1);
-  //   print('renderizou');
-
-  //   await SnackBar(content: Text('teste'));
-  //   super.initState();
-  // }
 
   @override
   Widget build(BuildContext context) {

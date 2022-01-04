@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/portfolioWB.dart';
-import 'widgets/tela2/boxes.dart';
-import 'widgets/tela1/primeira_parte.dart';
-import 'widgets/tela3/portfolio/portfolioIDV.dart';
-import 'widgets/tela3/portfolio/portfolioSM.dart';
-import 'widgets/tela4/solucoes/solucoes.dart';
+import '../widgets/tela1/view/home_page_mobile.dart';
+import '../widgets/tela2/view/oq_oferecemos.dart';
+import '../widgets/tela3-4-5/widgets/portfolioIDV.dart';
+import '../widgets/tela3-4-5/widgets/portfolioSM.dart';
+import '../widgets/tela3-4-5/widgets/portfolioWB.dart';
+import '../widgets/tela6/view/solucoes.dart';
+import '../widgets/tela7/view/planos.dart';
 
 class MobilePage extends StatefulWidget {
   MobilePage({Key? key}) : super(key: key);
@@ -30,25 +31,13 @@ class _MobilePageState extends State<MobilePage> {
           return PageView(
             controller: context.controller,
             children: [
-              PrimeiraParteMobile(
-                  segundaTela: () => context.controller.nextPage(
-                        duration: Duration(milliseconds: 500),
-                        curve: Curves.easeInOutQuart,
-                      ),
-                  portfolio: () => context.controller.animateToPage(
-                        2,
-                        duration: Duration(milliseconds: 500),
-                        curve: Curves.easeInOutQuart,
-                      )),
-              TodasBoxes(
-                portifolio: () => context.controller.nextPage(
-                    duration: Duration(milliseconds: 500),
-                    curve: Curves.easeInOutQuart),
-              ),
+              HomePageMobile(),
+              TodasBoxes(),
               PortfolioSM(),
               PortfolioIDV(),
               PortifolioWB(),
               Solucoes(),
+              Planos(),
             ],
             scrollDirection: Axis.vertical,
           );

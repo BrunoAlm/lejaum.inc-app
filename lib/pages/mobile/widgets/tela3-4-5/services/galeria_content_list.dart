@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/galeria/widgets/italo/italo_content.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3/portfolio/galeria/widgets/lejaum/lejaum_content.dart';
 
 import '../widgets/airsoft/airsoft_content.dart';
 import '../widgets/azardi/azardi_content.dart';
 import '../widgets/flor_do_grao/grao_content.dart';
+import '../widgets/italo/italo_content.dart';
 import '../widgets/janfie/janfie_content.dart';
+import '../widgets/lejaum/lejaum_content.dart';
 
 List<Widget> flor_do_grao_list = [
   // logo_flor_do_grao(),

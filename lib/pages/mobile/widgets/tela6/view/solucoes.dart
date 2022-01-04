@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:get/get.dart';
-import 'package:lejaum/pages/mobile/widgets/tela4/widgets/expansivelzada.dart';
-import '../../../services/themes.dart';
+import '../widgets/expansivelzada.dart';
 
 class Solucoes extends StatefulWidget {
   Solucoes({Key? key}) : super(key: key);
@@ -14,8 +12,6 @@ class Solucoes extends StatefulWidget {
 class _SolucoesState extends State<Solucoes> {
   @override
   Widget build(BuildContext context) {
-    Get.put(TestTileController());
-
     return Container(
       child: Padding(
         padding: EdgeInsets.only(top: 49),
