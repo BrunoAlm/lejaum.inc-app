@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import '../services/lista_de_textos.dart';
@@ -14,7 +13,6 @@ class Expansivelzada extends StatefulWidget {
 class _ExpansivelzadaState extends State<Expansivelzada> {
   // selected's value = 0. For default first item is open.
   int selected = 0; //attention
-  bool mudaIcone = true;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -39,9 +37,9 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                     initiallyExpanded: index == selected, //attention
 
                     leading: Icon(
-                      mudaIcone
-                          ? FontAwesomeIcons.arrowAltCircleDown
-                          : FontAwesomeIcons.arrowAltCircleUp,
+                      selected == index
+                          ? FontAwesomeIcons.minusCircle
+                          : FontAwesomeIcons.plusCircle,
                     ),
                     trailing: SizedBox(),
                     title: Text(titulos_Expansividade[index],
@@ -60,11 +58,9 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                         setState(() {
                           Duration(seconds: 20000);
                           selected = index;
-                          mudaIcone = !mudaIcone;
                         });
                       else
                         setState(() {
-                          // mudaIcone = !mudaIcone;
                           selected = -1;
                         });
                     })),
