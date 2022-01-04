@@ -27,26 +27,28 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
                   : StylesMobile.quaseWhite,
               width: 2.0),
         ),
-        child: IconButton(
-          onPressed: controller.trocaModo,
+        child:
+
+            // IconButton(
+            //   onPressed: controller.trocaModo,
+            //   icon:
+            //       Icon(controller.isDarkMode ? Icons.dark_mode : Icons.light_mode),
+            //   constraints: BoxConstraints.expand(),
+            //   splashRadius: 20,
+            // ),
+
+            TextButton.icon(
           icon:
               Icon(controller.isDarkMode ? Icons.dark_mode : Icons.light_mode),
-          constraints: BoxConstraints.expand(),
-          splashRadius: 20,
+          onPressed: controller.trocaModo,
+          label: Text(controller.isDarkMode ? 'escuro' : 'claro'),
+          style: ButtonStyle(
+              foregroundColor: MaterialStateProperty.all(
+            controller.isDarkMode
+                ? StylesMobile.quaseBlack
+                : StylesMobile.quaseWhite,
+          )),
         ),
-
-        // TextButton.icon(
-        //   icon:
-        //       Icon(controller.isDarkMode ? Icons.dark_mode : Icons.light_mode),
-        //   onPressed: controller.trocaModo,
-        //   label: Text(''),
-        //   style: ButtonStyle(
-        //       foregroundColor: MaterialStateProperty.all(
-        //     controller.isDarkMode
-        //         ? StylesMobile.quaseBlack
-        //         : StylesMobile.quaseWhite,
-        //   )),
-        // ),
       ),
     );
   }

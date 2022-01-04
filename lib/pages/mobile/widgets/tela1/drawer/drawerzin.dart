@@ -76,8 +76,7 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
             const SizedBox(height: 55),
             GetBuilder<ThemeController>(
               builder: (controller) => Text(
-                'Alterar tema para: ' +
-                    '${controller.isDarkMode ? 'escuro' : 'claro'}',
+                'Alterar tema para: ',
                 style: StylesMobile.subtituloBoldao.copyWith(
                   fontSize: 18,
                   color: controller.isDarkMode
