@@ -16,7 +16,7 @@ dependencies:
   google_fonts: ^2.1.0
 
   # Pacote de icones
-  # fleva_icons: ^1.0.2
+  font_awesome_flutter: ^9.2.0
 
   # Roda svg
   flutter_svg: ^0.22.0
@@ -31,17 +31,14 @@ dependencies:
   syncfusion_flutter_pdfviewer:
 
   # Responsividade
-  responsive_sizer: ^3.0.5+1
+  responsive_framework: ^0.1.5
 
   # Roda video
   video_player: ^2.2.10
-  carousel_slider: ^4.0.0
-  font_awesome_flutter: ^9.2.0
+  
+  # Abre link web
   url_launcher: ^6.0.17
-
-  # smooth_page_indicator: ^1.0.0+2
-  # carousel_slider: ^4.0.0
-
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter

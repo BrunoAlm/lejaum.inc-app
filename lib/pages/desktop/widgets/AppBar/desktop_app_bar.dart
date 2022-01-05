@@ -35,8 +35,9 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
         toolbarHeight: 70,
         elevation: 5,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const SizedBox(width: 145),
+            // const SizedBox(width: 145),
             MouseRegion(
               cursor: SystemMouseCursors.click,
               child: Row(
