@@ -1,8 +1,8 @@
-name: Build and Release APK
+name: Testando
 on: push
 jobs:
     hosting:
-      name: Deploy Website
+      name: Rodando repositório
       runs-on: ubuntu-latest
       steps:
         # Checkout Repository
@@ -14,15 +14,15 @@ jobs:
             channel: 'dev'
 
         # Build Website
-        - name: Build Website
+        - name: Construindo Site
           run: |
             flutter config --enable-web
             flutter pub get
-            flutter build web --release
+            flutter build web --release 
           working-directory: ./
 
         # Deploy Firebase Hosting
-        - name: Deploy Firebase Hosting
+        - name: Enviando para o Firebase
           uses: w9jds/firebase-action@master
           with:
             args: deploy --only hosting:lejaum-web-app

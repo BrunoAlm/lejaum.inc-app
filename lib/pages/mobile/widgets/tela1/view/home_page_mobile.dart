@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
@@ -15,10 +13,11 @@ class HomePageMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(TestPageController());
     var _altura = MediaQuery.of(context).size.height;
-    var tamanho_da_fonte_titulo =
+    var _tamanho_da_fonte_titulo =
         responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
       responsive.Condition.smallerThan(name: responsive.MOBILE, value: 25.0),
-      responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0)
+      responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
+      responsive.Condition.largerThan(name: responsive.DESKTOP, value: 60.0)
     ]).value;
     return Container(
       padding: EdgeInsets.only(bottom: 120),
@@ -38,25 +37,25 @@ class HomePageMobile extends StatelessWidget {
             Text(
               'NÃO VENDEMOS',
               style: StylesMobile.tituloFinoLinethrough.merge(
-                TextStyle(fontSize: tamanho_da_fonte_titulo),
+                TextStyle(fontSize: _tamanho_da_fonte_titulo),
               ),
             ),
             Text(
               'SERVIÇOS,',
               style: StylesMobile.tituloFinoLinethrough.merge(
-                TextStyle(fontSize: tamanho_da_fonte_titulo),
+                TextStyle(fontSize: _tamanho_da_fonte_titulo),
               ),
             ),
             Text(
               'NÓS ENTREGAMOS',
               style: StylesMobile.tituloExtraBold.merge(
-                TextStyle(fontSize: tamanho_da_fonte_titulo),
+                TextStyle(fontSize: _tamanho_da_fonte_titulo),
               ),
             ),
             Text(
               'SOLUÇÕES!',
               style: StylesMobile.tituloExtraBold.merge(
-                TextStyle(fontSize: tamanho_da_fonte_titulo),
+                TextStyle(fontSize: _tamanho_da_fonte_titulo),
               ),
             ),
             const SizedBox(height: 35),
