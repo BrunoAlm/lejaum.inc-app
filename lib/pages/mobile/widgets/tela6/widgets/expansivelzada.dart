@@ -41,8 +41,13 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                           : FontAwesomeIcons.plusCircle,
                     ),
                     trailing: SizedBox(),
-                    title: Text(titulos_Expansividade[index],
-                        style: StylesMobile.tituloIconTextSolucao),
+                    title: Text(
+                      titulos_Expansividade[index],
+                      style: StylesMobile.tituloIconTextSolucao.merge(
+                        TextStyle(
+                            color: Theme.of(context).colorScheme.secondary),
+                      ),
+                    ),
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(8.0),

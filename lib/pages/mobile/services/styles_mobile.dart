@@ -11,6 +11,7 @@ class StylesMobile {
   static const Color mareloMostarda = Color(0xFFFA9905);
   static const Color verdeGood = Color(0xFF25D366);
   static const String fonte = 'Georama';
+  ThemeData teste = ThemeData();
 
   static const tituloFinoLinethrough = TextStyle(
     color: laranjaum,
@@ -112,11 +113,10 @@ class StylesMobile {
   );
 
   // box text style
-  static const boxesStyle = TextStyle(
+  static final boxesStyle = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w500,
     fontSize: 17,
-    // color: laranjaum,
     color: quaseWhite,
   );
 

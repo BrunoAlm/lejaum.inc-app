@@ -30,7 +30,9 @@ class _SolucoesState extends State<Solucoes> {
               padding: const EdgeInsets.only(left: 25),
               child: Text(
                 'Veja abaixo algumas das soluções que nós podemos oferecer:',
-                style: StylesMobile.subtitulo,
+                style: StylesMobile.subtitulo.merge(
+                  TextStyle(color: Theme.of(context).colorScheme.secondary),
+                ),
               ),
             ),
             const SizedBox(height: 10),
@@ -40,7 +42,9 @@ class _SolucoesState extends State<Solucoes> {
               padding: const EdgeInsets.only(left: 25),
               child: Text(
                 'Nós somos a solução certa\npara você e sua empresa!',
-                style: StylesMobile.subtituloBoldao,
+                style: StylesMobile.subtituloBoldao.merge(
+                  TextStyle(color: Theme.of(context).colorScheme.secondary),
+                ),
               ),
             ),
           ],

@@ -16,6 +16,7 @@ class HomePageMobile extends StatelessWidget {
       padding: EdgeInsets.only(bottom: 120),
       height: _altura,
       decoration: BoxDecoration(
+        color: context.theme.backgroundColor,
         image: DecorationImage(
           image: AssetImage("assets/images/first_page_bg.png"),
           fit: BoxFit.cover,

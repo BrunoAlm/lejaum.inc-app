@@ -25,6 +25,7 @@ class _MobilePageState extends State<MobilePage> {
     Get.put(TestPageController());
     return SingleChildScrollView(
       child: Container(
+        color: Theme.of(context).backgroundColor,
         height: altura,
         width: largura,
         child: GetBuilder<TestPageController>(builder: (context) {

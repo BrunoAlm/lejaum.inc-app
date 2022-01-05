@@ -4,11 +4,12 @@ import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 class Themes {
   static final light = ThemeData.light().copyWith(
-    backgroundColor: Colors.white,
+    backgroundColor: StylesMobile.quaseWhite,
+    primaryColor: Colors.white,
     colorScheme: ColorScheme(
       primary: StylesMobile.laranjaum,
-      secondary: StylesMobile.quaseWhite,
-      surface: Colors.white,
+      secondary: StylesMobile.quaseBlack, // texto
+      surface: Colors.black,
       background: StylesMobile.quaseWhite,
       error: StylesMobile.laranjaum,
       onPrimary: StylesMobile.quaseWhite,
@@ -30,7 +31,7 @@ class Themes {
     backgroundColor: StylesMobile.quaseBlack,
     colorScheme: ColorScheme(
       primary: StylesMobile.laranjaum,
-      secondary: StylesMobile.quaseWhite,
+      secondary: StylesMobile.quaseWhite, // texto
       surface: Colors.white,
       background: StylesMobile.quaseBlack,
       error: StylesMobile.laranjaum,

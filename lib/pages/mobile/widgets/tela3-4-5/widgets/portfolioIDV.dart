@@ -11,7 +11,6 @@ class PortfolioIDV extends StatefulWidget {
 }
 
 class _PortfolioIDVState extends State<PortfolioIDV> {
-
   @override
   Widget build(BuildContext context) {
     return Container(

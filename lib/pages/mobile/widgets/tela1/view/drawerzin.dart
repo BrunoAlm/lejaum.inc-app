@@ -21,7 +21,7 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
     Get.put(TestPageController());
     Get.put(ThemeController());
     return Drawer(
-      backgroundColor: context.theme.colorScheme.background,
+      backgroundColor: context.theme.backgroundColor,
       child: GetBuilder<TestPageController>(
         builder: (_pageController) => Column(
           mainAxisAlignment: MainAxisAlignment.center,

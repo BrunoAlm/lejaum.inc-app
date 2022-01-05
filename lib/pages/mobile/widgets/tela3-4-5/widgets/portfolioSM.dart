@@ -11,7 +11,6 @@ class PortfolioSM extends StatefulWidget {
 }
 
 class _PortfolioSMState extends State<PortfolioSM> {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,7 +31,9 @@ class _PortfolioSMState extends State<PortfolioSM> {
             padding: const EdgeInsets.only(left: 25),
             child: Text(
               'Veja abaixo alguns projetos de design feito por nós:',
-              style: StylesMobile.subtitulo,
+              style: StylesMobile.subtitulo.merge(
+                TextStyle(color: Theme.of(context).colorScheme.secondary),
+              ),
             ),
           ),
           const SizedBox(height: 30),
