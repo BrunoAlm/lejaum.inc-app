@@ -16,7 +16,7 @@ class StylesMobile {
   static const tituloFinoLinethrough = TextStyle(
     color: laranjaum,
     fontFamily: fonte,
-    fontSize: 38,
+    // fontSize: 38,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w400,
     decoration: TextDecoration.lineThrough,
@@ -26,7 +26,7 @@ class StylesMobile {
   static const tituloExtraBold = TextStyle(
     color: laranjaum,
     fontFamily: fonte,
-    fontSize: 38,
+    // fontSize: 38,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w900,
     height: 1.28,
