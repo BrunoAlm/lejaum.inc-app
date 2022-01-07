@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
@@ -197,9 +198,10 @@ Widget cardSolicitacao({String? nome, String? valor, String? descricao}) =>
               const SizedBox(height: 10),
               BotaoEstilizado(
                 texto: 'Solicitar',
-                pressionado: () {},
+                pressionado: abrirWhatsApp,
                 cor: StylesMobile.laranjaum,
                 textColor: StylesMobile.quaseWhite,
+                altura: 28,
               ),
             ],
           ),
