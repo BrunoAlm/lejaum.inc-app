@@ -73,7 +73,7 @@ class StylesMobile {
   static const tituloIconTextSolucao = TextStyle(
     color: quaseWhite,
     fontFamily: fonte,
-    fontSize: 23,
+    fontSize: 20,
     fontStyle: FontStyle.normal,
     // fontWeight: FontWeight.w600,
     height: 1.2,

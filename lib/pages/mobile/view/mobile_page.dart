@@ -7,7 +7,7 @@ import '../widgets/tela3-4-5/widgets/portfolioIDV.dart';
 import '../widgets/tela3-4-5/widgets/portfolioSM.dart';
 import '../widgets/tela3-4-5/widgets/portfolioWB.dart';
 import '../widgets/tela6/view/solucoes.dart';
-import '../widgets/tela7/view/planos.dart';
+import '../widgets/tela7/view/planos_screen.dart';
 
 class MobilePage extends StatefulWidget {
   MobilePage({Key? key}) : super(key: key);

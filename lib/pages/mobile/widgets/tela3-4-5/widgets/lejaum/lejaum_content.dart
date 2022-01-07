@@ -1,28 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
-// String _logo_image = "assets/images/galeria/janfie/logo_nova.png";
+String _logo_image = "assets/images/icons/logo_icon.svg";
 Widget logo_lejaum() => Container(
       width: 186.47,
       height: 198.79,
-      decoration: BoxDecoration(
-        color: StylesMobile.quaseWhite,
-        // image: DecorationImage(
-        //   image: AssetImage(_logo_image),
-        //   fit: BoxFit.fitHeight,
-        // ),
-      ),
+      color: StylesMobile.quaseWhite,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child:
                 Text('Site lejaum', style: StylesMobile.textoPretoSemFrescura),
+          ),
+          Container(
+            height: 130,
+            width: 130,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(double.maxFinite),
+              color: StylesMobile.laranjaum,
+            ),
+            child: SvgPicture.asset(_logo_image),
+            padding: const EdgeInsets.all(12),
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -38,6 +42,7 @@ Widget logo_lejaum() => Container(
               icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
             ),
           ),
+
           // const SizedBox(height: 20),
         ],
       ),

@@ -43,6 +43,9 @@ List<Widget> janfie_list = [
 
 List<Widget> italo_list = [
   logo_italo(),
+  italo1(),
+  italo2(),
+  italo3(),
 ];
 List<Widget> lejaum_list = [
   logo_lejaum(),

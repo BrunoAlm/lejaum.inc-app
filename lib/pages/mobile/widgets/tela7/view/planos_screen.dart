@@ -20,7 +20,7 @@ class Planos extends StatelessWidget {
               padding: const EdgeInsets.only(left: 25),
               child: Text(
                 'Planos',
-                style: StylesMobile.tituloExtraBold,
+                style: StylesMobile.tituloExtraBoldMenor,
               ),
             ),
             const SizedBox(height: 10),

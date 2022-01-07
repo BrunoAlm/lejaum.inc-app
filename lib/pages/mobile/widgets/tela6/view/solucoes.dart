@@ -22,7 +22,7 @@ class _SolucoesState extends State<Solucoes> {
               padding: const EdgeInsets.only(left: 25),
               child: Text(
                 'Soluções',
-                style: StylesMobile.tituloExtraBold,
+                style: StylesMobile.tituloExtraBoldMenor,
               ),
             ),
             const SizedBox(height: 10),

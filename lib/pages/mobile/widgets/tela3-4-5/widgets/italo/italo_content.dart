@@ -4,16 +4,22 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
-// String _logo_image = "assets/images/galeria/janfie/logo_nova.png";
+String _logo_image = "assets/images/galeria/italo/logo.png";
+String _img1 = "assets/images/galeria/italo/img1.png";
+String _img2 = "assets/images/galeria/italo/img2.png";
+String _img3 = "assets/images/galeria/italo/img3.png";
+
 Widget logo_italo() => Container(
       width: 186.47,
       height: 198.79,
       decoration: BoxDecoration(
         color: StylesMobile.quaseWhite,
-        // image: DecorationImage(
-        //   image: AssetImage(_logo_image),
-        //   fit: BoxFit.fitHeight,
-        // ),
+        image: DecorationImage(
+          image: AssetImage(_logo_image),
+          fit: BoxFit.none,
+          alignment: Alignment.center,
+          // scale: 0.05,
+        ),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,5 +46,30 @@ Widget logo_italo() => Container(
           ),
           // const SizedBox(height: 20),
         ],
+      ),
+    );
+
+Widget italo1() => Container(
+      width: 320,
+      height: 198.79,
+      child: Image.asset(
+        _img1,
+        fit: BoxFit.fill,
+      ),
+    );
+Widget italo2() => Container(
+      width: 320,
+      height: 198.79,
+      child: Image.asset(
+        _img2,
+        fit: BoxFit.fill,
+      ),
+    );
+Widget italo3() => Container(
+      width: 320,
+      height: 198.79,
+      child: Image.asset(
+        _img3,
+        fit: BoxFit.fill,
       ),
     );
