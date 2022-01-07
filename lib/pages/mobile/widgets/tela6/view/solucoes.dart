@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+import 'package:lejaum/pages/mobile/widgets/tela6/services/teste_solucao_card_content.dart';
+import 'package:lejaum/pages/mobile/widgets/tela6/view/teste_card_espand_solucao.dart';
 import '../widgets/expansivelzada.dart';
 
 class Solucoes extends StatefulWidget {
@@ -36,7 +38,9 @@ class _SolucoesState extends State<Solucoes> {
               ),
             ),
             const SizedBox(height: 10),
-            Expansivelzada(),
+            // Expansivelzada(),
+            // TesteSolucao(),
+            SolucoesCard(),
             const SizedBox(height: 30),
             Padding(
               padding: const EdgeInsets.only(left: 25),

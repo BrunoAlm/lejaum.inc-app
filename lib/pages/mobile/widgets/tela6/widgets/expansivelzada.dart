@@ -18,61 +18,59 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
     return Container(
       height: 500,
       child: SingleChildScrollView(
-        child: Column(children: [
-          ListView.builder(
-            key: Key('builder ${selected.toString()}'), //attention
-            padding: EdgeInsets.only(left: 13.0, right: 13.0, bottom: 25.0),
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: titulos_Expansividade.length,
-            itemBuilder: (context, index) {
-              return Column(children: <Widget>[
-                Divider(
-                  height: 17.0,
-                  color: Colors.white,
-                ),
-                ExpansionTile(
-                    key: Key(index.toString()), //attention
-                    initiallyExpanded: index == selected, //attention
+        child: ListView.builder(
+          key: Key('builder ${selected.toString()}'), //attention
+          padding: EdgeInsets.only(left: 13.0, right: 13.0, bottom: 25.0),
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          itemCount: titulos_Expansividade.length,
+          itemBuilder: (context, index) {
+            return Column(children: <Widget>[
+              Divider(
+                height: 17.0,
+                color: Colors.white,
+              ),
+              ExpansionTile(
+                  key: Key(index.toString()), //attention
+                  initiallyExpanded: index == selected, //attention
 
-                    leading: Icon(
-                      selected == index
-                          ? FontAwesomeIcons.minusCircle
-                          : FontAwesomeIcons.plusCircle,
+                  leading: Icon(
+                    selected == index
+                        ? FontAwesomeIcons.minusCircle
+                        : FontAwesomeIcons.plusCircle,
+                  ),
+                  trailing: SizedBox(),
+                  title: Text(
+                    titulos_Expansividade[index],
+                    style: StylesMobile.tituloIconTextSolucao.merge(
+                      TextStyle(
+                          color: Theme.of(context).colorScheme.secondary),
                     ),
-                    trailing: SizedBox(),
-                    title: Text(
-                      titulos_Expansividade[index],
-                      style: StylesMobile.tituloIconTextSolucao.merge(
-                        TextStyle(
-                            color: Theme.of(context).colorScheme.secondary),
+                  ),
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        subtitulos_Expansividade[index],
+                        style: StylesMobile.subtituloIconTextSolucao,
                       ),
                     ),
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          subtitulos_Expansividade[index],
-                          style: StylesMobile.subtituloIconTextSolucao,
-                        ),
-                      ),
-                      const SizedBox(height: 5),
-                    ],
-                    onExpansionChanged: ((newState) {
-                      if (newState)
-                        setState(() {
-                          Duration(seconds: 20000);
-                          selected = index;
-                        });
-                      else
-                        setState(() {
-                          selected = -1;
-                        });
-                    })),
-              ]);
-            },
-          )
-        ]),
+                    const SizedBox(height: 5),
+                  ],
+                  onExpansionChanged: ((newState) {
+                    if (newState)
+                      setState(() {
+                        Duration(seconds: 20000);
+                        selected = index;
+                      });
+                    else
+                      setState(() {
+                        selected = -1;
+                      });
+                  })),
+            ]);
+          },
+        ),
       ),
     );
   }
