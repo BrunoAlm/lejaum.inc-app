@@ -22,7 +22,7 @@ Widget logo_azardi() => Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          BotaoEstilizado(
+          IconeBotaoEstilizado(
             cor: StylesMobile.laranjaum,
             textColor: Colors.white,
             texto: 'Ver projeto',

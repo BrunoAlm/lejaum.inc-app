@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StylesMobile {
@@ -135,23 +134,50 @@ class StylesMobile {
     border: Border.all(width: 2, color: laranjaum),
   );
 
-  static final carrosselTextTitulo = TextStyle(
+  static final planosTextFlagAtivado = TextStyle(
+    fontFamily: fonte,
+    fontWeight: FontWeight.w600,
+    fontSize: 18,
+    color: laranjaum,
+  );
+  static final planosTextFlagDesativado = TextStyle(
+    fontFamily: fonte,
+    fontWeight: FontWeight.w600,
+    fontSize: 18,
+    color: cinzou,
+  );
+
+  // TELA DE PLANOS
+  static final TitleTextPlanosCardMoney = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w800,
     fontSize: 25,
-    height: 1.15,
     color: quaseBlack,
   );
-  static final carrosselTextSubtitulo = TextStyle(
+  static final SubtitleTextPlanosCardMoney = TextStyle(
     fontFamily: fonte,
-    fontWeight: FontWeight.w400,
-    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    fontSize: 16,
     color: quaseBlack,
   );
-  static final carrosselTextButton = TextStyle(
-    fontFamily: fonte,
-    fontWeight: FontWeight.w500,
-    fontSize: 13,
-    color: quaseWhite,
-  );
+
+  // static final carrosselTextTitulo = TextStyle(
+  //   fontFamily: fonte,
+  //   fontWeight: FontWeight.w800,
+  //   fontSize: 25,
+  //   height: 1.15,
+  //   color: quaseBlack,
+  // );
+  // static final carrosselTextSubtitulo = TextStyle(
+  //   fontFamily: fonte,
+  //   fontWeight: FontWeight.w400,
+  //   fontSize: 15,
+  //   color: quaseBlack,
+  // );
+  // static final carrosselTextButton = TextStyle(
+  //   fontFamily: fonte,
+  //   fontWeight: FontWeight.w500,
+  //   fontSize: 13,
+  //   color: quaseWhite,
+  // );
 }

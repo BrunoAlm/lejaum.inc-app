@@ -21,7 +21,7 @@ Widget logo_janfie() => Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          BotaoEstilizado(
+          IconeBotaoEstilizado(
             textColor: Colors.white,
             cor: StylesMobile.laranjaum,
             texto: 'Ver projeto',

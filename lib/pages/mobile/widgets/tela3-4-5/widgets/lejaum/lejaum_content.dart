@@ -30,7 +30,7 @@ Widget logo_lejaum() => Container(
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
-            child: BotaoEstilizado(
+            child: IconeBotaoEstilizado(
               textColor: Colors.white,
               cor: StylesMobile.laranjaum,
               texto: 'Ver projeto',

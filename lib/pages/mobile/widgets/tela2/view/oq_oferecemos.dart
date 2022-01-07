@@ -42,7 +42,7 @@ class TodasBoxes extends StatelessWidget {
               ),
               SizedBox(height: 30),
               GetBuilder<TestPageController>(
-                builder: (_pageController) => BotaoEstilizado(
+                builder: (_pageController) => IconeBotaoEstilizado(
                   cor: StylesMobile.laranjaum,
                   textColor: Colors.white,
                   texto: 'Ver portfólio',

@@ -62,7 +62,7 @@ class HomePageMobile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                BotaoEstilizado(
+                IconeBotaoEstilizado(
                   textColor: Colors.white,
                   texto: "Saber Mais",
                   altura: 40,
@@ -75,7 +75,7 @@ class HomePageMobile extends StatelessWidget {
                   cor: StylesMobile.lowBlueGray,
                 ),
                 SizedBox(width: 20),
-                BotaoEstilizado(
+                IconeBotaoEstilizado(
                   textColor: StylesMobile.blackText,
                   texto: "Portfólio",
                   altura: 40,
@@ -94,7 +94,7 @@ class HomePageMobile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                BotaoEstilizado(
+                IconeBotaoEstilizado(
                   textColor: Colors.white,
                   cor: StylesMobile.laranjaum,
                   texto: "Ver Planos",
@@ -108,7 +108,7 @@ class HomePageMobile extends StatelessWidget {
                   icone: Icons.credit_card,
                 ),
                 SizedBox(width: 20),
-                BotaoEstilizado(
+                IconeBotaoEstilizado(
                   textColor: Colors.white,
                   cor: StylesMobile.verdeGood,
                   texto: "Whatsapp",
