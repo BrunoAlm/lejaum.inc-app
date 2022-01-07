@@ -172,38 +172,41 @@ Widget cardSolicitacao({String? nome, String? valor, String? descricao}) =>
       ),
       height: 150,
       width: 290,
-      child: Card(
-        // borderOnForeground: false,
-        elevation: 0,
-        color: Colors.transparent,
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                nome!,
-                style: StylesMobile.TitleTextPlanosCardMoney,
-              ),
-              const SizedBox(height: 5),
-              Text(
-                valor!,
-                style: StylesMobile.SubtitleTextPlanosCardMoney,
-              ),
-              Text(
-                descricao!,
-                style: StylesMobile.SubtitleTextPlanosCardMoney,
-              ),
-              const SizedBox(height: 10),
-              BotaoEstilizado(
-                texto: 'Solicitar',
-                pressionado: abrirWhatsApp,
-                cor: StylesMobile.laranjaum,
-                textColor: StylesMobile.quaseWhite,
-                altura: 28,
-              ),
-            ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Card(
+          // borderOnForeground: false,
+          elevation: 0,
+          color: Colors.transparent,
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  nome!,
+                  style: StylesMobile.TitleTextPlanosCardMoney,
+                ),
+                const SizedBox(height: 5),
+                Text(
+                  valor!,
+                  style: StylesMobile.SubtitleTextPlanosCardMoney,
+                ),
+                Text(
+                  descricao!,
+                  style: StylesMobile.SubtitleTextPlanosCardMoney,
+                ),
+                const SizedBox(height: 10),
+                BotaoEstilizado(
+                  texto: 'Solicitar',
+                  pressionado: abrirWhatsApp,
+                  cor: StylesMobile.laranjaum,
+                  textColor: StylesMobile.quaseWhite,
+                  altura: 28,
+                ),
+              ],
+            ),
           ),
         ),
       ),
