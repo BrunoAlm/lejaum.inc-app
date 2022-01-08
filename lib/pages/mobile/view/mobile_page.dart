@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../widgets/tela1/view/home_page_mobile.dart';
 import '../widgets/tela2/view/oq_oferecemos.dart';
 import '../widgets/tela3-4-5/widgets/portfolioIDV.dart';
@@ -8,6 +9,7 @@ import '../widgets/tela3-4-5/widgets/portfolioSM.dart';
 import '../widgets/tela3-4-5/widgets/portfolioWB.dart';
 import '../widgets/tela6/view/solucoes.dart';
 import '../widgets/tela7/view/planos_screen.dart';
+import 'dart:html' as html;
 
 class MobilePage extends StatefulWidget {
   MobilePage({Key? key}) : super(key: key);
@@ -29,18 +31,23 @@ class _MobilePageState extends State<MobilePage> {
         height: altura,
         width: largura,
         child: GetBuilder<TestPageController>(builder: (context) {
-          return PageView(
-            controller: context.controller,
-            children: [
-              HomePageMobile(),
-              TodasBoxes(),
-              PortfolioSM(),
-              PortfolioIDV(),
-              PortifolioWB(),
-              Solucoes(),
-              Planos(),
-            ],
-            scrollDirection: Axis.vertical,
+          return RefreshIndicator(
+            onRefresh: () {
+              return launch('portfolio.lejaum.me');
+            },
+            child: PageView(
+              controller: context.controller,
+              children: [
+                HomePageMobile(),
+                TodasBoxes(),
+                PortfolioSM(),
+                PortfolioIDV(),
+                PortifolioWB(),
+                Solucoes(),
+                Planos(),
+              ],
+              scrollDirection: Axis.vertical,
+            ),
           );
         }),
       ),
