@@ -76,7 +76,7 @@ class HomePageMobile extends StatelessWidget {
                 ),
                 SizedBox(width: 20),
                 IconeBotaoEstilizado(
-                  textColor: StylesMobile.blackText,
+                  textColor: StylesMobile.pretao,
                   texto: "Portfólio",
                   altura: 40,
                   largura: 160,

@@ -3,9 +3,13 @@ List<String> titulos_Expansividade = [
   'Social Media',
   'Identidade Visual',
   'Web Design',
+  
+];
+List<String> titulos_2_Expansividade = [
   'Consultoria em Marketing',
   'Design Gráfico',
   'Edição de Video',
+  'Naming',
 ];
 
 List<String> subtitulos_Expansividade = [

@@ -3,6 +3,10 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 class Themes {
+  static final expansionTheme = ThemeData(
+    textTheme: TextTheme(),
+  );
+
   static final light = ThemeData.light().copyWith(
     backgroundColor: StylesMobile.quaseWhite,
     primaryColor: Colors.white,
@@ -28,7 +32,7 @@ class Themes {
     // ),
   );
   static final dark = ThemeData.dark().copyWith(
-    backgroundColor: StylesMobile.quaseBlack,
+    backgroundColor: StylesMobile.pretao,
     colorScheme: ColorScheme(
       primary: StylesMobile.laranjaum,
       secondary: StylesMobile.quaseWhite, // texto

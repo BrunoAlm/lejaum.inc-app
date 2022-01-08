@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class StylesMobile {
   static const Color quaseBlack = Color(0xFF201F1E);
-  static const Color blackText = Color(0xFF1A1918);
+  static const Color pretao = Color(0xFF1A1918);
   static const Color quaseWhite = Color(0xFFF4F4F4);
   static const Color laranjaum = Color(0xFFFF5400);
   static const Color cinzou = Color(0xFF7D7D7D);
@@ -73,8 +73,7 @@ class StylesMobile {
     color: quaseWhite,
     fontFamily: fonte,
     fontSize: 20,
-    fontStyle: FontStyle.normal,
-    // fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w600,
     height: 1.2,
   );
   static const subtituloIconTextSolucao = TextStyle(
