@@ -43,6 +43,25 @@ class Plano1 extends StatelessWidget {
             flagsDoPlanoAtivado('Planejamento de Social\nMedia'),
             flagsDoPlanoAtivado('até 4 Posts Semanais\n(16/mês)'),
             flagsDoPlanoAtivado('Gestão de Tráfego\nCompleta'),
+            Container(
+              padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.only(left: 10),
+              decoration: BoxDecoration(
+                border: Border(
+                    left: BorderSide(color: StylesMobile.cinzou, width: 1)),
+              ),
+              child: Container(
+                width: 250,
+                child: Text(
+                  'Anuncios em redes sociais e de pesquisa, e-mail marketing entre outros;',
+                  softWrap: true,
+                  style: TextStyle(
+                      color: StylesMobile.cinzou,
+                      fontSize: 16,
+                      fontFamily: 'Georama'),
+                ),
+              ),
+            ),
             cardSolicitacao(
               nome: 'Digital Master',
               valor: 'Plano Pro - R\$1.997,00',
