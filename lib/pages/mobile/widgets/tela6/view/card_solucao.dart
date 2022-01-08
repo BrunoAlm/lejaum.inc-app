@@ -13,9 +13,8 @@ class _CardSolucaoState extends State<CardSolucao> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-      print(constraints.maxWidth);
       return Container(
-        height: 280,
+        height: 400,
         width: constraints.maxWidth,
         child: ListView(
           scrollDirection: Axis.horizontal,

@@ -42,8 +42,7 @@ class Plano1 extends StatelessWidget {
           children: [
             flagsDoPlanoAtivado('Planejamento de Social\nMedia'),
             flagsDoPlanoAtivado('até 4 Posts Semanais\n(16/mês)'),
-            flagsDoPlanoAtivado('Gestão de Anúncions\nno Facebook e Instagram'),
-            flagsDoPlanoAtivado('Gestão de Anúncios no\nGoogle e Youtube'),
+            flagsDoPlanoAtivado('Gestão de Tráfego\nCompleta'),
             cardSolicitacao(
               nome: 'Digital Master',
               valor: 'Plano Pro - R\$1.997,00',
@@ -128,7 +127,8 @@ Widget flagsDoPlanoAtivado(String texto) => Row(
                 color: StylesMobile.laranjaum,
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: Icon(FontAwesomeIcons.check, size: 6)),
+              child: Icon(FontAwesomeIcons.check,
+                  size: 6, color: StylesMobile.quaseWhite)),
         ),
         // const SizedBox(width: 4),
         Text(
