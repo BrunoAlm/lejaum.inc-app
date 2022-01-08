@@ -13,23 +13,19 @@ class _CardSolucaoState extends State<CardSolucao> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-      return Container(
-        height: 400,
-        width: constraints.maxWidth,
-        child: ListView(
-          scrollDirection: Axis.horizontal,
-          physics: ClampingScrollPhysics(),
-          children: [
-            Container(
-              constraints: BoxConstraints(minWidth: constraints.maxWidth * 0.8),
-              child: Expansivelzada(),
-            ),
-            Container(
-              constraints: BoxConstraints(maxWidth: constraints.maxWidth * 0.8),
-              child: Expansivelzada2(),
-            ),
-          ],
-        ),
+      return ListView(
+        scrollDirection: Axis.horizontal,
+        physics: ClampingScrollPhysics(),
+        children: [
+          Container(
+            constraints: BoxConstraints(minWidth: constraints.maxWidth * 0.8),
+            child: Expansivelzada(),
+          ),
+          Container(
+            constraints: BoxConstraints(maxWidth: constraints.maxWidth * 0.8),
+            child: Expansivelzada2(),
+          ),
+        ],
       );
     });
   }

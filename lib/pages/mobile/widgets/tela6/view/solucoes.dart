@@ -12,14 +12,14 @@ class Solucoes extends StatefulWidget {
 class _SolucoesState extends State<Solucoes> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Padding(
-        padding: EdgeInsets.only(top: 49),
+    return LayoutBuilder(
+      builder: (context, constraints) => Container(
+        height: constraints.maxHeight,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 25),
+              padding: const EdgeInsets.only(left: 25, top: 25),
               child: Text(
                 'Soluções',
                 style: StylesMobile.tituloExtraBoldMenor,
@@ -36,8 +36,7 @@ class _SolucoesState extends State<Solucoes> {
               ),
             ),
             const SizedBox(height: 20),
-            CardSolucao(),
-            const SizedBox(height: 50),
+            Expanded(child: CardSolucao()),
             Padding(
               padding: const EdgeInsets.only(left: 25),
               child: Text(
@@ -47,6 +46,7 @@ class _SolucoesState extends State<Solucoes> {
                 ),
               ),
             ),
+            const SizedBox(height: 80),
           ],
         ),
       ),
