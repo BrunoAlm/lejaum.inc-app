@@ -5,10 +5,9 @@ import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:get/get.dart';
 
 String _logo_image = "assets/images/galeria/janfie/logo_nova.png";
-String _img1 = "assets/images/galeria/janfie/img1.png";
-String _img2 = "assets/images/galeria/janfie/img2.png";
-String _img3 = "assets/images/galeria/janfie/img3.png";
-// String _img4 = "assets/images/galeria/janfie/img4.png";
+String _img1 = "assets/images/galeria/janfie/img1.webp";
+String _img2 = "assets/images/galeria/janfie/img2.webp";
+String _img3 = "assets/images/galeria/janfie/img3.webp";
 
 Widget logo_janfie() => Container(
       width: 186.47,

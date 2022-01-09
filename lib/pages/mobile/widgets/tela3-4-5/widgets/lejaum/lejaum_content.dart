@@ -6,6 +6,10 @@ import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
 String _logo_image = "assets/images/icons/logo_icon.svg";
+String _img1 = "assets/images/galeria/lejaum/img1.webp";
+String _img2 = "assets/images/galeria/lejaum/img2.webp";
+String _img3 = "assets/images/galeria/lejaum/img3.webp";
+
 Widget logo_lejaum() => Container(
       width: 186.47,
       height: 198.79,
@@ -46,4 +50,20 @@ Widget logo_lejaum() => Container(
           // const SizedBox(height: 20),
         ],
       ),
+    );
+
+Widget lejaum1() => Container(
+      width: 450,
+      height: 198.79,
+      child: Image.asset(_img1, fit: BoxFit.fill),
+    );
+Widget lejaum2() => Container(
+      width: 450,
+      height: 198.79,
+      child: Image.asset(_img2, fit: BoxFit.fill),
+    );
+Widget lejaum3() => Container(
+      width: 450,
+      height: 198.79,
+      child: Image.asset(_img3, fit: BoxFit.fill),
     );

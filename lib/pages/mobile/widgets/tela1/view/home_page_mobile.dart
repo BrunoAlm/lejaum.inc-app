@@ -15,9 +15,21 @@ class HomePageMobile extends StatelessWidget {
     var _altura = MediaQuery.of(context).size.height;
     var _tamanho_da_fonte_titulo =
         responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
-      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 25.0),
+      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 30.0),
       responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
       responsive.Condition.largerThan(name: responsive.DESKTOP, value: 60.0)
+    ]).value;
+    var _altura_do_botao =
+        responsive.ResponsiveValue(context, defaultValue: 40.0, valueWhen: [
+      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 40.0),
+      responsive.Condition.largerThan(name: responsive.TABLET, value: 40.0),
+      responsive.Condition.largerThan(name: responsive.DESKTOP, value: 40.0)
+    ]).value;
+    var _largura_do_botao =
+        responsive.ResponsiveValue(context, defaultValue: 160.0, valueWhen: [
+      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 130.0),
+      responsive.Condition.largerThan(name: responsive.TABLET, value: 160.0),
+      responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
     ]).value;
     return Container(
       padding: EdgeInsets.only(bottom: 120),
@@ -65,8 +77,8 @@ class HomePageMobile extends StatelessWidget {
                 IconeBotaoEstilizado(
                   textColor: Colors.white,
                   texto: "Saber Mais",
-                  altura: 40,
-                  largura: 160,
+                  altura: _altura_do_botao,
+                  largura: _largura_do_botao,
                   pressionado: () => _pageController.controller.nextPage(
                     duration: Duration(milliseconds: 500),
                     curve: Curves.easeInOutQuart,
@@ -78,8 +90,8 @@ class HomePageMobile extends StatelessWidget {
                 IconeBotaoEstilizado(
                   textColor: StylesMobile.pretao,
                   texto: "Portfólio",
-                  altura: 40,
-                  largura: 160,
+                  altura: _altura_do_botao,
+                  largura: _largura_do_botao,
                   pressionado: () => _pageController.controller.animateToPage(
                     2,
                     duration: Duration(milliseconds: 500),
@@ -98,8 +110,8 @@ class HomePageMobile extends StatelessWidget {
                   textColor: Colors.white,
                   cor: StylesMobile.laranjaum,
                   texto: "Ver Planos",
-                  altura: 40,
-                  largura: 160,
+                  altura: _altura_do_botao,
+                  largura: _largura_do_botao,
                   pressionado: () => _pageController.controller.animateToPage(
                     6,
                     duration: Duration(milliseconds: 500),
@@ -112,8 +124,8 @@ class HomePageMobile extends StatelessWidget {
                   textColor: Colors.white,
                   cor: StylesMobile.verdeGood,
                   texto: "Whatsapp",
-                  altura: 40,
-                  largura: 160,
+                  altura: _altura_do_botao,
+                  largura: _largura_do_botao,
                   pressionado: abrirWhatsApp,
                   icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
                 ),

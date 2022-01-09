@@ -5,9 +5,9 @@ import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
 String _logo_image = "assets/images/galeria/italo/logo.png";
-String _img1 = "assets/images/galeria/italo/img1.png";
-String _img2 = "assets/images/galeria/italo/img2.png";
-String _img3 = "assets/images/galeria/italo/img3.png";
+String _img1 = "assets/images/galeria/italo/img1.webp";
+String _img2 = "assets/images/galeria/italo/img2.webp";
+String _img3 = "assets/images/galeria/italo/img3.webp";
 
 Widget logo_italo() => Container(
       width: 186.47,

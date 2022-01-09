@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import '../services/lista_de_textos.dart';
@@ -68,7 +69,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                         Padding(
                           padding: const EdgeInsets.only(left: 8),
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: abrirWhatsApp,
                             style: ButtonStyle(
                               alignment: Alignment.centerLeft,
                               overlayColor: MaterialStateProperty.all(

@@ -35,13 +35,15 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
         toolbarHeight: 70,
         elevation: 5,
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             // const SizedBox(width: 145),
             MouseRegion(
               cursor: SystemMouseCursors.click,
               child: Row(
                 children: [
+                  const SizedBox(width: 25.08),
                   SvgPicture.asset("assets/images/icons/logo_icon.svg"),
                   const SizedBox(width: 3),
                   Text(
@@ -66,7 +68,7 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
             botaoAppBar('FAQ'),
             const SizedBox(width: 25.08),
             botaoAppBar('Contato'),
-            const SizedBox(width: 142),
+            const SizedBox(width: 25.08),
           ],
         ),
       ),

@@ -33,7 +33,7 @@ class StylesMobile {
   static const tituloExtraBoldMenor = TextStyle(
     color: laranjaum,
     fontFamily: fonte,
-    fontSize: 30,
+    fontSize: 25,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w900,
     height: 1.28,

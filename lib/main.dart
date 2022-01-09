@@ -24,13 +24,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       builder: (context, widget) => ResponsiveWrapper.builder(
           ClampingScrollWrapper.builder(context, widget!),
-          // maxWidth: 1200,
-          // minWidth: 480,
-          // defaultScale: true,
           breakpoints: const [
-            ResponsiveBreakpoint.resize(350, name: MOBILE),
+            ResponsiveBreakpoint.resize(360, name: MOBILE),
+            ResponsiveBreakpoint.resize(410, name: MOBILE),
             ResponsiveBreakpoint.autoScale(600, name: TABLET),
-            ResponsiveBreakpoint.resize(800, name: DESKTOP),
+            ResponsiveBreakpoint.resize(625, name: DESKTOP),
             ResponsiveBreakpoint.autoScale(1700, name: 'XL'),
           ],
           background: Container(color: Color(0xFFF5F5F5))),
@@ -42,7 +40,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/janfie-info': (context) => const PdfJanfie(),
-        
       },
     );
   }

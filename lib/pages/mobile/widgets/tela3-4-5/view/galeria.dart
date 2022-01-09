@@ -10,7 +10,7 @@ class GaleriaSM extends StatelessWidget {
     return Column(
       children: [
         FlorDoGrao(),
-        const SizedBox(height: 20),
+        // const SizedBox(height: 20),
         Airsoft(),
         const SizedBox(height: 20),
       ],
@@ -26,7 +26,7 @@ class GaleriaIDV extends StatelessWidget {
     return Column(
       children: [
         Azardi(),
-        const SizedBox(height: 20),
+        // const SizedBox(height: 20),
         Janfie(),
         const SizedBox(height: 20),
       ],
@@ -42,7 +42,7 @@ class GaleriaWB extends StatelessWidget {
     return Column(
       children: [
         Italo(),
-        const SizedBox(height: 20),
+        // const SizedBox(height: 20),
         Lejaum(),
         // const SizedBox(height: 20),
       ],
