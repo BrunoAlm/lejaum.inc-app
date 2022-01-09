@@ -22,33 +22,42 @@ class _PdfJanfieState extends State<PdfJanfie> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Janfie PDF'),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(
-              Icons.keyboard_arrow_up,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              _pdfViewerController.previousPage();
-            },
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.keyboard_arrow_down,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              _pdfViewerController.nextPage();
-            },
-          ),
-        ],
+        title: Text(
+          'Janfie - Id. Visual e Naming',
+        ),
       ),
       body: Container(
         child: SfPdfViewer.asset(
           'assets/pdf/janfie-apresentacao.pdf',
           controller: _pdfViewerController,
         ),
+      ),
+      floatingActionButton: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton.extended(
+            onPressed: () {
+              _pdfViewerController.previousPage();
+            },
+            elevation: 10,
+            label: Icon(
+              Icons.keyboard_arrow_up,
+              color: Colors.black,
+            ),
+          ),
+          // Expanded(child: Container()),
+          FloatingActionButton.extended(
+            onPressed: () {
+              _pdfViewerController.nextPage();
+            },
+            elevation: 10,
+            label: Icon(
+              Icons.keyboard_arrow_down,
+              color: Colors.black,
+            ),
+          ),
+        ],
       ),
     );
   }

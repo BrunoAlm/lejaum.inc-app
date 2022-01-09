@@ -3,10 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
 import 'pages/home_page_logic.dart';
-import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf.dart';
+import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -39,7 +40,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
-        '/janfie-info': (context) => const PdfJanfie(),
+        '/janfie-pdf': (context) => const PdfJanfie(),
+        '/azardi-pdf': (context) => const PdfAzardi(),
       },
     );
   }

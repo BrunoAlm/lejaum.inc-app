@@ -28,7 +28,7 @@ Widget logo_janfie() => Container(
             largura: 115.91,
             tamanho_fonte: 13,
             tamanho_icone: 13,
-            pressionado: () => Get.toNamed('/janfie-info'),
+            pressionado: () => Get.toNamed('/janfie-pdf'),
             icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
           ),
           SizedBox(height: 20),

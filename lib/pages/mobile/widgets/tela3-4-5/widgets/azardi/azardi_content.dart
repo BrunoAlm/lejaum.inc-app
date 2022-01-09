@@ -26,7 +26,7 @@ Widget logo_azardi() => Container(
             cor: StylesMobile.laranjaum,
             textColor: Colors.white,
             texto: 'Ver projeto',
-            pressionado: () => Get.toNamed('/janfie-info'),
+            pressionado: () => Get.toNamed('/azardi-pdf'),
             altura: 28,
             largura: 115.91,
             tamanho_fonte: 13,
