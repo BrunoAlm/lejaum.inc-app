@@ -44,11 +44,12 @@ class Plano1 extends StatelessWidget {
             flagsDoPlanoAtivado('até 4 Posts Semanais\n(16/mês)'),
             flagsDoPlanoAtivado('Gestão de Tráfego\nCompleta'),
             Container(
-              padding: const EdgeInsets.all(10),
-              margin: const EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 10),
+              margin: const EdgeInsets.only(left: 25),
               decoration: BoxDecoration(
                 border: Border(
-                    left: BorderSide(color: StylesMobile.cinzou, width: 1)),
+                  left: BorderSide(color: StylesMobile.cinzou, width: 1),
+                ),
               ),
               child: Container(
                 width: 250,

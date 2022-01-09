@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 String _logo_image = "assets/images/galeria/italo/logo.png";
 String _img1 = "assets/images/galeria/italo/img1.webp";
@@ -36,7 +37,16 @@ Widget logo_italo() => Container(
               textColor: Colors.white,
               cor: StylesMobile.laranjaum,
               texto: 'Ver projeto',
-              pressionado: () => Get.toNamed('/janfie-info'),
+              pressionado: () async {
+                var _url = "https://italobortolotti.com/";
+                if (await canLaunch(_url)) {
+                  await launch(_url);
+                } else {
+                  Get.showSnackbar(GetSnackBar(
+                    message: 'Sem Internet?',
+                  ));
+                }
+              },
               altura: 28,
               largura: 115.91,
               tamanho_fonte: 13,
