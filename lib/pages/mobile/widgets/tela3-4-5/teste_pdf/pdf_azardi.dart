@@ -23,7 +23,7 @@ class _PdfAzardiState extends State<PdfAzardi> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          'Janfie - Id. Visual e Naming',
+          'Azardi - Id. Visual e Naming',
         ),
       ),
       body: Container(
