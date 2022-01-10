@@ -8,8 +8,8 @@ String _img4 = "assets/images/galeria/airsoft/img4.webp";
 String _img5 = "assets/images/galeria/airsoft/img5.webp";
 
 Widget logo_airsoft() => Container(
-      width: 186.47,
-      height: 198.79,
+      width: 240,
+      height: 240,
       color: Colors.white,
       child: Center(
         child: Column(
@@ -22,27 +22,27 @@ Widget logo_airsoft() => Container(
       ),
     );
 Widget airsoft1() => Container(
-      width: 250,
-      height: 198.79,
+      width: 240,
+      height: 240,
       child: Image.asset(_img1, fit: BoxFit.fill),
     );
 Widget airsoft2() => Container(
       width: 250,
-      height: 198.79,
+      height: 240,
       child: Image.asset(_img2, fit: BoxFit.fill),
     );
 Widget airsoft3() => Container(
       width: 250,
-      height: 198.79,
+      height: 240,
       child: Image.asset(_img3, fit: BoxFit.fill),
     );
 Widget airsoft4() => Container(
       width: 300,
-      height: 198.79,
+      height: 240,
       child: Image.asset(_img4, fit: BoxFit.fill),
     );
 Widget airsoft5() => Container(
       width: 300,
-      height: 198.79,
+      height: 240,
       child: Image.asset(_img5, fit: BoxFit.fill),
     );

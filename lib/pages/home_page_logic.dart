@@ -29,12 +29,11 @@ class _HomePageState extends State<HomePage> {
                   preferredSize: Size(double.infinity, 70),
                 ),
           endDrawer: contraints.maxWidth < 800 ? DrawerLejaum() : null,
-          body:
-              //  MobilePage(),
+          body: MobilePage(),
 
-              Container(
-            child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
-          ),
+          //     Container(
+          //   child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
+          // ),
         );
       }, // Builder
     );
