@@ -14,7 +14,7 @@ Widget logo_italo() => Container(
       width: 186.47,
       height: 198.79,
       decoration: BoxDecoration(
-        color: StylesMobile.quaseWhite,
+        color: Styles.azulBaitolote,
         image: DecorationImage(
           image: AssetImage(_logo_image),
           fit: BoxFit.none,
@@ -28,14 +28,14 @@ Widget logo_italo() => Container(
           // const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.only(top: 10),
-            child: Text('Italo Bortolotti',
-                style: StylesMobile.textoPretoSemFrescura),
+            child:
+                Text('Italo Bortolotti', style: Styles.textoBrancoBold),
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.only(bottom: 20),
             child: IconeBotaoEstilizado(
               textColor: Colors.white,
-              cor: StylesMobile.laranjaum,
+              cor: Styles.laranjaum,
               texto: 'Ver projeto',
               pressionado: () async {
                 var _url = "https://italobortolotti.com/";

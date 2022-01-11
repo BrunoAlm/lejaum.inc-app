@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -11,7 +13,7 @@ import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: StylesMobile.laranjaum,
+    statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
   runApp(const MyApp());

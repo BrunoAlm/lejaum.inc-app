@@ -23,8 +23,8 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
           borderRadius: BorderRadius.circular(50),
           border: Border.all(
               color: controller.isDarkMode
-                  ? StylesMobile.quaseBlack
-                  : StylesMobile.quaseWhite,
+                  ? Styles.quaseBlack
+                  : Styles.quaseWhite,
               width: 2.0),
         ),
         child: TextButton.icon(
@@ -40,8 +40,8 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
           style: ButtonStyle(
               foregroundColor: MaterialStateProperty.all(
             controller.isDarkMode
-                ? StylesMobile.quaseBlack
-                : StylesMobile.quaseWhite,
+                ? Styles.quaseBlack
+                : Styles.quaseWhite,
           )),
         ),
       ),

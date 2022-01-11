@@ -16,15 +16,12 @@ class _PortifolioWBState extends State<PortifolioWB> {
     return Container(
       margin: EdgeInsets.only(top: 49),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 25),
-            child: Text(
-              'Portfólio - Web Design',
-              style: StylesMobile.tituloExtraBoldMenor,
-            ),
+          Text(
+            'Web Design',
+            style: Styles.tituloExtraBoldMenor,
           ),
           const SizedBox(height: 10),
           GaleriaWB(),

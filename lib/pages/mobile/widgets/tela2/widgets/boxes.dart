@@ -11,7 +11,7 @@ class BoxMao extends StatelessWidget {
         Expanded(
           child: Container(
             height: 80,
-            decoration: StylesMobile.boxesDecoration,
+            decoration: Styles.boxesDecoration,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -24,7 +24,7 @@ class BoxMao extends StatelessWidget {
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
-                    style: StylesMobile.boxesStyle.merge(
+                    style: Styles.boxesStyle.merge(
                       TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                     children: [
@@ -32,7 +32,7 @@ class BoxMao extends StatelessWidget {
                       TextSpan(text: 'clientes e fidelize eles com\n'),
                       TextSpan(
                         text: 'identidade visual',
-                        style: StylesMobile.boxesStyleBold.merge(
+                        style: Styles.boxesStyleBold.merge(
                           TextStyle(
                               color: Theme.of(context).colorScheme.secondary),
                         ),
@@ -59,7 +59,7 @@ class BoxCoracao extends StatelessWidget {
         Expanded(
           child: Container(
             height: 66,
-            decoration: StylesMobile.boxesDecoration,
+            decoration: Styles.boxesDecoration,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -68,7 +68,7 @@ class BoxCoracao extends StatelessWidget {
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
-                    style: StylesMobile.boxesStyle.merge(
+                    style: Styles.boxesStyle.merge(
                       TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                     children: [
@@ -76,7 +76,7 @@ class BoxCoracao extends StatelessWidget {
                       TextSpan(text: 'público com '),
                       TextSpan(
                         text: 'social media',
-                        style: StylesMobile.boxesStyleBold.merge(
+                        style: Styles.boxesStyleBold.merge(
                           TextStyle(
                               color: Theme.of(context).colorScheme.secondary),
                         ),
@@ -102,7 +102,7 @@ class BoxSino extends StatelessWidget {
       children: [
         Expanded(
           child: Container(
-            decoration: StylesMobile.boxesDecoration,
+            decoration: Styles.boxesDecoration,
             height: 80,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -112,7 +112,7 @@ class BoxSino extends StatelessWidget {
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
-                    style: StylesMobile.boxesStyle.merge(
+                    style: Styles.boxesStyle.merge(
                       TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                     children: [
@@ -121,7 +121,7 @@ class BoxSino extends StatelessWidget {
                       TextSpan(text: 'certo com '),
                       TextSpan(
                         text: 'tráfego pago',
-                        style: StylesMobile.boxesStyleBold.merge(
+                        style: Styles.boxesStyleBold.merge(
                           TextStyle(
                               color: Theme.of(context).colorScheme.secondary),
                         ),
@@ -148,7 +148,7 @@ class BoxGrafico extends StatelessWidget {
         Expanded(
           child: Container(
             height: 66,
-            decoration: StylesMobile.boxesDecoration,
+            decoration: Styles.boxesDecoration,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -157,7 +157,7 @@ class BoxGrafico extends StatelessWidget {
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
-                    style: StylesMobile.boxesStyle.merge(
+                    style: Styles.boxesStyle.merge(
                       TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                     children: [
@@ -165,7 +165,7 @@ class BoxGrafico extends StatelessWidget {
                       TextSpan(text: 'Vendas com '),
                       TextSpan(
                         text: 'marketing',
-                        style: StylesMobile.boxesStyleBold.merge(
+                        style: Styles.boxesStyleBold.merge(
                           TextStyle(
                               color: Theme.of(context).colorScheme.secondary),
                         ),

@@ -16,15 +16,12 @@ class _PortfolioIDVState extends State<PortfolioIDV> {
     return Container(
       margin: EdgeInsets.only(top: 49),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 25),
-            child: Text(
-              'Portfólio - Id. Visual',
-              style: StylesMobile.tituloExtraBoldMenor,
-            ),
+          Text(
+            'Identidade Visual',
+            style: Styles.tituloExtraBoldMenor,
           ),
           const SizedBox(height: 10),
           GaleriaIDV(),

@@ -31,7 +31,7 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
               height: 70,
               width: 70,
               decoration: BoxDecoration(
-                color: StylesMobile.laranjaum,
+                color: Styles.laranjaum,
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Padding(
@@ -40,7 +40,8 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
               ),
             ),
             const SizedBox(height: 55),
-            BotaoDrawer(texto: 'Home', pressionado: () => Get.offAllNamed('/')),
+            BotaoDrawer(
+                texto: 'Início', pressionado: () => Get.offAllNamed('/')),
             const SizedBox(height: 20),
             BotaoDrawer(
               texto: 'Sobre',
@@ -88,11 +89,11 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
             GetBuilder<ThemeController>(
               builder: (controller) => Text(
                 'Alterar tema para: ',
-                style: StylesMobile.subtituloBoldao.copyWith(
+                style: Styles.subtituloBoldao.copyWith(
                   fontSize: 18,
                   color: controller.isDarkMode
-                      ? StylesMobile.quaseBlack
-                      : StylesMobile.quaseWhite,
+                      ? Styles.quaseBlack
+                      : Styles.quaseWhite,
                 ),
               ),
             ),

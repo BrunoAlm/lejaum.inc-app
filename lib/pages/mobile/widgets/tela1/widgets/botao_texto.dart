@@ -12,8 +12,8 @@ class BotaoDrawer extends StatelessWidget {
 
   final String texto;
   final Function() pressionado;
-  final Color branco = StylesMobile.quaseWhite;
-  final Color preto = StylesMobile.quaseBlack;
+  final Color branco = Styles.quaseWhite;
+  final Color preto = Styles.quaseBlack;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class BotaoDrawer extends StatelessWidget {
         onPressed: pressionado,
         child: Text(
           texto,
-          style: StylesMobile.subtituloBoldao.copyWith(
+          style: Styles.subtituloBoldao.copyWith(
             // fontStyle: FontStyle.normal,
             fontSize: 18,
             color: controller.isDarkMode ? preto : branco,
