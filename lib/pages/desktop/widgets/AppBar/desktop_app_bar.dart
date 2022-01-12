@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lejaum/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart';
 import 'package:seo_renderer/seo_renderer.dart';
 
 import 'botoes_app_bar.dart';
@@ -72,10 +73,11 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
             const SizedBox(width: 25.08),
             botaoAppBar('Portfólio'),
             const SizedBox(width: 25.08),
-            botaoAppBar('FAQ'),
+            botaoAppBar('Ver Planos'),
             const SizedBox(width: 25.08),
             botaoAppBar('Contato'),
             const SizedBox(width: 25.08),
+            BotaoDarkModeDesktop(),
           ],
         ),
       ),

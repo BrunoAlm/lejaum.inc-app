@@ -22,9 +22,8 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(50),
           border: Border.all(
-              color: controller.isDarkMode
-                  ? Styles.quaseBlack
-                  : Styles.quaseWhite,
+              color:
+                  controller.isDarkMode ? Styles.quaseBlack : Styles.quaseWhite,
               width: 2.0),
         ),
         child: TextButton.icon(
@@ -39,9 +38,47 @@ class _BotaoDarkModeState extends State<BotaoDarkMode> {
           ),
           style: ButtonStyle(
               foregroundColor: MaterialStateProperty.all(
-            controller.isDarkMode
-                ? Styles.quaseBlack
-                : Styles.quaseWhite,
+            controller.isDarkMode ? Styles.quaseBlack : Styles.quaseWhite,
+          )),
+        ),
+      ),
+    );
+  }
+}
+
+class BotaoDarkModeDesktop extends StatefulWidget {
+  const BotaoDarkModeDesktop({Key? key}) : super(key: key);
+
+  @override
+  _BotaoDarkModeDesktopState createState() => _BotaoDarkModeDesktopState();
+}
+
+class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
+  @override
+  Widget build(BuildContext context) {
+    Get.put(ThemeController());
+    return GetBuilder<ThemeController>(
+      builder: (controller) => Container(
+        width: 110,
+        height: 40,
+        decoration: BoxDecoration(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(50),
+          border: Border.all(color: Styles.quaseWhite, width: 2.0),
+        ),
+        child: TextButton.icon(
+          icon:
+              Icon(controller.isDarkMode ? Icons.dark_mode : Icons.light_mode),
+          onPressed: controller.trocaModo,
+          label: Text(
+            controller.isDarkMode ? 'escuro' : 'claro',
+            style: TextStyle(
+              fontFamily: 'Georama',
+            ),
+          ),
+          style: ButtonStyle(
+              foregroundColor: MaterialStateProperty.all(
+            Styles.quaseWhite,
           )),
         ),
       ),
