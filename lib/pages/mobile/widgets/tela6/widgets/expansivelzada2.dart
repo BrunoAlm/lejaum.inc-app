@@ -18,7 +18,6 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
       height: 500,
       child: ListView.builder(
         key: Key('builder ${selected.toString()}'), //attention
