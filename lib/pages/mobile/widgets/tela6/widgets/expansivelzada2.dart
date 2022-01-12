@@ -21,7 +21,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
       height: 500,
       child: ListView.builder(
         key: Key('builder ${selected.toString()}'), //attention
-        padding: EdgeInsets.only(left: 13.0, right: 13.0, bottom: 25.0),
+        padding: EdgeInsets.only(right: 13.0, bottom: 25.0),
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemCount: titulos_2_Expansividade.length,

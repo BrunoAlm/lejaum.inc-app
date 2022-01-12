@@ -34,7 +34,7 @@ class _SolucoesState extends State<Solucoes> {
             const SizedBox(height: 20),
             Expanded(child: CardSolucao()),
             Text(
-              'Nós somos a solução para sua empresa!',
+              'Nós somos a solução para sua\nempresa!',
               softWrap: true,
               textAlign: TextAlign.center,
               style: Styles.subtituloBoldao
