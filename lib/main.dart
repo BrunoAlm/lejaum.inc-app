@@ -8,6 +8,7 @@ import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
+import 'package:seo_renderer/seo_renderer.dart';
 import 'pages/home_page_logic.dart';
 import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart';
 
@@ -35,6 +36,9 @@ class MyApp extends StatelessWidget {
             ResponsiveBreakpoint.autoScale(1700, name: 'XL'),
           ],
           background: Container(color: Color(0xFFF5F5F5))),
+      navigatorObservers: [
+        routeObserver,
+      ],
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: Themes.light,
