@@ -1,4 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:seo_renderer/seo_renderer.dart';
 
 class IconeBotaoEstilizado extends StatelessWidget {
   IconeBotaoEstilizado({
@@ -40,22 +43,24 @@ class IconeBotaoEstilizado extends StatelessWidget {
         ],
       ),
       child: ElevatedButton.icon(
-        style: ButtonStyle(
-          elevation: MaterialStateProperty.all(0),
-          backgroundColor: MaterialStateProperty.all(cor!),
-          shape: MaterialStateProperty.all(StadiumBorder()),
-        ),
-        onPressed: pressionado!,
-        icon: Icon(icone, color: textColor!, size: tamanho_icone),
-        label: Text(
-          texto!,
-          style: TextStyle(
-            fontFamily: 'Georama',
-            color: textColor!,
-            fontSize: tamanho_fonte,
+          style: ButtonStyle(
+            elevation: MaterialStateProperty.all(0),
+            backgroundColor: MaterialStateProperty.all(cor!),
+            shape: MaterialStateProperty.all(StadiumBorder()),
           ),
-        ),
-      ),
+          onPressed: pressionado!,
+          icon: Icon(icone, color: textColor!, size: tamanho_icone),
+          label: TextRenderer(
+            element: ParagraphElement(),
+            text: Text(
+              texto!,
+              style: TextStyle(
+                fontFamily: 'Georama',
+                color: textColor!,
+                fontSize: tamanho_fonte,
+              ),
+            ),
+          )),
     );
   }
 }

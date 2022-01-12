@@ -1,6 +1,10 @@
+import 'dart:html';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:seo_renderer/seo_renderer.dart';
 
 import 'botoes_app_bar.dart';
 
@@ -46,13 +50,16 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
                   const SizedBox(width: 25.08),
                   SvgPicture.asset("assets/images/icons/logo_icon.svg"),
                   const SizedBox(width: 3),
-                  Text(
-                    'lejaum',
-                    style: TextStyle(
-                      color: Color(0xFFE5E5E5),
-                      fontSize: 30,
-                      fontFamily: 'Georama',
-                      fontStyle: FontStyle.italic,
+                  TextRenderer(
+                    element: ParagraphElement(),
+                    text: Text(
+                      'lejaum',
+                      style: TextStyle(
+                        color: Color(0xFFE5E5E5),
+                        fontSize: 30,
+                        fontFamily: 'Georama',
+                        fontStyle: FontStyle.italic,
+                      ),
                     ),
                   ),
                 ],

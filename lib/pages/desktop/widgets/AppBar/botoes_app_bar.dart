@@ -1,5 +1,8 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
+import 'package:seo_renderer/renderers/text_renderer/text_renderer_web.dart';
 
 Widget botaoAppBar(String texto) {
   final Color laranjaum = Color(0xFFFF5400);
@@ -34,13 +37,16 @@ Widget botaoAppBar(String texto) {
       onPressed: () {},
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 2),
-        child: Text(
-          texto,
-          style: TextStyle(
-            color: quaseWhite,
-            fontFamily: "Georama",
-            fontStyle: FontStyle.normal,
-            fontSize: 18,
+        child: TextRenderer(
+          element: ParagraphElement(),
+          text: Text(
+            texto,
+            style: TextStyle(
+              color: quaseWhite,
+              fontFamily: "Georama",
+              fontStyle: FontStyle.normal,
+              fontSize: 18,
+            ),
           ),
         ),
       ),
