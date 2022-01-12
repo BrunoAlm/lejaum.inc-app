@@ -38,6 +38,7 @@ dependencies:
   
   # Abre link web
   url_launcher: ^6.0.17
+  seo_renderer: ^0.3.0
   
 dev_dependencies:
   flutter_test:
