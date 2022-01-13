@@ -48,25 +48,34 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               const SizedBox(width: 145),
-              MouseRegion(
-                cursor: SystemMouseCursors.click,
-                child: Row(
-                  children: [
-                    SvgPicture.asset("assets/images/icons/logo_icon.svg"),
-                    const SizedBox(width: 3),
-                    TextRenderer(
-                      element: ParagraphElement(),
-                      text: Text(
-                        'lejaum',
-                        style: TextStyle(
-                          color: Styles.quaseWhite,
-                          fontSize: 30,
-                          fontFamily: 'Georama',
-                          fontStyle: FontStyle.italic,
+              GestureDetector(
+                onTap: () {
+                  Scrollable.ensureVisible(
+                    controller.homeKey.currentContext!,
+                    duration: Duration(milliseconds: 500),
+                    curve: Curves.easeInOutQuart,
+                  );
+                },
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: Row(
+                    children: [
+                      SvgPicture.asset("assets/images/icons/logo_icon.svg"),
+                      const SizedBox(width: 3),
+                      TextRenderer(
+                        element: ParagraphElement(),
+                        text: Text(
+                          'lejaum',
+                          style: TextStyle(
+                            color: Styles.quaseWhite,
+                            fontSize: 30,
+                            fontFamily: 'Georama',
+                            fontStyle: FontStyle.italic,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Expanded(child: Container()),

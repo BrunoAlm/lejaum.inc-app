@@ -61,7 +61,7 @@ class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
   @override
   Widget build(BuildContext context) {
     double? _fonte =
-        responsive.ResponsiveValue(context, defaultValue: 1.0, valueWhen: [
+        responsive.ResponsiveValue(context, defaultValue: 17.0, valueWhen: [
       responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
       responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
       responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
