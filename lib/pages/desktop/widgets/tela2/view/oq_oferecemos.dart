@@ -10,8 +10,10 @@ class TodasBoxesDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _altura = MediaQuery.of(context).size.height;
+    var boxes = GlobalKey();
     var _largura = MediaQuery.of(context).size.width;
     return Container(
+      key: boxes,
       height: _altura - 60,
       width: _largura,
       color: context.theme.backgroundColor,

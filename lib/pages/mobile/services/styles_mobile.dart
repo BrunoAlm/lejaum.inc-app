@@ -116,15 +116,15 @@ class Styles {
   static final boxesStyle = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w500,
-    fontSize: 17,
+    fontSize: 15,
     color: quaseWhite,
   );
 
   // box text style bold
   static const boxesStyleBold = TextStyle(
     fontFamily: fonte,
-    fontWeight: FontWeight.w900,
-    fontSize: 17,
+    fontWeight: FontWeight.w800,
+    fontSize: 15,
     // color: laranjaum,
     color: quaseWhite,
   );

@@ -81,5 +81,7 @@ class MobilePageViewController extends GetxController {
 }
 
 class DesktopListViewController extends GetxController {
-  var controllerList = ScrollController();
+  var scrollController = ScrollController();
+  var homeKey = GlobalKey();
+  var boxesKey = GlobalKey();
 }

@@ -111,7 +111,9 @@ class BoxSino extends StatelessWidget {
               RichText(
                 text: TextSpan(
                   style: Styles.boxesStyle.merge(
-                    TextStyle(color: Theme.of(context).colorScheme.secondary),
+                    TextStyle(
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
                   ),
                   children: [
                     TextSpan(text: 'Apareça no digital para a\n'),
@@ -121,7 +123,8 @@ class BoxSino extends StatelessWidget {
                       text: 'tráfego pago',
                       style: Styles.boxesStyleBold.merge(
                         TextStyle(
-                            color: Theme.of(context).colorScheme.secondary),
+                          color: Theme.of(context).colorScheme.secondary,
+                        ),
                       ),
                     ),
                   ],

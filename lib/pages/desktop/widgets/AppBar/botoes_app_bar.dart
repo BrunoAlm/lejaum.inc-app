@@ -1,12 +1,15 @@
 import 'dart:html';
+import 'package:get/get.dart';
+import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_web.dart';
 
 class BotaoAppBar extends StatefulWidget {
-  const BotaoAppBar({Key? key, required this.texto}) : super(key: key);
-  final texto;
+  const BotaoAppBar({Key? key, required this.texto, required this.pressionado}) : super(key: key);
+  final String texto;
+  final Function()? pressionado;
   @override
   State<BotaoAppBar> createState() => _BotaoAppBarState();
 }
@@ -17,6 +20,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
 
   @override
   Widget build(BuildContext context) {
+    
     // var _altura_do_botao =
     //     responsive.ResponsiveValue(context, defaultValue: 20.0, valueWhen: [
     //   responsive.Condition.largerThan(name: responsive.TABLET, value: 20.0),
@@ -28,7 +32,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
     //   responsive.Condition.largerThan(name: 'DESKTOP1', value: 20.0)
     // ]).value;
     double? _fonte =
-        responsive.ResponsiveValue(context, defaultValue: 1.0, valueWhen: [
+        responsive.ResponsiveValue(context, defaultValue: 18.0, valueWhen: [
       responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
       responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
       responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
@@ -36,7 +40,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
     print(_fonte);
     return HoverWidget(
       hoverChild: TextButton(
-        onPressed: () {},
+        onPressed: widget.pressionado,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 6),
           child: Text(
@@ -64,7 +68,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
       ),
       onHover: (event) {},
       child: TextButton(
-        onPressed: () {},
+        onPressed: widget.pressionado,
         child: TextRenderer(
           element: ParagraphElement(),
           text: Padding(
