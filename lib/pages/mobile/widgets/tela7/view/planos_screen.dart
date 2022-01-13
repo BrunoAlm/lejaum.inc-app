@@ -17,22 +17,16 @@ class Planos extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 49),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 25),
-              child: Text(
-                'Planos',
-                style: StylesMobile.tituloExtraBoldMenor,
-              ),
+            Text(
+              'Planos Mensais',
+              style: Styles.tituloExtraBoldMenor,
             ),
             const SizedBox(height: 15),
-            Padding(
-              padding: const EdgeInsets.only(left: 25),
-              child: Text(
-                'Arraste para o lado para ver mais planos',
-                style: StylesMobile.subtitulo,
-              ),
+            Text(
+              'Arraste para o lado para ver mais planos',
+              style: Styles.subtitulo,
             ),
             const SizedBox(height: 15),
             Padding(
@@ -45,8 +39,8 @@ class Planos extends StatelessWidget {
                 texto: 'Solicitar plano personalizado',
                 pressionado: abrirWhatsApp,
                 icone: FontAwesomeIcons.whatsapp,
-                cor: StylesMobile.verdeGood,
-                textColor: StylesMobile.quaseWhite,
+                cor: Styles.verdeGood,
+                textColor: Styles.quaseWhite,
               ),
             ),
           ],

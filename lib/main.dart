@@ -6,12 +6,13 @@ import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
+import 'package:seo_renderer/seo_renderer.dart';
 import 'pages/home_page_logic.dart';
 import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: StylesMobile.laranjaum,
+    statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
   runApp(const MyApp());
@@ -27,12 +28,17 @@ class MyApp extends StatelessWidget {
           ClampingScrollWrapper.builder(context, widget!),
           breakpoints: const [
             ResponsiveBreakpoint.resize(360, name: MOBILE),
-            ResponsiveBreakpoint.resize(410, name: MOBILE),
             ResponsiveBreakpoint.autoScale(600, name: TABLET),
-            ResponsiveBreakpoint.resize(625, name: DESKTOP),
-            ResponsiveBreakpoint.autoScale(1700, name: 'XL'),
+            ResponsiveBreakpoint.resize(725, name: TABLET),
+            ResponsiveBreakpoint.resize(892, name: 'DESKTOP1'),
+            ResponsiveBreakpoint.resize(1167, name: 'DESKTOP2'),
+            ResponsiveBreakpoint.resize(1366, name: DESKTOP),
+            ResponsiveBreakpoint.autoScale(1920, name: 'DESKTOP GIGANTE'),
           ],
           background: Container(color: Color(0xFFF5F5F5))),
+      navigatorObservers: [
+        routeObserver,
+      ],
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: Themes.light,

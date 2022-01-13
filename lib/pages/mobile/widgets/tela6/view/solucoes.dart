@@ -15,36 +15,30 @@ class _SolucoesState extends State<Solucoes> {
     return LayoutBuilder(
       builder: (context, constraints) => Container(
         height: constraints.maxHeight,
+        width: constraints.maxWidth,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 25, top: 25),
-              child: Text(
-                'Soluções',
-                style: StylesMobile.tituloExtraBoldMenor,
-              ),
+            const SizedBox(height: 49),
+            Text(
+              'Soluções',
+              style: Styles.tituloExtraBoldMenor,
             ),
-            const SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.only(left: 25),
-              child: Text(
-                'Veja abaixo algumas das soluções que nós podemos oferecer:',
-                style: StylesMobile.subtitulo.merge(
-                  TextStyle(color: Theme.of(context).colorScheme.secondary),
-                ),
+            Text(
+              'Veja abaixo algumas das soluções que nós podemos oferecer:',
+              style: Styles.subtitulo.merge(
+                TextStyle(color: Theme.of(context).colorScheme.secondary),
               ),
             ),
             const SizedBox(height: 20),
             Expanded(child: CardSolucao()),
-            Padding(
-              padding: const EdgeInsets.only(left: 25),
-              child: Text(
-                'Nós somos a solução certa\npara você e sua empresa!',
-                style: StylesMobile.subtituloBoldao.merge(
-                  TextStyle(color: Theme.of(context).colorScheme.secondary),
-                ),
-              ),
+            Text(
+              'Nós somos a solução para sua\nempresa!',
+              softWrap: true,
+              textAlign: TextAlign.center,
+              style: Styles.subtituloBoldao
+                  .merge(TextStyle(color: Styles.laranjaum)),
             ),
             const SizedBox(height: 80),
           ],

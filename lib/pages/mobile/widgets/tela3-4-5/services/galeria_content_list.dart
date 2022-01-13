@@ -14,7 +14,9 @@ List<Widget> flor_do_grao_list = [
   grao3(),
   grao4(),
   grao5(),
-  grao6()
+  grao6(),
+  grao7(),
+  grao8(),
 ];
 
 List<Widget> airsoft_list = [
@@ -32,12 +34,7 @@ List<Widget> azardi_list = [
   azardi3(),
 ];
 
-List<Widget> janfie_list = [
-  logo_janfie(),
-  janfie1(),
-  janfie2(),
-  janfie3()
-];
+List<Widget> janfie_list = [logo_janfie(), janfie1(), janfie2(), janfie3()];
 
 List<Widget> italo_list = [
   logo_italo(),

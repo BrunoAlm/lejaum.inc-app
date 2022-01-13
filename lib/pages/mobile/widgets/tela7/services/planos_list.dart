@@ -33,7 +33,7 @@ class Plano1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      color: StylesMobile.quaseWhite,
+      color: Styles.quaseWhite,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
         child: Column(
@@ -48,7 +48,7 @@ class Plano1 extends StatelessWidget {
               margin: const EdgeInsets.only(left: 25),
               decoration: BoxDecoration(
                 border: Border(
-                  left: BorderSide(color: StylesMobile.cinzou, width: 1),
+                  left: BorderSide(color: Styles.cinzou, width: 1),
                 ),
               ),
               child: Container(
@@ -57,7 +57,7 @@ class Plano1 extends StatelessWidget {
                   'Anuncios em redes sociais e de pesquisa, e-mail marketing entre outros;',
                   softWrap: true,
                   style: TextStyle(
-                      color: StylesMobile.cinzou,
+                      color: Styles.cinzou,
                       fontSize: 16,
                       fontFamily: 'Georama'),
                 ),
@@ -82,7 +82,7 @@ class Plano2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      color: StylesMobile.quaseWhite,
+      color: Styles.quaseWhite,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
         child: Column(
@@ -112,7 +112,7 @@ class Plano3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      color: StylesMobile.quaseWhite,
+      color: Styles.quaseWhite,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
         child: Column(
@@ -144,17 +144,17 @@ Widget flagsDoPlanoAtivado(String texto) => Row(
           child: Container(
               padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
-                color: StylesMobile.laranjaum,
+                color: Styles.laranjaum,
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Icon(FontAwesomeIcons.check,
-                  size: 6, color: StylesMobile.quaseWhite)),
+                  size: 6, color: Styles.quaseWhite)),
         ),
         // const SizedBox(width: 4),
         Text(
           texto,
           softWrap: true,
-          style: StylesMobile.planosTextFlagAtivado,
+          style: Styles.planosTextFlagAtivado,
         ),
       ],
     );
@@ -166,7 +166,7 @@ Widget flagsDoPlanoDesativado(String texto) => Row(
           child: Container(
               padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
-                color: StylesMobile.cinzou,
+                color: Styles.cinzou,
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Icon(FontAwesomeIcons.times, size: 6)),
@@ -175,7 +175,7 @@ Widget flagsDoPlanoDesativado(String texto) => Row(
         Text(
           texto,
           softWrap: true,
-          style: StylesMobile.planosTextFlagDesativado,
+          style: Styles.planosTextFlagDesativado,
         ),
       ],
     );
@@ -208,23 +208,23 @@ Widget cardSolicitacao({String? nome, String? valor, String? descricao}) =>
                 children: [
                   Text(
                     nome!,
-                    style: StylesMobile.TitleTextPlanosCardMoney,
+                    style: Styles.TitleTextPlanosCardMoney,
                   ),
                   const SizedBox(height: 5),
                   Text(
                     valor!,
-                    style: StylesMobile.SubtitleTextPlanosCardMoney,
+                    style: Styles.SubtitleTextPlanosCardMoney,
                   ),
                   Text(
                     descricao!,
-                    style: StylesMobile.SubtitleTextPlanosCardMoney,
+                    style: Styles.SubtitleTextPlanosCardMoney,
                   ),
                   const SizedBox(height: 10),
                   BotaoEstilizado(
                     texto: 'Solicitar',
                     pressionado: abrirWhatsApp,
-                    cor: StylesMobile.laranjaum,
-                    textColor: StylesMobile.quaseWhite,
+                    cor: Styles.laranjaum,
+                    textColor: Styles.quaseWhite,
                     altura: 28,
                   ),
                 ],

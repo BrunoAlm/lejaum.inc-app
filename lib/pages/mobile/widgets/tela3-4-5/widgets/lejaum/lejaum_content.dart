@@ -13,30 +13,29 @@ String _img3 = "assets/images/galeria/lejaum/img3.webp";
 Widget logo_lejaum() => Container(
       width: 186.47,
       height: 198.79,
-      color: StylesMobile.quaseWhite,
+      color: Colors.transparent,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 10),
-            child:
-                Text('Site lejaum', style: StylesMobile.textoPretoSemFrescura),
+            child: Text('Site lejaum', style: Styles.textoBrancoBold),
           ),
           Container(
             height: 130,
             width: 130,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(double.maxFinite),
-              color: StylesMobile.laranjaum,
+              color: Styles.laranjaum,
             ),
             child: SvgPicture.asset(_logo_image),
             padding: const EdgeInsets.all(12),
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.only(bottom: 20),
             child: IconeBotaoEstilizado(
               textColor: Colors.white,
-              cor: StylesMobile.laranjaum,
+              cor: Styles.laranjaum,
               texto: 'Ver projeto',
               altura: 28,
               largura: 115.91,

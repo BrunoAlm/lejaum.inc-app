@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/desktop/desktop_page.dart';
+import 'package:lejaum/pages/desktop/view/desktop_page.dart';
 import 'desktop/widgets/AppBar/desktop_app_bar.dart';
 import 'mobile/view/mobile_page.dart';
 import 'mobile/widgets/tela1/view/mobile_app_bar.dart';
@@ -16,25 +16,24 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (context, contraints) {
+      builder: (context, constraints) {
         return Scaffold(
           backgroundColor: Color(0xFF1A1918),
-          appBar: contraints.maxWidth < 800
+          appBar: constraints.maxWidth < 892
               ? PreferredSize(
                   child: MobileAppBar(),
                   preferredSize: Size(double.infinity, 70),
                 )
               : PreferredSize(
                   child: DesktopAppBar(),
-                  preferredSize: Size(double.infinity, 70),
+                  preferredSize: Size(double.infinity, 60),
                 ),
-          endDrawer: contraints.maxWidth < 800 ? DrawerLejaum() : null,
-          body:
-              //  MobilePage(),
+          endDrawer: constraints.maxWidth < 892 ? DrawerLejaum() : null,
+          body: constraints.maxWidth < 892 ? MobilePage() : DesktopPage(),
 
-              Container(
-            child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
-          ),
+          //     Container(
+          //   child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
+          // ),
         );
       }, // Builder
     );

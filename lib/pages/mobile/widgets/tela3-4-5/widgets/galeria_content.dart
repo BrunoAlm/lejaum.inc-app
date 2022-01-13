@@ -10,15 +10,15 @@ class FlorDoGrao extends StatelessWidget {
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
 
-    return SizedBox(
+    return Container(
       height: 250,
       width: largura,
+      margin: const EdgeInsets.only(bottom: 10),
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(), // this for snapping
-        itemCount: flor_do_grao_list.length,
-        itemBuilder: (_, index) => flor_do_grao_list[index],
-      ),
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(), // this for snapping
+          itemCount: flor_do_grao_list.length,
+          itemBuilder: (_, index) => flor_do_grao_list[index]),
     );
   }
 }

@@ -1,6 +1,9 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:seo_renderer/renderers/text_renderer/text_renderer.dart';
 
 class MobileAppBar extends StatelessWidget {
   final Color laranjaum = Color(0xFFFF5400);
@@ -29,13 +32,16 @@ class MobileAppBar extends StatelessWidget {
             // Image.asset("assets/images/logo_icon.png"),
             SvgPicture.asset("assets/images/icons/logo_icon.svg"),
             const SizedBox(width: 3),
-            Text(
-              'lejaum',
-              style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'Georama',
-                fontStyle: FontStyle.italic,
-                fontSize: 30,
+            TextRenderer(
+              element: ParagraphElement(),
+              text: Text(
+                'lejaum',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Georama',
+                  fontStyle: FontStyle.italic,
+                  fontSize: 30,
+                ),
               ),
             ),
           ],

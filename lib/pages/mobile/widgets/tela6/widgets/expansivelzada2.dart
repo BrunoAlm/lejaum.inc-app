@@ -18,11 +18,10 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
       height: 500,
       child: ListView.builder(
         key: Key('builder ${selected.toString()}'), //attention
-        padding: EdgeInsets.only(left: 13.0, right: 13.0, bottom: 25.0),
+        padding: EdgeInsets.only(right: 13.0, bottom: 25.0),
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemCount: titulos_2_Expansividade.length,
@@ -39,8 +38,8 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                     borderRadius: BorderRadius.circular(10),
                     child: ExpansionTile(
                       expandedCrossAxisAlignment: CrossAxisAlignment.start,
-                      collapsedBackgroundColor: StylesMobile.quaseBlack,
-                      backgroundColor: StylesMobile.quaseBlack,
+                      collapsedBackgroundColor: Styles.quaseBlack,
+                      backgroundColor: Styles.quaseBlack,
                       key: Key(index.toString()), //attention
                       initiallyExpanded: index == selected, //attention
                       leading: null,
@@ -51,7 +50,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                       ),
                       title: Text(
                         titulos_2_Expansividade[index],
-                        style: StylesMobile.tituloIconTextSolucao.merge(
+                        style: Styles.tituloIconTextSolucao.merge(
                           TextStyle(
                             color: Theme.of(context).colorScheme.secondary,
                           ),
@@ -62,7 +61,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                           padding: const EdgeInsets.only(left: 15),
                           child: Text(
                             subtitulos_2_Expansividade[index],
-                            style: StylesMobile.subtituloIconTextSolucao,
+                            style: Styles.subtituloIconTextSolucao,
                           ),
                         ),
                         const SizedBox(height: 5),
@@ -73,7 +72,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                             style: ButtonStyle(
                               alignment: Alignment.centerLeft,
                               overlayColor: MaterialStateProperty.all(
-                                  StylesMobile.cinzou.withOpacity(0.5)),
+                                  Styles.cinzou.withOpacity(0.5)),
                               splashFactory: InkSplash.splashFactory,
                             ),
                             child: Text(
@@ -81,8 +80,8 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                               style: TextStyle(
                                 decorationStyle: TextDecorationStyle.solid,
                                 decoration: TextDecoration.underline,
-                                decorationColor: StylesMobile.cinzou,
-                                color: StylesMobile.cinzou,
+                                decorationColor: Styles.cinzou,
+                                color: Styles.cinzou,
                               ),
                             ),
                           ),

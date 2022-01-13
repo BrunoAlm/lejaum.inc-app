@@ -22,7 +22,7 @@ Widget logo_janfie() => Container(
         children: [
           IconeBotaoEstilizado(
             textColor: Colors.white,
-            cor: StylesMobile.laranjaum,
+            cor: Styles.laranjaum,
             texto: 'Ver projeto',
             altura: 28,
             largura: 115.91,

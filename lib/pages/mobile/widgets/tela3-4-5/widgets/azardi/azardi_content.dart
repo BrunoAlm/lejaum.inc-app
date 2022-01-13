@@ -23,7 +23,7 @@ Widget logo_azardi() => Container(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           IconeBotaoEstilizado(
-            cor: StylesMobile.laranjaum,
+            cor: Styles.laranjaum,
             textColor: Colors.white,
             texto: 'Ver projeto',
             pressionado: () => Get.toNamed('/azardi-pdf'),

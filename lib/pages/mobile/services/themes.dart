@@ -8,22 +8,22 @@ class Themes {
   );
 
   static final light = ThemeData.light().copyWith(
-    backgroundColor: StylesMobile.quaseWhite,
+    backgroundColor: Styles.quaseWhite,
     primaryColor: Colors.white,
     colorScheme: ColorScheme(
-      primary: StylesMobile.laranjaum,
-      secondary: StylesMobile.quaseBlack, // texto
+      primary: Styles.laranjaum,
+      secondary: Styles.quaseBlack, // texto
       surface: Colors.black,
-      background: StylesMobile.quaseWhite,
-      error: StylesMobile.laranjaum,
-      onPrimary: StylesMobile.quaseWhite,
-      onSecondary: StylesMobile.quaseWhite,
-      onSurface: StylesMobile.quaseWhite,
-      onBackground: StylesMobile.laranjaum,
+      background: Styles.quaseWhite,
+      error: Styles.laranjaum,
+      onPrimary: Styles.quaseWhite,
+      onSecondary: Styles.quaseWhite,
+      onSurface: Styles.quaseWhite,
+      onBackground: Styles.laranjaum,
       onError: Colors.red,
       brightness: Brightness.light,
-      primaryVariant: StylesMobile.laranjaum,
-      secondaryVariant: StylesMobile.quaseWhite,
+      primaryVariant: Styles.laranjaum,
+      secondaryVariant: Styles.quaseWhite,
     ),
     // elevatedButtonTheme: ElevatedButtonThemeData(
     //   style: ButtonStyle(
@@ -32,23 +32,23 @@ class Themes {
     // ),
   );
   static final dark = ThemeData.dark().copyWith(
-    backgroundColor: StylesMobile.pretao,
+    backgroundColor: Styles.pretao,
     colorScheme: ColorScheme(
-      primary: StylesMobile.laranjaum,
-      secondary: StylesMobile.quaseWhite, // texto
+      primary: Styles.laranjaum,
+      secondary: Styles.quaseWhite, // texto
       surface: Colors.white,
-      background: StylesMobile.quaseBlack,
-      error: StylesMobile.laranjaum,
-      onPrimary: StylesMobile.quaseWhite,
-      onSecondary: StylesMobile.quaseWhite,
-      onSurface: StylesMobile.quaseWhite,
-      onBackground: StylesMobile.laranjaum,
+      background: Styles.quaseBlack,
+      error: Styles.laranjaum,
+      onPrimary: Styles.quaseWhite,
+      onSecondary: Styles.quaseWhite,
+      onSurface: Styles.quaseWhite,
+      onBackground: Styles.laranjaum,
       onError: Colors.red,
       brightness: Brightness.dark,
-      primaryVariant: StylesMobile.laranjaum,
-      secondaryVariant: StylesMobile.quaseBlack,
+      primaryVariant: Styles.laranjaum,
+      secondaryVariant: Styles.quaseBlack,
     ),
-    iconTheme: IconThemeData(color: StylesMobile.quaseWhite),
+    iconTheme: IconThemeData(color: Styles.quaseWhite),
   );
 }
 
@@ -76,6 +76,12 @@ class ThemeController extends GetxController {
   }
 }
 
-class TestPageController extends GetxController {
+class MobilePageViewController extends GetxController {
   var controller = PageController();
+}
+
+class DesktopListViewController extends GetxController {
+  var scrollController = ScrollController();
+  var homeKey = GlobalKey();
+  var boxesKey = GlobalKey();
 }

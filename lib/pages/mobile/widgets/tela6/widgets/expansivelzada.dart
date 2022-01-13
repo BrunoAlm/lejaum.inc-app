@@ -39,8 +39,8 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                     borderRadius: BorderRadius.circular(10),
                     child: ExpansionTile(
                       expandedCrossAxisAlignment: CrossAxisAlignment.start,
-                      collapsedBackgroundColor: StylesMobile.quaseBlack,
-                      backgroundColor: StylesMobile.quaseBlack,
+                      collapsedBackgroundColor: Styles.quaseBlack,
+                      backgroundColor: Styles.quaseBlack,
                       key: Key(index.toString()), //attention
                       initiallyExpanded: index == selected, //attention
                       leading: null,
@@ -51,7 +51,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                       ),
                       title: Text(
                         titulos_Expansividade[index],
-                        style: StylesMobile.tituloIconTextSolucao.merge(
+                        style: Styles.tituloIconTextSolucao.merge(
                           TextStyle(
                             color: Theme.of(context).colorScheme.secondary,
                           ),
@@ -62,7 +62,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                           padding: const EdgeInsets.only(left: 15),
                           child: Text(
                             subtitulos_Expansividade[index],
-                            style: StylesMobile.subtituloIconTextSolucao,
+                            style: Styles.subtituloIconTextSolucao,
                           ),
                         ),
                         const SizedBox(height: 5),
@@ -73,16 +73,17 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                             style: ButtonStyle(
                               alignment: Alignment.centerLeft,
                               overlayColor: MaterialStateProperty.all(
-                                  StylesMobile.cinzou.withOpacity(0.5)),
+                                  Styles.cinzou.withOpacity(0.5)),
                               splashFactory: InkSplash.splashFactory,
                             ),
                             child: Text(
                               'Clique para mais informações',
                               style: TextStyle(
+                                fontStyle: FontStyle.italic,
                                 decorationStyle: TextDecorationStyle.solid,
                                 decoration: TextDecoration.underline,
-                                decorationColor: StylesMobile.cinzou,
-                                color: StylesMobile.cinzou,
+                                decorationColor: Styles.cinzou,
+                                color: Styles.cinzou,
                               ),
                             ),
                           ),

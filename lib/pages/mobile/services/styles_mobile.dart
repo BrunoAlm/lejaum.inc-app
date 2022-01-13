@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StylesMobile {
+class Styles {
   static const Color quaseBlack = Color(0xFF201F1E);
   static const Color pretao = Color(0xFF1A1918);
   static const Color quaseWhite = Color(0xFFF4F4F4);
@@ -9,6 +9,8 @@ class StylesMobile {
   static const Color lowBlueGray = Color(0xFF334756);
   static const Color mareloMostarda = Color(0xFFFA9905);
   static const Color verdeGood = Color(0xFF25D366);
+  static const Color roxinho = Color(0xFF72147E);
+  static const Color azulBaitolote = Color(0xFF191E26);
   static const String fonte = 'Georama';
   ThemeData teste = ThemeData();
 
@@ -33,7 +35,7 @@ class StylesMobile {
   static const tituloExtraBoldMenor = TextStyle(
     color: laranjaum,
     fontFamily: fonte,
-    fontSize: 25,
+    fontSize: 35,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w900,
     height: 1.28,
@@ -73,7 +75,7 @@ class StylesMobile {
     color: quaseWhite,
     fontFamily: fonte,
     fontSize: 20,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w800,
     height: 1.2,
   );
   static const subtituloIconTextSolucao = TextStyle(
@@ -85,18 +87,18 @@ class StylesMobile {
     height: 1.2,
   );
 
-  static const textoPretoSemFrescura = TextStyle(
-    color: quaseBlack,
+  static const textoPretoBold = TextStyle(
+    color: pretao,
     fontFamily: fonte,
     fontSize: 17,
     fontWeight: FontWeight.w700,
   );
 
-  static const textoBrancoSemFrescura = TextStyle(
+  static const textoBrancoBold = TextStyle(
     color: quaseWhite,
     fontFamily: fonte,
-    fontSize: 23,
-    fontStyle: FontStyle.normal,
+    fontSize: 17,
+    fontWeight: FontWeight.w700,
     height: 1.2,
   );
 
@@ -114,15 +116,15 @@ class StylesMobile {
   static final boxesStyle = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w500,
-    fontSize: 17,
+    fontSize: 15,
     color: quaseWhite,
   );
 
   // box text style bold
   static const boxesStyleBold = TextStyle(
     fontFamily: fonte,
-    fontWeight: FontWeight.w900,
-    fontSize: 17,
+    fontWeight: FontWeight.w800,
+    fontSize: 15,
     // color: laranjaum,
     color: quaseWhite,
   );
