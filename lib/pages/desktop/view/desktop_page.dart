@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:lejaum/pages/desktop/widgets/primeira_parte/primeira_parte.dart';
+
+import '../widgets/home_page/home_page_desktop.dart';
 
 class DesktopPage extends StatefulWidget {
   const DesktopPage({Key? key}) : super(key: key);
@@ -12,20 +12,15 @@ class DesktopPage extends StatefulWidget {
 class _DesktopPageState extends State<DesktopPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: SingleChildScrollView(
+    return LayoutBuilder(builder: (context, constraints) {
+      return SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            PrimeiraParteDesktop(),
-            ElevatedButton(
-              onPressed: () => Get.toNamed('/janfie-info'),
-              child: Text('Clica ai no pdf'),
-            ),
-            // Video(),
+            HomePageDesktop(),
           ],
         ),
-      ),
-    );
+      );
+    });
   }
 }

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart';
 
 import '../services/galeria_content_list.dart';
 

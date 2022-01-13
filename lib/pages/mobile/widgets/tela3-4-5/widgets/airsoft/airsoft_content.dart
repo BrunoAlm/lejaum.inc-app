@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart';
 
 // String _logo_image = "assets/images/galeria/airsoft/logo.png";
 String _img1 = "assets/images/galeria/airsoft/img1.webp";

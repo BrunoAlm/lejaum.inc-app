@@ -22,12 +22,12 @@ class _MobilePageState extends State<MobilePage> {
   Widget build(BuildContext context) {
     var altura = MediaQuery.of(context).size.height;
     var largura = MediaQuery.of(context).size.width;
-    Get.put(TestPageController());
+    Get.put(MobilePageViewController());
     return Container(
       color: Theme.of(context).backgroundColor,
       height: altura,
       width: largura,
-      child: GetBuilder<TestPageController>(builder: (context) {
+      child: GetBuilder<MobilePageViewController>(builder: (context) {
         return PageView(
           controller: context.controller,
           children: [

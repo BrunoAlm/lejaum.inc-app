@@ -76,6 +76,10 @@ class ThemeController extends GetxController {
   }
 }
 
-class TestPageController extends GetxController {
+class MobilePageViewController extends GetxController {
   var controller = PageController();
+}
+
+class DesktopListViewController extends GetxController {
+  var controllerList = ScrollController();
 }

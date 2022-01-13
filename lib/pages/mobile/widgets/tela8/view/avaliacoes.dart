@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
-import 'package:lejaum/pages/mobile/widgets/tela7/widgets/planos_card.dart';
-import 'package:lejaum/widgets/botao_estilizado.dart';
 
 import '../../../services/styles_mobile.dart';
 

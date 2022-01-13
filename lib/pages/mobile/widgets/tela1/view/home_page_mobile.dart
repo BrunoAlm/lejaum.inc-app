@@ -11,7 +11,7 @@ class HomePageMobile extends StatelessWidget {
   const HomePageMobile({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    Get.put(TestPageController());
+    Get.put(MobilePageViewController());
     var _altura = MediaQuery.of(context).size.height;
     var _tamanho_da_fonte_titulo =
         responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
@@ -32,6 +32,7 @@ class HomePageMobile extends StatelessWidget {
       responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
     ]).value;
     return LayoutBuilder(builder: (context, constraints) {
+      print(constraints.maxWidth);
       return Container(
         height: _altura,
         decoration: BoxDecoration(
@@ -41,7 +42,7 @@ class HomePageMobile extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: GetBuilder<TestPageController>(
+        child: GetBuilder<MobilePageViewController>(
           builder: (_pageController) => Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,

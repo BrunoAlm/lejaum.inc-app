@@ -5,8 +5,8 @@ import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import '../widgets/boxes.dart';
 
-class TodasBoxes extends StatelessWidget {
-  const TodasBoxes({Key? key}) : super(key: key);
+class TodasBoxesDesktop extends StatelessWidget {
+  const TodasBoxesDesktop({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     Get.put(MobilePageViewController());
