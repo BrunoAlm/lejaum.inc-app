@@ -55,6 +55,7 @@ class HomePageDesktop extends StatelessWidget {
                   'Estamos construindo o nosso site! Pode haver erros ou bugs!',
                   softWrap: true,
                   style: TextStyle(
+                    color: Styles.quaseWhite,
                     fontFamily: 'Georama',
                     fontStyle: FontStyle.italic,
                   ),
@@ -70,33 +71,30 @@ class HomePageDesktop extends StatelessWidget {
                   Text(
                     'NÃO VENDEMOS SERVIÇOS,',
                     style: Styles.tituloFinoLinethrough.merge(
-                      TextStyle(fontSize: 58),
+                      TextStyle(fontSize: 48),
                     ),
                   ),
                   Text(
                     'NÓS ENTREGAMOS SOLUÇÕES!',
                     style: Styles.tituloExtraBold.merge(
-                      TextStyle(fontSize: 58),
+                      TextStyle(fontSize: 48),
                     ),
                   ),
-                  const SizedBox(height: 35),
+                  const SizedBox(height: 55),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       IconeBotaoEstilizado(
                         textColor: Colors.white,
                         texto: "Saber Mais",
-                        altura: 40,
-                        largura: 140,
+                        altura: 35,
+                        largura: 130,
                         pressionado: () {
                           Scrollable.ensureVisible(
                             controller.boxesKey.currentContext!,
                             duration: Duration(milliseconds: 500),
                             curve: Curves.easeInOutQuart,
                           );
-                          // controller.scrollController.animateTo(2,
-                          //     duration: Duration(milliseconds: 500),
-                          //     curve: Curves.easeInOutQuart);
                         },
                         icone: Icons.arrow_circle_down_outlined,
                         cor: Styles.lowBlueGray,
@@ -105,8 +103,8 @@ class HomePageDesktop extends StatelessWidget {
                       IconeBotaoEstilizado(
                         textColor: Styles.pretao,
                         texto: "Portfólio",
-                        altura: 40,
-                        largura: 140,
+                        altura: 35,
+                        largura: 130,
                         pressionado: () {},
                         icone: Icons.arrow_circle_down_outlined,
                         cor: Styles.mareloMostarda,
@@ -116,8 +114,8 @@ class HomePageDesktop extends StatelessWidget {
                         textColor: Colors.white,
                         cor: Styles.laranjaum,
                         texto: "Ver Planos",
-                        altura: 40,
-                        largura: 140,
+                        altura: 35,
+                        largura: 130,
                         pressionado: () {},
                         icone: Icons.credit_card,
                       ),
@@ -126,8 +124,8 @@ class HomePageDesktop extends StatelessWidget {
                         textColor: Colors.white,
                         cor: Styles.verdeGood,
                         texto: "Whatsapp",
-                        altura: 40,
-                        largura: 140,
+                        altura: 35,
+                        largura: 130,
                         pressionado: abrirWhatsApp,
                         icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
                       ),

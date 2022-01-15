@@ -1,13 +1,12 @@
 import 'dart:html';
-import 'package:get/get.dart';
-import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_web.dart';
 
 class BotaoAppBar extends StatefulWidget {
-  const BotaoAppBar({Key? key, required this.texto, required this.pressionado}) : super(key: key);
+  const BotaoAppBar({Key? key, required this.texto, required this.pressionado})
+      : super(key: key);
   final String texto;
   final Function()? pressionado;
   @override
@@ -20,7 +19,6 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
 
   @override
   Widget build(BuildContext context) {
-    
     // var _altura_do_botao =
     //     responsive.ResponsiveValue(context, defaultValue: 20.0, valueWhen: [
     //   responsive.Condition.largerThan(name: responsive.TABLET, value: 20.0),
