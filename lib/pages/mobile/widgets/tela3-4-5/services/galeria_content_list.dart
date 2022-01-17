@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_zoom_content.dart';
 
 import '../widgets/airsoft/airsoft_content.dart';
 import '../widgets/azardi/azardi_content.dart';
@@ -17,6 +18,17 @@ List<Widget> flor_do_grao_list = [
   grao6(),
   grao7(),
   grao8(),
+];
+List<Widget> flor_do_grao_zoom_list = [
+  // logo_flor_do_grao(),
+  grao_zoom_1(),
+  grao_zoom_2(),
+  grao_zoom_3(),
+  grao_zoom_4(),
+  grao_zoom_5(),
+  grao_zoom_6(),
+  grao_zoom_7(),
+  grao_zoom_8(),
 ];
 
 List<Widget> airsoft_list = [

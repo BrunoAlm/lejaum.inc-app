@@ -10,15 +10,54 @@ class FlorDoGrao extends StatelessWidget {
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
 
-    return Container(
-      height: 250,
-      width: largura,
-      margin: const EdgeInsets.only(bottom: 10),
-      child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          physics: const BouncingScrollPhysics(), // this for snapping
-          itemCount: flor_do_grao_list.length,
-          itemBuilder: (_, index) => flor_do_grao_list[index]),
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return const FlorDoGraoZoom();
+        }));
+      },
+      child: Hero(
+        tag: 'florDoGrao',
+        child: Container(
+          height: 250,
+          width: largura,
+          margin: const EdgeInsets.only(bottom: 10),
+          child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(), // this for snapping
+              itemCount: flor_do_grao_list.length,
+              itemBuilder: (_, index) => flor_do_grao_list[index]),
+        ),
+      ),
+    );
+  }
+}
+
+class FlorDoGraoZoom extends StatelessWidget {
+  const FlorDoGraoZoom({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var largura = MediaQuery.of(context).size.width;
+    return GestureDetector(
+      onTap: () {
+        Navigator.pop(context);
+      },
+      child: Center(
+        child: Hero(
+          tag: 'florDoGrao',
+          child: Container(
+            height: 500,
+            width: largura,
+            margin: const EdgeInsets.only(bottom: 10),
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                physics: const BouncingScrollPhysics(), // this for snapping
+                itemCount: flor_do_grao_zoom_list.length,
+                itemBuilder: (_, index) => flor_do_grao_zoom_list[index]),
+          ),
+        ),
+      ),
     );
   }
 }

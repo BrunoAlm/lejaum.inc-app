@@ -10,68 +10,67 @@ String _img6 = "assets/images/galeria/flor_do_grao/img6.webp";
 String _img7 = "assets/images/galeria/flor_do_grao/img7.webp";
 String _img8 = "assets/images/galeria/flor_do_grao/img8.webp";
 
-
-Widget grao1() => Container(
-      width: 142.43,
-      height: 251.35,
+Widget grao_zoom_1() => Container(
+      width: 142.43 * 2,
+      height: 251.35 * 2,
       margin: EdgeInsets.symmetric(horizontal: 10),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Image.asset(_img1, fit: BoxFit.fill),
       ),
     );
-Widget grao2() => Container(
+Widget grao_zoom_2() => Container(
       margin: EdgeInsets.only(right: 10),
-      width: 142.43,
-      height: 251.35,
+      width: 142.43 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Image.asset(_img2, fit: BoxFit.fill),
       ),
     );
-Widget grao3() => Container(
+Widget grao_zoom_3() => Container(
       margin: EdgeInsets.only(right: 10),
-      width: 142.43,
-      height: 251.35,
+      width: 142.43 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Image.asset(_img3, fit: BoxFit.fill)),
     );
-Widget grao4() => Container(
+Widget grao_zoom_4() => Container(
       margin: EdgeInsets.only(right: 10),
-      width: 142.43,
-      height: 251.35,
+      width: 142.43 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Image.asset(_img4, fit: BoxFit.fill)),
     );
-Widget grao5() => Container(
+Widget grao_zoom_5() => Container(
       margin: EdgeInsets.only(right: 10),
-      width: 142.43,
-      height: 251.35,
+      width: 142.43 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Image.asset(_img5, fit: BoxFit.fill)),
     );
-Widget grao6() => Container(
+Widget grao_zoom_6() => Container(
       margin: EdgeInsets.only(right: 10),
-      width: 142.43,
-      height: 251.35,
+      width: 142.43 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Image.asset(_img6, fit: BoxFit.fill)),
     );
-Widget grao7() => Container(
+Widget grao_zoom_7() => Container(
       margin: EdgeInsets.only(right: 10),
-      width: 205.75,
-      height: 251.35,
+      width: 205.75 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Image.asset(_img7, fit: BoxFit.fill)),
     );
-Widget grao8() => Container(
-      width: 205.75,
-      height: 251.35,
+Widget grao_zoom_8() => Container(
+      width: 205.75 * 2,
+      height: 251.35 * 2,
       child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Image.asset(_img8, fit: BoxFit.fill)),
