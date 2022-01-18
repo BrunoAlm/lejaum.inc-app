@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/widgets/tela7/services/planos_list.dart';
 
@@ -15,7 +14,13 @@ class PlanosCard extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(), // this for snapping
         itemCount: planosList.length,
-        itemBuilder: (_, index) => planosList[index],
+        itemBuilder: (_, index) {
+          if (index == 0) {
+            return planosList[index + 1];
+          } else {
+            return planosList[index - 1];
+          }
+        },
       ),
     );
   }
