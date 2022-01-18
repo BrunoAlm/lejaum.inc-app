@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class PdfAzardi extends StatefulWidget {
-  const PdfAzardi({Key? key}) : super(key: key);
+class PdfArzadi extends StatefulWidget {
+  const PdfArzadi({Key? key}) : super(key: key);
 
   @override
-  _PdfAzardiState createState() => _PdfAzardiState();
+  _PdfArzadiState createState() => _PdfArzadiState();
 }
 
-class _PdfAzardiState extends State<PdfAzardi> {
+class _PdfArzadiState extends State<PdfArzadi> {
   late PdfViewerController _pdfViewerController;
 
   @override

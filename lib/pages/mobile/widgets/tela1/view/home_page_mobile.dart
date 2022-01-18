@@ -16,19 +16,19 @@ class HomePageMobile extends StatelessWidget {
     var _tamanho_da_fonte_titulo =
         responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
       responsive.Condition.smallerThan(name: responsive.MOBILE, value: 30.0),
-      responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
+      // responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
       responsive.Condition.largerThan(name: responsive.DESKTOP, value: 60.0)
     ]).value;
     var _altura_do_botao =
         responsive.ResponsiveValue(context, defaultValue: 40.0, valueWhen: [
       responsive.Condition.smallerThan(name: responsive.MOBILE, value: 40.0),
-      responsive.Condition.largerThan(name: responsive.TABLET, value: 40.0),
+      // responsive.Condition.largerThan(name: responsive.TABLET, value: 40.0),
       responsive.Condition.largerThan(name: responsive.DESKTOP, value: 40.0)
     ]).value;
     var _largura_do_botao =
         responsive.ResponsiveValue(context, defaultValue: 160.0, valueWhen: [
       responsive.Condition.smallerThan(name: responsive.MOBILE, value: 130.0),
-      responsive.Condition.largerThan(name: responsive.TABLET, value: 160.0),
+      // responsive.Condition.largerThan(name: responsive.TABLET, value: 160.0),
       responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
     ]).value;
     return LayoutBuilder(builder: (context, constraints) {

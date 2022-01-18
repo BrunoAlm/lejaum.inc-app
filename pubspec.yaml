@@ -38,7 +38,12 @@ dependencies:
   
   # Abre link web
   url_launcher: ^6.0.17
+
+  # SEO?
   seo_renderer: ^0.3.0
+
+  # Text Size
+  auto_size_text: ^3.0.0
   
 dev_dependencies:
   flutter_test:

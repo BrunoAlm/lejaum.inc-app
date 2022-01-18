@@ -1,36 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_zoom_content.dart';
-
 import '../widgets/airsoft/airsoft_content.dart';
-import '../widgets/azardi/azardi_content.dart';
-import '../widgets/flor_do_grao/grao_content.dart';
+import '../widgets/arzadi/arzadi_content.dart';
 import '../widgets/italo/italo_content.dart';
 import '../widgets/janfie/janfie_content.dart';
 import '../widgets/lejaum/lejaum_content.dart';
 
-List<Widget> flor_do_grao_list = [
-  // logo_flor_do_grao(),
-  grao1(),
-  grao2(),
-  grao3(),
-  grao4(),
-  grao5(),
-  grao6(),
-  grao7(),
-  grao8(),
-];
-List<Widget> flor_do_grao_zoom_list = [
-  // logo_flor_do_grao(),
-  grao_zoom_1(),
-  grao_zoom_2(),
-  grao_zoom_3(),
-  grao_zoom_4(),
-  grao_zoom_5(),
-  grao_zoom_6(),
-  grao_zoom_7(),
-  grao_zoom_8(),
+List<String> flor_do_grao_list_image = [
+  "assets/images/galeria/flor_do_grao/img1.webp",
+  "assets/images/galeria/flor_do_grao/img2.webp",
+  "assets/images/galeria/flor_do_grao/img3.webp",
+  "assets/images/galeria/flor_do_grao/img4.webp",
+  "assets/images/galeria/flor_do_grao/img5.webp",
+  "assets/images/galeria/flor_do_grao/img6.webp",
+  "assets/images/galeria/flor_do_grao/img7.webp",
+  "assets/images/galeria/flor_do_grao/img8.webp",
 ];
 
+List<String> airsoft_list_image = [
+  "assets/images/galeria/airsoft/img1.webp",
+  "assets/images/galeria/airsoft/img2.webp",
+  "assets/images/galeria/airsoft/img3.webp",
+  "assets/images/galeria/airsoft/img4.webp",
+  "assets/images/galeria/airsoft/img5.webp",
+];
 List<Widget> airsoft_list = [
   airsoft1(),
   airsoft2(),

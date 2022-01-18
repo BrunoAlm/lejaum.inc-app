@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
 import 'package:seo_renderer/seo_renderer.dart';
@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
           ClampingScrollWrapper.builder(context, widget!),
           breakpoints: const [
             ResponsiveBreakpoint.resize(320, name: MOBILE),
-            ResponsiveBreakpoint.autoScale(600, name: TABLET),
-            ResponsiveBreakpoint.resize(725, name: TABLET),
+            ResponsiveBreakpoint.autoScale(390, name: 'MOBILE2'),
+            ResponsiveBreakpoint.resize(725, name: 'AIPEDE'),
             ResponsiveBreakpoint.resize(892, name: 'DESKTOP1'),
-            ResponsiveBreakpoint.autoScale(1167, name: 'DESKTOP2'),
+            ResponsiveBreakpoint.resize(1167, name: 'DESKTOP2'),
             ResponsiveBreakpoint.resize(1366, name: DESKTOP),
             ResponsiveBreakpoint.autoScale(1920, name: 'DESKTOP GIGANTE'),
           ],
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/janfie-pdf': (context) => const PdfJanfie(),
-        '/azardi-pdf': (context) => const PdfAzardi(),
+        '/azardi-pdf': (context) => const PdfArzadi(),
       },
     );
   }

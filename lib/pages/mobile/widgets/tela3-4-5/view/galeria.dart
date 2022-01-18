@@ -10,17 +10,14 @@ class GaleriaSM extends StatelessWidget {
     return Column(
       children: [
         FlorDoGrao(),
-        // const SizedBox(height: 20),
         Airsoft(),
-        const SizedBox(height: 20),
       ],
     );
   }
 }
 
 class GaleriaIDV extends StatelessWidget {
-  const GaleriaIDV({Key? key, this.teste}) : super(key: key);
-  final BuildContext? teste;
+  const GaleriaIDV({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -35,8 +32,8 @@ class GaleriaIDV extends StatelessWidget {
 }
 
 class GaleriaWB extends StatelessWidget {
-  const GaleriaWB({Key? key, this.teste}) : super(key: key);
-  final BuildContext? teste;
+  const GaleriaWB({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
