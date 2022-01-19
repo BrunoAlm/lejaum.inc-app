@@ -21,48 +21,48 @@ String _img5 = "assets/images/galeria/airsoft/img5.webp";
 //         ),
 //       ),
 //     );
-Widget airsoft1() => Container(
-      width: 240,
-      height: 240,
-      margin: EdgeInsets.symmetric(horizontal: 10),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: Image.asset(_img1, fit: BoxFit.fill),
-      ),
-    );
-Widget airsoft2() => Container(
-      margin: EdgeInsets.only(right: 10),
-      width: 240,
-      height: 240,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: Image.asset(_img2, fit: BoxFit.fill),
-      ),
-    );
-Widget airsoft3() => Container(
-      margin: EdgeInsets.only(right: 10),
-      width: 240,
-      height: 240,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: Image.asset(_img3, fit: BoxFit.fill),
-      ),
-    );
-Widget airsoft4() => Container(
-      margin: EdgeInsets.only(right: 10),
-      width: 240,
-      height: 240,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: Image.asset(_img4, fit: BoxFit.fill),
-      ),
-    );
-Widget airsoft5() => Container(
-      margin: EdgeInsets.only(right: 10),
-      width: 240,
-      height: 240,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: Image.asset(_img5, fit: BoxFit.fill),
-      ),
-    );
+// Widget airsoft1() => Container(
+//       width: 240,
+//       height: 240,
+//       margin: EdgeInsets.symmetric(horizontal: 10),
+//       child: ClipRRect(
+//         borderRadius: BorderRadius.circular(10),
+//         child: Image.asset(_img1, fit: BoxFit.fill),
+//       ),
+//     );
+// Widget airsoft2() => Container(
+//       margin: EdgeInsets.only(right: 10),
+//       width: 240,
+//       height: 240,
+//       child: ClipRRect(
+//         borderRadius: BorderRadius.circular(10),
+//         child: Image.asset(_img2, fit: BoxFit.fill),
+//       ),
+//     );
+// Widget airsoft3() => Container(
+//       margin: EdgeInsets.only(right: 10),
+//       width: 240,
+//       height: 240,
+//       child: ClipRRect(
+//         borderRadius: BorderRadius.circular(10),
+//         child: Image.asset(_img3, fit: BoxFit.fill),
+//       ),
+//     );
+// Widget airsoft4() => Container(
+//       margin: EdgeInsets.only(right: 10),
+//       width: 240,
+//       height: 240,
+//       child: ClipRRect(
+//         borderRadius: BorderRadius.circular(10),
+//         child: Image.asset(_img4, fit: BoxFit.fill),
+//       ),
+//     );
+// Widget airsoft5() => Container(
+//       margin: EdgeInsets.only(right: 10),
+//       width: 240,
+//       height: 240,
+//       child: ClipRRect(
+//         borderRadius: BorderRadius.circular(10),
+//         child: Image.asset(_img5, fit: BoxFit.fill),
+//       ),
+//     );

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hovering/hovering.dart';
+import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:responsive_framework/responsive_framework.dart' as responsive;
+// import 'package:responsive_framework/responsive_framework.dart' as responsive;
+import 'package:sizer/sizer.dart';
 
 class BotaoDarkMode extends StatefulWidget {
   const BotaoDarkMode({Key? key}) : super(key: key);
@@ -60,12 +62,13 @@ class BotaoDarkModeDesktop extends StatefulWidget {
 class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
   @override
   Widget build(BuildContext context) {
-    double? _fonte =
-        responsive.ResponsiveValue(context, defaultValue: 17.0, valueWhen: [
-      responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
-      responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
-      responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
-    ]).value?.toDouble();
+    double _fontSize = StylesDesktop.appBarFontSize;
+    // double? _fonte =
+    //     responsive.ResponsiveValue(context, defaultValue: 17.0, valueWhen: [
+    //   responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
+    //   responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
+    //   responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
+    // ]).value?.toDouble();
     Get.put(ThemeController());
     return GetBuilder<ThemeController>(
       builder: (controller) => HoverWidget(
@@ -83,7 +86,7 @@ class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
           child: TextButton.icon(
             icon: Icon(
               controller.isDarkMode ? Icons.dark_mode : Icons.light_mode,
-              size: _fonte,
+              size: _fontSize,
               color: Styles.laranjaum,
             ),
             onPressed: controller.trocaModo,
@@ -92,10 +95,13 @@ class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
               style: TextStyle(
                 color: Styles.laranjaum,
                 fontFamily: 'Georama',
-                fontSize: _fonte,
+                fontSize: _fontSize,
               ),
             ),
             style: ButtonStyle(
+              padding: MaterialStateProperty.all(
+                const EdgeInsets.only(left: 12, right: 12),
+              ),
               foregroundColor: MaterialStateProperty.all(Styles.quaseWhite),
             ),
           ),
@@ -114,7 +120,7 @@ class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
           child: TextButton.icon(
             icon: Icon(
               controller.isDarkMode ? Icons.dark_mode : Icons.light_mode,
-              size: _fonte,
+              size: _fontSize,
             ),
             onPressed: controller.trocaModo,
             label: Text(
@@ -124,10 +130,13 @@ class _BotaoDarkModeDesktopState extends State<BotaoDarkModeDesktop> {
                     ? Styles.quaseBlack
                     : Styles.quaseWhite,
                 fontFamily: 'Georama',
-                fontSize: _fonte,
+                fontSize: _fontSize,
               ),
             ),
             style: ButtonStyle(
+              padding: MaterialStateProperty.all(
+                const EdgeInsets.only(left: 12, right: 12),
+              ),
               foregroundColor: MaterialStateProperty.all(
                 controller.isDarkMode ? Styles.quaseBlack : Styles.quaseWhite,
               ),

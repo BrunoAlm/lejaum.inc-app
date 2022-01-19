@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/services/themes.dart';
+// import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import '../widgets/boxes.dart';
 

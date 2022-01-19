@@ -1,7 +1,9 @@
 import 'dart:html';
-import 'package:responsive_framework/responsive_framework.dart' as responsive;
+// import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
+import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_web.dart';
 
 class BotaoAppBar extends StatefulWidget {
@@ -14,8 +16,7 @@ class BotaoAppBar extends StatefulWidget {
 }
 
 class _BotaoAppBarState extends State<BotaoAppBar> {
-  final Color laranjaum = Color(0xFFFF5400);
-  final Color quaseWhite = Color(0xFFE5E5E5);
+  final double _fontSize = StylesDesktop.appBarFontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +30,13 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
     //   responsive.Condition.largerThan(name: responsive.TABLET, value: 70.0),
     //   responsive.Condition.largerThan(name: 'DESKTOP1', value: 20.0)
     // ]).value;
-    double? _fonte =
-        responsive.ResponsiveValue(context, defaultValue: 18.0, valueWhen: [
-      responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
-      responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
-      responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
-    ]).value?.toDouble();
-    print(_fonte);
+    // double? _fonte =
+    //     responsive.ResponsiveValue(context, defaultValue: 18.0, valueWhen: [
+    //   responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
+    //   responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
+    //   responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
+    // ]).value?.toDouble();
+    // print(_fonte);
     return HoverWidget(
       hoverChild: TextButton(
         onPressed: widget.pressionado,
@@ -44,10 +45,10 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
           child: Text(
             widget.texto,
             style: TextStyle(
-              color: laranjaum,
+              color: Styles.laranjaum,
               fontFamily: "Georama",
               fontStyle: FontStyle.normal,
-              fontSize: _fonte,
+              fontSize: _fontSize,
             ),
           ),
         ),
@@ -55,10 +56,10 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
           // fixedSize: MaterialStateProperty.all(
           //     Size(_largura_do_botao!, _altura_do_botao!)),
           backgroundColor:
-              MaterialStateColor.resolveWith((states) => quaseWhite),
+              MaterialStateColor.resolveWith((states) => Styles.quaseWhite),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
-              side: BorderSide(color: quaseWhite, width: 2),
+              side: BorderSide(color: Styles.quaseWhite, width: 2),
               borderRadius: BorderRadius.circular(50),
             ),
           ),
@@ -74,10 +75,10 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
             child: Text(
               widget.texto,
               style: TextStyle(
-                color: quaseWhite,
+                color: Styles.quaseWhite,
                 fontFamily: "Georama",
                 fontStyle: FontStyle.normal,
-                fontSize: _fonte,
+                fontSize: _fontSize,
               ),
             ),
           ),
@@ -87,7 +88,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
           //     Size(_largura_do_botao, _altura_do_botao)),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
-              side: BorderSide(color: quaseWhite, width: 2),
+              side: BorderSide(color: Styles.quaseWhite, width: 2),
               borderRadius: BorderRadius.circular(50),
             ),
           ),

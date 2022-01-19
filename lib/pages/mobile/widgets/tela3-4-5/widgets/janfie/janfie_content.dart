@@ -3,13 +3,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 String _logo_image = "assets/images/galeria/janfie/logo.webp";
 String _img1 = "assets/images/galeria/janfie/img1.webp";
 String _img2 = "assets/images/galeria/janfie/img2.webp";
 String _img3 = "assets/images/galeria/janfie/img3.webp";
 String _img4 = "assets/images/galeria/janfie/img4.webp";
-
+var _altura = 37.h;
+var _largura = _altura / 0.4417;
 Widget logo_janfie() => Container(
       width: 186.47,
       height: 198.79,
@@ -39,37 +41,29 @@ Widget logo_janfie() => Container(
       ),
     );
 Widget janfie1() => Container(
-      width: 450,
-      height: 198.79,
+      width: _largura,
+      height: _altura,
       child: Image.asset(_img1, fit: BoxFit.fill),
     );
 Widget janfie2() => Container(
-      width: 450,
-      height: 198.79,
+      width: _largura,
+      height: _altura,
       child: Image.asset(_img2, fit: BoxFit.fill),
     );
 Widget janfie3() => Container(
-      width: 450,
-      height: 198.79,
+      width: _largura,
+      height: _altura,
       child: Image.asset(_img3, fit: BoxFit.fill),
     );
 Widget janfie4() => Padding(
- padding: const EdgeInsets.only(right: 10),
-  child:   ClipRRect(
-  
+      padding: const EdgeInsets.only(right: 10),
+      child: ClipRRect(
         borderRadius: BorderRadius.only(
-  
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
-  
         child: Container(
-  
-          width: 450,
-  
-          height: 198.79,
-  
+          width: _largura,
+          height: _altura,
           child: Image.asset(_img4, fit: BoxFit.fill),
-  
         ),
-  
       ),
-);
+    );

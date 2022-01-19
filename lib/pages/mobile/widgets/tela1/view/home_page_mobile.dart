@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:responsive_framework/responsive_framework.dart' as responsive;
+// import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import '../../../../../widgets/botao_estilizado.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

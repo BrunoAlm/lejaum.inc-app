@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart' as responsive;
+// import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import '../services/galeria_content_list.dart';
+import 'package:sizer/sizer.dart';
 
 class SocialMedia1 extends StatelessWidget {
   const SocialMedia1({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    var _altura = 37.h;
+    var _largura = _altura / 1.764;
     // var _altura =
     //     responsive.ResponsiveValue(context, defaultValue: 251.35, valueWhen: [
     //   responsive.Condition.equals(
@@ -34,7 +37,7 @@ class SocialMedia1 extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.only(right: 10),
           child: Container(
-            height: 251.35,
+            height: _altura,
             width: MediaQuery.of(context).size.width,
             margin: const EdgeInsets.only(bottom: 10),
             child: ListView.builder(
@@ -42,8 +45,8 @@ class SocialMedia1 extends StatelessWidget {
               physics: const BouncingScrollPhysics(), // this for snapping
               itemCount: social_media1_images.length,
               itemBuilder: (_, index) => Container(
-                width: 142.43,
-                height: 251.35,
+                width: _largura,
+                height: _altura,
                 margin: EdgeInsets.only(left: 10),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
@@ -95,6 +98,8 @@ class SocialMedia2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var _altura = 37.h;
+    var _largura = _altura / 1.0041;
     // var _altura =
     //     responsive.ResponsiveValue(context, defaultValue: 244.92, valueWhen: [
     //   responsive.Condition.equals(
@@ -113,15 +118,15 @@ class SocialMedia2 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 10),
       child: SizedBox(
-        height: 244.92,
+        height: _altura,
         width: MediaQuery.of(context).size.width,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(), // this for snapping
           itemCount: social_media2_images.length,
           itemBuilder: (_, index) => Container(
-            height: 244.92,
-            width: 243.9,
+            height: _altura,
+            width: _largura,
             margin: EdgeInsets.only(left: 10),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
@@ -139,10 +144,11 @@ class Arzadi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var _altura = 37.h;
     var largura = MediaQuery.of(context).size.width;
     return Container(
       margin: const EdgeInsets.only(left: 10, bottom: 10),
-      height: 250,
+      height: _altura,
       width: largura,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -165,8 +171,9 @@ class _JanfieState extends State<Janfie> {
   @override
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
+    var _altura = 37.h;
     return Container(
-      height: 250,
+      height: _altura,
       width: largura,
       margin: const EdgeInsets.only(left: 10),
       child: ListView.builder(

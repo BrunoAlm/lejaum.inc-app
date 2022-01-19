@@ -3,12 +3,14 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
+import 'package:sizer/sizer.dart';
 
 String _logo_image = "assets/images/galeria/azardi/logo_preta.webp";
 String _img1 = "assets/images/galeria/azardi/img1.webp";
 String _img2 = "assets/images/galeria/azardi/img2.webp";
 String _img3 = "assets/images/galeria/azardi/img3.webp";
-var _altura = 247.53;
+var _altura = 37.h;
+var _largura = _altura / 0.49;
 
 Widget logo_azardi() => Container(
       width: 186.47,
@@ -40,12 +42,12 @@ Widget logo_azardi() => Container(
       ),
     );
 Widget azardi1() => Container(
-      width: 500,
+      width: _largura,
       height: _altura,
       child: Image.asset(_img1, fit: BoxFit.fill),
     );
 Widget azardi2() => Container(
-      width: 500,
+      width: _largura,
       height: _altura,
       child: Image.asset(_img2, fit: BoxFit.fill),
     );
@@ -55,7 +57,7 @@ Widget azardi3() => Padding(
         borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
-          width: 500,
+          width: _largura,
           height: _altura,
           child: Image.asset(_img3, fit: BoxFit.fill),
         ),

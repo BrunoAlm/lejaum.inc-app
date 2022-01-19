@@ -14,7 +14,7 @@ class _PortfolioIDVState extends State<PortfolioIDV> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 49),
+      margin: EdgeInsets.only(top: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,

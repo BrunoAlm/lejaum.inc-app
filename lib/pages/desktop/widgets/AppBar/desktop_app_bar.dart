@@ -8,7 +8,7 @@ import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart';
 import 'package:seo_renderer/seo_renderer.dart';
-
+import 'package:sizer/sizer.dart';
 import 'botoes_app_bar.dart';
 
 class DesktopAppBar extends StatefulWidget {
@@ -106,7 +106,7 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
               BotaoAppBar(texto: 'Contato', pressionado: () {}),
               const SizedBox(width: 20.0),
               BotaoDarkModeDesktop(),
-              const SizedBox(width: 145),
+              SizedBox(width: 10.w),
             ],
           ),
         ),

@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class StylesDesktop {
   static const Color quaseBlack = Color(0xFF201F1E);
   static const Color quaseWhite = Color(0xFFF4F4F4);
   static const Color laranjaum = Color(0xFFFF5400);
   static const String fonte = 'Georama';
+
+  static final double appBarFontSize = 3.4.sp;
 
   static const tituloFinoLinethrough = TextStyle(
     color: laranjaum,
