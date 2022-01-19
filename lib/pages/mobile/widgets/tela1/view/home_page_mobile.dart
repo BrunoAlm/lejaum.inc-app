@@ -13,24 +13,24 @@ class HomePageMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(MobilePageViewController());
     var _altura = MediaQuery.of(context).size.height;
-    var _tamanho_da_fonte_titulo =
-        responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
-      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 30.0),
-      // responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
-      responsive.Condition.largerThan(name: responsive.DESKTOP, value: 60.0)
-    ]).value;
-    var _altura_do_botao =
-        responsive.ResponsiveValue(context, defaultValue: 40.0, valueWhen: [
-      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 40.0),
-      // responsive.Condition.largerThan(name: responsive.TABLET, value: 40.0),
-      responsive.Condition.largerThan(name: responsive.DESKTOP, value: 40.0)
-    ]).value;
-    var _largura_do_botao =
-        responsive.ResponsiveValue(context, defaultValue: 160.0, valueWhen: [
-      responsive.Condition.smallerThan(name: responsive.MOBILE, value: 130.0),
-      // responsive.Condition.largerThan(name: responsive.TABLET, value: 160.0),
-      responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
-    ]).value;
+    // var _tamanho_da_fonte_titulo =
+    //     responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
+    //   responsive.Condition.smallerThan(name: responsive.MOBILE, value: 30.0),
+    //   // responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
+    //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 60.0)
+    // ]).value;
+    // var _altura_do_botao =
+    //     responsive.ResponsiveValue(context, defaultValue: 40.0, valueWhen: [
+    //   responsive.Condition.smallerThan(name: responsive.MOBILE, value: 40.0),
+    //   // responsive.Condition.largerThan(name: responsive.TABLET, value: 40.0),
+    //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 40.0)
+    // ]).value;
+    // var _largura_do_botao =
+    //     responsive.ResponsiveValue(context, defaultValue: 160.0, valueWhen: [
+    //   responsive.Condition.smallerThan(name: responsive.MOBILE, value: 130.0),
+    //   // responsive.Condition.largerThan(name: responsive.TABLET, value: 160.0),
+    //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
+    // ]).value;
     return LayoutBuilder(builder: (context, constraints) {
       print(constraints.maxWidth);
       return Container(
@@ -70,25 +70,25 @@ class HomePageMobile extends StatelessWidget {
                     Text(
                       'NÃO VENDEMOS',
                       style: Styles.tituloFinoLinethrough.merge(
-                        TextStyle(fontSize: _tamanho_da_fonte_titulo),
+                        TextStyle(fontSize: 38.0),
                       ),
                     ),
                     Text(
                       'SERVIÇOS,',
                       style: Styles.tituloFinoLinethrough.merge(
-                        TextStyle(fontSize: _tamanho_da_fonte_titulo),
+                        TextStyle(fontSize: 38.0),
                       ),
                     ),
                     Text(
                       'NÓS ENTREGAMOS',
                       style: Styles.tituloExtraBold.merge(
-                        TextStyle(fontSize: _tamanho_da_fonte_titulo),
+                        TextStyle(fontSize: 38.0),
                       ),
                     ),
                     Text(
                       'SOLUÇÕES!',
                       style: Styles.tituloExtraBold.merge(
-                        TextStyle(fontSize: _tamanho_da_fonte_titulo),
+                        TextStyle(fontSize: 38.0),
                       ),
                     ),
                     const SizedBox(height: 35),
@@ -98,8 +98,8 @@ class HomePageMobile extends StatelessWidget {
                         IconeBotaoEstilizado(
                           textColor: Colors.white,
                           texto: "Saber Mais",
-                          altura: _altura_do_botao,
-                          largura: _largura_do_botao,
+                          altura: 40.0,
+                          largura: 160.0,
                           pressionado: () =>
                               _pageController.controller.nextPage(
                             duration: Duration(milliseconds: 500),
@@ -112,8 +112,8 @@ class HomePageMobile extends StatelessWidget {
                         IconeBotaoEstilizado(
                           textColor: Styles.pretao,
                           texto: "Portfólio",
-                          altura: _altura_do_botao,
-                          largura: _largura_do_botao,
+                          altura: 40.0,
+                          largura: 160.0,
                           pressionado: () =>
                               _pageController.controller.animateToPage(
                             2,
@@ -133,8 +133,8 @@ class HomePageMobile extends StatelessWidget {
                           textColor: Colors.white,
                           cor: Styles.laranjaum,
                           texto: "Ver Planos",
-                          altura: _altura_do_botao,
-                          largura: _largura_do_botao,
+                          altura: 40.0,
+                          largura: 160.0,
                           pressionado: () =>
                               _pageController.controller.animateToPage(
                             6,
@@ -148,8 +148,8 @@ class HomePageMobile extends StatelessWidget {
                           textColor: Colors.white,
                           cor: Styles.verdeGood,
                           texto: "Whatsapp",
-                          altura: _altura_do_botao,
-                          largura: _largura_do_botao,
+                          altura: 40.0,
+                          largura: 160.0,
                           pressionado: abrirWhatsApp,
                           icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
                         ),

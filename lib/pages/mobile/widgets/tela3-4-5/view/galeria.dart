@@ -9,8 +9,8 @@ class GaleriaSM extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        FlorDoGrao(),
-        Airsoft(),
+        SocialMedia1(),
+        SocialMedia2(),
       ],
     );
   }
@@ -22,10 +22,8 @@ class GaleriaIDV extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Azardi(),
-        // const SizedBox(height: 20),
+        Arzadi(),
         Janfie(),
-        const SizedBox(height: 20),
       ],
     );
   }

@@ -14,6 +14,8 @@ Widget logo_azardi() => Container(
       width: 186.47,
       // height: _altura,
       decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
         color: Color(0xFF0E0D0C),
         image: DecorationImage(
             image: AssetImage(_logo_image), fit: BoxFit.contain),
@@ -47,8 +49,15 @@ Widget azardi2() => Container(
       height: _altura,
       child: Image.asset(_img2, fit: BoxFit.fill),
     );
-Widget azardi3() => Container(
-      width: 500,
-      height: _altura,
-      child: Image.asset(_img3, fit: BoxFit.fill),
+Widget azardi3() => Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+            bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
+        child: Container(
+          width: 500,
+          height: _altura,
+          child: Image.asset(_img3, fit: BoxFit.fill),
+        ),
+      ),
     );

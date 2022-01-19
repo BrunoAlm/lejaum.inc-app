@@ -44,6 +44,7 @@ dependencies:
 
   # Text Size
   auto_size_text: ^3.0.0
+  sizer: ^2.0.15
   
 dev_dependencies:
   flutter_test:
@@ -57,8 +58,8 @@ flutter:
   assets:
     - assets/images/boxes/
     - assets/images/icons/
-    - assets/images/galeria/flor_do_grao/
-    - assets/images/galeria/airsoft/
+    - assets/images/galeria/social_media1/
+    - assets/images/galeria/social_media2/
     - assets/images/galeria/azardi/
     - assets/images/galeria/janfie/
     - assets/images/galeria/italo/

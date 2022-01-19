@@ -15,7 +15,7 @@ class _PortfolioSMState extends State<PortfolioSM> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 39),
+      margin: EdgeInsets.only(top: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -26,13 +26,13 @@ class _PortfolioSMState extends State<PortfolioSM> {
             style: Styles.tituloExtraBoldMenor,
           ),
           const SizedBox(height: 10),
-          Text(
-            'Veja abaixo alguns projetos de design feito por nós:',
-            style: Styles.subtitulo.merge(
-              TextStyle(color: Theme.of(context).colorScheme.secondary),
-            ),
-          ),
-          const SizedBox(height: 30),
+          // Text(
+          //   'Veja abaixo alguns projetos de design feito por nós:',
+          //   style: Styles.subtitulo.merge(
+          //     TextStyle(color: Theme.of(context).colorScheme.secondary),
+          //   ),
+          // ),
+          // const SizedBox(height: 30),
           // CarrosselPortfolio(),
           GaleriaSM(),
         ],

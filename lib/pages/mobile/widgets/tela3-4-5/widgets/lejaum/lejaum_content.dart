@@ -9,11 +9,16 @@ String _logo_image = "assets/images/icons/logo_icon.svg";
 String _img1 = "assets/images/galeria/lejaum/img1.webp";
 String _img2 = "assets/images/galeria/lejaum/img2.webp";
 String _img3 = "assets/images/galeria/lejaum/img3.webp";
+String _img4 = "assets/images/galeria/lejaum/img4.webp";
 
 Widget logo_lejaum() => Container(
+      decoration: BoxDecoration(
+        color: Styles.quaseBlack,
+        borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
+      ),
       width: 186.47,
       height: 198.79,
-      color: Colors.transparent,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -25,7 +30,7 @@ Widget logo_lejaum() => Container(
             height: 130,
             width: 130,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(double.maxFinite),
+              borderRadius: BorderRadius.circular(100),
               color: Styles.laranjaum,
             ),
             child: SvgPicture.asset(_logo_image),
@@ -65,4 +70,16 @@ Widget lejaum3() => Container(
       width: 450,
       height: 198.79,
       child: Image.asset(_img3, fit: BoxFit.fill),
+    );
+Widget lejaum4() => Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+            bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
+        child: Container(
+          width: 450,
+          height: 198.79,
+          child: Image.asset(_img4, fit: BoxFit.fill),
+        ),
+      ),
     );

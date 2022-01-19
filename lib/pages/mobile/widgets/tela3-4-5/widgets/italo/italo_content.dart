@@ -14,6 +14,8 @@ Widget logo_italo() => Container(
       width: 186.47,
       height: 198.79,
       decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
         color: Styles.azulBaitolote,
         image: DecorationImage(
           image: AssetImage(_logo_image),
@@ -28,8 +30,7 @@ Widget logo_italo() => Container(
           // const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.only(top: 10),
-            child:
-                Text('Italo Bortolotti', style: Styles.textoBrancoBold),
+            child: Text('Italo Bortolotti', style: Styles.textoBrancoBold),
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 20),
@@ -75,11 +76,18 @@ Widget italo2() => Container(
         fit: BoxFit.fill,
       ),
     );
-Widget italo3() => Container(
-      width: 320,
-      height: 198.79,
-      child: Image.asset(
-        _img3,
-        fit: BoxFit.fill,
+Widget italo3() => Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+            bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
+        child: Container(
+          width: 320,
+          height: 198.79,
+          child: Image.asset(
+            _img3,
+            fit: BoxFit.fill,
+          ),
+        ),
       ),
     );
