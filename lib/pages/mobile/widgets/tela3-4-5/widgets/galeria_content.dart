@@ -5,6 +5,7 @@ import 'package:sizer/sizer.dart';
 
 class SocialMedia1 extends StatelessWidget {
   const SocialMedia1({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     var _altura = 37.h;
@@ -63,7 +64,7 @@ class SocialMedia1Zoom extends StatelessWidget {
           tag: 'sm1_hero_$index',
           child: Container(
             child: Image.asset(
-              social_media1_images[index],
+              social_media1_images_png[index],
               fit: BoxFit.fill,
             ),
           ),

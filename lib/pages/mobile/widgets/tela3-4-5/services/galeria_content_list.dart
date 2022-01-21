@@ -5,14 +5,24 @@ import '../widgets/janfie/janfie_content.dart';
 import '../widgets/lejaum/lejaum_content.dart';
 
 List<String> social_media1_images = [
-  "assets/images/galeria/social_media1/img1.webp",
-  "assets/images/galeria/social_media1/img2.webp",
-  "assets/images/galeria/social_media1/img3.webp",
-  "assets/images/galeria/social_media1/img4.webp",
-  "assets/images/galeria/social_media1/img5.webp",
-  "assets/images/galeria/social_media1/img6.webp",
-  "assets/images/galeria/social_media1/img7.webp",
-  "assets/images/galeria/social_media1/img8.webp",
+  "assets/images/galeria/social_media1/webp/img1.webp",
+  "assets/images/galeria/social_media1/webp/img2.webp",
+  "assets/images/galeria/social_media1/webp/img3.webp",
+  "assets/images/galeria/social_media1/webp/img4.webp",
+  "assets/images/galeria/social_media1/webp/img5.webp",
+  "assets/images/galeria/social_media1/webp/img6.webp",
+  "assets/images/galeria/social_media1/webp/img7.webp",
+  "assets/images/galeria/social_media1/webp/img8.webp",
+];
+List<String> social_media1_images_png = [
+  "assets/images/galeria/social_media1/png/img1.png",
+  "assets/images/galeria/social_media1/png/img2.png",
+  "assets/images/galeria/social_media1/png/img3.png",
+  "assets/images/galeria/social_media1/png/img4.png",
+  "assets/images/galeria/social_media1/png/img5.jpg",
+  "assets/images/galeria/social_media1/png/img6.png",
+  "assets/images/galeria/social_media1/png/img7.jpg",
+  "assets/images/galeria/social_media1/png/img8.png",
 ];
 
 List<String> social_media2_images = [

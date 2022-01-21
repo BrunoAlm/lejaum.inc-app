@@ -60,7 +60,8 @@ flutter:
   assets:
     - assets/images/boxes/
     - assets/images/icons/
-    - assets/images/galeria/social_media1/
+    - assets/images/galeria/social_media1/png/
+    - assets/images/galeria/social_media1/webp/
     - assets/images/galeria/social_media2/
     - assets/images/galeria/azardi/
     - assets/images/galeria/janfie/
