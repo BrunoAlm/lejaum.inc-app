@@ -27,11 +27,10 @@ dependencies:
   # State management
   get: ^4.6.1
 
-  # Abre os pdf 
-  syncfusion_flutter_pdfviewer:
 
   # Responsividade
   responsive_framework: ^0.1.5
+  sizer: ^2.0.15
 
   # Roda video
   video_player: ^2.2.10
@@ -44,7 +43,10 @@ dependencies:
 
   # Text Size
   auto_size_text: ^3.0.0
-  sizer: ^2.0.15
+
+  # PDF
+  syncfusion_flutter_pdfviewer: ^19.4.43-beta
+  pdf_render: ^1.0.21
   
 dev_dependencies:
   flutter_test:

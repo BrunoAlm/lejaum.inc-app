@@ -36,7 +36,7 @@ class SocialMedia1 extends StatelessWidget {
                   );
                 },
                 child: Hero(
-                  tag: 'sm1_hero',
+                  tag: 'sm1_hero_$index',
                   child: Image.asset(
                     social_media1_images[index],
                     fit: BoxFit.fill,
@@ -60,7 +60,7 @@ class SocialMedia1Zoom extends StatelessWidget {
       onTap: () => Navigator.pop(context),
       child: Center(
         child: Hero(
-          tag: 'sm1_hero',
+          tag: 'sm1_hero_$index',
           child: Container(
             child: Image.asset(
               social_media1_images[index],
@@ -105,7 +105,7 @@ class SocialMedia2 extends StatelessWidget {
                   );
                 },
                 child: Hero(
-                    tag: 'sm2_hero',
+                    tag: 'sm2_hero_$index',
                     child: Image.asset(social_media2_images[index],
                         fit: BoxFit.fill)),
               ),
@@ -126,7 +126,7 @@ class SocialMedia2Zoom extends StatelessWidget {
       onTap: () => Navigator.pop(context),
       child: Center(
         child: Hero(
-          tag: 'sm2_hero',
+          tag: 'sm2_hero_$index',
           child: Container(
             child: Image.asset(
               social_media2_images[index],
