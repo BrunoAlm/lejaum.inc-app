@@ -14,16 +14,6 @@ List<String> social_media1_images = [
   "assets/images/galeria/social_media1/webp/img7.webp",
   "assets/images/galeria/social_media1/webp/img8.webp",
 ];
-List<String> social_media1_images_png = [
-  "assets/images/galeria/social_media1/png/img1.png",
-  "assets/images/galeria/social_media1/png/img2.png",
-  "assets/images/galeria/social_media1/png/img3.png",
-  "assets/images/galeria/social_media1/png/img4.png",
-  "assets/images/galeria/social_media1/png/img5.jpg",
-  "assets/images/galeria/social_media1/png/img6.png",
-  "assets/images/galeria/social_media1/png/img7.jpg",
-  "assets/images/galeria/social_media1/png/img8.png",
-];
 
 List<String> social_media2_images = [
   "assets/images/galeria/social_media2/img1.webp",

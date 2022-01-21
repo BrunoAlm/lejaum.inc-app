@@ -4,8 +4,6 @@ import 'package:hovering/hovering.dart';
 import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-// import 'package:responsive_framework/responsive_framework.dart' as responsive;
-import 'package:sizer/sizer.dart';
 
 class BotaoDarkMode extends StatefulWidget {
   const BotaoDarkMode({Key? key}) : super(key: key);

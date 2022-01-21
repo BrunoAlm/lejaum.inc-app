@@ -37,9 +37,7 @@ class GaleriaWB extends StatelessWidget {
     return Column(
       children: [
         Italo(),
-        // const SizedBox(height: 20),
         Lejaum(),
-        // const SizedBox(height: 20),
       ],
     );
   }

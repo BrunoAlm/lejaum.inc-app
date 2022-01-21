@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 // import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import '../services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
+
+ScrollController _teste = ScrollController();
 
 class SocialMedia1 extends StatelessWidget {
   const SocialMedia1({Key? key}) : super(key: key);
@@ -18,6 +21,7 @@ class SocialMedia1 extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         margin: const EdgeInsets.only(bottom: 10),
         child: ListView.builder(
+          controller: _teste,
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(), // this for snapping
           itemCount: social_media1_images.length,
@@ -32,7 +36,7 @@ class SocialMedia1 extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) {
-                      return SocialMedia1Zoom(index: index);
+                      return SocialMedia1Zoom(imagemClicada: index);
                     }),
                   );
                 },
@@ -52,28 +56,81 @@ class SocialMedia1 extends StatelessWidget {
   }
 }
 
-class SocialMedia1Zoom extends StatelessWidget {
-  const SocialMedia1Zoom({Key? key, required this.index}) : super(key: key);
-  final int index;
+class SocialMedia1Zoom extends StatefulWidget {
+  SocialMedia1Zoom({Key? key, required this.imagemClicada}) : super(key: key);
+  int imagemClicada;
+
+  @override
+  State<SocialMedia1Zoom> createState() => _SocialMedia1ZoomState();
+}
+
+class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.pop(context),
-      child: Center(
+      child: Container(
+        color: Styles.quaseBlack,
         child: Hero(
-          tag: 'sm1_hero_$index',
-          child: Container(
-            child: InteractiveViewer(
-              child: Image.asset(
-                social_media1_images[index],
-                fit: BoxFit.fill,
+          tag: 'sm1_hero_${widget.imagemClicada}',
+          child: Stack(
+            children: [
+              Center(
+                child: Container(
+                  child: InteractiveViewer(
+                    child: Image.asset(
+                      social_media1_images[widget.imagemClicada],
+                      fit: BoxFit.fitWidth,
+                    ),
+                  ),
+                ),
               ),
-            ),
+              Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    customButton(Icons.arrow_back, () {
+                      widget.imagemClicada < 1
+                          ? setState(() {
+                              widget.imagemClicada =
+                                  social_media1_images.length - 1;
+                            })
+                          : setState(() {
+                              widget.imagemClicada--;
+                            });
+                    }),
+                    customButton(Icons.arrow_forward, () {
+                      widget.imagemClicada == social_media1_images.length - 1
+                          ? setState(() {
+                              widget.imagemClicada = 0;
+                            })
+                          : setState(() {
+                              widget.imagemClicada++;
+                            });
+                    }),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),
     );
   }
+}
+
+Widget customButton(IconData? icone, void Function()? pressionado) {
+  return ElevatedButton(
+    style: ButtonStyle(
+        shape: MaterialStateProperty.all(CircleBorder()),
+        padding:
+            MaterialStateProperty.all(const EdgeInsets.symmetric(vertical: 20)),
+        backgroundColor:
+            MaterialStateProperty.all(Colors.black.withOpacity(0.7))),
+    child: Icon(icone),
+    onPressed: pressionado,
+  );
 }
 
 class SocialMedia2 extends StatelessWidget {
@@ -109,10 +166,8 @@ class SocialMedia2 extends StatelessWidget {
                 },
                 child: Hero(
                     tag: 'sm2_hero_$index',
-                    child: InteractiveViewer(
-                      child: Image.asset(social_media2_images[index],
-                          fit: BoxFit.fill),
-                    )),
+                    child: Image.asset(social_media2_images[index],
+                        fit: BoxFit.fill)),
               ),
             ),
           ),
@@ -129,13 +184,18 @@ class SocialMedia2Zoom extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.pop(context),
-      child: Center(
-        child: Hero(
-          tag: 'sm2_hero_$index',
-          child: Container(
-            child: Image.asset(
-              social_media2_images[index],
-              fit: BoxFit.fill,
+      child: Container(
+        color: Styles.quaseBlack,
+        child: Center(
+          child: Hero(
+            tag: 'sm2_hero_$index',
+            child: Container(
+              child: InteractiveViewer(
+                child: Image.asset(
+                  social_media2_images[index],
+                  fit: BoxFit.fill,
+                ),
+              ),
             ),
           ),
         ),
