@@ -109,8 +109,10 @@ class SocialMedia2 extends StatelessWidget {
                 },
                 child: Hero(
                     tag: 'sm2_hero_$index',
-                    child: Image.asset(social_media2_images[index],
-                        fit: BoxFit.fill)),
+                    child: InteractiveViewer(
+                      child: Image.asset(social_media2_images[index],
+                          fit: BoxFit.fill),
+                    )),
               ),
             ),
           ),
