@@ -67,6 +67,7 @@ class SocialMedia1Zoom extends StatefulWidget {
 class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
   @override
   Widget build(BuildContext context) {
+    var altura = MediaQuery.of(context).size.height;
     return GestureDetector(
       onTap: () => Navigator.pop(context),
       child: Container(
@@ -90,7 +91,16 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    customButton(Icons.arrow_back, () {
+                    tipoInstanelsonDireita(altura, () {
+                      widget.imagemClicada == social_media1_images.length - 1
+                          ? setState(() {
+                              widget.imagemClicada = 0;
+                            })
+                          : setState(() {
+                              widget.imagemClicada++;
+                            });
+                    }),
+                    tipoInstanelsonEsquerda(altura, () {
                       widget.imagemClicada < 1
                           ? setState(() {
                               widget.imagemClicada =
@@ -100,15 +110,25 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                               widget.imagemClicada--;
                             });
                     }),
-                    customButton(Icons.arrow_forward, () {
-                      widget.imagemClicada == social_media1_images.length - 1
-                          ? setState(() {
-                              widget.imagemClicada = 0;
-                            })
-                          : setState(() {
-                              widget.imagemClicada++;
-                            });
-                    }),
+                    // customButton(Icons.arrow_back, () {
+                    //   widget.imagemClicada < 1
+                    //       ? setState(() {
+                    //           widget.imagemClicada =
+                    //               social_media1_images.length - 1;
+                    //         })
+                    //       : setState(() {
+                    //           widget.imagemClicada--;
+                    //         });
+                    // }),
+                    // customButton(Icons.arrow_forward, () {
+                    //   widget.imagemClicada == social_media1_images.length - 1
+                    //       ? setState(() {
+                    //           widget.imagemClicada = 0;
+                    //         })
+                    //       : setState(() {
+                    //           widget.imagemClicada++;
+                    //         });
+                    // }),
                   ],
                 ),
               ),
@@ -118,6 +138,20 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
       ),
     );
   }
+}
+
+Widget tipoInstanelsonDireita(double altura, Function()? pressionado) {
+  return GestureDetector(
+    onTap: pressionado,
+    child: Container(height: altura, width: 40),
+  );
+}
+
+Widget tipoInstanelsonEsquerda(double altura, Function()? pressionado) {
+  return GestureDetector(
+    onTap: pressionado,
+    child: Container(height: altura, width: 40),
+  );
 }
 
 Widget customButton(IconData? icone, void Function()? pressionado) {
