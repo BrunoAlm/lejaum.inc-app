@@ -63,9 +63,11 @@ class SocialMedia1Zoom extends StatelessWidget {
         child: Hero(
           tag: 'sm1_hero_$index',
           child: Container(
-            child: Image.asset(
-              social_media1_images_png[index],
-              fit: BoxFit.fill,
+            child: InteractiveViewer(
+              child: Image.asset(
+                social_media1_images[index],
+                fit: BoxFit.fill,
+              ),
             ),
           ),
         ),
