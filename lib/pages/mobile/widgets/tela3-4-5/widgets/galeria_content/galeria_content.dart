@@ -1,6 +1,5 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import '../../services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
@@ -73,77 +72,72 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
   @override
   Widget build(BuildContext context) {
     var altura = MediaQuery.of(context).size.height;
-    return Stack(
-      children: [
-        borrada(),
-        GestureDetector(
-          onTap: () => Navigator.pop(context),
-          child: Hero(
+    return GestureDetector(
+      onTap: () => Navigator.pop(context),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          borrada(),
+          Hero(
             tag: 'sm1_hero_${widget.imagemClicada}',
             child: SingleChildScrollView(
               physics: NeverScrollableScrollPhysics(),
-              child: Stack(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 60),
-                    child: InteractiveViewer(
-                      child: Image.asset(
-                        social_media1_images[widget.imagemClicada],
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
+                  DotsIndicator(
+                    decorator: DotsDecorator(
+                        activeColor: Styles.laranjaum,
+                        shape: StadiumBorder(),
+                        size: Size(30, 5),
+                        activeSize: Size(30, 8),
+                        activeShape: StadiumBorder(),
+                        spacing: const EdgeInsets.all(1)),
+                    dotsCount: social_media1_images.length,
+                    position: widget.imagemClicada.toDouble(),
                   ),
-                  Positioned(
-                    top: 40,
-                    width: Get.width,
-                    child: DotsIndicator(
-                      decorator: DotsDecorator(
-                          activeColor: Styles.laranjaum,
-                          shape: StadiumBorder(),
-                          size: Size(30, 5),
-                          activeSize: Size(30, 8),
-                          activeShape: StadiumBorder(),
-                          spacing: const EdgeInsets.all(1)),
-                      dotsCount: social_media1_images.length,
-                      position: widget.imagemClicada.toDouble(),
+                  const SizedBox(height: 10),
+                  InteractiveViewer(
+                    child: Image.asset(
+                      social_media1_images[widget.imagemClicada],
+                      fit: BoxFit.fitWidth,
                     ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Flexible(
-                        child: tipoInstanelsonDireita(altura, () {
-                          widget.imagemClicada < 1
-                              ? setState(() {
-                                  widget.imagemClicada =
-                                      social_media1_images.length - 1;
-                                })
-                              : setState(() {
-                                  widget.imagemClicada--;
-                                });
-                        }),
-                      ),
-                      Flexible(
-                        child: tipoInstanelsonEsquerda(altura, () {
-                          widget.imagemClicada ==
-                                  social_media1_images.length - 1
-                              ? setState(() {
-                                  widget.imagemClicada = 0;
-                                })
-                              : setState(() {
-                                  widget.imagemClicada++;
-                                });
-                        }),
-                      ),
-                    ],
                   ),
                 ],
               ),
             ),
           ),
-        ),
-      ],
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Flexible(
+                child: tipoInstanelsonDireita(altura, () {
+                  widget.imagemClicada < 1
+                      ? setState(() {
+                          widget.imagemClicada =
+                              social_media1_images.length - 1;
+                        })
+                      : setState(() {
+                          widget.imagemClicada--;
+                        });
+                }),
+              ),
+              Flexible(
+                child: tipoInstanelsonEsquerda(altura, () {
+                  widget.imagemClicada == social_media1_images.length - 1
+                      ? setState(() {
+                          widget.imagemClicada = 0;
+                        })
+                      : setState(() {
+                          widget.imagemClicada++;
+                        });
+                }),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
@@ -206,74 +200,72 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
   @override
   Widget build(BuildContext context) {
     var altura = MediaQuery.of(context).size.height;
-    return Stack(
-      children: [
-        borrada(),
-        GestureDetector(
-          onTap: () => Navigator.pop(context),
-          child: Hero(
+    return GestureDetector(
+      onTap: () => Navigator.pop(context),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          borrada(),
+          Hero(
             tag: 'sm2_hero_${widget.imagemClicada}',
             child: SingleChildScrollView(
               physics: NeverScrollableScrollPhysics(),
-              child: Stack(
-                alignment: Alignment.center,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  DotsIndicator(
+                    decorator: DotsDecorator(
+                        activeColor: Styles.laranjaum,
+                        shape: StadiumBorder(),
+                        size: Size(30, 5),
+                        activeSize: Size(30, 8),
+                        activeShape: StadiumBorder(),
+                        spacing: const EdgeInsets.all(1)),
+                    dotsCount: social_media2_images.length,
+                    position: widget.imagemClicada.toDouble(),
+                  ),
+                  const SizedBox(height: 10),
                   InteractiveViewer(
                     child: Image.asset(
                       social_media2_images[widget.imagemClicada],
                       fit: BoxFit.fitWidth,
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Flexible(
-                        child: tipoInstanelsonDireita(altura, () {
-                          widget.imagemClicada < 1
-                              ? setState(() {
-                                  widget.imagemClicada =
-                                      social_media2_images.length - 1;
-                                })
-                              : setState(() {
-                                  widget.imagemClicada--;
-                                });
-                        }),
-                      ),
-                      Flexible(
-                        child: tipoInstanelsonEsquerda(altura, () {
-                          widget.imagemClicada ==
-                                  social_media2_images.length - 1
-                              ? setState(() {
-                                  widget.imagemClicada = 0;
-                                })
-                              : setState(() {
-                                  widget.imagemClicada++;
-                                });
-                        }),
-                      ),
-                    ],
-                  ),
-                  Positioned(
-                    top: 210,
-                    child: DotsIndicator(
-                      decorator: DotsDecorator(
-                          activeColor: Styles.laranjaum,
-                          shape: StadiumBorder(),
-                          size: Size(30, 5),
-                          activeSize: Size(30, 8),
-                          activeShape: StadiumBorder(),
-                          spacing: const EdgeInsets.all(1)),
-                      dotsCount: social_media2_images.length,
-                      position: widget.imagemClicada.toDouble(),
-                    ),
-                  ),
                 ],
               ),
             ),
           ),
-        ),
-      ],
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Flexible(
+                child: tipoInstanelsonDireita(altura, () {
+                  widget.imagemClicada < 1
+                      ? setState(() {
+                          widget.imagemClicada =
+                              social_media2_images.length - 1;
+                        })
+                      : setState(() {
+                          widget.imagemClicada--;
+                        });
+                }),
+              ),
+              Flexible(
+                child: tipoInstanelsonEsquerda(altura, () {
+                  widget.imagemClicada == social_media2_images.length - 1
+                      ? setState(() {
+                          widget.imagemClicada = 0;
+                        })
+                      : setState(() {
+                          widget.imagemClicada++;
+                        });
+                }),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
