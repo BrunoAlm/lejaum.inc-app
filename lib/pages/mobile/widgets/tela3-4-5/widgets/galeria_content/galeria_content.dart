@@ -1,10 +1,7 @@
-import 'dart:ui';
-
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-// import 'package:responsive_framework/responsive_framework.dart' as responsive;
 import '../../services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
 
@@ -47,12 +44,6 @@ class SocialMedia1 extends StatelessWidget {
                       opaque: false,
                     ),
                   );
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) {
-                  //     return SocialMedia1Zoom(imagemClicada: index);
-                  //   }),
-                  // );
                 },
                 child: Hero(
                   tag: 'sm1_hero_$index',
@@ -225,6 +216,7 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
             child: SingleChildScrollView(
               physics: NeverScrollableScrollPhysics(),
               child: Stack(
+                alignment: Alignment.center,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 60),
@@ -236,7 +228,7 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
                     ),
                   ),
                   Positioned(
-                    top: 40,
+                    top: 210,
                     width: Get.width,
                     child: DotsIndicator(
                       decorator: DotsDecorator(
@@ -289,7 +281,6 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
     );
   }
 }
-
 
 class Arzadi extends StatelessWidget {
   const Arzadi({Key? key}) : super(key: key);
