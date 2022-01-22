@@ -218,28 +218,10 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 60),
-                    child: InteractiveViewer(
-                      child: Image.asset(
-                        social_media2_images[widget.imagemClicada],
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 210,
-                    width: Get.width,
-                    child: DotsIndicator(
-                      decorator: DotsDecorator(
-                          activeColor: Styles.laranjaum,
-                          shape: StadiumBorder(),
-                          size: Size(30, 5),
-                          activeSize: Size(30, 8),
-                          activeShape: StadiumBorder(),
-                          spacing: const EdgeInsets.all(1)),
-                      dotsCount: social_media2_images.length,
-                      position: widget.imagemClicada.toDouble(),
+                  InteractiveViewer(
+                    child: Image.asset(
+                      social_media2_images[widget.imagemClicada],
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
                   Row(
@@ -271,6 +253,20 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
                         }),
                       ),
                     ],
+                  ),
+                  Positioned(
+                    top: 210,
+                    child: DotsIndicator(
+                      decorator: DotsDecorator(
+                          activeColor: Styles.laranjaum,
+                          shape: StadiumBorder(),
+                          size: Size(30, 5),
+                          activeSize: Size(30, 8),
+                          activeShape: StadiumBorder(),
+                          spacing: const EdgeInsets.all(1)),
+                      dotsCount: social_media2_images.length,
+                      position: widget.imagemClicada.toDouble(),
+                    ),
                   ),
                 ],
               ),
