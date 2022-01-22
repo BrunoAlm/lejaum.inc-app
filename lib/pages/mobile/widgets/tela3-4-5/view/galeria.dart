@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/galeria_content.dart';
+import '../widgets/galeria_content/galeria_content.dart';
 
 class GaleriaSM extends StatelessWidget {
   const GaleriaSM({Key? key}) : super(key: key);

@@ -8,6 +8,7 @@ import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart'
 // import 'package:responsive_framework/utils/scroll_behavior.dart';
 import 'package:seo_renderer/seo_renderer.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'pages/home_page_logic.dart';
 import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart';
 
@@ -16,6 +17,7 @@ void main() {
     statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
