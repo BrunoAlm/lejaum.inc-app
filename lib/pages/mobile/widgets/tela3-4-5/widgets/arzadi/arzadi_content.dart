@@ -9,8 +9,9 @@ String _logo_image = "assets/images/galeria/azardi/logo_preta.webp";
 String _img1 = "assets/images/galeria/azardi/img1.webp";
 String _img2 = "assets/images/galeria/azardi/img2.webp";
 String _img3 = "assets/images/galeria/azardi/img3.webp";
-var _altura = 37.h;
-var _largura = _altura / 0.49;
+// var _altura = 37.h;
+// var _largura = _altura / 0.49;
+var _largura = 439.6;
 
 Widget logo_azardi() => Container(
       width: 186.47,
@@ -43,12 +44,12 @@ Widget logo_azardi() => Container(
     );
 Widget azardi1() => Container(
       width: _largura,
-      height: _altura,
+      // height: _altura,
       child: Image.asset(_img1, fit: BoxFit.fill),
     );
 Widget azardi2() => Container(
       width: _largura,
-      height: _altura,
+      // height: _altura,
       child: Image.asset(_img2, fit: BoxFit.fill),
     );
 Widget azardi3() => Padding(
@@ -58,7 +59,7 @@ Widget azardi3() => Padding(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
           width: _largura,
-          height: _altura,
+          // height: _altura,
           child: Image.asset(_img3, fit: BoxFit.fill),
         ),
       ),

@@ -18,6 +18,12 @@ class _PdfJanfieState extends State<PdfJanfie> {
   }
 
   @override
+  void dispose() {
+    _pdfViewerController;
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -37,6 +43,7 @@ class _PdfJanfieState extends State<PdfJanfie> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton.extended(
+            heroTag: 'previusPage',
             onPressed: () {
               _pdfViewerController.previousPage();
             },
@@ -48,6 +55,7 @@ class _PdfJanfieState extends State<PdfJanfie> {
           ),
           // Expanded(child: Container()),
           FloatingActionButton.extended(
+            heroTag: 'nextPage',
             onPressed: () {
               _pdfViewerController.nextPage();
             },
