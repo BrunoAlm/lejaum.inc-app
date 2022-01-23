@@ -28,21 +28,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
-        // builder: (context, widget) => ResponsiveWrapper.builder(
-        //   ClampingScrollWrapper.builder(context, widget!),
-        //   breakpoints: const [
-        //     ResponsiveBreakpoint.autoScaleDown(359, name: MOBILE),
-        //     ResponsiveBreakpoint.autoScale(360, name: 'MOBILE1'),
-        //     ResponsiveBreakpoint.resize(390, name: 'MOBILE2'),
-        //     ResponsiveBreakpoint.resize(725, name: 'AIPEDE'),
-        //     ResponsiveBreakpoint.resize(892, name: 'DESKTOP1'),
-        //     ResponsiveBreakpoint.resize(1167, name: 'DESKTOP2'),
-        //     ResponsiveBreakpoint.resize(1366, name: DESKTOP),
-        //     ResponsiveBreakpoint.autoScale(1920, name: 'DESKTOP GIGANTE'),
-        //   ],
-        //   background: Container(color: Color(0xFFF5F5F5)),
-        // ),
-
         navigatorObservers: [
           routeObserver,
         ],
