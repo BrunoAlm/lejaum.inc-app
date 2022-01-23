@@ -85,3 +85,37 @@ class DesktopListViewController extends GetxController {
   var homeKey = GlobalKey();
   var boxesKey = GlobalKey();
 }
+
+class DirecaoDoSwipe extends GetxController {
+  int imagemClicada = 0;
+  bool direitaParaEsquerda = false;
+  bool esquerdaParaDireita = false;
+
+  void swipe(DragEndDetails details, int tamanhoDaLista) {
+    if (details.primaryVelocity! < 0) {
+      esquerdaParaDireita = false;
+      direitaParaEsquerda = true;
+      update();
+    } else {
+      direitaParaEsquerda = false;
+      esquerdaParaDireita = true;
+      update();
+    }
+    if (direitaParaEsquerda) {
+      imagemClicada++;
+      update();
+    }
+    if (direitaParaEsquerda && imagemClicada == tamanhoDaLista) {
+      imagemClicada = 0;
+      update();
+    }
+    if (esquerdaParaDireita) {
+      imagemClicada--;
+      update();
+    }
+    if (esquerdaParaDireita && imagemClicada == -1) {
+      imagemClicada = tamanhoDaLista - 1;
+      update();
+    }
+  }
+}
