@@ -111,7 +111,7 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                 ),
               ),
               Hero(
-                tag: 'sm2_hero_${swipe.imagemClicada}',
+                tag: 'sm1_hero_${swipe.imagemClicada}',
                 child: ZoomOverlay(
                   animationDuration: Duration(milliseconds: 200),
                   minScale: 0.5,
