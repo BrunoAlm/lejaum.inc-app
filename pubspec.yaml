@@ -49,6 +49,7 @@ dependencies:
   pdf_render: ^1.0.21
   dots_indicator: ^2.0.0
   url_strategy: ^0.2.0
+  zoom_pinch_overlay: ^1.1.2
   
 dev_dependencies:
   flutter_test:

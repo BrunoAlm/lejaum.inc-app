@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import '../../services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
+import 'package:zoom_pinch_overlay/zoom_pinch_overlay.dart';
 
 import 'galeria_widgets.dart';
 
@@ -97,7 +98,10 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
             ),
             Hero(
               tag: 'sm2_hero_${widget.imagemClicada}',
-              child: InteractiveViewer(
+              child: ZoomOverlay(
+                animationDuration: Duration(milliseconds: 200),
+                minScale: 0.5,
+                maxScale: 3,
                 child: Image.asset(
                   social_media1_images[widget.imagemClicada],
                   fit: BoxFit.fitWidth,
@@ -175,8 +179,10 @@ class SocialMedia2 extends StatelessWidget {
                 },
                 child: Hero(
                     tag: 'sm2_hero_$index',
-                    child: Image.asset(social_media2_images[index],
-                        fit: BoxFit.fill)),
+                    child: ZoomOverlay(
+                      child: Image.asset(social_media2_images[index],
+                          fit: BoxFit.fill),
+                    )),
               ),
             ),
           ),
