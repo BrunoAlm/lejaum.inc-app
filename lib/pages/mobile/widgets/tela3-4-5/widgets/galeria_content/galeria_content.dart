@@ -194,7 +194,30 @@ class SocialMedia2Zoom extends StatefulWidget {
   State<SocialMedia2Zoom> createState() => _SocialMedia2ZoomState();
 }
 
-class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
+class _SocialMedia2ZoomState extends State<SocialMedia2Zoom>
+    with SingleTickerProviderStateMixin {
+  late TransformationController controller;
+  late AnimationController animationController;
+  Animation<Matrix4>? animation;
+
+  @override
+  void initState() {
+    controller = TransformationController();
+    animationController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 200),
+    )..addListener(() => controller.value = animation!.value);
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    animationController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     var altura = MediaQuery.of(context).size.height;
@@ -223,6 +246,10 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
             Hero(
               tag: 'sm2_hero_${widget.imagemClicada}',
               child: InteractiveViewer(
+                transformationController: controller,
+                onInteractionEnd: (details) {
+                  resetAnimation();
+                },
                 child: Image.asset(
                   social_media2_images[widget.imagemClicada],
                   fit: BoxFit.fitWidth,
@@ -262,6 +289,17 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
         ),
       ),
     );
+  }
+
+  void resetAnimation() {
+    animation = Matrix4Tween(
+      begin: controller.value,
+      end: Matrix4.identity(),
+    ).animate(CurvedAnimation(
+      parent: animationController,
+      curve: Curves.easeIn,
+    ));
+    animationController.forward(from: 0);
   }
 }
 
