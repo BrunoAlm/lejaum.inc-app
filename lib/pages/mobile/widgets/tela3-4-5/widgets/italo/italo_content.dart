@@ -11,6 +11,7 @@ String _img2 = "assets/images/galeria/italo/img2.webp";
 String _img3 = "assets/images/galeria/italo/img3.webp";
 
 Widget logo_italo() => Container(
+  margin: const EdgeInsets.only(left: 10),
       width: 186.47,
       height: 198.79,
       decoration: BoxDecoration(
@@ -61,16 +62,16 @@ Widget logo_italo() => Container(
     );
 
 Widget italo1() => Container(
-      width: 320,
-      height: 198.79,
+      // width: 320,
+      // height: 198.79,
       child: Image.asset(
         _img1,
         fit: BoxFit.fill,
       ),
     );
 Widget italo2() => Container(
-      width: 320,
-      height: 198.79,
+      // width: 320,
+      // height: 198.79,
       child: Image.asset(
         _img2,
         fit: BoxFit.fill,
@@ -82,8 +83,8 @@ Widget italo3() => Padding(
         borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
-          width: 320,
-          height: 198.79,
+          // width: 320,
+          // height: 198.79,
           child: Image.asset(
             _img3,
             fit: BoxFit.fill,

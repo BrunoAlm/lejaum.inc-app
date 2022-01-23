@@ -21,49 +21,46 @@ class SocialMedia1 extends StatelessWidget {
     var _altura = 37.h;
     var _largura = _altura / 1.764;
 
-    return Padding(
-      padding: const EdgeInsets.only(right: 10),
-      child: Container(
-        height: _altura,
-        width: MediaQuery.of(context).size.width,
-        margin: const EdgeInsets.only(bottom: 10),
-        child: GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
-          return ListView.builder(
-            controller: _teste,
-            scrollDirection: Axis.horizontal,
-            physics: const BouncingScrollPhysics(), // this for snapping
-            itemCount: social_media1_images.length,
-            itemBuilder: (_, index) => Container(
-              width: _largura,
-              height: _altura,
-              margin: EdgeInsets.only(left: 10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: GestureDetector(
-                  onTap: () {
-                    swipe.imagemClicada = index;
-                    Navigator.of(context).push(
-                      PageRouteBuilder(
-                        pageBuilder: (context, _, __) => SocialMedia1Zoom(
-                          imagemClicada: index,
-                        ),
-                        opaque: false,
+    return Container(
+      height: _altura,
+      width: MediaQuery.of(context).size.width,
+      margin: const EdgeInsets.only(bottom: 10),
+      child: GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
+        return ListView.builder(
+          controller: _teste,
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(), // this for snapping
+          itemCount: social_media1_images.length,
+          itemBuilder: (_, index) => Container(
+            width: _largura,
+            height: _altura,
+            margin: EdgeInsets.only(left: 10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: GestureDetector(
+                onTap: () {
+                  swipe.imagemClicada = index;
+                  Navigator.of(context).push(
+                    PageRouteBuilder(
+                      pageBuilder: (context, _, __) => SocialMedia1Zoom(
+                        imagemClicada: index,
                       ),
-                    );
-                  },
-                  child: Hero(
-                    tag: 'sm1_hero_$index',
-                    child: Image.asset(
-                      social_media1_images[index],
-                      fit: BoxFit.fill,
+                      opaque: false,
                     ),
+                  );
+                },
+                child: Hero(
+                  tag: 'sm1_hero_$index',
+                  child: Image.asset(
+                    social_media1_images[index],
+                    fit: BoxFit.fill,
                   ),
                 ),
               ),
             ),
-          );
-        }),
-      ),
+          ),
+        );
+      }),
     );
   }
 }
@@ -167,46 +164,43 @@ class SocialMedia2 extends StatelessWidget {
     Get.put(DirecaoDoSwipe());
     var _altura = 37.h;
     var _largura = _altura / 1.0041;
-    return Padding(
-      padding: const EdgeInsets.only(right: 10),
-      child: SizedBox(
-        height: _altura,
-        width: MediaQuery.of(context).size.width,
-        child: GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
-          return ListView.builder(
-            scrollDirection: Axis.horizontal,
-            physics: const BouncingScrollPhysics(), // this for snapping
-            itemCount: social_media2_images.length,
-            itemBuilder: (_, index) => Container(
-              height: _altura,
-              width: _largura,
-              margin: EdgeInsets.only(left: 10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: GestureDetector(
-                  onTap: () {
-                    swipe.imagemClicada = index;
-                    Navigator.of(context).push(
-                      PageRouteBuilder(
-                        pageBuilder: (context, _, __) => SocialMedia2Zoom(
-                          imagemClicada: index,
-                        ),
-                        opaque: false,
+    return SizedBox(
+      height: _altura,
+      width: Get.width,
+      child: GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
+        return ListView.builder(
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(), // this for snapping
+          itemCount: social_media2_images.length,
+          itemBuilder: (_, index) => Container(
+            height: _altura,
+            width: _largura,
+            margin: EdgeInsets.only(left: 10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: GestureDetector(
+                onTap: () {
+                  swipe.imagemClicada = index;
+                  Navigator.of(context).push(
+                    PageRouteBuilder(
+                      pageBuilder: (context, _, __) => SocialMedia2Zoom(
+                        imagemClicada: index,
                       ),
-                    );
-                  },
-                  child: Hero(
-                      tag: 'sm2_hero_$index',
-                      child: ZoomOverlay(
-                        child: Image.asset(social_media2_images[index],
-                            fit: BoxFit.fill),
-                      )),
-                ),
+                      opaque: false,
+                    ),
+                  );
+                },
+                child: Hero(
+                    tag: 'sm2_hero_$index',
+                    child: ZoomOverlay(
+                      child: Image.asset(social_media2_images[index],
+                          fit: BoxFit.fill),
+                    )),
               ),
             ),
-          );
-        }),
-      ),
+          ),
+        );
+      }),
     );
   }
 }
@@ -309,11 +303,12 @@ class Arzadi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _altura = 37.h;
-    var largura = MediaQuery.of(context).size.width;
+    // var _altura = 247.53;
+    var _largura = MediaQuery.of(context).size.width;
     return Container(
-      margin: const EdgeInsets.only(left: 10, bottom: 10),
+      margin: const EdgeInsets.only(bottom: 10),
       height: _altura,
-      width: largura,
+      width: _largura,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(), // this for snapping
@@ -334,12 +329,11 @@ class Janfie extends StatefulWidget {
 class _JanfieState extends State<Janfie> {
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var _largura = MediaQuery.of(context).size.width;
     var _altura = 37.h;
     return Container(
       height: _altura,
-      width: largura,
-      margin: const EdgeInsets.only(left: 10),
+      width: _largura,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(), // this for snapping
@@ -355,11 +349,11 @@ class Italo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var _largura = MediaQuery.of(context).size.width;
+    var _altura = 37.h;
     return Container(
-      height: 250,
-      width: largura,
-      margin: const EdgeInsets.only(left: 10),
+      height: _altura,
+      width: _largura,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(), // this for snapping
@@ -375,11 +369,12 @@ class Lejaum extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var _largura = MediaQuery.of(context).size.width;
+    var _altura = 37.h;
     return Container(
-      height: 250,
-      width: largura,
-      margin: const EdgeInsets.only(left: 10, top: 10),
+      height: _altura,
+      width: _largura,
+      margin: const EdgeInsets.only(top: 10),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(), // this for snapping
