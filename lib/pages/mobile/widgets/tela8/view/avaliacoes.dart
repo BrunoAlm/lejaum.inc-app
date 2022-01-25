@@ -17,7 +17,7 @@ class Avaliacoes extends StatefulWidget {
 class _AvaliacoesState extends State<Avaliacoes> {
   final _html = '''
 <figure>
-  <audio class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3">
+  <audio preload controls class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3">
     Sorry, <code>AUDIO</code> tag is not supported.
   </audio>
 </figure>
@@ -31,7 +31,7 @@ class _AvaliacoesState extends State<Avaliacoes> {
       child: Padding(
         padding: const EdgeInsets.only(top: 49),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 25),
@@ -54,7 +54,7 @@ class _AvaliacoesState extends State<Avaliacoes> {
               child: Card(
                 color: Styles.quaseCinza,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
@@ -66,14 +66,14 @@ class _AvaliacoesState extends State<Avaliacoes> {
                         key: Key(_html),
                         baseUrl: Uri.parse('avaliacao1.mp3'),
                         customStylesBuilder: (element) {
-                          // if (element.classes.contains('audio')) {
-                          //   return {
-                          //     'width': '300px',
-                          //     'height': '30px',
-                          //     'font-size': '3px',
-                          //   };
-                          // }
-
+                          if (element.classes.contains('audio')) {
+                            return {
+                              // 'background': 'black'
+                              'border-radius': '8px'
+                              // 'background-color': 'rgb(241, 243, 244)',
+                            };
+                          }
+                         
                           return null;
                         },
                       ),
@@ -137,7 +137,7 @@ class _AvaliacoesState extends State<Avaliacoes> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('Feito com ', style: Styles.footer),
-                      SvgPicture.asset('svgs/coracao.svg'),
+                      SvgPicture.asset('/svgs/coracao.svg'),
                       Text(' por lejaum + bruno', style: Styles.footer),
                     ],
                   )
