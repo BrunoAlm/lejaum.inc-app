@@ -54,6 +54,18 @@
     <img class="center" aria-hidden="true" src="splash/img/light-1x.png" />
   </picture>
 
+  <div id="container">
+    <svg viewBox="0 0 100 100">
+      <defs>
+        <filter id="shadow">
+          <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+            flood-color="#fc6767"/>
+        </filter>
+      </defs>
+      <circle id="spinner" style="fill:transparent;stroke:#ffffff;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+  </svg>
+  </div>
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -125,6 +137,7 @@
       loadMainDartJs();
     }
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 </body>
 
 </html>
