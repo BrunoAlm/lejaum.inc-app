@@ -14,7 +14,7 @@ class Avaliacoes extends StatefulWidget {
 class _AvaliacoesState extends State<Avaliacoes> {
   final _html = '''
 <figure>
-  <audio style="height: 60px" src="avaliacao1.mp3"}>
+  <audio style="height: 50px;" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3"}>
     Sorry, <code>AUDIO</code> tag is not supported.
   </audio>
 </figure>
@@ -46,9 +46,19 @@ class _AvaliacoesState extends State<Avaliacoes> {
               ),
             ),
             Expanded(child: SizedBox()),
-            HtmlWidget(_html,
-                key: Key(_html),
-                baseUrl: Uri.file('assets/audio/avaliacao1.mp3')),
+            Card(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  HtmlWidget(
+                    _html,
+                    key: Key(_html),
+                    baseUrl: Uri.parse('avaliacao1.mp3'),
+                  ),
+                  Row()
+                ],
+              ),
+            ),
             Expanded(child: SizedBox()),
             Container(
               height: 100,
