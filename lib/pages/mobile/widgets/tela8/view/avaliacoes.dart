@@ -1,4 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +17,7 @@ class Avaliacoes extends StatefulWidget {
 class _AvaliacoesState extends State<Avaliacoes> {
   final _html = '''
 <figure>
-  <audio style="height: 50px;" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3"}>
+  <audio class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3">
     Sorry, <code>AUDIO</code> tag is not supported.
   </audio>
 </figure>
@@ -45,18 +48,71 @@ class _AvaliacoesState extends State<Avaliacoes> {
                 style: Styles.subtitulo,
               ),
             ),
-            Expanded(child: SizedBox()),
-            Card(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  HtmlWidget(
-                    _html,
-                    key: Key(_html),
-                    baseUrl: Uri.parse('avaliacao1.mp3'),
+            // Expanded(child: SizedBox()),
+            Padding(
+              padding: const EdgeInsets.all(13.0),
+              child: Card(
+                color: Styles.quaseCinza,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      HtmlWidget(
+                        _html,
+                        key: Key(_html),
+                        baseUrl: Uri.parse('avaliacao1.mp3'),
+                        customStylesBuilder: (element) {
+                          // if (element.classes.contains('audio')) {
+                          //   return {
+                          //     'width': '300px',
+                          //     'height': '30px',
+                          //     'font-size': '3px',
+                          //   };
+                          // }
+
+                          return null;
+                        },
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            backgroundImage: Image.asset(
+                                    'assets/images/galeria/janfie/avatar.png')
+                                .image,
+                          ),
+                          const SizedBox(width: 10),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              RichText(
+                                text: TextSpan(
+                                  style: Styles.avaliador,
+                                  children: [
+                                    TextSpan(
+                                      text: 'Letícia | ',
+                                      style: Styles.nome_avaliador,
+                                    ),
+                                    TextSpan(text: 'Janfie Boutique'),
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                'Naming e Identidade Visual',
+                                style: Styles.servico_avaliado,
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ],
                   ),
-                  Row()
-                ],
+                ),
               ),
             ),
             Expanded(child: SizedBox()),
@@ -74,10 +130,17 @@ class _AvaliacoesState extends State<Avaliacoes> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Informações'),
-                  Text('Cnpj'),
-                  Text('Networks'),
-                  Text('Feito com  ❤️  por lejaum + bruno'),
+                  Text('Informações', style: Styles.footer),
+                  Text('Cnpj', style: Styles.footer),
+                  Text('Networks', style: Styles.footer),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Feito com ', style: Styles.footer),
+                      SvgPicture.asset('svgs/coracao.svg'),
+                      Text(' por lejaum + bruno', style: Styles.footer),
+                    ],
+                  )
                 ],
               ),
             ),

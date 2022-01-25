@@ -6,6 +6,7 @@ class Styles {
   static const Color quaseWhite = Color(0xFFF4F4F4);
   static const Color laranjaum = Color(0xFFFF5400);
   static const Color cinzou = Color(0xFF7D7D7D);
+  static const Color quaseCinza = Color(0xFF322F2E);
   static const Color lowBlueGray = Color(0xFF334756);
   static const Color mareloMostarda = Color(0xFFFA9905);
   static const Color verdeGood = Color(0xFF25D366);
@@ -160,6 +161,30 @@ class Styles {
     fontWeight: FontWeight.w600,
     fontSize: 16,
     color: quaseBlack,
+  );
+
+  // TELA DE AVALIAÇÕES
+  static final nome_avaliador = TextStyle(
+    // fontFamily: fonte,
+    // fontSize: 10,
+    // color: quaseWhite,
+    fontWeight: FontWeight.bold,
+  );
+  static final avaliador = TextStyle(
+    fontFamily: fonte,
+    fontSize: 13,
+    color: quaseWhite,
+  );
+  static final servico_avaliado = TextStyle(
+    fontFamily: fonte,
+    fontSize: 13,
+    color: cinzou,
+  );
+  static final footer = TextStyle(
+    fontFamily: fonte,
+    fontSize: 14,
+    height: 1.2,
+    color: cinzou,
   );
 
   // static final carrosselTextTitulo = TextStyle(

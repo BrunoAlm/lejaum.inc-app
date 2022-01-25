@@ -80,6 +80,18 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
             ),
             const SizedBox(height: 20),
             BotaoDrawer(
+              texto: 'Avaliações',
+              pressionado: () {
+                _pageController.controller.animateToPage(
+                  7,
+                  duration: Duration(milliseconds: 500),
+                  curve: Curves.easeInOutQuart,
+                );
+                Navigator.of(context).pop();
+              },
+            ),
+            const SizedBox(height: 20),
+            BotaoDrawer(
               texto: 'Whatsapp',
               pressionado: () {
                 abrirWhatsApp();
