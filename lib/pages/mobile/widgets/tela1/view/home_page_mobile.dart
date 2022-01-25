@@ -57,6 +57,7 @@ class HomePageMobile extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Georama',
                       fontStyle: FontStyle.italic,
+                      fontSize: 13,
                     ),
                   ),
                 ),
