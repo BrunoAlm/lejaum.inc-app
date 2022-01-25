@@ -27,7 +27,6 @@ dependencies:
   # State management
   get: ^4.6.1
 
-
   # Responsividade
   responsive_framework: ^0.1.5
   sizer: ^2.0.15
@@ -46,10 +45,19 @@ dependencies:
 
   # PDF
   syncfusion_flutter_pdfviewer: 
-  pdf_render: ^1.0.21
+  # pdf_render: ^1.0.21
+
+  # DOTS INDICATOR BRABO
   dots_indicator: ^2.0.0
+
+  # URL SEM #
   url_strategy: ^0.2.0
+
+  # ZOOM E DESZOOM MOBILE
   zoom_pinch_overlay: ^1.1.2
+
+  # HTML NO DART?
+  flutter_widget_from_html: ^0.8.0
   
 dev_dependencies:
   flutter_test:
@@ -74,6 +82,7 @@ flutter:
     - assets/pdf/
     - assets/svgs/
     - assets/videos/
+    - assets/audio/
 
   fonts:
     - family: Georama

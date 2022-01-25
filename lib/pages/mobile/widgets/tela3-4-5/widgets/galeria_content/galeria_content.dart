@@ -305,15 +305,18 @@ class Arzadi extends StatelessWidget {
     var _altura = 37.h;
     // var _altura = 247.53;
     var _largura = MediaQuery.of(context).size.width;
-    return Container(
-      margin: const EdgeInsets.only(bottom: 10),
-      height: _altura,
-      width: _largura,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(), // this for snapping
-        itemCount: arzadi_list.length,
-        itemBuilder: (_, index) => arzadi_list[index],
+    return GestureDetector(
+      onTap: () => Get.toNamed('/azardi-pdf'),
+      child: Container(
+        margin: const EdgeInsets.only(bottom: 10),
+        height: _altura,
+        width: _largura,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(), // this for snapping
+          itemCount: arzadi_list.length,
+          itemBuilder: (_, index) => arzadi_list[index],
+        ),
       ),
     );
   }
@@ -331,14 +334,17 @@ class _JanfieState extends State<Janfie> {
   Widget build(BuildContext context) {
     var _largura = MediaQuery.of(context).size.width;
     var _altura = 37.h;
-    return Container(
-      height: _altura,
-      width: _largura,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(), // this for snapping
-        itemCount: janfie_list.length,
-        itemBuilder: (context, index) => janfie_list[index],
+    return GestureDetector(
+      onTap: () => Get.toNamed('/janfie-pdf'),
+      child: Container(
+        height: _altura,
+        width: _largura,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(), // this for snapping
+          itemCount: janfie_list.length,
+          itemBuilder: (context, index) => janfie_list[index],
+        ),
       ),
     );
   }

@@ -19,8 +19,6 @@ class _DesktopPageState extends State<DesktopPage> {
     var _altura = MediaQuery.of(context).size.height;
     var _largura = MediaQuery.of(context).size.width;
 
-    print("Altura: $_altura");
-    print("Largura: $_largura");
     return SizedBox(
       height: _altura - 60,
       width: _largura,

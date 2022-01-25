@@ -20,23 +20,6 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
 
   @override
   Widget build(BuildContext context) {
-    // var _altura_do_botao =
-    //     responsive.ResponsiveValue(context, defaultValue: 20.0, valueWhen: [
-    //   responsive.Condition.largerThan(name: responsive.TABLET, value: 20.0),
-    //   responsive.Condition.largerThan(name: 'DESKTOP1', value: 20.0)
-    // ]).value;
-    // var _largura_do_botao =
-    //     responsive.ResponsiveValue(context, defaultValue: 70.0, valueWhen: [
-    //   responsive.Condition.largerThan(name: responsive.TABLET, value: 70.0),
-    //   responsive.Condition.largerThan(name: 'DESKTOP1', value: 20.0)
-    // ]).value;
-    // double? _fonte =
-    //     responsive.ResponsiveValue(context, defaultValue: 18.0, valueWhen: [
-    //   responsive.Condition.equals(name: 'DESKTOP1', value: 14.0),
-    //   responsive.Condition.equals(name: 'DESKTOP2', value: 17.0),
-    //   responsive.Condition.equals(name: responsive.DESKTOP, value: 17.0),
-    // ]).value?.toDouble();
-    // print(_fonte);
     return HoverWidget(
       hoverChild: TextButton(
         onPressed: widget.pressionado,

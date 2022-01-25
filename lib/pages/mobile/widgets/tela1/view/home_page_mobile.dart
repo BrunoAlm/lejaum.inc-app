@@ -32,7 +32,6 @@ class HomePageMobile extends StatelessWidget {
     //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
     // ]).value;
     return LayoutBuilder(builder: (context, constraints) {
-      print(constraints.maxWidth);
       return Container(
         height: _altura,
         decoration: BoxDecoration(
