@@ -1,5 +1,4 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
@@ -42,9 +41,7 @@ class SocialMedia1 extends StatelessWidget {
                   swipe.imagemClicada = index;
                   Navigator.of(context).push(
                     PageRouteBuilder(
-                      pageBuilder: (context, _, __) => SocialMedia1Zoom(
-                        imagemClicada: index,
-                      ),
+                      pageBuilder: (context, _, __) => SocialMedia1Zoom(),
                       opaque: false,
                     ),
                   );
@@ -66,8 +63,7 @@ class SocialMedia1 extends StatelessWidget {
 }
 
 class SocialMedia1Zoom extends StatefulWidget {
-  SocialMedia1Zoom({Key? key, required this.imagemClicada}) : super(key: key);
-  int imagemClicada;
+  SocialMedia1Zoom({Key? key}) : super(key: key);
 
   @override
   State<SocialMedia1Zoom> createState() => _SocialMedia1ZoomState();
@@ -183,9 +179,7 @@ class SocialMedia2 extends StatelessWidget {
                   swipe.imagemClicada = index;
                   Navigator.of(context).push(
                     PageRouteBuilder(
-                      pageBuilder: (context, _, __) => SocialMedia2Zoom(
-                        imagemClicada: index,
-                      ),
+                      pageBuilder: (context, _, __) => SocialMedia2Zoom(),
                       opaque: false,
                     ),
                   );
@@ -206,8 +200,7 @@ class SocialMedia2 extends StatelessWidget {
 }
 
 class SocialMedia2Zoom extends StatefulWidget {
-  SocialMedia2Zoom({Key? key, required this.imagemClicada}) : super(key: key);
-  int imagemClicada;
+  SocialMedia2Zoom({Key? key}) : super(key: key);
 
   @override
   State<SocialMedia2Zoom> createState() => _SocialMedia2ZoomState();

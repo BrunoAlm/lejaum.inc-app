@@ -33,7 +33,7 @@ dependencies:
 
   # Roda video
   video_player: ^2.2.10
-  
+
   # Abre link web
   url_launcher: ^6.0.17
 
@@ -44,7 +44,7 @@ dependencies:
   auto_size_text: ^3.0.0
 
   # PDF
-  syncfusion_flutter_pdfviewer: 
+  syncfusion_flutter_pdfviewer:
   # pdf_render: ^1.0.21
 
   # DOTS INDICATOR BRABO
@@ -56,17 +56,18 @@ dependencies:
   # ZOOM E DESZOOM MOBILE
   zoom_pinch_overlay: ^1.1.2
 
-  # HTML NO DART?
-  flutter_widget_from_html: ^0.8.0
-  
-  
 dev_dependencies:
   flutter_test:
     sdk: flutter
-    
+
   # SPLASH SCREEN
   flutter_native_splash: ^1.3.3
-  flutter_lints: ^1.0.0
+  flutter_lints:
+    ^1.0.0
+
+  # HTML NO DART?
+  flutter_widget_from_html: ^0.8.0
+  flutter_widget_from_html_core: ^0.8.4
 
 flutter:
   uses-material-design: true

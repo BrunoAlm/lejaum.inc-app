@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
@@ -19,9 +20,12 @@ class Planos extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            AutoSizeText(
               'Planos Mensais',
+              maxLines: 1,
               style: Styles.tituloExtraBoldMenor,
+              maxFontSize: 40,
+              minFontSize: 35,
             ),
             const SizedBox(height: 15),
             Text(

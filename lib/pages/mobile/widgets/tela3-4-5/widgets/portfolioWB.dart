@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
@@ -19,11 +20,14 @@ class _PortifolioWBState extends State<PortifolioWB> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text(
+          AutoSizeText(
             'Web Design',
+            maxLines: 1,
             style: Styles.tituloExtraBoldMenor,
+            maxFontSize: 40,
+            minFontSize: 35,
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 20),
           GaleriaWB(),
         ],
       ),

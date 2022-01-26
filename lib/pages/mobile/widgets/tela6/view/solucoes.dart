@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/view/card_solucao.dart';
@@ -21,9 +22,12 @@ class _SolucoesState extends State<Solucoes> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SizedBox(height: 49),
-            Text(
+            AutoSizeText(
               'Soluções',
+              maxLines: 1,
               style: Styles.tituloExtraBoldMenor,
+              maxFontSize: 40,
+              minFontSize: 35,
             ),
             Text(
               'Veja abaixo algumas das soluções que nós podemos oferecer:',

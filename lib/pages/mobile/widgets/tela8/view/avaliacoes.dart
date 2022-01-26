@@ -1,5 +1,4 @@
-import 'dart:html';
-
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
@@ -35,9 +34,12 @@ class _AvaliacoesState extends State<Avaliacoes> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 25),
-              child: Text(
+              child: AutoSizeText(
                 'Avaliações',
+                maxLines: 1,
                 style: Styles.tituloExtraBoldMenor,
+                maxFontSize: 40,
+                minFontSize: 35,
               ),
             ),
             const SizedBox(height: 15),
@@ -73,7 +75,7 @@ class _AvaliacoesState extends State<Avaliacoes> {
                               // 'background-color': 'rgb(241, 243, 244)',
                             };
                           }
-                         
+
                           return null;
                         },
                       ),

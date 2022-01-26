@@ -8,6 +8,8 @@ class GaleriaSM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         SocialMedia1(),
         SocialMedia2(),
@@ -21,6 +23,8 @@ class GaleriaIDV extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Arzadi(),
         Janfie(),
@@ -35,6 +39,8 @@ class GaleriaWB extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Italo(),
         Lejaum(),

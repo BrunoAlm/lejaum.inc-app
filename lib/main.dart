@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
         navigatorObservers: [
           routeObserver,
         ],
+        
         debugShowCheckedModeBanner: false,
         themeMode: ThemeMode.dark,
         theme: Themes.light,
