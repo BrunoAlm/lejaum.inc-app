@@ -51,23 +51,29 @@
 
 <body>
   <!-- SPLASH SCREEN -->
-  <picture id="splash">
-    <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
-    <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
-    <img class="center" aria-hidden="true" src="splash/img/light-1x.png" />
-  </picture>
-
-  <div id="container">
-    <svg viewBox="0 0 100 100">
-      <defs>
-        <filter id="shadow">
-          <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
-            flood-color="#fc6767"/>
-        </filter>
-      </defs>
-      <circle id="spinner" style="fill:transparent;stroke:#ffffff;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
-  </svg>
-  </div>
+    <picture id="splash">
+      <source
+        srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x"
+        media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+      <source
+        srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x"
+        media="(prefers-color-scheme: dark)">
+      <img class="center" aria-hidden="true" src="splash/img/light-1x.png" />
+    </picture>
+  
+    <div id="container">
+      <svg viewBox="0 0 100 100">
+        <defs>
+          <filter id="shadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#fc6767" />
+          </filter>
+        </defs>
+        <circle id="spinner"
+          style="fill:transparent;stroke:#ffffff;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50"
+          cy="50" r="45" />
+      </svg>
+    </div>
+  
   <!-- FIM SPLASH SCREEN -->
 
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -141,6 +147,17 @@
       loadMainDartJs();
     }
   </script>
+
+  <!-- TEMPO DA SPLASH SCREEN -->
+  <!-- <script>
+    window.addEventListener("dart-app-ready", function () {
+      console.log('app is loaded');
+      var loadingIndicator = document.getElementById("loading_indicator");
+      if (loadingIndicator) {
+        loadingIndicator.remove();
+      }
+    });
+  </script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 </body>
 

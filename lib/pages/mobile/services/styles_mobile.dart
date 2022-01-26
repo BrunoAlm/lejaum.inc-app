@@ -36,7 +36,7 @@ class Styles {
   static const tituloExtraBoldMenor = TextStyle(
     color: laranjaum,
     fontFamily: fonte,
-    fontSize: 35,
+    // fontSize: 35,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w900,
     height: 1.28,
