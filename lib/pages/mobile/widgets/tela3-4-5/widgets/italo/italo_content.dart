@@ -6,12 +6,12 @@ import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 String _logo_image = "assets/images/galeria/italo/logo.png";
-String _img1 = "assets/images/galeria/italo/img1.webp";
-String _img2 = "assets/images/galeria/italo/img2.webp";
-String _img3 = "assets/images/galeria/italo/img3.webp";
+String _img1 = "assets/images/galeria/italo/img1.png";
+String _img2 = "assets/images/galeria/italo/img2.png";
+String _img3 = "assets/images/galeria/italo/img3.png";
 
 Widget logo_italo() => Container(
-  margin: const EdgeInsets.only(left: 10),
+      margin: const EdgeInsets.only(left: 10),
       width: 186.47,
       height: 198.79,
       decoration: BoxDecoration(
