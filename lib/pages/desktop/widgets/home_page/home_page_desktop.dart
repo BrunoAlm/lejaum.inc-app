@@ -52,7 +52,7 @@ class HomePageDesktop extends StatelessWidget {
               color: Styles.roxinho,
               child: Center(
                 child: Text(
-                  'Versão completa do portfólio na versão mobile, pois estamos construindo o nosso site! Pode haver erros ou bugs!',
+                  'Versão completa do portfólio na versão mobile, pois estamos construindo o nosso site! Pode haver partes incompletas!',
                   softWrap: true,
                   style: TextStyle(
                     color: Styles.quaseWhite,
