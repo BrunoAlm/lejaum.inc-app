@@ -16,11 +16,7 @@ class BoxMao extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(width: 14),
-                Image.asset(
-                  'assets/images/boxes/mao_icon.webp',
-                  fit: BoxFit.cover,
-                  height: 60,
-                ),
+                Image.asset('assets/images/boxes/mao_icon.webp', width: 50),
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
@@ -64,7 +60,8 @@ class BoxCoracao extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(width: 14),
-                Image.asset('assets/images/boxes/like_insta_icon.webp'),
+                Image.asset('assets/images/boxes/like_insta_icon.webp',
+                    width: 50),
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
@@ -108,7 +105,7 @@ class BoxSino extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(width: 14),
-                Image.asset('assets/images/boxes/sino_icon.webp'),
+                Image.asset('assets/images/boxes/sino_icon.webp', width: 50),
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
@@ -153,7 +150,7 @@ class BoxGrafico extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(width: 14),
-                Image.asset('assets/images/boxes/grafico_icon.webp'),
+                Image.asset('assets/images/boxes/grafico_icon.webp', width: 50),
                 const SizedBox(width: 15),
                 RichText(
                   text: TextSpan(
