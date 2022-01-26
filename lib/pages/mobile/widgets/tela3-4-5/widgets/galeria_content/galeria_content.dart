@@ -6,7 +6,7 @@ import 'package:lejaum/pages/mobile/services/themes.dart';
 import '../../services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
 import 'package:zoom_pinch_overlay/zoom_pinch_overlay.dart';
-
+import 'dart:html' as html;
 import 'galeria_widgets.dart';
 
 ScrollController _teste = ScrollController();
@@ -328,6 +328,12 @@ class _JanfieState extends State<Janfie> {
     var _largura = MediaQuery.of(context).size.width;
     var _altura = 37.h;
     return GestureDetector(
+      // onTap: () {
+      //   final url =
+      //       'https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf';
+      //   html.window.open(url, "_blank");
+      //   print("teste");
+      // },
       onTap: () => Get.toNamed('/janfie-pdf'),
       child: Container(
         height: _altura,

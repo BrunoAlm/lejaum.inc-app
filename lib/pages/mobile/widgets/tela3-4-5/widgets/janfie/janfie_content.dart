@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:get/get.dart';
+// import 'dart:html' as html;
 // import 'package:sizer/sizer.dart';
 
 String _logo_image = "assets/images/galeria/janfie/logo.webp";
@@ -34,6 +35,12 @@ Widget logo_janfie() => Container(
             largura: 115.91,
             tamanho_fonte: 13,
             tamanho_icone: 13,
+            // pressionado: () {
+            //   final url =
+            //       'https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf';
+            //   html.window.open(url, "_blank");
+            //   print("teste");
+            // },
             pressionado: () => Get.toNamed('/janfie-pdf'),
             icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
           ),
