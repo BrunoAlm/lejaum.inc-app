@@ -32,11 +32,12 @@ class _PdfJanfieState extends State<PdfJanfie> {
           'Janfie - Id. Visual e Naming',
         ),
       ),
-      body: Container(
-        child: SfPdfViewer.asset(
-          'assets/pdf/janfie-apresentacao.pdf',
-          controller: _pdfViewerController,
-        ),
+      body: SfPdfViewer.network(
+        'https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf',
+        controller: _pdfViewerController,
+        onDocumentLoaded: (PdfDocumentLoadedDetails details) {
+          print(details.document.pages.count);
+        },
       ),
       floatingActionButton: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
