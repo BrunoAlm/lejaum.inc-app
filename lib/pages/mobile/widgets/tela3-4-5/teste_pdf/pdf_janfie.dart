@@ -101,7 +101,7 @@ class Iframe extends StatelessWidget {
     ui.platformViewRegistry.registerViewFactory('iframe', (int viewId) {
       var iframe = html.IFrameElement();
       iframe.src =
-          'https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf';
+          'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf';
       return iframe;
     });
   }
