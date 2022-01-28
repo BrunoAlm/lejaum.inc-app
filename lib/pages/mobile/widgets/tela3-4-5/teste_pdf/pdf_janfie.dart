@@ -169,13 +169,15 @@ class _PdfJanfieState extends State<PdfJanfie> {
             },
           ),
           floatingActionButton: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               FloatingActionButton(
                 heroTag: 'fab-back',
                 child: Icon(Icons.navigate_before, color: Styles.pretao),
                 onPressed: () {
                   _pdfController.previousPage(
-                    curve: Curves.ease,
+                    curve: Curves.linear,
                     duration: Duration(milliseconds: 100),
                   );
                 },
@@ -186,7 +188,7 @@ class _PdfJanfieState extends State<PdfJanfie> {
                 child: Icon(Icons.navigate_next, color: Styles.pretao),
                 onPressed: () {
                   _pdfController.nextPage(
-                    curve: Curves.ease,
+                    curve: Curves.linear,
                     duration: Duration(milliseconds: 100),
                   );
                 },
