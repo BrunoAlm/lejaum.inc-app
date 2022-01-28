@@ -31,7 +31,6 @@ class MyApp extends StatelessWidget {
         navigatorObservers: [
           routeObserver,
         ],
-        
         debugShowCheckedModeBanner: false,
         themeMode: ThemeMode.dark,
         theme: Themes.light,
@@ -39,7 +38,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const HomePage(),
-          '/janfie-pdf': (context) => const PdfJanfie(),
+          '/janfie-pdf': (context) => PdfJanfie(),
           '/azardi-pdf': (context) => const PdfArzadi(),
         },
       );

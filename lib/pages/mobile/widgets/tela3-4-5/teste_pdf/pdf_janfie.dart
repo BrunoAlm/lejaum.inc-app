@@ -72,45 +72,127 @@
 //   }
 // }
 import 'package:flutter/material.dart';
-import 'dart:html' as html;
-import 'dart:ui' as ui;
-
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+import 'package:native_pdf_view/native_pdf_view.dart';
 
-class PdfJanfie extends StatelessWidget {
-  const PdfJanfie({Key? key}) : super(key: key);
-
+class PdfJanfie extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text(
-          'Janfie - Id. Visual e Naming',
-          style: Styles.textoBrancoBold,
-        ),
-      ),
-      body: Iframe(),
-    );
-  }
+  _PdfJanfieState createState() => _PdfJanfieState();
 }
 
-class Iframe extends StatelessWidget {
-  Iframe() {
-    // ignore: undefined_prefixed_name
-    ui.platformViewRegistry.registerViewFactory('iframe', (int viewId) {
-      var iframe = html.IFrameElement();
-      iframe.src =
-          'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf';
-      return iframe;
-    });
-  }
+class _PdfJanfieState extends State<PdfJanfie> {
+  static final int _initialPage = 1;
+  int _actualPageNumber = _initialPage, _allPagesCount = 0;
+  bool isSampleDoc = true;
+  late PdfController _pdfController;
+
   @override
-  Widget build(BuildContext context) {
-    return Center(
-        // decoration: BoxDecoration(border: Border.all(color: Colors.blueAccent)),
-        // width: 400,
-        // height: 300,
-        child: HtmlElementView(viewType: 'iframe'));
+  void initState() {
+    _pdfController = PdfController(
+      document: PdfDocument.openAsset('assets/pdf/janfie-apresentacao.pdf'),
+      initialPage: _initialPage,
+    );
+    super.initState();
   }
+
+  @override
+  void dispose() {
+    _pdfController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) => SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Styles.pretao,
+            title: Text(
+              'Janfie - Id. Visual e Naming',
+              style: Styles.textoBrancoBold,
+            ),
+            actions: <Widget>[
+              // IconButton(
+              //   icon: Icon(Icons.navigate_before),
+              //   onPressed: () {
+              //     _pdfController.previousPage(
+              //       curve: Curves.ease,
+              //       duration: Duration(milliseconds: 100),
+              //     );
+              //   },
+              // ),
+              Container(
+                alignment: Alignment.center,
+                child: Text(
+                  '$_actualPageNumber/$_allPagesCount',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+              // IconButton(
+              //   icon: Icon(Icons.navigate_next),
+              //   onPressed: () {
+              //     _pdfController.nextPage(
+              //       curve: Curves.ease,
+              //       duration: Duration(milliseconds: 100),
+              //     );
+              //   },
+              // ),
+              const SizedBox(width: 10),
+              IconButton(
+                icon: Icon(Icons.refresh),
+                onPressed: () {
+                  if (isSampleDoc) {
+                    _pdfController.loadDocument(PdfDocument.openAsset(
+                        'assets/pdf/janfie-apresentacao.pdf'));
+                  } else {
+                    _pdfController.loadDocument(PdfDocument.openAsset(
+                        'assets/pdf/janfie-apresentacao.pdf'));
+                  }
+                  isSampleDoc = !isSampleDoc;
+                },
+              )
+            ],
+          ),
+          body: PdfView(
+            scrollDirection: Axis.vertical,
+            documentLoader: Center(child: CircularProgressIndicator()),
+            pageLoader: Center(child: CircularProgressIndicator()),
+            controller: _pdfController,
+            onDocumentLoaded: (document) {
+              setState(() {
+                _allPagesCount = document.pagesCount;
+              });
+            },
+            onPageChanged: (page) {
+              setState(() {
+                _actualPageNumber = page;
+              });
+            },
+          ),
+          floatingActionButton: Row(
+            children: [
+              FloatingActionButton(
+                heroTag: 'fab-back',
+                child: Icon(Icons.navigate_before, color: Styles.pretao),
+                onPressed: () {
+                  _pdfController.previousPage(
+                    curve: Curves.ease,
+                    duration: Duration(milliseconds: 100),
+                  );
+                },
+              ),
+              const SizedBox(width: 10),
+              FloatingActionButton(
+                heroTag: 'fab-next',
+                child: Icon(Icons.navigate_next, color: Styles.pretao),
+                onPressed: () {
+                  _pdfController.nextPage(
+                    curve: Curves.ease,
+                    duration: Duration(milliseconds: 100),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      );
 }
