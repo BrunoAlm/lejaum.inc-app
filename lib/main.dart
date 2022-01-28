@@ -17,6 +17,7 @@ void main() {
     statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
+   WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
   runApp(const MyApp());
 }
