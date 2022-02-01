@@ -14,9 +14,14 @@ String _img3 = "assets/images/galeria/azardi/img3.webp";
 // var _largura = 439.6;
 // var _altura = 247.53;
 
-Widget logo_azardi() => Container(
+class LogoArzadi extends StatelessWidget {
+  const LogoArzadi({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
       margin: const EdgeInsets.only(left: 10),
-      width: 186.47,
+      width: context.widthTransformer(reducedBy: 20),
       // height: _altura,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -44,6 +49,9 @@ Widget logo_azardi() => Container(
         ],
       ),
     );
+  }
+}
+
 Widget azardi1() => Container(
       // width: _largura,
       // height: _altura,

@@ -3,21 +3,19 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart';
-// import 'package:responsive_framework/responsive_wrapper.dart';
-// import 'package:responsive_framework/utils/scroll_behavior.dart';
 import 'package:seo_renderer/seo_renderer.dart';
 import 'package:sizer/sizer.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'pages/home_page_logic.dart';
-import 'pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart';
+import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart';
+import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   setPathUrlStrategy();
   runApp(const MyApp());
 }
@@ -39,8 +37,8 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const HomePage(),
-          '/janfie-pdf': (context) => PdfJanfie(),
-          '/azardi-pdf': (context) => const PdfArzadi(),
+          '/janfie-pdf': (context) => const PdfJanfie(),
+          '/arzadi-pdf': (context) => const PdfArzadi(),
         },
       );
     });
