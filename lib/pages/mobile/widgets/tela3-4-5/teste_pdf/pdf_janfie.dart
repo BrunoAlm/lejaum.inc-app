@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:pdf_render/pdf_render_widgets.dart';
 
 class PdfJanfie extends StatefulWidget {
@@ -13,7 +14,9 @@ class _PdfJanfieState extends State<PdfJanfie> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Janfie PDF'),
+        backgroundColor: Styles.pretao,
+        title: const Text('Janfie - Id. Visual e Naming',
+            style: Styles.textoBrancoBold),
       ),
       backgroundColor: Colors.grey,
       body: Center(
