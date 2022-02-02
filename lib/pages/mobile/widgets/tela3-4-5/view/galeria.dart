@@ -4,8 +4,7 @@ import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_view.d
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_view.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart';
-
-import '../widgets/galeria_content/social_media_2_view.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_view.dart';
 
 class GaleriaSM extends StatelessWidget {
   const GaleriaSM({Key? key}) : super(key: key);
