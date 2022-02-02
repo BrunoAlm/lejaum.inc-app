@@ -11,18 +11,24 @@ String _img1 = "assets/images/galeria/janfie/img1.webp";
 String _img2 = "assets/images/galeria/janfie/img2.webp";
 String _img3 = "assets/images/galeria/janfie/img3.webp";
 String _img4 = "assets/images/galeria/janfie/img4.webp";
+
 // var _altura = 37.h;
 // var _largura = _altura / 0.4417;
-Widget logo_janfie() => Container(
+class LogoJanfie extends StatelessWidget {
+  const LogoJanfie({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
       margin: const EdgeInsets.only(left: 10),
-      width: 186.47,
+      width: context.widthTransformer(reducedBy: 20),
       height: 198.79,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
         color: Color(0xFF0E0D0C),
-        image: DecorationImage(
-            image: AssetImage(_logo_image), fit: BoxFit.fitHeight),
+        image:
+            DecorationImage(image: AssetImage(_logo_image), fit: BoxFit.cover),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -48,6 +54,9 @@ Widget logo_janfie() => Container(
         ],
       ),
     );
+  }
+}
+
 Widget janfie1() => Container(
       // width: _largura,
       // height:  ,
