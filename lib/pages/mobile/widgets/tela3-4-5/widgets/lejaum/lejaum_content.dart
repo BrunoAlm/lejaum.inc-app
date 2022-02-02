@@ -11,14 +11,19 @@ String _img2 = "assets/images/galeria/lejaum/img2.webp";
 String _img3 = "assets/images/galeria/lejaum/img3.webp";
 String _img4 = "assets/images/galeria/lejaum/img4.webp";
 
-Widget logo_lejaum() => Container(
-   margin: const EdgeInsets.only(left: 10),
+class LogoLejaum extends StatelessWidget {
+  const LogoLejaum({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(left: 10),
       decoration: BoxDecoration(
         color: Styles.quaseBlack,
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
       ),
-      width: 186.47,
+      width: context.widthTransformer(reducedBy: 20),
       height: 198.79,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,6 +61,8 @@ Widget logo_lejaum() => Container(
         ],
       ),
     );
+  }
+}
 
 Widget lejaum1() => Container(
       // width: 450,

@@ -20,13 +20,13 @@ List<Widget> janfie_list = [
 ];
 
 List<Widget> italo_list = [
-  logo_italo(),
+  LogoItalo(),
   italo1(),
   italo2(),
   italo3(),
 ];
 List<Widget> lejaum_list = [
-  logo_lejaum(),
+  LogoLejaum(),
   lejaum1(),
   lejaum2(),
   lejaum3(),

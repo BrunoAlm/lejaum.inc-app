@@ -10,9 +10,14 @@ String _img1 = "assets/images/galeria/italo/img1.png";
 String _img2 = "assets/images/galeria/italo/img2.png";
 String _img3 = "assets/images/galeria/italo/img3.png";
 
-Widget logo_italo() => Container(
+class LogoItalo extends StatelessWidget {
+  const LogoItalo({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
       margin: const EdgeInsets.only(left: 10),
-      width: 186.47,
+      width: context.widthTransformer(reducedBy: 20),
       height: 198.79,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -60,6 +65,8 @@ Widget logo_italo() => Container(
         ],
       ),
     );
+  }
+}
 
 Widget italo1() => Container(
       // width: 320,

@@ -15,11 +15,7 @@ class PlanosCard extends StatelessWidget {
         physics: const BouncingScrollPhysics(), // this for snapping
         itemCount: planosList.length,
         itemBuilder: (_, index) {
-          if (index == 0) {
-            return planosList[index + 1];
-          } else {
-            return planosList[index - 1];
-          }
+          return planosList[index];
         },
       ),
     );

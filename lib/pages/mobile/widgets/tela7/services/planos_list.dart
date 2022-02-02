@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
@@ -125,7 +126,7 @@ class Plano3 extends StatelessWidget {
                 'Gestão de Anúncions\nno Facebook e Instagram'),
             flagsDoPlanoDesativado('Gestão de Anúncios no\nGoogle e Youtube'),
             cardSolicitacao(
-              nome: 'Digital Master',
+              nome: 'Relacionamento Basic',
               valor: 'Plano Básico - R\$399,00',
               descricao: 'Social Media',
             ),
@@ -206,9 +207,10 @@ Widget cardSolicitacao({String? nome, String? valor, String? descricao}) =>
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     nome!,
                     style: Styles.TitleTextPlanosCardMoney,
+                    maxFontSize: 20,
                   ),
                   const SizedBox(height: 5),
                   Text(

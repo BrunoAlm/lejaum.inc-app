@@ -41,6 +41,7 @@ class Planos extends StatelessWidget {
             Center(
               child: IconeBotaoEstilizado(
                 texto: 'Solicitar plano personalizado',
+                altura: 40,
                 pressionado: abrirWhatsApp,
                 icone: FontAwesomeIcons.whatsapp,
                 cor: Styles.verdeGood,
