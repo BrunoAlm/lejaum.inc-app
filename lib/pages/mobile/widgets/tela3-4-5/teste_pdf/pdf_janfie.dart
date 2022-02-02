@@ -208,6 +208,8 @@ import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:native_pdf_renderer/native_pdf_renderer.dart';
 
 class PdfJanfie extends StatelessWidget {
+  var _controller = PageController();
+
   Future<PdfDocument> _getDocument() async {
     if (await hasPdfSupport()) {
       return PdfDocument.openAsset('assets/pdf/janfie-apresentacao.pdf');
@@ -254,8 +256,16 @@ class PdfJanfie extends StatelessWidget {
             );
           }
 
-          return ListView.builder(
+          return ListView.custom(
+            childrenDelegate: SliverChildListDelegate([
+              
+            ]),
+            pageSnapping: false,
+            scrollDirection: Axis.vertical,
+            controller: _controller,
+            clipBehavior: Clip.hardEdge,
             itemCount: 21,
+            padEnds: false,
             itemBuilder: (context, index) {
               return ImageLoader(
                 key: ValueKey('pdf$index'),
@@ -311,7 +321,9 @@ class ImageLoader extends StatelessWidget {
             }
             if (!snapshot.hasData) {
               return Center(
-                child: CircularProgressIndicator(),
+                child: Container(
+                    margin: const EdgeInsets.only(top: 10),
+                    child: CircularProgressIndicator()),
               );
             }
 
