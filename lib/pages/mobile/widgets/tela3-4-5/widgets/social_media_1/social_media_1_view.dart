@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/galeria_widgets.dart';
-// import '../../services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
 import 'package:zoom_pinch_overlay/zoom_pinch_overlay.dart';
 

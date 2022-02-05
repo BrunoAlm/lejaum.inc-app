@@ -11,7 +11,7 @@ class Styles {
   static const Color mareloMostarda = Color(0xFFFA9905);
   static const Color verdeGood = Color(0xFF25D366);
   static const Color roxinho = Color(0xFF72147E);
-  static const Color azulBaitolote = Color(0xFF191E26);
+  static const Color azulBaitolote = Color(0xFF191D26);
   static const String fonte = 'Georama';
   ThemeData teste = ThemeData();
 

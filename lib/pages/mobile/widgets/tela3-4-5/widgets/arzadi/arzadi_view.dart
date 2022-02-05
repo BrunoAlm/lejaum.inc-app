@@ -12,7 +12,7 @@ class Arzadi extends StatelessWidget {
     // var _altura = 247.53;
     var _largura = MediaQuery.of(context).size.width;
     return GestureDetector(
-      onTap: () => Get.toNamed('/arzadi-pdf'),
+      onTap: () => Get.toNamed('/arzadi_pdf'),
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),
         height: _altura,
@@ -27,4 +27,3 @@ class Arzadi extends StatelessWidget {
     );
   }
 }
-

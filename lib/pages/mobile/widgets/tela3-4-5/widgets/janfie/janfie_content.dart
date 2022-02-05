@@ -3,8 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:get/get.dart';
-// import 'dart:html' as html;
-// import 'package:sizer/sizer.dart';
 
 String _logo_image = "assets/images/galeria/janfie/logo.webp";
 String _img1 = "assets/images/galeria/janfie/img1.webp";
@@ -12,8 +10,6 @@ String _img2 = "assets/images/galeria/janfie/img2.webp";
 String _img3 = "assets/images/galeria/janfie/img3.webp";
 String _img4 = "assets/images/galeria/janfie/img4.webp";
 
-// var _altura = 37.h;
-// var _largura = _altura / 0.4417;
 class LogoJanfie extends StatelessWidget {
   const LogoJanfie({Key? key}) : super(key: key);
 
@@ -41,13 +37,7 @@ class LogoJanfie extends StatelessWidget {
             largura: 115.91,
             tamanho_fonte: 13,
             tamanho_icone: 13,
-            // pressionado: () {
-            //   final url =
-            //       'https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/pdf/janfie-apresentacao.pdf';
-            //   html.window.open(url, "_blank");
-            //   print("teste");
-            // },
-            pressionado: () => Get.toNamed('/janfie-pdf'),
+            pressionado: () => Get.toNamed('/janfie_pdf'),
             icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
           ),
           SizedBox(height: 20),
@@ -58,18 +48,12 @@ class LogoJanfie extends StatelessWidget {
 }
 
 Widget janfie1() => Container(
-      // width: _largura,
-      // height:  ,
       child: Image.asset(_img1, fit: BoxFit.fill),
     );
 Widget janfie2() => Container(
-      // width: _largura,
-      // height:  ,
       child: Image.asset(_img2, fit: BoxFit.fill),
     );
 Widget janfie3() => Container(
-      // width: _largura,
-      // height:  ,
       child: Image.asset(_img3, fit: BoxFit.fill),
     );
 Widget janfie4() => Padding(
@@ -78,8 +62,6 @@ Widget janfie4() => Padding(
         borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
-          // width: _largura,
-          // height:  ,
           child: Image.asset(_img4, fit: BoxFit.fill),
         ),
       ),

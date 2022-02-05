@@ -16,7 +16,7 @@ class _JanfieState extends State<Janfie> {
     var _largura = MediaQuery.of(context).size.width;
     var _altura = 37.h;
     return GestureDetector(
-      onTap: () => Get.toNamed('/janfie-pdf'),
+      onTap: () => Get.toNamed('/janfie_pdf'),
       child: Container(
         height: _altura,
         width: _largura,

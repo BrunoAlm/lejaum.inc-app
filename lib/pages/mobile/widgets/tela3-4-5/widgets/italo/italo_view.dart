@@ -11,7 +11,7 @@ class Italo extends StatelessWidget {
     var _largura = MediaQuery.of(context).size.width;
     var _altura = 37.h;
     return GestureDetector(
-      onTap: () => Get.toNamed('/janfie-pdf'),
+      onTap: () => Get.toNamed('/italo_pdf'),
       child: Container(
         height: _altura,
         width: _largura,

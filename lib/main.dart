@@ -1,22 +1,37 @@
+// PACKAGES INTERNOS
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+// PACKAGES EXTERNOS
 import 'package:get/get.dart';
-import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:seo_renderer/seo_renderer.dart';
 import 'package:sizer/sizer.dart';
 import 'package:url_strategy/url_strategy.dart';
+import 'package:seo_renderer/seo_renderer.dart';
+
+// HOMEPAGE
 import 'pages/home_page_logic.dart';
-import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart';
+
+// ESTILOS
+import 'pages/mobile/services/styles_mobile.dart';
+import 'pages/mobile/services/themes.dart';
+
+// PÁGINAS DE PDF
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart';
+import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart';
+import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_italo.dart';
+import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart';
 
 void main() {
+  // Altera statusBarColor do MOBILE
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
+  // n sei
   WidgetsFlutterBinding.ensureInitialized();
+  // Remove o # da url
   setPathUrlStrategy();
+  // MaterialApp
   runApp(const MyApp());
 }
 
@@ -35,10 +50,19 @@ class MyApp extends StatelessWidget {
         theme: Themes.light,
         darkTheme: Themes.dark,
         initialRoute: '/',
+        // getPages: [
+        //   GetPage(name: '/', page: () => const HomePage()),
+        //   GetPage(name: '/janfie_pdf', page: () => const PdfJanfie()),
+        //   GetPage(name: '/arzadi_pdf', page: () => const PdfArzadi()),
+        //   GetPage(name: '/italo_pdf', page: () => const PdfItalo()),
+        //   GetPage(name: '/lejaum_pdf', page: () => const PdfLejaum()),
+        // ],
         routes: {
           '/': (context) => const HomePage(),
-          '/janfie-pdf': (context) => const PdfJanfie(),
-          '/arzadi-pdf': (context) => const PdfArzadi(),
+          '/janfie_pdf': (context) => const PdfJanfie(),
+          '/arzadi_pdf': (context) => const PdfArzadi(),
+          '/italo_pdf': (context) => const PdfItalo(),
+          '/lejaum_pdf': (context) => const PdfLejaum(),
         },
       );
     });

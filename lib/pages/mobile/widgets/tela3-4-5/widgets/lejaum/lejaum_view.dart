@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter/material.dart';
@@ -13,11 +14,14 @@ class Lejaum extends StatelessWidget {
       height: _altura,
       width: _largura,
       margin: const EdgeInsets.only(top: 10),
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(), // this for snapping
-        itemCount: lejaum_list.length,
-        itemBuilder: (context, index) => lejaum_list[index],
+      child: GestureDetector(
+        onTap: () => Get.toNamed('/lejaum_pdf'),
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(), // this for snapping
+          itemCount: lejaum_list.length,
+          itemBuilder: (context, index) => lejaum_list[index],
+        ),
       ),
     );
   }

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:pdf_render/pdf_render_widgets.dart';
 
-class PdfJanfie extends StatefulWidget {
-  const PdfJanfie({Key? key}) : super(key: key);
+class PdfLejaum extends StatefulWidget {
+  const PdfLejaum({Key? key}) : super(key: key);
 
   @override
-  _PdfJanfieState createState() => _PdfJanfieState();
+  _PdfLejaumState createState() => _PdfLejaumState();
 }
 
-class _PdfJanfieState extends State<PdfJanfie> {
+class _PdfLejaumState extends State<PdfLejaum> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Styles.pretao,
-        title: const Text('Janfie - Id. Visual e Naming',
+        title: const Text('Lejaum - Id. Visual e Naming',
             style: Styles.textoBrancoBold),
       ),
       // backgroundColor: Colors.grey,

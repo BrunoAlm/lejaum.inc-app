@@ -13,7 +13,7 @@ class PdfArzadi extends StatelessWidget {
         title: const Text('Arzadi - Id. Visual e Naming',
             style: Styles.textoBrancoBold),
       ),
-      backgroundColor: Colors.grey,
+      // backgroundColor: Colors.grey,
       body: Center(
         child: PdfDocumentLoader.openAsset(
           'assets/pdf/azardi_shop.pdf',

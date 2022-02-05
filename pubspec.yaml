@@ -44,9 +44,9 @@ dependencies:
   auto_size_text: ^3.0.0
 
   # PDF
-  syncfusion_flutter_pdfviewer:
-  native_pdf_view: ^5.0.0
-  native_pdf_renderer: ^4.0.1
+  # syncfusion_flutter_pdfviewer:
+  # native_pdf_view: ^5.0.0
+  # native_pdf_renderer: ^4.0.1
   pdf_render: ^1.0.23
   
 
