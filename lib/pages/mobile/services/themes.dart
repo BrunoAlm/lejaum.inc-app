@@ -22,8 +22,8 @@ class Themes {
       onBackground: Styles.laranjaum,
       onError: Colors.red,
       brightness: Brightness.light,
-      // primaryVariant: Styles.laranjaum,
-      // secondaryVariant: Styles.quaseWhite,
+      primaryVariant: Styles.laranjaum,
+      secondaryVariant: Styles.quaseWhite,
     ),
     // elevatedButtonTheme: ElevatedButtonThemeData(
     //   style: ButtonStyle(
@@ -45,8 +45,8 @@ class Themes {
       onBackground: Styles.laranjaum,
       onError: Colors.red,
       brightness: Brightness.dark,
-      // primaryVariant: Styles.laranjaum,
-      // secondaryVariant: Styles.quaseBlack,
+      primaryVariant: Styles.laranjaum,
+      secondaryVariant: Styles.quaseBlack,
     ),
     iconTheme: IconThemeData(color: Styles.quaseWhite),
   );

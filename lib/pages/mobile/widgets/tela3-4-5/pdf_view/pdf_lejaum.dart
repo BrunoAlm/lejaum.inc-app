@@ -21,7 +21,7 @@ class _PdfLejaumState extends State<PdfLejaum> {
       // backgroundColor: Colors.grey,
       body: Center(
         child: PdfDocumentLoader.openAsset(
-          'assets/pdf/janfie-apresentacao.pdf',
+          'pdf/janfie.pdf',
           documentBuilder: (context, pdfDocument, pageCount) => LayoutBuilder(
             builder: (context, constraints) => ListView.builder(
               scrollDirection: Axis.vertical,
