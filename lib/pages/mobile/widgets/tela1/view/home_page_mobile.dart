@@ -46,22 +46,22 @@ class HomePageMobile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                height: 30,
-                width: constraints.maxWidth,
-                color: Styles.roxinho,
-                child: Center(
-                  child: Text(
-                    'Estamos construindo o nosso site! Pode haver erros ou bugs!',
-                    softWrap: true,
-                    style: TextStyle(
-                      fontFamily: 'Georama',
-                      fontStyle: FontStyle.italic,
-                      fontSize: 13,
-                    ),
-                  ),
-                ),
-              ),
+              // Container(
+              //   height: 30,
+              //   width: constraints.maxWidth,
+              //   color: Styles.roxinho,
+              //   child: Center(
+              //     child: Text(
+              //       'Estamos construindo o nosso site! Pode haver erros ou bugs!',
+              //       softWrap: true,
+              //       style: TextStyle(
+              //         fontFamily: 'Georama',
+              //         fontStyle: FontStyle.italic,
+              //         fontSize: 13,
+              //       ),
+              //     ),
+              //   ),
+              // ),
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

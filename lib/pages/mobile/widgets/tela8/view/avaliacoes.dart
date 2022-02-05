@@ -48,14 +48,14 @@ class _AvaliacoesState extends State<Avaliacoes> {
               padding: const EdgeInsets.all(13.0),
               child: AvaliacaoJanfie(),
             ),
-            Padding(
-              padding: const EdgeInsets.all(13.0),
-              child: AvaliacaoJanfie(),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(13.0),
-              child: AvaliacaoJanfie(),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(13.0),
+            //   child: AvaliacaoJanfie(),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.all(13.0),
+            //   child: AvaliacaoJanfie(),
+            // ),
             Expanded(child: SizedBox()),
             Container(
               height: 100,

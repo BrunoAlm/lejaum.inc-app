@@ -24,27 +24,30 @@ class _SolucoesState extends State<Solucoes> {
             const SizedBox(height: 49),
             AutoSizeText(
               'Soluções',
-              maxLines: 1,
               style: Styles.tituloExtraBoldMenor,
+              maxLines: 1,
               maxFontSize: 40,
               minFontSize: 35,
             ),
+            const SizedBox(height: 10),
             Text(
               'Veja abaixo algumas das soluções que nós podemos oferecer:',
               style: Styles.subtitulo.merge(
                 TextStyle(color: Theme.of(context).colorScheme.secondary),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             Expanded(child: CardSolucao()),
-            Text(
-              'Nós somos a solução para sua\nempresa!',
-              softWrap: true,
+            AutoSizeText(
+              'Nós somos a solução para sua empresa!',
+              maxLines: 2,
+              maxFontSize: 40,
+              minFontSize: 23,
               textAlign: TextAlign.center,
               style: Styles.subtituloBoldao
                   .merge(TextStyle(color: Styles.laranjaum)),
             ),
-            const SizedBox(height: 80),
+            const SizedBox(height: 40),
           ],
         ),
       ),

@@ -3,6 +3,7 @@ List<String> titulos_Expansividade = [
   'Identidade Visual',
   'Gestão de Tráfego',
   'Social Media',
+  'Copywriting'
 ];
 
 List<String> subtitulos_Expansividade = [
@@ -10,6 +11,7 @@ List<String> subtitulos_Expansividade = [
   'Simbolo, Logotipo, tipografia, cores, patterns, design system (se necessario), itens de papelaria, itens de marca e etc;',
   'Anúncios onlines e captação de leads via  facebook, google, tiktok e qualquer outra plataforma, análise de funis, relatórios personalizados e etc;',
   'Gerenciamento de redes sociais, criação de conteúdo, publicações, posts, status, relacionamento com o público, e etc;',
+  'Copywriting é a arte de escrever de forma persuasiva e de forma que o leitor se interesse pelo texto e seja conquistado para que realize a ação desejada, por exemplo, uma compra.'
 ];
 
 List<String> titulos_2_Expansividade = [

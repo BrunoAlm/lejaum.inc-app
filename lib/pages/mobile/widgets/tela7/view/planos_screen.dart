@@ -37,7 +37,7 @@ class Planos extends StatelessWidget {
               padding: const EdgeInsets.only(left: 10),
               child: PlanosCard(),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
             Center(
               child: IconeBotaoEstilizado(
                 texto: 'Solicitar plano personalizado',

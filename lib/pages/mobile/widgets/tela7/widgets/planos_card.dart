@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/widgets/tela7/services/planos_list.dart';
+import 'package:sizer/sizer.dart';
 
 class PlanosCard extends StatelessWidget {
   const PlanosCard({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class PlanosCard extends StatelessWidget {
     var largura = MediaQuery.of(context).size.width;
     return Container(
       width: largura,
-      height: 400,
+      height: 63.h,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(), // this for snapping
