@@ -173,7 +173,7 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                       color: Colors.black38,
                       height: 75,
                       width: largura,
-                      child: TutorialDoSlide()),
+                      child: Center(child: TutorialDoSlide())),
                 ),
               ),
             ],
@@ -211,12 +211,14 @@ class _TutorialDoSlideState extends State<TutorialDoSlide>
     return LayoutBuilder(builder: (context, constraints) {
       final Size biggest = constraints.biggest;
       return Stack(
-        alignment: Alignment.center,
+        textDirection: TextDirection.ltr,
         children: [
           PositionedTransition(
             rect: RelativeRectTween(
               begin: RelativeRect.fromSize(
-                  const Rect.fromLTWH(0, 0, smallLogo, smallLogo), biggest),
+                  Rect.fromLTWH(
+                      biggest.width * .45 + 30, 0, smallLogo, smallLogo),
+                  biggest),
               end: RelativeRect.fromSize(
                   Rect.fromLTWH(biggest.width - bigLogo, 0, bigLogo, bigLogo),
                   biggest),
@@ -228,6 +230,27 @@ class _TutorialDoSlideState extends State<TutorialDoSlide>
               padding: EdgeInsets.all(8),
               child: Icon(
                 Icons.arrow_forward_ios,
+                color: Colors.white,
+                size: smallLogo,
+              ),
+            ),
+          ),
+          PositionedTransition(
+            rect: RelativeRectTween(
+              begin: RelativeRect.fromSize(
+                  Rect.fromLTWH(
+                      biggest.width * 0.45 - 30, 0, smallLogo, smallLogo),
+                  biggest),
+              end: RelativeRect.fromSize(
+                  const Rect.fromLTWH(0, 0, bigLogo, bigLogo), biggest),
+            ).animate(CurvedAnimation(
+              parent: _controller,
+              curve: Curves.fastOutSlowIn,
+            )),
+            child: const Padding(
+              padding: EdgeInsets.all(8),
+              child: Icon(
+                Icons.arrow_back_ios,
                 color: Colors.white,
                 size: smallLogo,
               ),
