@@ -6,19 +6,22 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         # Checkout Repository
-        - uses: actions/checkout@v1
+        - uses: actions/checkout@v2
 
         # Install Flutter command
-        - uses: subosito/flutter-action@v1
+        - uses: subosito/flutter-action@v2
           with:
-            channel: 'dev'
+            channel: 'stable'
 
         # Build Website
         - name: Construindo Site
           run: |
-            flutter config --enable-web
             flutter pub get
-            flutter build web --release 
+            flutter test
+            flutter build web
+        # flutter config --enable-web
+        # flutter pub get
+        # flutter build web --release 
           working-directory: ./
 
         # Deploy Firebase Hosting
