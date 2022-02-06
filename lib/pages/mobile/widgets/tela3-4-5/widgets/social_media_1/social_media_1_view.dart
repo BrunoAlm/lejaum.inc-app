@@ -67,10 +67,33 @@ class SocialMedia1Zoom extends StatefulWidget {
 }
 
 class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
+  bool _visible = true;
+
+  @override
+  void initState() {
+    super.initState(); //when this route starts, it will execute this code
+    Future.delayed(const Duration(seconds: 4), () {
+      //asynchronous delay
+      if (this.mounted) {
+        //checks if widget is still active and not disposed
+        setState(() {
+          //tells the widget builder to rebuild again because ui has updated
+          _visible =
+              false; //update the variable declare this under your class so its accessible for both your widget build and initState which is located under widget build{}
+        });
+      }
+    });
+    if (!this.mounted) {
+      _visible = false;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Get.put(DirecaoDoSwipe());
     var altura = MediaQuery.of(context).size.height;
+    var largura = MediaQuery.of(context).size.width;
+
     return GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
       return GestureDetector(
         onTap: () => Navigator.pop(context),
@@ -141,9 +164,76 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                   ),
                 ],
               ),
+              Positioned(
+                // top: altura - 80,
+                bottom: 75,
+                child: Visibility(
+                  visible: _visible,
+                  child: Container(
+                      color: Colors.black38,
+                      height: 75,
+                      width: largura,
+                      child: TutorialDoSlide()),
+                ),
+              ),
             ],
           ),
         ),
+      );
+    });
+  }
+}
+
+class TutorialDoSlide extends StatefulWidget {
+  const TutorialDoSlide({Key? key}) : super(key: key);
+
+  @override
+  _TutorialDoSlideState createState() => _TutorialDoSlideState();
+}
+
+class _TutorialDoSlideState extends State<TutorialDoSlide>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    duration: const Duration(seconds: 1),
+    vsync: this,
+  )..repeat(reverse: true);
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    const double smallLogo = 60;
+    const double bigLogo = 60;
+    return LayoutBuilder(builder: (context, constraints) {
+      final Size biggest = constraints.biggest;
+      return Stack(
+        alignment: Alignment.center,
+        children: [
+          PositionedTransition(
+            rect: RelativeRectTween(
+              begin: RelativeRect.fromSize(
+                  const Rect.fromLTWH(0, 0, smallLogo, smallLogo), biggest),
+              end: RelativeRect.fromSize(
+                  Rect.fromLTWH(biggest.width - bigLogo, 0, bigLogo, bigLogo),
+                  biggest),
+            ).animate(CurvedAnimation(
+              parent: _controller,
+              curve: Curves.fastOutSlowIn,
+            )),
+            child: const Padding(
+              padding: EdgeInsets.all(8),
+              child: Icon(
+                Icons.arrow_forward_ios,
+                color: Colors.white,
+                size: smallLogo,
+              ),
+            ),
+          ),
+        ],
       );
     });
   }
