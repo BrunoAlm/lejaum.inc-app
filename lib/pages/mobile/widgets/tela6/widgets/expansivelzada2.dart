@@ -25,7 +25,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemCount: titulos_2_Expansividade.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (c, index) {
           return Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,9 +51,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                       title: Text(
                         titulos_2_Expansividade[index],
                         style: Styles.tituloIconTextSolucao.merge(
-                          TextStyle(
-                            color: Theme.of(context).colorScheme.secondary,
-                          ),
+                          TextStyle(color: Colors.white),
                         ),
                       ),
                       children: <Widget>[

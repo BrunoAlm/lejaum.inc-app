@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
@@ -26,7 +27,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemCount: titulos_Expansividade.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (c, index) {
           return Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,9 +53,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                       title: Text(
                         titulos_Expansividade[index],
                         style: Styles.tituloIconTextSolucao.merge(
-                          TextStyle(
-                            color: Theme.of(context).colorScheme.secondary,
-                          ),
+                          TextStyle(color: Colors.white),
                         ),
                       ),
                       children: <Widget>[

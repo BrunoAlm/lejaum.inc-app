@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart';
 import 'package:sizer/sizer.dart';
 import 'package:zoom_pinch_overlay/zoom_pinch_overlay.dart';
 import '../galeria_widgets.dart';
@@ -63,11 +64,33 @@ class SocialMedia2Zoom extends StatefulWidget {
 }
 
 class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
+  bool _visible = true;
+
+  @override
+  void initState() {
+    super.initState(); //when this route starts, it will execute this code
+    Future.delayed(const Duration(seconds: 4), () {
+      //asynchronous delay
+      if (this.mounted) {
+        //checks if widget is still active and not disposed
+        setState(() {
+          //tells the widget builder to rebuild again because ui has updated
+          _visible =
+              false; //update the variable declare this under your class so its accessible for both your widget build and initState which is located under widget build{}
+        });
+      }
+    });
+    if (!this.mounted) {
+      _visible = false;
+    }
+  }
+
   // var direcaoDoSwipe = DirecaoDoSwipe();
   @override
   Widget build(BuildContext context) {
     Get.put(DirecaoDoSwipe());
     var altura = MediaQuery.of(context).size.height;
+    var largura = MediaQuery.of(context).size.width;
     return GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
       return GestureDetector(
         onTap: () => Navigator.pop(context),
@@ -137,6 +160,18 @@ class _SocialMedia2ZoomState extends State<SocialMedia2Zoom> {
                     }),
                   ),
                 ],
+              ),
+              Positioned(
+                // top: altura - 80,
+                bottom: 228,
+                child: Visibility(
+                  visible: _visible,
+                  child: Container(
+                      color: Colors.black38,
+                      height: 55,
+                      width: largura,
+                      child: Center(child: TutorialDoSlide())),
+                ),
               ),
             ],
           ),

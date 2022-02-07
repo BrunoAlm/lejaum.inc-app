@@ -42,7 +42,11 @@ Widget flagsDoPlanoDesativado(String texto) => Row(
                 color: Styles.cinzou,
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: Icon(FontAwesomeIcons.times, size: 6)),
+              child: Icon(
+                FontAwesomeIcons.times,
+                size: 6,
+                color: Colors.white,
+              )),
         ),
         // const SizedBox(width: 4),
         AutoSizeText(

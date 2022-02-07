@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/view/card_solucao.dart';
 
@@ -33,7 +34,7 @@ class _SolucoesState extends State<Solucoes> {
             Text(
               'Veja abaixo algumas das soluções que nós podemos oferecer:',
               style: Styles.subtitulo.merge(
-                TextStyle(color: Theme.of(context).colorScheme.secondary),
+                TextStyle(color: Get.theme.colorScheme.secondary),
               ),
             ),
             const SizedBox(height: 30),

@@ -171,7 +171,7 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                   visible: _visible,
                   child: Container(
                       color: Colors.black38,
-                      height: 75,
+                      height: 55,
                       width: largura,
                       child: Center(child: TutorialDoSlide())),
                 ),
@@ -194,7 +194,7 @@ class TutorialDoSlide extends StatefulWidget {
 class _TutorialDoSlideState extends State<TutorialDoSlide>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(seconds: 1),
+    duration: const Duration(milliseconds: 800),
     vsync: this,
   )..repeat(reverse: true);
 
@@ -206,8 +206,8 @@ class _TutorialDoSlideState extends State<TutorialDoSlide>
 
   @override
   Widget build(BuildContext context) {
-    const double smallLogo = 60;
-    const double bigLogo = 60;
+    const double smallLogo = 40;
+    const double bigLogo = 40;
     return LayoutBuilder(builder: (context, constraints) {
       final Size biggest = constraints.biggest;
       return Stack(
