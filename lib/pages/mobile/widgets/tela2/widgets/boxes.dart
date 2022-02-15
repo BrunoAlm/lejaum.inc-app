@@ -69,8 +69,8 @@ class BoxCoracao extends StatelessWidget {
                       TextStyle(color: Theme.of(context).colorScheme.secondary),
                     ),
                     children: [
-                      TextSpan(text: 'Crie relacionamento com seu\n'),
-                      TextSpan(text: 'público com '),
+                      TextSpan(text: 'Desenvolva relacionamento\n'),
+                      TextSpan(text: 'com seu público com nosso\n'),
                       TextSpan(
                         text: 'social media',
                         style: Styles.boxesStyleBold.merge(

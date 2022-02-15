@@ -25,7 +25,7 @@ Widget flagsDoPlanoAtivado(String texto) => Row(
           texto,
           maxLines: 2,
           maxFontSize: 25,
-          minFontSize: 20,
+          minFontSize: 10,
           // softWrap: true,
           style: Styles.planosTextFlagAtivado,
         ),
@@ -60,8 +60,7 @@ Widget flagsDoPlanoDesativado(String texto) => Row(
       ],
     );
 
-Widget cardSolicitacao({String? nome, String? valor, String? descricao}) =>
-    Container(
+Widget cardSolicitacao({String? valor, String? descricao}) => Container(
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/images/planos_money.png'),
@@ -87,13 +86,13 @@ Widget cardSolicitacao({String? nome, String? valor, String? descricao}) =>
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AutoSizeText(
-                    nome!,
-                    style: Styles.TitleTextPlanosCardMoney,
-                    maxLines: 1,
-                    maxFontSize: 30,
-                    minFontSize: 27,
-                  ),
+                  // AutoSizeText(
+                  //   nome!,
+                  //   style: Styles.TitleTextPlanosCardMoney,
+                  //   maxLines: 1,
+                  //   maxFontSize: 30,
+                  //   minFontSize: 27,
+                  // ),
                   const SizedBox(height: 10),
                   AutoSizeText(
                     valor!,
