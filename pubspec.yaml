@@ -99,6 +99,8 @@ flutter:
       fonts:
         - asset: assets/fonts/Georama/Georama-Regular.ttf
           weight: 400
+        - asset: assets/fonts/Georama/Georama-Medium.ttf
+          weight: 500
         - asset: assets/fonts/Georama/Georama-MediumItalic.ttf
           weight: 500
           style: italic

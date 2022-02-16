@@ -139,13 +139,13 @@ class Styles {
   static final planosTextFlagAtivado = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w600,
-    fontSize: 18,
+    // fontSize: 18,
     color: laranjaum,
   );
   static final planosTextFlagDesativado = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w600,
-    fontSize: 18,
+    // fontSize: 18,
     color: cinzou,
   );
 
@@ -154,7 +154,7 @@ class Styles {
     fontFamily: fonte,
     fontWeight: FontWeight.w800,
     fontSize: 25,
-    color: quaseBlack,
+    color: quaseWhite,
   );
   static final SubtitleTextPlanosCardMoney = TextStyle(
     fontFamily: fonte,

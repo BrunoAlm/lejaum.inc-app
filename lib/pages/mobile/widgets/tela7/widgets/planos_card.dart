@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+// import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela7/services/planos_list.dart';
 import 'package:sizer/sizer.dart';
 
@@ -10,15 +10,15 @@ class PlanosCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
     var controller = ScrollController(
-      initialScrollOffset: largura * 0.76,
+      initialScrollOffset: largura * 0.77,
     );
     return Container(
       width: largura,
-      height: 63.h,
+      height: 44.h,
       child: ListView.builder(
         controller: controller,
         scrollDirection: Axis.horizontal,
-        physics: const ClampingScrollPhysics(), // this for snapping
+        physics: const BouncingScrollPhysics(), // this for snapping
         itemCount: planosList.length,
         itemBuilder: (_, index) {
           // return Align(
@@ -42,7 +42,11 @@ class PlanosCard extends StatelessWidget {
           //     ),
           //   ),
           // );
-          return planosList[index];
+          return Container(
+            width: largura * 0.85,
+            // height: 43.h,
+            child: planosList[index],
+          );
         },
       ),
     );

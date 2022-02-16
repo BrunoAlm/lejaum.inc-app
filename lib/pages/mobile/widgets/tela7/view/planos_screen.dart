@@ -27,14 +27,30 @@ class Planos extends StatelessWidget {
               maxFontSize: 40,
               minFontSize: 35,
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 10),
             Text(
               'Arraste para o lado para ver mais planos',
-              style: Styles.subtitulo,
+              style: Styles.subtitulo.copyWith(color: Styles.cinzou),
             ),
-            const SizedBox(height: 15),
-            PlanosCard(),
             const SizedBox(height: 30),
+            PlanosCard(),
+            const SizedBox(height: 20),
+            Text(
+              '*Planos mensais cobrados semestralmente;',
+              style:
+                  Styles.subtitulo.copyWith(color: Styles.cinzou, fontSize: 13),
+            ),
+            Text(
+              '**Os planos apresentados aqui são apenas de referência,',
+              style:
+                  Styles.subtitulo.copyWith(color: Styles.cinzou, fontSize: 13),
+            ),
+            Text(
+              'podendo sofrer alterações previamente avisadas.',
+              style:
+                  Styles.subtitulo.copyWith(color: Styles.cinzou, fontSize: 13),
+            ),
+            const SizedBox(height: 60),
             Center(
               child: IconeBotaoEstilizado(
                 texto: 'Solicitar plano personalizado',
