@@ -32,7 +32,7 @@ class Planos extends StatelessWidget {
               'Arraste para o lado para ver mais planos',
               style: Styles.subtitulo.copyWith(color: Styles.cinzou),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             PlanosCard(),
             const SizedBox(height: 20),
             Text(
