@@ -9,6 +9,7 @@ List<Widget> arzadi_list = [
   azardi1(),
   azardi2(),
   azardi3(),
+  Arzardi4(),
 ];
 
 List<Widget> janfie_list = [
@@ -16,7 +17,8 @@ List<Widget> janfie_list = [
   janfie1(),
   janfie2(),
   janfie3(),
-  janfie4()
+  janfie4(),
+  Janfie5(),
 ];
 
 List<Widget> italo_list = [
@@ -24,11 +26,13 @@ List<Widget> italo_list = [
   italo1(),
   italo2(),
   italo3(),
+  Italo4(),
 ];
 List<Widget> lejaum_list = [
   LogoLejaum(),
   lejaum1(),
   lejaum2(),
   lejaum3(),
-  lejaum4()
+  lejaum4(),
+  Lejaum5(),
 ];

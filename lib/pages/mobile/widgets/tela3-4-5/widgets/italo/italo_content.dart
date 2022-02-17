@@ -5,6 +5,9 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 // import 'package:url_launcher/url_launcher.dart';
+import 'package:sizer/sizer.dart';
+
+import '../janfie/janfie_content.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
 String _logo_image = "assets/images/galeria/italo/logo.svg";
@@ -26,39 +29,31 @@ class LogoItalo extends StatelessWidget {
       ),
       width: context.widthTransformer(reducedBy: 20),
       height: 198.79,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: Text('Italo Bortolotti', style: Styles.textoBrancoBold),
+      child: Center(
+        child: Container(
+          height: 200,
+          width: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            color: Styles.azulBaitolote,
           ),
-          Container(
-            height: 180,
-            width: 180,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(100),
-              color: Styles.azulBaitolote,
-            ),
-            child: SvgPicture.asset(_logo_image, fit: BoxFit.cover),
-            padding: const EdgeInsets.all(8),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 20),
-            child: IconeBotaoEstilizado(
-              textColor: Colors.white,
-              cor: Styles.laranjaum,
-              texto: 'Ver projeto',
-              altura: 28,
-              largura: 115.91,
-              tamanho_fonte: 13,
-              tamanho_icone: 13,
-              pressionado: () => Get.toNamed('/italo_pdf'),
-              icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
-            ),
-          ),
-        ],
+          child: SvgPicture.asset(_logo_image, fit: BoxFit.cover),
+          padding: const EdgeInsets.all(8),
+        ),
+        // Padding(
+        //   padding: const EdgeInsets.only(bottom: 20),
+        //   child: IconeBotaoEstilizado(
+        //     textColor: Colors.white,
+        //     cor: Styles.laranjaum,
+        //     texto: 'Ver projeto',
+        //     altura: 28,
+        //     largura: 115.91,
+        //     tamanho_fonte: 13,
+        //     tamanho_icone: 13,
+        //     pressionado: () => Get.toNamed('/italo_pdf'),
+        //     icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
+        //   ),
+        // ),
       ),
     );
   }
@@ -89,3 +84,35 @@ Widget italo3() => Padding(
         ),
       ),
     );
+
+class Italo4 extends StatelessWidget {
+  const Italo4({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var _altura = 37.h;
+    return Container(
+      width: context.widthTransformer(reducedBy: 20),
+      height: _altura,
+      // height: 198.79,
+      child: Padding(
+        padding: const EdgeInsets.only(right: 10),
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          child: Container(
+            margin: const EdgeInsets.all(0),
+            decoration: BoxDecoration(
+              color: Color(0xff191E26),
+            ),
+            child: CliqueParaVerOProjetoCompleto(
+              cor: Styles.laranjaum,
+              rota: '/arzadi_pdf',
+            ),
+            // height: 400,
+            // width: 400,
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -3,7 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
+import 'package:sizer/sizer.dart';
 
 String _logo_image = "assets/images/icons/logo_icon.svg";
 String _img1 = "assets/images/galeria/lejaum/img1.webp";
@@ -19,45 +21,37 @@ class LogoLejaum extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(left: 10),
       decoration: BoxDecoration(
-        color: Styles.quaseBlack,
+        color: Styles.laranjaum,
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
       ),
       width: context.widthTransformer(reducedBy: 20),
       height: 198.79,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: Text('Site lejaum', style: Styles.textoBrancoBold),
+      child: Center(
+        child: Container(
+          height: 200,
+          width: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            color: Styles.laranjaum,
           ),
-          Container(
-            height: 180,
-            width: 180,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(100),
-              color: Styles.laranjaum,
-            ),
-            child: SvgPicture.asset(_logo_image, fit: BoxFit.cover),
-            padding: const EdgeInsets.all(20),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 20),
-            child: IconeBotaoEstilizado(
-              textColor: Colors.white,
-              cor: Styles.laranjaum,
-              texto: 'Ver projeto',
-              altura: 28,
-              largura: 115.91,
-              tamanho_fonte: 13,
-              tamanho_icone: 13,
-              pressionado: () => Get.toNamed('/lejaum_pdf'),
-              icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
-            ),
-          ),
-        ],
+          child: SvgPicture.asset(_logo_image, fit: BoxFit.cover),
+          padding: const EdgeInsets.all(20),
+        ),
+        // Padding(
+        //   padding: const EdgeInsets.only(bottom: 20),
+        //   child: IconeBotaoEstilizado(
+        //     textColor: Colors.white,
+        //     cor: Styles.laranjaum,
+        //     texto: 'Ver projeto',
+        //     altura: 28,
+        //     largura: 115.91,
+        //     tamanho_fonte: 13,
+        //     tamanho_icone: 13,
+        //     pressionado: () => Get.toNamed('/lejaum_pdf'),
+        //     icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
+        //   ),
+        // ),
       ),
     );
   }
@@ -82,3 +76,35 @@ Widget lejaum4() => Padding(
         ),
       ),
     );
+
+class Lejaum5 extends StatelessWidget {
+  const Lejaum5({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var _altura = 37.h;
+    return Container(
+      width: context.widthTransformer(reducedBy: 20),
+      height: _altura,
+      // height: 198.79,
+      child: Padding(
+        padding: const EdgeInsets.only(right: 10),
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          child: Container(
+            margin: const EdgeInsets.all(0),
+            decoration: BoxDecoration(
+              color: Styles.quaseBlack,
+            ),
+            child: CliqueParaVerOProjetoCompleto(
+              cor: Styles.laranjaum,
+              rota: '/arzadi_pdf',
+            ),
+            // height: 400,
+            // width: 400,
+          ),
+        ),
+      ),
+    );
+  }
+}
