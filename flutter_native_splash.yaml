@@ -18,11 +18,11 @@ flutter_native_splash:
 
   # The image parameter allows you to specify an image used in the splash screen.  It must be a
   # png file and should be sized for 4x pixel density.
-  image: web\icons\Icon-maskable-512.png
+  image: web\icons\logo_icon_png.png
 
   # This property allows you to specify an image used as branding in the splash screen. It must be
   # a png file. Currently, it is only supported for Android and iOS.
-  branding: web\icons\Icon-maskable-512.png
+  branding: web\icons\logo_icon_png.png
   #
   #
   # Specify your branding image for dark mode.
