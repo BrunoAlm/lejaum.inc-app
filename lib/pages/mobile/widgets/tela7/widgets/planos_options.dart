@@ -69,6 +69,7 @@ Widget flagsDoPlanoDesativado(String texto) => Row(
 Widget cardSolicitacao(
         {String? valor, String? descricao, String? descricaoNegrito}) =>
     Container(
+      height: 71,
       decoration: BoxDecoration(
         border: Border.all(color: Styles.laranjaum, width: 3),
         shape: BoxShape.rectangle,

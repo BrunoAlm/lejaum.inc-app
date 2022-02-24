@@ -41,7 +41,7 @@ class Plano1 extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  // mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // const SizedBox(height: 30),
                     flagsDoPlanoAtivado('Planejamento de Social Media'),
@@ -107,7 +107,7 @@ class Plano2 extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                // mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // const SizedBox(height: 30),
                   flagsDoPlanoAtivado('Planejamento de Social Media'),
@@ -177,7 +177,7 @@ class Plano3 extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  // mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // const SizedBox(height: 30),
                     flagsDoPlanoAtivado('Assessoria em Marketing'),
