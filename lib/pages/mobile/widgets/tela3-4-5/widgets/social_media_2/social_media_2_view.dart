@@ -15,19 +15,21 @@ class SocialMedia2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(DirecaoDoSwipe());
-    var _altura = 37.h;
-    var _largura = _altura / 1.0041;
+    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _altura_do_slider = _largura_da_tela <= 400 ? 35.h : 39.h;
+    var _largura_do_slider = _altura_do_slider / 1.0041;
+
     return SizedBox(
-      height: _altura,
-      width: Get.width,
+      height: _altura_do_slider,
+      width: _largura_da_tela,
       child: GetBuilder<DirecaoDoSwipe>(builder: (swipe) {
         return ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(), // this for snapping
           itemCount: social_media2_images.length,
           itemBuilder: (_, index) => Container(
-            height: _altura,
-            width: _largura,
+            height: _altura_do_slider,
+            width: _largura_do_slider,
             margin: EdgeInsets.only(left: 10),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),

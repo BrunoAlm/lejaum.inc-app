@@ -13,12 +13,14 @@ class Janfie extends StatefulWidget {
 class _JanfieState extends State<Janfie> {
   @override
   Widget build(BuildContext context) {
+    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _altura_do_slider = _largura_da_tela <= 400 ? 33.h : 42.h;
     var _largura = MediaQuery.of(context).size.width;
-    var _altura = 37.h;
+    // var _altura = 37.h;
     return GestureDetector(
       onTap: () => Get.toNamed('/janfie_pdf'),
       child: Container(
-        height: _altura,
+        height: _altura_do_slider,
         width: _largura,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,

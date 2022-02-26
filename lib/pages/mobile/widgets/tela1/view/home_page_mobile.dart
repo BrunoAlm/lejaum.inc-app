@@ -1,36 +1,23 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-// import 'package:responsive_framework/responsive_framework.dart' as responsive;
-import '../../../../../widgets/botao_estilizado.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lejaum/pages/mobile/widgets/tela1/widgets/linha_botao_1.dart';
+import 'package:lejaum/pages/mobile/widgets/tela1/widgets/linha_botao_2.dart';
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    Get.put(MobilePageViewController());
     var _altura = MediaQuery.of(context).size.height;
-    // var _tamanho_da_fonte_titulo =
-    //     responsive.ResponsiveValue(context, defaultValue: 38.0, valueWhen: [
-    //   responsive.Condition.smallerThan(name: responsive.MOBILE, value: 30.0),
-    //   // responsive.Condition.largerThan(name: responsive.TABLET, value: 35.0),
-    //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 60.0)
-    // ]).value;
-    // var _altura_do_botao =
-    //     responsive.ResponsiveValue(context, defaultValue: 40.0, valueWhen: [
-    //   responsive.Condition.smallerThan(name: responsive.MOBILE, value: 40.0),
-    //   // responsive.Condition.largerThan(name: responsive.TABLET, value: 40.0),
-    //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 40.0)
-    // ]).value;
-    // var _largura_do_botao =
-    //     responsive.ResponsiveValue(context, defaultValue: 160.0, valueWhen: [
-    //   responsive.Condition.smallerThan(name: responsive.MOBILE, value: 130.0),
-    //   // responsive.Condition.largerThan(name: responsive.TABLET, value: 160.0),
-    //   responsive.Condition.largerThan(name: responsive.DESKTOP, value: 160.0)
-    // ]).value;
+    var _largura = MediaQuery.of(context).size.width;
+
+    double tamanhoDoDispositivo(double altura) {
+      double tamanho_fonte = altura <= motog4 ? 31 : 38;
+      return tamanho_fonte;
+    }
+
     return LayoutBuilder(builder: (context, constraints) {
       return Container(
         height: _altura,
@@ -41,123 +28,45 @@ class HomePageMobile extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: GetBuilder<MobilePageViewController>(
-          builder: (_pageController) => Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Container(
-              //   height: 30,
-              //   width: constraints.maxWidth,
-              //   color: Styles.roxinho,
-              //   child: Center(
-              //     child: Text(
-              //       'Estamos construindo o nosso site! Pode haver erros ou bugs!',
-              //       softWrap: true,
-              //       style: TextStyle(
-              //         fontFamily: 'Georama',
-              //         fontStyle: FontStyle.italic,
-              //         fontSize: 13,
-              //       ),
-              //     ),
-              //   ),
-              // ),
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'NÃO VENDEMOS',
-                      style: Styles.tituloFinoLinethrough.merge(
-                        TextStyle(fontSize: 38.0),
-                      ),
-                    ),
-                    Text(
-                      'SERVIÇOS,',
-                      style: Styles.tituloFinoLinethrough.merge(
-                        TextStyle(fontSize: 38.0),
-                      ),
-                    ),
-                    Text(
-                      'NÓS ENTREGAMOS',
-                      style: Styles.tituloExtraBold.merge(
-                        TextStyle(fontSize: 38.0),
-                      ),
-                    ),
-                    Text(
-                      'SOLUÇÕES!',
-                      style: Styles.tituloExtraBold.merge(
-                        TextStyle(fontSize: 38.0),
-                      ),
-                    ),
-                    const SizedBox(height: 35),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        IconeBotaoEstilizado(
-                          textColor: Colors.white,
-                          texto: "Saber Mais",
-                          altura: 40.0,
-                          largura: 160.0,
-                          pressionado: () =>
-                              _pageController.controller.nextPage(
-                            duration: Duration(milliseconds: 500),
-                            curve: Curves.easeInOutQuart,
-                          ),
-                          icone: Icons.arrow_circle_down_outlined,
-                          cor: Styles.lowBlueGray,
-                        ),
-                        SizedBox(width: 20),
-                        IconeBotaoEstilizado(
-                          textColor: Styles.pretao,
-                          texto: "Portfólio",
-                          altura: 40.0,
-                          largura: 160.0,
-                          pressionado: () =>
-                              _pageController.controller.animateToPage(
-                            2,
-                            duration: Duration(milliseconds: 500),
-                            curve: Curves.easeInOutQuart,
-                          ),
-                          icone: Icons.arrow_circle_down_outlined,
-                          cor: Styles.mareloMostarda,
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 20),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        IconeBotaoEstilizado(
-                          textColor: Colors.white,
-                          cor: Styles.laranjaum,
-                          texto: "Ver Planos",
-                          altura: 40.0,
-                          largura: 160.0,
-                          pressionado: () =>
-                              _pageController.controller.animateToPage(
-                            6,
-                            duration: Duration(milliseconds: 500),
-                            curve: Curves.easeInOutQuart,
-                          ),
-                          icone: Icons.credit_card,
-                        ),
-                        SizedBox(width: 20),
-                        IconeBotaoEstilizado(
-                          textColor: Colors.white,
-                          cor: Styles.verdeGood,
-                          texto: "Whatsapp",
-                          altura: 40.0,
-                          largura: 160.0,
-                          pressionado: abrirWhatsApp,
-                          icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+              AutoSizeText(
+                'NÃO VENDEMOS',
+                style: Styles.tituloFinoLinethrough,
+                // maxFontSize: 38,
+                maxLines: 1,
+                minFontSize: tamanhoDoDispositivo(_largura),
               ),
+              AutoSizeText(
+                'SERVIÇOS,',
+                style: Styles.tituloFinoLinethrough,
+                // maxFontSize: 38,
+                maxLines: 1,
+                minFontSize: tamanhoDoDispositivo(_largura),
+              ),
+              AutoSizeText(
+                'NÓS ENTREGAMOS',
+                style: Styles.tituloExtraBold,
+                // maxFontSize: 38,
+                minFontSize: tamanhoDoDispositivo(_largura),
+
+                // overflow: TextOverflow.ellipsis,
+                maxLines: 1,
+              ),
+              AutoSizeText(
+                'SOLUÇÕES!',
+                style: Styles.tituloExtraBold,
+                maxLines: 1,
+                minFontSize: tamanhoDoDispositivo(_largura),
+              ),
+              const SizedBox(height: 35),
+              LinhaBotao1(),
+              SizedBox(height: 20),
+              LinhaBotao2(),
             ],
           ),
         ),

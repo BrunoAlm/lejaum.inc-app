@@ -8,14 +8,18 @@ class Arzadi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _altura = 37.h;
+    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _altura_do_slider = _largura_da_tela <= 400 ? 33.h : 42.h;
+    // var _largura_do_slider = _altura_do_slider / 1.764;
+
+    // var _altura = 37.h;
     // var _altura = 247.53;
     var _largura = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: () => Get.toNamed('/arzadi_pdf'),
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),
-        height: _altura,
+        height: _altura_do_slider,
         width: _largura,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,

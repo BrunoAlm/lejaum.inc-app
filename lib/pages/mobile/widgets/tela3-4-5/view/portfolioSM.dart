@@ -17,7 +17,6 @@ class _PortfolioSMState extends State<PortfolioSM> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (_, constraints) {
-      print('Largura/Altura: ${constraints.biggest}');
       return Container(
         height: constraints.maxHeight,
         width: constraints.maxWidth,
