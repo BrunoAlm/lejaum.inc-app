@@ -9,9 +9,11 @@ class Lejaum extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _largura = MediaQuery.of(context).size.width;
-    var _altura = 37.h;
+    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _altura_do_slider = _largura_da_tela <= 400 ? 35.h : 39.h;
+    // var _altura = 37.h;
     return Container(
-      height: _altura,
+      height: _altura_do_slider,
       width: _largura,
       margin: const EdgeInsets.only(top: 10),
       child: GestureDetector(

@@ -9,11 +9,13 @@ class Italo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _largura = MediaQuery.of(context).size.width;
-    var _altura = 37.h;
+    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _altura_do_slider = _largura_da_tela <= 400 ? 35.h : 39.h;
+    // var _altura = 37.h;
     return GestureDetector(
       onTap: () => Get.toNamed('/italo_pdf'),
       child: Container(
-        height: _altura,
+        height: _altura_do_slider,
         width: _largura,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,

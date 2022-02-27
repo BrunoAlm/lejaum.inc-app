@@ -9,7 +9,7 @@ class Arzadi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _largura_da_tela = MediaQuery.of(context).size.width;
-    var _altura_do_slider = _largura_da_tela <= 400 ? 33.h : 42.h;
+    var _altura_do_slider = _largura_da_tela <= 400 ? 35.h : 39.h;
     // var _largura_do_slider = _altura_do_slider / 1.764;
 
     // var _altura = 37.h;
