@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import '../services/lista_de_textos.dart';
+import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_1_m.dart';
+import '../services/textos_expansivo_1.dart';
 
 class Expansivelzada extends StatefulWidget {
   Expansivelzada({Key? key}) : super(key: key);
@@ -18,6 +18,22 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
   int selected = 0; //attention
   @override
   Widget build(BuildContext context) {
+    var _largura_da_tela = MediaQuery.of(context).size.width;
+    double mudarFonteTitulo(double largura) {
+      double tamanho_fonte = largura <= motog4 ? 18 : 23;
+      return tamanho_fonte;
+    }
+
+    double mudarAlturaSvg(double largura) {
+      double tamanho_fonte = largura <= motog4 ? 17 : 23;
+      return tamanho_fonte;
+    }
+
+    double mudarFonteSubTitulo(double largura) {
+      double tamanho_fonte = largura <= motog4 ? 13 : 16;
+      return tamanho_fonte;
+    }
+
     return Container(
       width: 300,
       height: 500,
@@ -26,7 +42,9 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
         padding: EdgeInsets.only(left: 13.0, right: 13.0, bottom: 25.0),
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
-        itemCount: titulos_Expansividade.length,
+        itemCount: _largura_da_tela <= motog4
+            ? titulos_1_Expansividade_m.length
+            : titulos_1_Expansividade.length,
         itemBuilder: (c, index) {
           return Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -35,7 +53,8 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
               Theme(
                 data: Themes.expansionTheme,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  padding: EdgeInsets.symmetric(
+                      vertical: _largura_da_tela <= motog4 ? 4 : 8),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: ExpansionTile(
@@ -49,19 +68,28 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                         selected == index
                             ? "assets/svgs/seta_solucoes_cima.svg"
                             : "assets/svgs/seta_solucoes_baixo.svg",
+                        height: mudarAlturaSvg(_largura_da_tela),
                       ),
+
                       title: Text(
-                        titulos_Expansividade[index],
-                        style: Styles.tituloIconTextSolucao.merge(
-                          TextStyle(color: Colors.white),
+                        _largura_da_tela <= motog4
+                            ? titulos_1_Expansividade_m[index]
+                            : titulos_1_Expansividade[index],
+                        style: Styles.tituloIconTextSolucao.copyWith(
+                          color: Colors.white,
+                          fontSize: mudarFonteTitulo(_largura_da_tela),
                         ),
                       ),
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 15),
+                          padding: const EdgeInsets.only(left: 15, right: 5),
                           child: Text(
-                            subtitulos_Expansividade[index],
-                            style: Styles.subtituloIconTextSolucao,
+                            _largura_da_tela <= motog4
+                                ? subtitulos_1_Expansividade_m[index]
+                                : subtitulos_1_Expansividade[index],
+                            style: Styles.subtituloIconTextSolucao.copyWith(
+                              fontSize: mudarFonteSubTitulo(_largura_da_tela),
+                            ),
                           ),
                         ),
                         const SizedBox(height: 5),
@@ -77,12 +105,8 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                             ),
                             child: Text(
                               'Clique para mais informações',
-                              style: TextStyle(
-                                fontStyle: FontStyle.italic,
-                                decorationStyle: TextDecorationStyle.solid,
-                                decoration: TextDecoration.underline,
-                                decorationColor: Styles.cinzou,
-                                color: Styles.cinzou,
+                              style: Styles.linkTextSolucao.copyWith(
+                                fontSize: mudarFonteSubTitulo(_largura_da_tela),
                               ),
                             ),
                           ),

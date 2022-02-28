@@ -1,3 +1,4 @@
+import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +15,7 @@ class _JanfieState extends State<Janfie> {
   @override
   Widget build(BuildContext context) {
     var _largura_da_tela = MediaQuery.of(context).size.width;
-    var _altura_do_slider = _largura_da_tela <= 400 ? 35.h : 39.h;
+    var _altura_do_slider = _largura_da_tela <= motog4 ? 35.h : 39.h;
     var _largura = MediaQuery.of(context).size.width;
     // var _altura = 37.h;
     return GestureDetector(

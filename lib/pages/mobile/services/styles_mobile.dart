@@ -46,7 +46,7 @@ class Styles {
   static const subtitulo = TextStyle(
     color: quaseWhite,
     fontFamily: fonte,
-    fontSize: 14,
+    // fontSize: 14,
     fontStyle: FontStyle.italic,
     fontWeight: FontWeight.w500,
     height: 1.2,
@@ -86,6 +86,13 @@ class Styles {
     fontStyle: FontStyle.italic,
     // fontWeight: FontWeight.w600,
     height: 1.2,
+  );
+  static const linkTextSolucao = TextStyle(
+    fontStyle: FontStyle.italic,
+    decorationStyle: TextDecorationStyle.solid,
+    decoration: TextDecoration.underline,
+    decorationColor: Styles.cinzou,
+    color: Styles.cinzou,
   );
 
   static const textoPretoBold = TextStyle(

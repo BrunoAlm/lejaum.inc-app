@@ -120,4 +120,4 @@ class DirecaoDoSwipe extends GetxController {
   }
 }
 
-const double motog4 = 392;
+const double motog4 = 389;
