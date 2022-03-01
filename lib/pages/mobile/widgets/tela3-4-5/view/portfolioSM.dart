@@ -1,6 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
+import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/galeria.dart';
 
 // import '../view/galeria.dart';
@@ -29,8 +31,7 @@ class _PortfolioSMState extends State<PortfolioSM> {
               'Social Media',
               maxLines: 1,
               style: Styles.tituloExtraBoldMenor,
-              maxFontSize: 40,
-              minFontSize: 35,
+              minFontSize: Get.size.width <= motog4 ? 30 : 35,
             ),
             const SizedBox(height: 20),
             GaleriaSM(),

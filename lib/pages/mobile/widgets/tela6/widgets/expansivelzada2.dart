@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:lejaum/pages/mobile/widgets/tela6/services/responsividade.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_1_m.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_2.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_2_m.dart';
@@ -21,20 +22,6 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
   @override
   Widget build(BuildContext context) {
     var _largura_da_tela = MediaQuery.of(context).size.width;
-    double mudarFonteTitulo(double largura) {
-      double tamanho_fonte = largura <= motog4 ? 18 : 23;
-      return tamanho_fonte;
-    }
-
-    double mudarAlturaSvg(double largura) {
-      double tamanho_fonte = largura <= motog4 ? 17 : 23;
-      return tamanho_fonte;
-    }
-
-    double mudarFonteSubTitulo(double largura) {
-      double tamanho_fonte = largura <= motog4 ? 13 : 16;
-      return tamanho_fonte;
-    }
 
     print('titulo 2 mobile  ${titulos_2_Expansividade_m.length}');
     print('titulo 2  ${titulos_2_Expansividade.length}');
@@ -56,7 +43,8 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
               Theme(
                 data: Themes.expansionTheme,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  padding: EdgeInsets.symmetric(
+                      vertical: _largura_da_tela <= motog4 ? 4 : 8),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: ExpansionTile(
@@ -104,11 +92,8 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                             ),
                             child: Text(
                               'Clique para mais informações',
-                              style: TextStyle(
-                                decorationStyle: TextDecorationStyle.solid,
-                                decoration: TextDecoration.underline,
-                                decorationColor: Styles.cinzou,
-                                color: Styles.cinzou,
+                              style: Styles.linkTextSolucao.copyWith(
+                                fontSize: mudarFonteSubTitulo(_largura_da_tela),
                               ),
                             ),
                           ),

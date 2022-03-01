@@ -15,15 +15,15 @@ class Solucoes extends StatefulWidget {
 class _SolucoesState extends State<Solucoes> {
   @override
   Widget build(BuildContext context) {
-    double font14(double largura) {
+    double upperText(double largura) {
       double tamanho_fonte = largura <= motog4 ? 11 : 14;
       print(largura);
       return tamanho_fonte;
     }
 
-    double font23(double largura) {
+    double footerText(double largura) {
       double tamanho_fonte;
-      tamanho_fonte = largura <= motog4 ? 21 : 24;
+      tamanho_fonte = largura <= motog4 ? 18 : 24;
       return tamanho_fonte;
     }
 
@@ -40,28 +40,27 @@ class _SolucoesState extends State<Solucoes> {
               'Soluções',
               style: Styles.tituloExtraBoldMenor,
               maxLines: 1,
-              maxFontSize: 40,
-              minFontSize: 35,
+              minFontSize: constraints.maxWidth <= motog4 ? 30 : 35,
             ),
             const SizedBox(height: 10),
             AutoSizeText(
               'Veja abaixo algumas das soluções que nós podemos oferecer:',
               style: Styles.subtitulo.copyWith(
                   color: Get.theme.colorScheme.secondary,
-                  fontSize: font14(constraints.maxWidth)),
+                  fontSize: upperText(constraints.maxWidth)),
             ),
             const SizedBox(height: 20),
             Expanded(child: CardSolucao()),
             AutoSizeText(
-              'Nós somos a solução para sua empresa!',
+              'Nós somos a solução para\nsua empresa!',
               textAlign: TextAlign.center,
               maxLines: 2,
               style: Styles.subtituloBoldao.copyWith(
                 color: Styles.laranjaum,
-                fontSize: font23(constraints.maxWidth),
+                fontSize: footerText(constraints.maxWidth),
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: constraints.maxWidth <= motog4 ? 20 : 50),
           ],
         ),
       ),

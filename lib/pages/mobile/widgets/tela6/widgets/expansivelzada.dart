@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:lejaum/pages/mobile/widgets/tela6/services/responsividade.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_1_m.dart';
 import '../services/textos_expansivo_1.dart';
 
@@ -19,20 +20,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
   @override
   Widget build(BuildContext context) {
     var _largura_da_tela = MediaQuery.of(context).size.width;
-    double mudarFonteTitulo(double largura) {
-      double tamanho_fonte = largura <= motog4 ? 18 : 23;
-      return tamanho_fonte;
-    }
-
-    double mudarAlturaSvg(double largura) {
-      double tamanho_fonte = largura <= motog4 ? 17 : 23;
-      return tamanho_fonte;
-    }
-
-    double mudarFonteSubTitulo(double largura) {
-      double tamanho_fonte = largura <= motog4 ? 13 : 16;
-      return tamanho_fonte;
-    }
+   
 
     return Container(
       width: 300,
