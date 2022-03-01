@@ -23,8 +23,6 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
   Widget build(BuildContext context) {
     var _largura_da_tela = MediaQuery.of(context).size.width;
 
-    print('titulo 2 mobile  ${titulos_2_Expansividade_m.length}');
-    print('titulo 2  ${titulos_2_Expansividade.length}');
     return Container(
       height: 500,
       child: ListView.builder(

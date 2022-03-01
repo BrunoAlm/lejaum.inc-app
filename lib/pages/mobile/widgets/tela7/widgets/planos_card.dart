@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela7/services/planos_list.dart';
 import 'package:sizer/sizer.dart';
 
@@ -11,7 +12,7 @@ class PlanosCard extends StatelessWidget {
     var controller = ScrollController(initialScrollOffset: largura * 0.77);
     return Container(
       width: largura,
-      height: 50.h,
+      height: largura <= motog4 ? 55.h : 50.h,
       child: ListView.builder(
         controller: controller,
         scrollDirection: Axis.horizontal,

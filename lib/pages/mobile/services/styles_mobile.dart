@@ -160,7 +160,7 @@ class Styles {
   static final TitleTextPlanosCardMoney = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w800,
-    fontSize: 25,
+    // fontSize: 25,
     color: quaseWhite,
   );
   static final SubtitleTextPlanosCardMoney = TextStyle(
