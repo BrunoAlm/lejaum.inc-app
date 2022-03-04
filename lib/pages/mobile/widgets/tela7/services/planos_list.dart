@@ -36,7 +36,7 @@ class Plano1 extends StatelessWidget {
           const SizedBox(height: 5),
           ConstrainedBox(
             constraints: BoxConstraints(
-                maxHeight: _largura_da_tela <= motog4 ? 46.h : 38.h,
+                maxHeight: _largura_da_tela <= motog4 ? 46.h : 39.h,
                 maxWidth: 85.w),
             child: Card(
               shape: RoundedRectangleBorder(
@@ -111,7 +111,7 @@ class Plano2 extends StatelessWidget {
         const SizedBox(height: 5),
         ConstrainedBox(
           constraints: BoxConstraints(
-            maxHeight: _largura_da_tela <= motog4 ? 46.h : 38.h,
+            maxHeight: _largura_da_tela <= motog4 ? 46.h : 39.h,
             maxWidth: 85.w,
           ),
           child: Card(
