@@ -21,7 +21,7 @@ class _AvaliacoesState extends State<Avaliacoes> {
     return Container(
       height: altura,
       child: Padding(
-        padding: const EdgeInsets.only(top: 49),
+        padding: const EdgeInsets.only(top: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
