@@ -58,7 +58,7 @@ class _AvaliacoesState extends State<Avaliacoes> {
             // ),
             Expanded(child: SizedBox()),
             Container(
-              height: 100,
+              height: 140,
               width: Get.width,
               padding: const EdgeInsets.all(5),
               decoration: BoxDecoration(
