@@ -50,13 +50,6 @@ class MyApp extends StatelessWidget {
         theme: Themes.light,
         darkTheme: Themes.dark,
         initialRoute: '/',
-        // getPages: [
-        //   GetPage(name: '/', page: () => const HomePage()),
-        //   GetPage(name: '/janfie_pdf', page: () => const PdfJanfie()),
-        //   GetPage(name: '/arzadi_pdf', page: () => const PdfArzadi()),
-        //   GetPage(name: '/italo_pdf', page: () => const PdfItalo()),
-        //   GetPage(name: '/lejaum_pdf', page: () => const PdfLejaum()),
-        // ],
         routes: {
           '/': (context) => const HomePage(),
           '/janfie_pdf': (context) => const PdfJanfie(),

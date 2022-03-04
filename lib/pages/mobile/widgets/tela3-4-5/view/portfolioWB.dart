@@ -16,7 +16,11 @@ class PortifolioWB extends StatefulWidget {
 class _PortifolioWBState extends State<PortifolioWB> {
   @override
   Widget build(BuildContext context) {
+    var _altura = MediaQuery.of(context).size.height;
+    var _largura = MediaQuery.of(context).size.width;
     return Container(
+      height: _altura,
+      width: _largura,
       margin: EdgeInsets.only(top: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

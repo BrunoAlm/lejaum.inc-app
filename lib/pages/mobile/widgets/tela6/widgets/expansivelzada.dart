@@ -20,7 +20,6 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
   @override
   Widget build(BuildContext context) {
     var _largura_da_tela = MediaQuery.of(context).size.width;
-   
 
     return Container(
       width: 300,
@@ -58,7 +57,6 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                             : "assets/svgs/seta_solucoes_baixo.svg",
                         height: mudarAlturaSvg(_largura_da_tela),
                       ),
-
                       title: Text(
                         _largura_da_tela <= motog4
                             ? titulos_1_Expansividade_m[index]
@@ -80,7 +78,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 5),
+                        SizedBox(height: _largura_da_tela <= motog4 ? 0 : 5),
                         Padding(
                           padding: const EdgeInsets.only(left: 8),
                           child: TextButton(
@@ -99,7 +97,7 @@ class _ExpansivelzadaState extends State<Expansivelzada> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 5),
+                        SizedBox(height: _largura_da_tela <= motog4 ? 0 : 5),
                       ],
                       onExpansionChanged: ((newState) {
                         if (newState)

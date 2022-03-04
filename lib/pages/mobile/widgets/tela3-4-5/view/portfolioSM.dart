@@ -18,26 +18,26 @@ class PortfolioSM extends StatefulWidget {
 class _PortfolioSMState extends State<PortfolioSM> {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (_, constraints) {
-      return Container(
-        height: constraints.maxHeight,
-        width: constraints.maxWidth,
-        margin: EdgeInsets.only(top: 30),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            AutoSizeText(
-              'Social Media',
-              maxLines: 1,
-              style: Styles.tituloExtraBoldMenor,
-              minFontSize: Get.size.width <= motog4 ? 30 : 35,
-            ),
-            const SizedBox(height: 20),
-            GaleriaSM(),
-          ],
-        ),
-      );
-    });
+    var _altura = MediaQuery.of(context).size.height;
+    var _largura = MediaQuery.of(context).size.width;
+    return Container(
+      height: _altura,
+      width: _largura,
+      margin: EdgeInsets.only(top: 30),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          AutoSizeText(
+            'Social Media',
+            maxLines: 1,
+            style: Styles.tituloExtraBoldMenor,
+            minFontSize: Get.size.width <= motog4 ? 30 : 35,
+          ),
+          const SizedBox(height: 20),
+          GaleriaSM(),
+        ],
+      ),
+    );
   }
 }

@@ -18,6 +18,7 @@ class Planos extends StatelessWidget {
     var _largura = MediaQuery.of(context).size.width;
     return Container(
       height: _altura,
+      width: _largura,
       child: Padding(
         padding: const EdgeInsets.only(top: 30),
         child: Column(

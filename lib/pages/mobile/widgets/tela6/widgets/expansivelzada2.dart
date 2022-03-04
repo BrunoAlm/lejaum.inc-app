@@ -77,7 +77,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 5),
+                        SizedBox(height: _largura_da_tela <= motog4 ? 0 : 5),
                         Padding(
                           padding: const EdgeInsets.only(left: 8),
                           child: TextButton(
@@ -96,7 +96,7 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 5),
+                        SizedBox(height: _largura_da_tela <= motog4 ? 0 : 5),
                       ],
                       onExpansionChanged: ((newState) {
                         if (newState)
