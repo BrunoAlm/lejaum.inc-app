@@ -70,6 +70,11 @@
   <meta name="facebook-domain-verification" content="mmdkk6g8d3udbdephxraluxyopgdmm" />
 
   <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KCWBX8J"></script>
+
+  <script>
+    dataLayer = [];
+  </script>
   <script>
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -82,7 +87,8 @@
         dl = l != 'dataLayer' ? '&l=' + l : '';
       j.async = true;
       j.src =
-        'https://www.googletagmanager.com/gtm.js?id=%27+i+dl;f.parentNode.insertBefore(j,f)'
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-KCWBX8J');
   </script>
   <!-- End Google Tag Manager -->
