@@ -35,9 +35,9 @@ class Footer extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Feito com ', style: Styles.footer),
-            SvgPicture.asset('/svgs/coracao.svg'),
-            Text(' por lejaum', style: Styles.footer),
+            Text('Feito com ❤️  por lejaum', style: Styles.footer),
+            // SvgPicture.asset('/svgs/coracao.svg'),
+            // Text(' por lejaum', style: Styles.footer),
           ],
         )
       ],
