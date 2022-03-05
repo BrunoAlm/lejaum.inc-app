@@ -61,6 +61,7 @@ dependencies:
   # ZOOM E DESZOOM MOBILE
   zoom_pinch_overlay: ^1.1.2
   universal_html: ^2.0.8
+  google_tag_manager: ^0.1.0
 
 dev_dependencies:
   flutter_test:

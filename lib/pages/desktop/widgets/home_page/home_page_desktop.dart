@@ -5,12 +5,23 @@ import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
+import 'package:google_tag_manager/google_tag_manager.dart' as gtm;
 
-class HomePageDesktop extends StatelessWidget {
+class HomePageDesktop extends StatefulWidget {
   const HomePageDesktop({Key? key}) : super(key: key);
 
   @override
+  State<HomePageDesktop> createState() => _HomePageDesktopState();
+}
+
+class _HomePageDesktopState extends State<HomePageDesktop>
+    with TickerProviderStateMixin {
+  @override
   Widget build(BuildContext context) {
+    pushGtm() {
+      gtm.pushEvent('EventAppWeb', data: {'eventoApp': 'VerPlanosBtn'});
+    }
+
     var _altura = MediaQuery.of(context).size.height;
     Get.put(DesktopListViewController());
     // var _tamanho_da_fonte_titulo =
@@ -117,7 +128,9 @@ class HomePageDesktop extends StatelessWidget {
                         texto: "Ver Planos",
                         altura: 35,
                         largura: 130,
-                        pressionado: () {},
+                        pressionado: () {
+                          pushGtm();
+                        },
                         icone: Icons.credit_card,
                       ),
                       SizedBox(width: 20),
