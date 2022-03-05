@@ -16,28 +16,31 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        return Scaffold(
-          backgroundColor: Color(0xFF1A1918),
-          appBar: constraints.maxWidth < 892
-              ? PreferredSize(
-                  child: MobileAppBar(),
-                  preferredSize: Size(double.infinity,
-                      constraints.maxWidth <= motog4 ? 60 : 70),
-                )
-              : PreferredSize(
-                  child: DesktopAppBar(),
-                  preferredSize: Size(double.infinity, 60),
-                ),
-          endDrawer: constraints.maxWidth < 892 ? DrawerLejaum() : null,
-          body: constraints.maxWidth < 892 ? MobilePage() : DesktopPage(),
+    return MediaQuery(
+      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return Scaffold(
+            backgroundColor: Color(0xFF1A1918),
+            appBar: constraints.maxWidth < 892
+                ? PreferredSize(
+                    child: MobileAppBar(),
+                    preferredSize: Size(double.infinity,
+                        constraints.maxWidth <= motog4 ? 60 : 70),
+                  )
+                : PreferredSize(
+                    child: DesktopAppBar(),
+                    preferredSize: Size(double.infinity, 60),
+                  ),
+            endDrawer: constraints.maxWidth < 892 ? DrawerLejaum() : null,
+            body: constraints.maxWidth < 892 ? MobilePage() : DesktopPage(),
 
-          //     Container(
-          //   child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
-          // ),
-        );
-      }, // Builder
+            //     Container(
+            //   child: contraints.maxWidth < 800 ? MobilePage() : DesktopPage(),
+            // ),
+          );
+        }, // Builder
+      ),
     );
   }
 }
