@@ -30,7 +30,7 @@ class _PortfolioIDVState extends State<PortfolioIDV> {
             'Identidade Visual',
             maxLines: 1,
             style: Styles.tituloExtraBoldMenor,
-            minFontSize: Get.size.width <= motog4 ? 30 : 35,
+            minFontSize: Get.size.height <= motog4 ? 30 : 35,
           ),
           const SizedBox(height: 20),
           GaleriaIDV(),

@@ -9,10 +9,11 @@ class PlanosCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
+    var altura_tela = MediaQuery.of(context).size.height;
     var controller = ScrollController(initialScrollOffset: largura * 0.77);
     return Container(
       width: largura,
-      height: largura <= motog4 ? 55.h : 50.h,
+      height: altura_tela <= motog4 ? 55.h : 55.h,
       child: ListView.builder(
         controller: controller,
         scrollDirection: Axis.horizontal,

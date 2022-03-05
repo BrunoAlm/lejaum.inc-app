@@ -21,7 +21,8 @@ class _Expansivelzada2State extends State<Expansivelzada2> {
   int selected = 0; //attention
   @override
   Widget build(BuildContext context) {
-    var _largura_da_tela = MediaQuery.of(context).size.width;
+    // var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _largura_da_tela = MediaQuery.of(context).size.height;
 
     return Container(
       height: 500,

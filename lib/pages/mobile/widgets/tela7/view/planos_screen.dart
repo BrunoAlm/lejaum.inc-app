@@ -15,12 +15,13 @@ class Planos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _altura = MediaQuery.of(context).size.height;
-    var _largura = MediaQuery.of(context).size.width;
+    var _largura = MediaQuery.of(context).size.height;
+    // var _largura = MediaQuery.of(context).size.width;
     return Container(
       height: _altura,
-      width: _largura,
+      width: MediaQuery.of(context).size.width,
       child: Padding(
-        padding: const EdgeInsets.only(top: 30),
+        padding: EdgeInsets.only(top: _largura <= motog4 ? 15 : 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -31,7 +32,7 @@ class Planos extends StatelessWidget {
               maxFontSize: 40,
               minFontSize: _largura <= motog4 ? 30 : 35,
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: _largura <= motog4 ? 5 : 10),
             Text(
               'Arraste para o lado para ver mais planos',
               style: Styles.subtitulo.copyWith(
@@ -39,9 +40,9 @@ class Planos extends StatelessWidget {
                 fontSize: _largura <= motog4 ? 11 : 14,
               ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: _largura <= motog4 ? 5 : 10),
             PlanosCard(),
-            SizedBox(height: _largura <= motog4 ? 10 : 20),
+            SizedBox(height: _largura <= motog4 ? 5 : 20),
             Text(
               '*Planos mensais cobrados semestralmente;',
               style: Styles.subtitulo.copyWith(
@@ -63,7 +64,7 @@ class Planos extends StatelessWidget {
                 fontSize: mudarFontefooter(_largura),
               ),
             ),
-            SizedBox(height: _largura <= motog4 ? 20 : 60),
+            SizedBox(height: _largura <= motog4 ? 20 : 30),
             Center(
               child: IconeBotaoEstilizado(
                 texto: 'Solicitar plano personalizado',

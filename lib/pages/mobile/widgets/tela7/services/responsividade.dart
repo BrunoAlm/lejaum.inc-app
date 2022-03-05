@@ -16,7 +16,7 @@ double mudarFonteSubTituloCard(double largura) {
 }
 
 double mudarFonteCardSolicitacao(double largura) {
-  double tamanho_fonte = largura <= motog4 ? 12 : 18;
+  double tamanho_fonte = largura <= motog4 ? 12 : 20;
   return tamanho_fonte;
 }
 
@@ -26,6 +26,6 @@ double mudarFonteQuote(double largura) {
 }
 
 double mudarFontefooter(double largura) {
-  double tamanho_fonte = largura <= motog4 ? 11 : 14;
+  double tamanho_fonte = largura <= motog4 ? 11 : 16;
   return tamanho_fonte;
 }

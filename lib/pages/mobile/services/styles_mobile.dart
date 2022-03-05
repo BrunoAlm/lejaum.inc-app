@@ -166,7 +166,7 @@ class Styles {
   static final SubtitleTextPlanosCardMoney = TextStyle(
     fontFamily: fonte,
     fontWeight: FontWeight.w600,
-    fontSize: 16,
+    // fontSize: 16,
     color: quaseBlack,
   );
 

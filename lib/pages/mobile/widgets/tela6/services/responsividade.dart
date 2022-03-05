@@ -11,6 +11,6 @@ double mudarAlturaSvg(double largura) {
 }
 
 double mudarFonteSubTitulo(double largura) {
-  double tamanho_fonte = largura <= motog4 ? 12 : 16;
+  double tamanho_fonte = largura <= motog4 ? 11 : 15;
   return tamanho_fonte;
 }

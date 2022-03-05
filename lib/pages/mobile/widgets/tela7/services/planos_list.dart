@@ -20,7 +20,8 @@ class Plano1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _largura_da_tela = MediaQuery.of(context).size.height;
+    // var _largura_da_tela = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.only(left: 20),
       child: Column(
@@ -36,7 +37,7 @@ class Plano1 extends StatelessWidget {
           const SizedBox(height: 5),
           ConstrainedBox(
             constraints: BoxConstraints(
-                maxHeight: _largura_da_tela <= motog4 ? 46.h : 39.h,
+                maxHeight: _largura_da_tela <= motog4 ? 46.h : 42.h,
                 maxWidth: 85.w),
             child: Card(
               shape: RoundedRectangleBorder(
@@ -51,34 +52,33 @@ class Plano1 extends StatelessWidget {
                   children: [
                     // const SizedBox(height: 30),
                     FlagsDoPlanoAtivado(texto: 'Planejamento de Social Media'),
-                    const SizedBox(height: 12),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                     FlagsDoPlanoAtivado(texto: 'até 2 Posts Semanais (8/mês)'),
                     // const SizedBox(height: 15),
-                    const SizedBox(height: 12),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                     FlagsDoPlanoDesativado(
-                        texto:
-                            'Gestão de Anúncios\nno Facebook e no Instagram'),
-                    const SizedBox(height: 12),
+                        texto: 'Gestão de Anúncios no Facebook e no Instagram'),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                     FlagsDoPlanoDesativado(
-                        texto: 'Gestão de Anúncios no Google\ne Youtube'),
+                        texto: 'Gestão de Anúncios no Google e Youtube'),
                     // Expanded(child: Container()),
                     // quoteDoPlano(),
                     // Expanded(child: Container()),
-                    const SizedBox(height: 12),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                     CardSolicitacao(
                       // nome: 'Digital Master',
                       valor: 'Plano Básico: Social Media',
                       descricao: 'por ',
                       descricaoNegrito: 'R\$399,00',
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 10 : 20),
                     BotaoEstilizado(
                       texto: 'Solicitar',
-                      tamanho_fonte: _largura_da_tela <= motog4 ? 12 : 14,
+                      tamanho_fonte: _largura_da_tela <= motog4 ? 12 : 16,
                       pressionado: abrirWhatsApp,
                       cor: Styles.laranjaum,
                       textColor: Styles.quaseWhite,
-                      altura: 28,
+                      altura: _largura_da_tela <= motog4 ? 28 : 30,
                     ),
                   ],
                 ),
@@ -96,7 +96,7 @@ class Plano2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _largura_da_tela = MediaQuery.of(context).size.height;
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
@@ -111,7 +111,7 @@ class Plano2 extends StatelessWidget {
         const SizedBox(height: 5),
         ConstrainedBox(
           constraints: BoxConstraints(
-            maxHeight: _largura_da_tela <= motog4 ? 46.h : 39.h,
+            maxHeight: _largura_da_tela <= motog4 ? 46.h : 42.h,
             maxWidth: 85.w,
           ),
           child: Card(
@@ -126,33 +126,33 @@ class Plano2 extends StatelessWidget {
                 children: [
                   // const SizedBox(height: 30),
                   FlagsDoPlanoAtivado(texto: 'Planejamento de Social Media'),
-                  const SizedBox(height: 12),
+                  SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                   FlagsDoPlanoAtivado(texto: 'até 3 Posts Semanais (12/mês)'),
                   // const SizedBox(height: 15),
-                  const SizedBox(height: 12),
+                  SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                   FlagsDoPlanoAtivado(
-                      texto: 'Gestão de Anúncios\nno Facebook e no Instagram'),
-                  const SizedBox(height: 12),
+                      texto: 'Gestão de Anúncios no Facebook e no Instagram'),
+                  SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                   FlagsDoPlanoDesativado(
                       texto: 'Gestão de Anúncios no Google\ne Youtube'),
                   // Expanded(child: Container()),
                   // quoteDoPlano(),
                   // Expanded(child: Container()),
-                  const SizedBox(height: 12),
+                  SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                   CardSolicitacao(
                     // nome: 'Digital Master',
                     valor: 'Plano Médio: Social + Tráfego',
                     descricao: 'por ',
                     descricaoNegrito: 'R\$997,00',
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: _largura_da_tela <= motog4 ? 10 : 20),
                   BotaoEstilizado(
                     texto: 'Solicitar',
-                    tamanho_fonte: _largura_da_tela <= motog4 ? 12 : 14,
+                    tamanho_fonte: _largura_da_tela <= motog4 ? 12 : 16,
                     pressionado: abrirWhatsApp,
                     cor: Styles.laranjaum,
                     textColor: Styles.quaseWhite,
-                    altura: 28,
+                    altura: _largura_da_tela <= motog4 ? 28 : 30,
                   ),
                 ],
               ),
@@ -169,7 +169,7 @@ class Plano3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _largura_da_tela = MediaQuery.of(context).size.width;
+    var _largura_da_tela = MediaQuery.of(context).size.height;
 
     return Padding(
       padding: const EdgeInsets.only(right: 20),
@@ -187,7 +187,7 @@ class Plano3 extends StatelessWidget {
           const SizedBox(height: 5),
           ConstrainedBox(
             constraints: BoxConstraints(
-                maxHeight: _largura_da_tela <= motog4 ? 48.h : 41.h,
+                maxHeight: _largura_da_tela <= motog4 ? 49.h : 44.h,
                 maxWidth: 85.w),
             child: Card(
               shape: RoundedRectangleBorder(
@@ -204,16 +204,16 @@ class Plano3 extends StatelessWidget {
                     FlagsDoPlanoAtivado(texto: 'Assessoria em Marketing'),
                     const SizedBox(height: 5),
                     QuoteDoPlano(texto: 'por um de nossos especialistas;'),
-                    const SizedBox(height: 12),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                     FlagsDoPlanoAtivado(texto: 'Social Media Personalizado'),
                     // const SizedBox(height: 15),
-                    const SizedBox(height: 12),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 12),
                     FlagsDoPlanoAtivado(texto: 'Gestão de Tráfego Completa'),
                     const SizedBox(height: 5),
                     QuoteDoPlano(
                         texto:
                             'Anuncios em redes sociais e de pesquisa, e-mail marketing entre outros;'),
-                    const SizedBox(height: 12),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 5 : 20),
 
                     CardSolicitacao(
                       // nome: 'Digital Master',
@@ -221,14 +221,14 @@ class Plano3 extends StatelessWidget {
                       descricao: 'por ',
                       descricaoNegrito: 'R\$1997,00',
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: _largura_da_tela <= motog4 ? 10 : 20),
                     BotaoEstilizado(
                       texto: 'Solicitar',
-                      tamanho_fonte: _largura_da_tela <= motog4 ? 12 : 14,
+                      tamanho_fonte: _largura_da_tela <= motog4 ? 12 : 16,
                       pressionado: abrirWhatsApp,
                       cor: Styles.laranjaum,
                       textColor: Styles.quaseWhite,
-                      altura: _largura_da_tela <= motog4 ? 28 : 29,
+                      altura: _largura_da_tela <= motog4 ? 28 : 30,
                     ),
                   ],
                 ),

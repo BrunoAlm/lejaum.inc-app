@@ -2,13 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/desktop/widgets/tela2/view/oq_oferecemos.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioIDV.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioWB.dart';
-import 'package:lejaum/pages/mobile/widgets/tela6/view/solucoes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela7/view/planos_screen.dart';
-import 'package:lejaum/pages/mobile/widgets/tela8/view/avaliacoes.dart';
-
 import '../widgets/home_page/home_page_desktop.dart';
 
 class DesktopPage extends StatefulWidget {

@@ -13,7 +13,7 @@ class FlagsDoPlanoAtivado extends StatelessWidget {
   final String texto;
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var largura = MediaQuery.of(context).size.height;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -53,7 +53,7 @@ class FlagsDoPlanoDesativado extends StatelessWidget {
   final String texto;
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var largura = MediaQuery.of(context).size.height;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,17 +101,18 @@ class CardSolicitacao extends StatelessWidget {
   final String descricaoNegrito;
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var largura = MediaQuery.of(context).size.height;
+    // var largura = MediaQuery.of(context).size.width;
 
     return Container(
-      height: largura <= motog4 ? 65 : 71,
+      height: largura <= motog4 ? 50 : 73,
       decoration: BoxDecoration(
         border: Border.all(color: Styles.laranjaum, width: 3),
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: EdgeInsets.only(left: 8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -153,7 +154,7 @@ class QuoteDoPlano extends StatelessWidget {
   final String texto;
   @override
   Widget build(BuildContext context) {
-    var largura = MediaQuery.of(context).size.width;
+    var largura = MediaQuery.of(context).size.height;
 
     return Container(
       padding: const EdgeInsets.only(left: 10),
