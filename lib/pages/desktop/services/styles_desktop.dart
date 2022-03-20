@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 class StylesDesktop {
@@ -89,4 +90,11 @@ class StylesDesktop {
     fontSize: 13,
     color: quaseWhite,
   );
+}
+
+class DesktopListViewController extends GetxController {
+  var scrollController = ScrollController();
+  var homeKey = GlobalKey();
+  var boxesKey = GlobalKey();
+  var portfolioKey = GlobalKey();
 }

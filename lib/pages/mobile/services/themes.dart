@@ -80,11 +80,7 @@ class MobilePageViewController extends GetxController {
   var controller = PageController();
 }
 
-class DesktopListViewController extends GetxController {
-  var scrollController = ScrollController();
-  var homeKey = GlobalKey();
-  var boxesKey = GlobalKey();
-}
+
 
 class DirecaoDoSwipe extends GetxController {
   int imagemClicada = 0;

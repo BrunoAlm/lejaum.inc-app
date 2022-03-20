@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart';
@@ -102,7 +103,15 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
                       );
                     }),
                 const SizedBox(width: 20.0),
-                BotaoAppBar(texto: 'Portfólio', pressionado: () {}),
+                BotaoAppBar(
+                    texto: 'Portfólio',
+                    pressionado: () {
+                      Scrollable.ensureVisible(
+                        controller.portfolioKey.currentContext!,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInOutQuart,
+                      );
+                    }),
                 const SizedBox(width: 20.0),
                 BotaoAppBar(texto: 'Ver Planos', pressionado: () {}),
                 const SizedBox(width: 20.0),

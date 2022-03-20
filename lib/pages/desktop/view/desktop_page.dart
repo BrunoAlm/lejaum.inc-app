@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/desktop/widgets/tela2/view/oq_oferecemos.dart';
 import 'package:lejaum/pages/desktop/widgets/tela3/view/portfolioSM.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
@@ -34,7 +35,7 @@ class _DesktopPageState extends State<DesktopPage> {
             children: [
               HomePageDesktop(key: context.homeKey),
               TodasBoxesDesktop(key: context.boxesKey),
-              PortfolioSM(),
+              PortfolioSM(key: context.portfolioKey),
               // PortfolioIDV(),
               // PortifolioWB(),
               // Solucoes(),

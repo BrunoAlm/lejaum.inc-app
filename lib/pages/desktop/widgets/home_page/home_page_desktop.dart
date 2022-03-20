@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
@@ -104,7 +105,13 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                             texto: "Portfólio",
                             altura: 35,
                             largura: 130,
-                            pressionado: () {},
+                            pressionado: () {
+                              Scrollable.ensureVisible(
+                                controller.portfolioKey.currentContext!,
+                                duration: Duration(milliseconds: 500),
+                                curve: Curves.easeInOutQuart,
+                              );
+                            },
                             icone: Icons.arrow_circle_down_outlined,
                             cor: Styles.mareloMostarda,
                           ),

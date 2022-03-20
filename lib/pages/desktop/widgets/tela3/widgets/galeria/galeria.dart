@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+// import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/desktop/widgets/tela3/widgets/social_media_1/social_media_1_view.dart';
 import 'package:lejaum/pages/desktop/widgets/tela3/widgets/social_media_2/social_media_2_view.dart';
-
+// import 'package:get/get.dart';
 class GaleriaSM extends StatelessWidget {
   const GaleriaSM({Key? key}) : super(key: key);
 

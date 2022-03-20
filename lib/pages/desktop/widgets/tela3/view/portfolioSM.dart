@@ -15,8 +15,10 @@ class PortfolioSM extends StatefulWidget {
 }
 
 class _PortfolioSMState extends State<PortfolioSM> {
+
   @override
   Widget build(BuildContext context) {
+
     var _altura = MediaQuery.of(context).size.height;
     var _largura = MediaQuery.of(context).size.width;
     return Container(
