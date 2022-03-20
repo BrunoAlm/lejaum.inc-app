@@ -11,7 +11,7 @@ class HomePageMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _altura = MediaQuery.of(context).size.height;
-    var _largura = MediaQuery.of(context).size.width;
+    var _altura_tela = MediaQuery.of(context).size.height;
 
     double fontMotoG4(double largura) {
       double tamanho_fonte = largura <= motog4 ? 31 : 38;
@@ -39,20 +39,20 @@ class HomePageMobile extends StatelessWidget {
                 style: Styles.tituloFinoLinethrough,
                 // maxFontSize: 38,
                 maxLines: 1,
-                minFontSize: fontMotoG4(_largura),
+                minFontSize: fontMotoG4(_altura_tela),
               ),
               AutoSizeText(
                 'SERVIÇOS,',
                 style: Styles.tituloFinoLinethrough,
                 // maxFontSize: 38,
                 maxLines: 1,
-                minFontSize: fontMotoG4(_largura),
+                minFontSize: fontMotoG4(_altura_tela),
               ),
               AutoSizeText(
                 'NÓS ENTREGAMOS',
                 style: Styles.tituloExtraBold,
                 // maxFontSize: 38,
-                minFontSize: fontMotoG4(_largura),
+                minFontSize: fontMotoG4(_altura_tela),
 
                 // overflow: TextOverflow.ellipsis,
                 maxLines: 1,
@@ -61,7 +61,7 @@ class HomePageMobile extends StatelessWidget {
                 'SOLUÇÕES!',
                 style: Styles.tituloExtraBold,
                 maxLines: 1,
-                minFontSize: fontMotoG4(_largura),
+                minFontSize: fontMotoG4(_altura_tela),
               ),
               const SizedBox(height: 35),
               LinhaBotao1(),

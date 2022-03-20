@@ -32,7 +32,7 @@ class _PortfolioSMState extends State<PortfolioSM> {
             'Social Media',
             maxLines: 1,
             style: Styles.tituloExtraBoldMenor,
-            minFontSize: Get.size.width <= motog4 ? 30 : 35,
+            minFontSize: _altura <= motog4 ? 30 : 35,
           ),
           const SizedBox(height: 20),
           GaleriaSM(),

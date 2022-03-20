@@ -24,7 +24,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
       hoverChild: TextButton(
         onPressed: widget.pressionado,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 6),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
           child: Text(
             widget.texto,
             style: TextStyle(
@@ -35,16 +35,14 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
             ),
           ),
         ),
-        style: ButtonStyle(
+        style: TextButton.styleFrom(
           // fixedSize: MaterialStateProperty.all(
           //     Size(_largura_do_botao!, _altura_do_botao!)),
           backgroundColor:
               MaterialStateColor.resolveWith((states) => Styles.quaseWhite),
-          shape: MaterialStateProperty.all(
-            RoundedRectangleBorder(
-              side: BorderSide(color: Styles.quaseWhite, width: 2),
-              borderRadius: BorderRadius.circular(50),
-            ),
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: Styles.quaseWhite, width: 2),
+            borderRadius: BorderRadius.circular(50),
           ),
         ),
       ),
@@ -54,7 +52,7 @@ class _BotaoAppBarState extends State<BotaoAppBar> {
         child: TextRenderer(
           element: ParagraphElement(),
           text: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
             child: Text(
               widget.texto,
               style: TextStyle(

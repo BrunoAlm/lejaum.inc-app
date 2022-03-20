@@ -16,7 +16,8 @@ class SocialMedia2 extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(DirecaoDoSwipe());
     var _largura_da_tela = MediaQuery.of(context).size.width;
-    var _altura_do_slider = _largura_da_tela <= motog4 ? 35.h : 39.h;
+    var _altura_da_tela = MediaQuery.of(context).size.height;
+    var _altura_do_slider = _altura_da_tela <= motog4 ? 35.h : 39.h;
     var _largura_do_slider = _altura_do_slider / 1.0041;
 
     return SizedBox(

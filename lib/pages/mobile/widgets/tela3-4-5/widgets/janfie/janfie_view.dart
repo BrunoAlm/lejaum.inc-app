@@ -4,21 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart';
 
-class Janfie extends StatefulWidget {
+class Janfie extends StatelessWidget {
   const Janfie({Key? key}) : super(key: key);
 
   @override
-  State<Janfie> createState() => _JanfieState();
-}
-
-class _JanfieState extends State<Janfie> {
-  @override
   Widget build(BuildContext context) {
-    // var _largura_da_tela = MediaQuery.of(context).size.width;
     var _largura_da_tela = MediaQuery.of(context).size.height;
     var _altura_do_slider = _largura_da_tela <= motog4 ? 35.h : 39.h;
     var _largura = MediaQuery.of(context).size.width;
-    // var _altura = 37.h;
     return GestureDetector(
       onTap: () => Get.toNamed('/janfie_pdf'),
       child: Container(

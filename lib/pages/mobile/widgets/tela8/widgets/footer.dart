@@ -20,15 +20,24 @@ class Footer extends StatelessWidget {
             TextButton(
                 onPressed: () =>
                     acessarRedesSociais('https://www.facebook.com/lejaum'),
-                child: Text('Facebook')),
+                child: Text(
+                  'Facebook',
+                  style: TextStyle(fontFamily: "Georama"),
+                )),
             TextButton(
                 onPressed: () => acessarRedesSociais(
                     'https://www.instagram.com/lejaum.me/?hl=pt-br'),
-                child: Text('Instagram')),
+                child: Text(
+                  'Instagram',
+                  style: TextStyle(fontFamily: "Georama"),
+                )),
             TextButton(
                 onPressed: () =>
                     acessarRedesSociais('https://www.behance.net/lejaum'),
-                child: Text('Behance')),
+                child: Text(
+                  'Behance',
+                  style: TextStyle(fontFamily: "Georama"),
+                )),
           ],
         ),
         // Text('Facebook | Instagram | Behance', style: Styles.footer),

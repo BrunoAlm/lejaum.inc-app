@@ -20,11 +20,11 @@ class DesktopAppBar extends StatefulWidget {
 
 class _DesktopAppBarState extends State<DesktopAppBar> {
   final Color laranjaum = Color(0xFFFF5400);
-
   final Color quaseWhite = Color(0xFFE5E5E5);
 
   @override
   Widget build(BuildContext context) {
+    var largura_app_bar = MediaQuery.of(context).size.width;
     Get.put(DesktopListViewController());
     return GetBuilder<DesktopListViewController>(
       builder: (controller) => Container(
@@ -43,71 +43,75 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
           backgroundColor: laranjaum,
           toolbarHeight: 60,
           elevation: 5,
-          title: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              const SizedBox(width: 145),
-              GestureDetector(
-                onTap: () {
-                  Scrollable.ensureVisible(
-                    controller.homeKey.currentContext!,
-                    duration: Duration(milliseconds: 500),
-                    curve: Curves.easeInOutQuart,
-                  );
-                },
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: Row(
-                    children: [
-                      SvgPicture.asset("assets/images/icons/logo_icon.svg"),
-                      const SizedBox(width: 3),
-                      TextRenderer(
-                        element: ParagraphElement(),
-                        text: Text(
-                          'lejaum',
-                          style: TextStyle(
-                            color: Styles.quaseWhite,
-                            fontSize: 30,
-                            fontFamily: 'Georama',
-                            fontStyle: FontStyle.italic,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Expanded(child: Container()),
-              BotaoAppBar(
-                  texto: 'Início',
-                  pressionado: () {
+          title: ConstrainedBox(
+            constraints:
+                BoxConstraints(maxHeight: 60, maxWidth: largura_app_bar),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const SizedBox(width: 145),
+                GestureDetector(
+                  onTap: () {
                     Scrollable.ensureVisible(
                       controller.homeKey.currentContext!,
                       duration: Duration(milliseconds: 500),
                       curve: Curves.easeInOutQuart,
                     );
-                  }),
-              const SizedBox(width: 20.0),
-              BotaoAppBar(
-                  texto: 'Sobre',
-                  pressionado: () {
-                    Scrollable.ensureVisible(
-                      controller.boxesKey.currentContext!,
-                      duration: Duration(milliseconds: 500),
-                      curve: Curves.easeInOutQuart,
-                    );
-                  }),
-              const SizedBox(width: 20.0),
-              BotaoAppBar(texto: 'Portfólio', pressionado: () {}),
-              const SizedBox(width: 20.0),
-              BotaoAppBar(texto: 'Ver Planos', pressionado: () {}),
-              const SizedBox(width: 20.0),
-              BotaoAppBar(texto: 'Contato', pressionado: () {}),
-              const SizedBox(width: 20.0),
-              BotaoDarkModeDesktop(),
-              SizedBox(width: 10.w),
-            ],
+                  },
+                  child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Row(
+                      children: [
+                        SvgPicture.asset("assets/images/icons/logo_icon.svg"),
+                        const SizedBox(width: 3),
+                        TextRenderer(
+                          element: ParagraphElement(),
+                          text: Text(
+                            'lejaum',
+                            style: TextStyle(
+                              color: Styles.quaseWhite,
+                              fontSize: 30,
+                              fontFamily: 'Georama',
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(child: Container()),
+                BotaoAppBar(
+                    texto: 'Início',
+                    pressionado: () {
+                      Scrollable.ensureVisible(
+                        controller.homeKey.currentContext!,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInOutQuart,
+                      );
+                    }),
+                const SizedBox(width: 20.0),
+                BotaoAppBar(
+                    texto: 'Sobre',
+                    pressionado: () {
+                      Scrollable.ensureVisible(
+                        controller.boxesKey.currentContext!,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInOutQuart,
+                      );
+                    }),
+                const SizedBox(width: 20.0),
+                BotaoAppBar(texto: 'Portfólio', pressionado: () {}),
+                const SizedBox(width: 20.0),
+                BotaoAppBar(texto: 'Ver Planos', pressionado: () {}),
+                const SizedBox(width: 20.0),
+                BotaoAppBar(texto: 'Contato', pressionado: () {}),
+                const SizedBox(width: 20.0),
+                BotaoDarkModeDesktop(),
+                SizedBox(width: 10.w),
+              ],
+            ),
           ),
         ),
       ),

@@ -22,6 +22,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
       gtm.pushEvent('EventAppWeb', data: {'eventoApp': 'VerPlanosBtn'});
     }
 
+    var _largura_btn = 150;
     var _altura = MediaQuery.of(context).size.height;
     Get.put(DesktopListViewController());
 
@@ -56,76 +57,86 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 160.0, top: _altura * 0.25),
-              child: Column(
+            SizedBox(
+              height: _altura - 90,
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
-                    'NÃO VENDEMOS SERVIÇOS,',
-                    style: Styles.tituloFinoLinethrough.merge(
-                      TextStyle(fontSize: 48),
-                    ),
-                  ),
-                  Text(
-                    'NÓS ENTREGAMOS SOLUÇÕES!',
-                    style: Styles.tituloExtraBold.merge(
-                      TextStyle(fontSize: 48),
-                    ),
-                  ),
-                  const SizedBox(height: 55),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      IconeBotaoEstilizado(
-                        textColor: Colors.white,
-                        texto: "Saber Mais",
-                        altura: 35,
-                        largura: 130,
-                        pressionado: () {
-                          Scrollable.ensureVisible(
-                            controller.boxesKey.currentContext!,
-                            duration: Duration(milliseconds: 500),
-                            curve: Curves.easeInOutQuart,
-                          );
-                        },
-                        icone: Icons.arrow_circle_down_outlined,
-                        cor: Styles.lowBlueGray,
+                      Text(
+                        'NÃO VENDEMOS SERVIÇOS,',
+                        style: Styles.tituloFinoLinethrough.merge(
+                          TextStyle(fontSize: 48),
+                        ),
                       ),
-                      SizedBox(width: 20),
-                      IconeBotaoEstilizado(
-                        textColor: Styles.pretao,
-                        texto: "Portfólio",
-                        altura: 35,
-                        largura: 130,
-                        pressionado: () {},
-                        icone: Icons.arrow_circle_down_outlined,
-                        cor: Styles.mareloMostarda,
+                      Text(
+                        'NÓS ENTREGAMOS SOLUÇÕES!',
+                        style: Styles.tituloExtraBold.merge(
+                          TextStyle(fontSize: 48),
+                        ),
                       ),
-                      SizedBox(width: 20),
-                      IconeBotaoEstilizado(
-                        textColor: Colors.white,
-                        cor: Styles.laranjaum,
-                        texto: "Ver Planos",
-                        altura: 35,
-                        largura: 130,
-                        pressionado: () {
-                          pushGtm();
-                        },
-                        icone: Icons.credit_card,
-                      ),
-                      SizedBox(width: 20),
-                      IconeBotaoEstilizado(
-                        textColor: Colors.white,
-                        cor: Styles.verdeGood,
-                        texto: "Whatsapp",
-                        altura: 35,
-                        largura: 130,
-                        pressionado: abrirWhatsApp,
-                        icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
+                      const SizedBox(height: 55),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          IconeBotaoEstilizado(
+                            textColor: Colors.white,
+                            texto: "Saber Mais",
+                            altura: 35,
+                            largura: 130,
+                            pressionado: () {
+                              Scrollable.ensureVisible(
+                                controller.boxesKey.currentContext!,
+                                duration: Duration(milliseconds: 500),
+                                curve: Curves.easeInOutQuart,
+                              );
+                            },
+                            icone: Icons.arrow_circle_down_outlined,
+                            cor: Styles.lowBlueGray,
+                          ),
+                          SizedBox(width: 20),
+                          IconeBotaoEstilizado(
+                            textColor: Styles.pretao,
+                            texto: "Portfólio",
+                            altura: 35,
+                            largura: 130,
+                            pressionado: () {},
+                            icone: Icons.arrow_circle_down_outlined,
+                            cor: Styles.mareloMostarda,
+                          ),
+                          SizedBox(width: 20),
+                          IconeBotaoEstilizado(
+                            textColor: Colors.white,
+                            cor: Styles.laranjaum,
+                            texto: "Ver Planos",
+                            altura: 35,
+                            largura: 130,
+                            pressionado: () {
+                              pushGtm();
+                            },
+                            icone: Icons.credit_card,
+                          ),
+                          SizedBox(width: 20),
+                          IconeBotaoEstilizado(
+                            textColor: Colors.white,
+                            cor: Styles.verdeGood,
+                            texto: "Whatsapp",
+                            altura: 35,
+                            largura: 130,
+                            pressionado: abrirWhatsApp,
+                            icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
+                          ),
+                        ],
                       ),
                     ],
+                  ),
+                  Center(
+                    child: Image.asset('assets/images/astronauta.png',
+                        height: 450, alignment: Alignment.center),
                   ),
                 ],
               ),

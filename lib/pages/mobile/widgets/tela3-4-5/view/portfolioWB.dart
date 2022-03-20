@@ -30,7 +30,7 @@ class _PortifolioWBState extends State<PortifolioWB> {
             'Web Design',
             maxLines: 1,
             style: Styles.tituloExtraBoldMenor,
-            minFontSize: Get.size.width <= motog4 ? 30 : 35,
+            minFontSize: _altura <= motog4 ? 30 : 35,
           ),
           const SizedBox(height: 20),
           GaleriaWB(),
