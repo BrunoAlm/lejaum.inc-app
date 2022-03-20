@@ -79,7 +79,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                           TextStyle(fontSize: 48),
                         ),
                       ),
-                      const SizedBox(height: 55),
+                      const SizedBox(height: 45),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
