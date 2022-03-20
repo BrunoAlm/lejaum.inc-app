@@ -14,7 +14,7 @@ class TodasBoxesDesktop extends StatelessWidget {
     var _largura = MediaQuery.of(context).size.width;
     return Container(
       key: boxes,
-      height: _altura - 60,
+      height: _altura - 30,
       width: _largura,
       color: context.theme.backgroundColor,
       child: Center(

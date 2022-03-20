@@ -58,7 +58,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
               ),
             ),
             SizedBox(
-              height: _altura - 90,
+              height: _altura - 120,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -79,7 +79,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                           TextStyle(fontSize: 48),
                         ),
                       ),
-                      const SizedBox(height: 45),
+                      const SizedBox(height: 35),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
