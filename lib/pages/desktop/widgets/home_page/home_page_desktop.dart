@@ -142,7 +142,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                     ],
                   ),
                   Center(
-                    child: Image.asset('assets/images/astronauta.png',
+                    child: Image.asset('assets/images/astronauta2.png',
                         height: 450, alignment: Alignment.center),
                   ),
                 ],

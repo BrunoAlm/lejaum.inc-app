@@ -22,16 +22,16 @@ class _PortfolioIDVState extends State<PortfolioIDV> {
       width: _largura,
       // margin: EdgeInsets.only(top: 30),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: const EdgeInsets.only(left: 160, top: 30.0),
             child: AutoSizeText(
               'Identidade Visual',
               maxLines: 1,
               style: Styles.tituloExtraBoldMenor,
-              minFontSize: Get.size.height <= motog4 ? 30 : 35,
+              minFontSize: _altura <= motog4 ? 30 : 35,
             ),
           ),
           const SizedBox(height: 20),
