@@ -1,0 +1,1567 @@
+1631243675|Bruno Almeida de Matos|A|/.firebase/hosting.YnVpbGRcd2Vi.cache
+1631243675|Bruno Almeida de Matos|A|/.firebaserc
+1631243675|Bruno Almeida de Matos|A|/.gitattributes
+1631243675|Bruno Almeida de Matos|A|/.github/workflows/main.yml
+1631243675|Bruno Almeida de Matos|A|/.gitignore
+1631243675|Bruno Almeida de Matos|A|/.metadata
+1631243675|Bruno Almeida de Matos|A|/README.md
+1631243675|Bruno Almeida de Matos|A|/analysis_options.yaml
+1631243675|Bruno Almeida de Matos|A|/android/.gitignore
+1631243675|Bruno Almeida de Matos|A|/android/app/build.gradle
+1631243675|Bruno Almeida de Matos|A|/android/app/src/debug/AndroidManifest.xml
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/AndroidManifest.xml
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/kotlin/com/example/lejaum/MainActivity.kt
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/drawable-v21/launch_background.xml
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/drawable/launch_background.xml
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/values-night/styles.xml
+1631243675|Bruno Almeida de Matos|A|/android/app/src/main/res/values/styles.xml
+1631243675|Bruno Almeida de Matos|A|/android/app/src/profile/AndroidManifest.xml
+1631243675|Bruno Almeida de Matos|A|/android/build.gradle
+1631243675|Bruno Almeida de Matos|A|/android/gradle.properties
+1631243675|Bruno Almeida de Matos|A|/android/gradle/wrapper/gradle-wrapper.properties
+1631243675|Bruno Almeida de Matos|A|/android/settings.gradle
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Black.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-BlackItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Bold.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-BoldItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-ExtraBold.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-ExtraBoldItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-ExtraLight.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-ExtraLightItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Italic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Light.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-LightItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Medium.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-MediumItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Regular.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-SemiBold.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-SemiBoldItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-Thin.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/fonts/Georama/Georama-ThinItalic.ttf
+1631243675|Bruno Almeida de Matos|A|/assets/images/backgroundlejaum.png
+1631243675|Bruno Almeida de Matos|A|/firebase.json
+1631243675|Bruno Almeida de Matos|A|/ios/.gitignore
+1631243675|Bruno Almeida de Matos|A|/ios/Flutter/AppFrameworkInfo.plist
+1631243675|Bruno Almeida de Matos|A|/ios/Flutter/Debug.xcconfig
+1631243675|Bruno Almeida de Matos|A|/ios/Flutter/Release.xcconfig
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcodeproj/project.pbxproj
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcworkspace/contents.xcworkspacedata
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+1631243675|Bruno Almeida de Matos|A|/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/AppDelegate.swift
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Base.lproj/LaunchScreen.storyboard
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Base.lproj/Main.storyboard
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Info.plist
+1631243675|Bruno Almeida de Matos|A|/ios/Runner/Runner-Bridging-Header.h
+1631243675|Bruno Almeida de Matos|A|/lib/main.dart
+1631243675|Bruno Almeida de Matos|A|/public/404.html
+1631243675|Bruno Almeida de Matos|A|/public/index.html
+1631243675|Bruno Almeida de Matos|A|/pubspec.lock
+1631243675|Bruno Almeida de Matos|A|/pubspec.yaml
+1631243675|Bruno Almeida de Matos|A|/web/favicon.png
+1631243675|Bruno Almeida de Matos|A|/web/icons/Icon-192.png
+1631243675|Bruno Almeida de Matos|A|/web/icons/Icon-512.png
+1631243675|Bruno Almeida de Matos|A|/web/icons/Icon-maskable-192.png
+1631243675|Bruno Almeida de Matos|A|/web/icons/Icon-maskable-512.png
+1631243675|Bruno Almeida de Matos|A|/web/index.html
+1631243675|Bruno Almeida de Matos|A|/web/manifest.json
+1631243675|Bruno Almeida de Matos|A|/windows/.gitignore
+1631243675|Bruno Almeida de Matos|A|/windows/CMakeLists.txt
+1631243675|Bruno Almeida de Matos|A|/windows/flutter/CMakeLists.txt
+1631243675|Bruno Almeida de Matos|A|/windows/flutter/generated_plugin_registrant.cc
+1631243675|Bruno Almeida de Matos|A|/windows/flutter/generated_plugin_registrant.h
+1631243675|Bruno Almeida de Matos|A|/windows/flutter/generated_plugins.cmake
+1631243675|Bruno Almeida de Matos|A|/windows/runner/CMakeLists.txt
+1631243675|Bruno Almeida de Matos|A|/windows/runner/Runner.rc
+1631243675|Bruno Almeida de Matos|A|/windows/runner/flutter_window.cpp
+1631243675|Bruno Almeida de Matos|A|/windows/runner/flutter_window.h
+1631243675|Bruno Almeida de Matos|A|/windows/runner/main.cpp
+1631243675|Bruno Almeida de Matos|A|/windows/runner/resource.h
+1631243675|Bruno Almeida de Matos|A|/windows/runner/resources/app_icon.ico
+1631243675|Bruno Almeida de Matos|A|/windows/runner/runner.exe.manifest
+1631243675|Bruno Almeida de Matos|A|/windows/runner/utils.cpp
+1631243675|Bruno Almeida de Matos|A|/windows/runner/utils.h
+1631243675|Bruno Almeida de Matos|A|/windows/runner/win32_window.cpp
+1631243675|Bruno Almeida de Matos|A|/windows/runner/win32_window.h
+1631243876|Bruno Almeida de Matos|M|/lib/main.dart
+1631244368|Bruno Almeida de Matos|M|/lib/main.dart
+1631244893|Bruno Almeida de Matos|M|/pubspec.lock
+1631245568|Bruno Almeida de Matos|M|/.firebase/hosting.YnVpbGRcd2Vi.cache
+1631245568|Bruno Almeida de Matos|M|/firebase.json
+1631245568|Bruno Almeida de Matos|M|/lib/main.dart
+1631245865|Bruno Almeida de Matos|M|/README.md
+1631246042|Bruno Almeida de Matos|M|/lib/main.dart
+1631246042|Bruno Almeida de Matos|M|/pubspec.yaml
+1631247572|Bruno Almeida de Matos|M|/lib/main.dart
+1631248544|FlutLab.io|M|/analysis_options.yaml
+1631248544|FlutLab.io|D|/assets/images/backgroundlejaum.png
+1631248544|FlutLab.io|A|/assets/images/first_page_bg.png
+1631248544|FlutLab.io|M|/lib/main.dart
+1631248544|FlutLab.io|M|/pubspec.yaml
+1631248971|Bruno Almeida de Matos|D|/assets/images/backgroundlejaum.png
+1631248971|Bruno Almeida de Matos|A|/assets/images/first_page_bg.png
+1631248971|Bruno Almeida de Matos|M|/lib/main.dart
+1631248971|Bruno Almeida de Matos|M|/pubspec.yaml
+1631249262|Bruno Almeida de Matos|M|/lib/main.dart
+1631249447|Bruno Almeida de Matos|M|/README.md
+1631311163|Bruno Almeida de Matos|M|/lib/main.dart
+1631314262|Bruno Almeida de Matos|M|/lib/main.dart
+1631314262|Bruno Almeida de Matos|A|/lib/pages/home/home_page.dart
+1631314262|Bruno Almeida de Matos|A|/lib/pages/home/widgets/mobile_app_bar.dart
+1631314262|Bruno Almeida de Matos|M|/pubspec.yaml
+1631314917|Bruno Almeida de Matos|M|/lib/main.dart
+1631314917|Bruno Almeida de Matos|M|/lib/pages/home/widgets/mobile_app_bar.dart
+1631314917|Bruno Almeida de Matos|A|/lib/pages/home/widgets/web_app_bar.dart
+1631324924|Bruno Almeida de Matos|M|/lib/main.dart
+1631324924|Bruno Almeida de Matos|M|/lib/pages/home/home_page.dart
+1631324924|Bruno Almeida de Matos|M|/lib/pages/home/widgets/mobile_app_bar.dart
+1631324924|Bruno Almeida de Matos|M|/lib/pages/home/widgets/web_app_bar.dart
+1631324924|Bruno Almeida de Matos|A|/lib/widgets/fonts.dart
+1631330710|Bruno Almeida de Matos|M|/lib/main.dart
+1631330710|Bruno Almeida de Matos|M|/lib/pages/home/home_page.dart
+1631330710|Bruno Almeida de Matos|M|/lib/pages/home/widgets/mobile_app_bar.dart
+1631330710|Bruno Almeida de Matos|A|/lib/pages/home/widgets/mobile_page.dart
+1631330710|Bruno Almeida de Matos|M|/pubspec.yaml
+1631334100|Bruno Almeida de Matos|A|/assets/images/grafico_icon.png
+1631334100|Bruno Almeida de Matos|A|/assets/images/mao_icon.png
+1631334100|Bruno Almeida de Matos|A|/assets/images/sino_icon.png
+1631334100|Bruno Almeida de Matos|M|/lib/pages/home/home_page.dart
+1631334100|Bruno Almeida de Matos|A|/lib/pages/home/widgets/AppBar/mobile_app_bar.dart
+1631334100|Bruno Almeida de Matos|A|/lib/pages/home/widgets/AppBar/web_app_bar.dart
+1631334100|Bruno Almeida de Matos|D|/lib/pages/home/widgets/mobile_app_bar.dart
+1631334100|Bruno Almeida de Matos|D|/lib/pages/home/widgets/mobile_page.dart
+1631334100|Bruno Almeida de Matos|D|/lib/pages/home/widgets/web_app_bar.dart
+1631334100|Bruno Almeida de Matos|A|/lib/pages/mobile/mobile_page.dart
+1631334100|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/botao_saiba_mais.dart
+1631334100|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/cards.dart
+1631334100|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/primeira_parte.dart
+1631334313|Bruno Almeida de Matos|A|/assets/images/logo_icon.png
+1631334313|Bruno Almeida de Matos|M|/lib/pages/home/widgets/AppBar/mobile_app_bar.dart
+1631334445|Bruno Almeida de Matos|M|/lib/pages/home/widgets/AppBar/mobile_app_bar.dart
+1631335256|Bruno Almeida de Matos|A|/assets/images/logo_icon.svg
+1631335256|Bruno Almeida de Matos|M|/lib/pages/home/widgets/AppBar/mobile_app_bar.dart
+1631335256|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631335256|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/boxes.dart
+1631335256|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/cards.dart
+1631335256|Bruno Almeida de Matos|M|/pubspec.lock
+1631335256|Bruno Almeida de Matos|M|/pubspec.yaml
+1631336473|Bruno Almeida de Matos|M|/lib/pages/home/home_page.dart
+1631336473|Bruno Almeida de Matos|M|/lib/pages/home/widgets/AppBar/mobile_app_bar.dart
+1631336567|Bruno Almeida de Matos|M|/lib/pages/home/widgets/AppBar/web_app_bar.dart
+1631337330|Bruno Almeida de Matos|A|/assets/images/favicon.png
+1631337330|Bruno Almeida de Matos|A|/assets/images/favicon.svg
+1631337330|Bruno Almeida de Matos|M|/web/favicon.png
+1631337986|Bruno Almeida de Matos|M|/web/manifest.json
+1631364480|Bruno Almeida de Matos|M|/lib/main.dart
+1631364480|Bruno Almeida de Matos|A|/lib/pages/home/AppBar/mobile_app_bar.dart
+1631364480|Bruno Almeida de Matos|A|/lib/pages/home/AppBar/web_app_bar.dart
+1631364480|Bruno Almeida de Matos|M|/lib/pages/home/home_page.dart
+1631364480|Bruno Almeida de Matos|D|/lib/pages/home/widgets/AppBar/mobile_app_bar.dart
+1631364480|Bruno Almeida de Matos|D|/lib/pages/home/widgets/AppBar/web_app_bar.dart
+1631364480|Bruno Almeida de Matos|D|/lib/widgets/fonts.dart
+1631364480|Bruno Almeida de Matos|M|/web/index.html
+1631365923|Bruno Almeida de Matos|M|/lib/main.dart
+1631365923|Bruno Almeida de Matos|M|/lib/pages/home/AppBar/mobile_app_bar.dart
+1631365923|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/boxes.dart
+1631365923|Bruno Almeida de Matos|M|/web/icons/Icon-192.png
+1631365923|Bruno Almeida de Matos|A|/web/icons/Icon-192old.png
+1631365923|Bruno Almeida de Matos|M|/web/icons/Icon-512.png
+1631365923|Bruno Almeida de Matos|A|/web/icons/Icon-512old.png
+1631365923|Bruno Almeida de Matos|M|/web/icons/Icon-maskable-192.png
+1631365923|Bruno Almeida de Matos|A|/web/icons/Icon-maskable-192old.png
+1631365923|Bruno Almeida de Matos|M|/web/icons/Icon-maskable-512.png
+1631365923|Bruno Almeida de Matos|A|/web/icons/Icon-maskable-512old.png
+1631365923|Bruno Almeida de Matos|A|/web/icons/favicon.png
+1631366206|Bruno Almeida de Matos|M|/lib/main.dart
+1631366206|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631368802|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/boxes.dart
+1631368802|Bruno Almeida de Matos|A|/lib/pages/services/styles.dart
+1631371934|Bruno Almeida de Matos|M|/lib/main.dart
+1631371934|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631371934|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/botao_saiba_mais.dart
+1631371934|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/boxes.dart
+1631371934|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/portfolio.dart
+1631371934|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/primeira_parte.dart
+1631371934|Bruno Almeida de Matos|M|/lib/pages/services/styles.dart
+1631371934|Bruno Almeida de Matos|M|/pubspec.yaml
+1631372321|Bruno Almeida de Matos|M|/lib/pages/services/styles.dart
+1631395781|Bruno Almeida de Matos|A|/assets/images/boxes/grafico_icon.png
+1631395781|Bruno Almeida de Matos|A|/assets/images/boxes/like_insta_icon.png
+1631395781|Bruno Almeida de Matos|A|/assets/images/boxes/mao_icon.png
+1631395781|Bruno Almeida de Matos|A|/assets/images/boxes/sino_icon.png
+1631395781|Bruno Almeida de Matos|D|/assets/images/favicon.png
+1631395781|Bruno Almeida de Matos|D|/assets/images/favicon.svg
+1631395781|Bruno Almeida de Matos|D|/assets/images/grafico_icon.png
+1631395781|Bruno Almeida de Matos|A|/assets/images/icons/favicon.png
+1631395781|Bruno Almeida de Matos|A|/assets/images/icons/favicon.svg
+1631395781|Bruno Almeida de Matos|A|/assets/images/icons/logo_icon.png
+1631395781|Bruno Almeida de Matos|A|/assets/images/icons/logo_icon.svg
+1631395781|Bruno Almeida de Matos|D|/assets/images/logo_icon.png
+1631395781|Bruno Almeida de Matos|D|/assets/images/logo_icon.svg
+1631395781|Bruno Almeida de Matos|D|/assets/images/mao_icon.png
+1631395781|Bruno Almeida de Matos|D|/assets/images/sino_icon.png
+1631395781|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631395781|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/boxes.dart
+1631395781|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/carrossel.dart
+1631395781|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/primeira_parte.dart
+1631395781|Bruno Almeida de Matos|M|/lib/pages/services/styles.dart
+1631395781|Bruno Almeida de Matos|M|/pubspec.yaml
+1631395781|Bruno Almeida de Matos|M|/web/index.html
+1631395781|Bruno Almeida de Matos|M|/web/manifest.json
+1631399456|Bruno Almeida de Matos|A|/assets/images/carrossel/azardi_shop.png
+1631399456|Bruno Almeida de Matos|A|/assets/images/carrossel/bortolotti.png
+1631399456|Bruno Almeida de Matos|A|/assets/images/carrossel/cafe_sovertinho.png
+1631399456|Bruno Almeida de Matos|A|/assets/images/carrossel/milky_cream.png
+1631399456|Bruno Almeida de Matos|A|/assets/images/carrossel/quarta_chopp.png
+1631399456|Bruno Almeida de Matos|M|/pubspec.yaml
+1631399967|Bruno Almeida de Matos|M|/pubspec.yaml
+1631400236|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/boxes.dart
+1631401900|Bruno Almeida de Matos|M|/lib/pages/home/home_page.dart
+1631401900|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631401900|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/boxes.dart
+1631401900|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio.dart
+1631401900|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/primeira_parte.dart
+1631406356|Bruno Almeida de Matos|M|/lib/main.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/home/AppBar/mobile_app_bar.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/home/AppBar/web_app_bar.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/home/home_page.dart
+1631406356|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/AppBar/mobile_app_bar.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/botao_saiba_mais.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/boxes.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/carrossel.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/portfolio.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/primeira_parte.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/primeira_parte/botao_saiba_mais.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/primeira_parte/boxes.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1631406356|Bruno Almeida de Matos|D|/lib/pages/services/styles.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/web-app/AppBar/web_app_bar.dart
+1631406356|Bruno Almeida de Matos|A|/lib/pages/web-app/home_page.dart
+1631406356|Bruno Almeida de Matos|A|/lib/services/styles.dart
+1631406356|Bruno Almeida de Matos|M|/public/404.html
+1631406356|Bruno Almeida de Matos|M|/public/index.html
+1631406356|Bruno Almeida de Matos|M|/pubspec.lock
+1631406356|Bruno Almeida de Matos|M|/pubspec.yaml
+1631407666|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631407666|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1631407904|Bruno Almeida de Matos|M|/lib/pages/web-app/home_page.dart
+1631408925|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631451334|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631451981|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631452426|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631452805|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631455992|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631455992|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631455992|Bruno Almeida de Matos|M|/lib/pages/web-app/home_page.dart
+1631480515|Bruno Almeida de Matos|M|/assets/images/carrossel/bortolotti.png
+1631480515|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631480515|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1631480515|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/solucoes/solucoes.dart
+1631480515|Bruno Almeida de Matos|M|/lib/services/styles.dart
+1631481610|Bruno Almeida de Matos|M|/web/icons/Icon-192.png
+1631481610|Bruno Almeida de Matos|D|/web/icons/Icon-192old.png
+1631481610|Bruno Almeida de Matos|M|/web/icons/Icon-512.png
+1631481610|Bruno Almeida de Matos|D|/web/icons/Icon-512old.png
+1631481610|Bruno Almeida de Matos|M|/web/icons/Icon-maskable-192.png
+1631481610|Bruno Almeida de Matos|D|/web/icons/Icon-maskable-192old.png
+1631481610|Bruno Almeida de Matos|M|/web/icons/Icon-maskable-512.png
+1631481610|Bruno Almeida de Matos|D|/web/icons/Icon-maskable-512old.png
+1631488547|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631488547|Bruno Almeida de Matos|M|/lib/services/styles.dart
+1631488547|Bruno Almeida de Matos|A|/web/cors.json
+1631490580|Bruno Almeida de Matos|M|/lib/main.dart
+1631490580|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631492762|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631500957|Bruno Almeida de Matos|M|/lib/main.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/desktop/desktop_page.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/desktop/services/styles_desktop.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/desktop/widgets/primeira_parte/primeira_parte.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/home_page.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1631500957|Bruno Almeida de Matos|A|/lib/pages/mobile/services/styles_mobile.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/AppBar/mobile_app_bar.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/primeira_parte/botao_saiba_mais.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/primeira_parte/boxes.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1631500957|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/solucoes/solucoes.dart
+1631500957|Bruno Almeida de Matos|D|/lib/pages/web-app/AppBar/web_app_bar.dart
+1631500957|Bruno Almeida de Matos|D|/lib/pages/web-app/home_page.dart
+1631500957|Bruno Almeida de Matos|D|/lib/services/styles.dart
+1631500957|Bruno Almeida de Matos|M|/pubspec.lock
+1631500957|Bruno Almeida de Matos|M|/pubspec.yaml
+1631542395|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1631542981|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1636246166|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1636247718|BrunoAlm|A|/assets/svgs/1.svg
+1636247718|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1636247718|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1636247718|BrunoAlm|M|/lib/pages/mobile/widgets/solucoes/solucoes.dart
+1636247718|BrunoAlm|M|/pubspec.lock
+1636247718|BrunoAlm|M|/pubspec.yaml
+1636249148|BrunoAlm|M|/assets/svgs/1.svg
+1636249148|BrunoAlm|M|/lib/pages/mobile/widgets/solucoes/solucoes.dart
+1640172441|Bruno Almeida de Matos|M|/pubspec.lock
+1640202302|Bruno Almeida de Matos|M|/lib/main.dart
+1640202302|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/portfolio/carrossel.dart
+1640202302|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/portfolio/carrossel.old.dart
+1640202302|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/portfolio/galeria/galeria.dart
+1640202302|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1640202302|Bruno Almeida de Matos|M|/pubspec.lock
+1640225552|BrunoAlm|A|/assets/images/galeria/airsoft_logo.png
+1640225552|BrunoAlm|A|/assets/images/galeria/flor_do_grao_logo.png
+1640225552|BrunoAlm|D|/assets/svgs/1.svg
+1640225552|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1640225552|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/galeria.dart
+1640225552|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart
+1640225552|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640225552|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640225552|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/galeria_content.dart
+1640225552|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1640225552|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/botao_saiba_mais.dart
+1640225552|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640225552|BrunoAlm|M|/lib/pages/mobile/widgets/solucoes/solucoes.dart
+1640225552|BrunoAlm|M|/pubspec.yaml
+1640227071|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640227071|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640607410|BrunoAlm|M|/lib/main.dart
+1640607410|BrunoAlm|M|/lib/pages/desktop/widgets/primeira_parte/primeira_parte.dart
+1640607410|BrunoAlm|D|/lib/pages/home_page.dart
+1640607410|BrunoAlm|A|/lib/pages/home_page_logic.dart
+1640607410|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640607410|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640607410|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640607410|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1640607410|BrunoAlm|D|/lib/pages/mobile/widgets/primeira_parte/botao_saiba_mais.dart
+1640607410|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/boxes.dart
+1640607410|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640607410|BrunoAlm|A|/lib/widgets/botao_estilizado.dart
+1640610477|BrunoAlm|M|/lib/main.dart
+1640610477|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640610477|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1640610477|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640610477|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1640611040|BrunoAlm|M|/pubspec.lock
+1640611040|BrunoAlm|M|/pubspec.yaml
+1640612330|BrunoAlm|M|/lib/main.dart
+1640612330|BrunoAlm|M|/lib/pages/desktop/widgets/primeira_parte/primeira_parte.dart
+1640612330|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640612330|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640612330|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640612330|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640612330|BrunoAlm|M|/pubspec.lock
+1640612330|BrunoAlm|M|/pubspec.yaml
+1640705879|BrunoAlm|A|/assets/images/galeria/azardi_logo.png
+1640705879|BrunoAlm|A|/assets/images/galeria/janfie_logo.png
+1640705879|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640705879|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/galeria.dart
+1640705879|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart
+1640705879|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/azardi/azardi.dart
+1640705879|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640705879|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/galeria_content.dart
+1640705879|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie.dart
+1640705879|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1640705879|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/portfolio2.dart
+1640712256|BrunoAlm|A|/assets/images/galeria/airsoft/img1.png
+1640712256|BrunoAlm|A|/assets/images/galeria/airsoft/img2.png
+1640712256|BrunoAlm|A|/assets/images/galeria/airsoft/img3.png
+1640712256|BrunoAlm|A|/assets/images/galeria/airsoft/img4.png
+1640712256|BrunoAlm|A|/assets/images/galeria/airsoft/logo.png
+1640712256|BrunoAlm|D|/assets/images/galeria/airsoft_logo.png
+1640712256|BrunoAlm|A|/assets/images/galeria/azardi/img1.png
+1640712256|BrunoAlm|A|/assets/images/galeria/azardi/img2.png
+1640712256|BrunoAlm|A|/assets/images/galeria/azardi/img3.png
+1640712256|BrunoAlm|A|/assets/images/galeria/azardi/img4.png
+1640712256|BrunoAlm|A|/assets/images/galeria/azardi/logo.png
+1640712256|BrunoAlm|D|/assets/images/galeria/azardi_logo.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img1.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img2.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img3.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img4.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img5.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img6.png
+1640712256|BrunoAlm|A|/assets/images/galeria/flor_do_grao/logo.png
+1640712256|BrunoAlm|D|/assets/images/galeria/flor_do_grao_logo.png
+1640712256|BrunoAlm|A|/assets/images/galeria/janfie/img1.png
+1640712256|BrunoAlm|A|/assets/images/galeria/janfie/img2.png
+1640712256|BrunoAlm|A|/assets/images/galeria/janfie/img3.png
+1640712256|BrunoAlm|A|/assets/images/galeria/janfie/img4.png
+1640712256|BrunoAlm|A|/assets/images/galeria/janfie/logo.png
+1640712256|BrunoAlm|D|/assets/images/galeria/janfie_logo.png
+1640712256|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart
+1640712256|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640712256|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/azardi/azardi.dart
+1640712256|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/azardi/azardi_content.dart
+1640712256|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640712256|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie.dart
+1640712256|BrunoAlm|A|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640712256|BrunoAlm|M|/pubspec.yaml
+1640716995|BrunoAlm|A|/assets/images/galeria/azardi/img1.jpg
+1640716995|BrunoAlm|D|/assets/images/galeria/azardi/img1.png
+1640716995|BrunoAlm|A|/assets/images/galeria/azardi/img2.jpg
+1640716995|BrunoAlm|D|/assets/images/galeria/azardi/img2.png
+1640716995|BrunoAlm|A|/assets/images/galeria/azardi/img3.jpg
+1640716995|BrunoAlm|D|/assets/images/galeria/azardi/img3.png
+1640716995|BrunoAlm|M|/assets/images/galeria/azardi/logo.png
+1640716995|BrunoAlm|M|/assets/images/galeria/flor_do_grao/img1.png
+1640716995|BrunoAlm|M|/assets/images/galeria/flor_do_grao/img2.png
+1640716995|BrunoAlm|M|/assets/images/galeria/flor_do_grao/img3.png
+1640716995|BrunoAlm|M|/assets/images/galeria/flor_do_grao/img4.png
+1640716995|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img5.jpg
+1640716995|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img5.png
+1640716995|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img6.jpg
+1640716995|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img6.png
+1640716995|BrunoAlm|M|/assets/images/galeria/flor_do_grao/logo.png
+1640716995|BrunoAlm|A|/assets/videos/TESTE GLITCH.mp4
+1640716995|BrunoAlm|M|/lib/pages/desktop/desktop_page.dart
+1640716995|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640716995|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/azardi/azardi_content.dart
+1640716995|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640716995|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640716995|BrunoAlm|A|/lib/pages/mobile/widgets/teste_videos/video.dart
+1640716995|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1640716995|BrunoAlm|M|/pubspec.lock
+1640716995|BrunoAlm|M|/pubspec.yaml
+1640720058|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1640720058|BrunoAlm|M|/lib/pages/mobile/widgets/AppBar/mobile_app_bar.dart
+1640720058|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640720058|BrunoAlm|M|/lib/pages/mobile/widgets/teste_videos/video.dart
+1640720058|BrunoAlm|M|/pubspec.lock
+1640720058|BrunoAlm|M|/pubspec.yaml
+1640720654|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640735406|BrunoAlm|M|/assets/images/galeria/airsoft/img1.png
+1640735406|BrunoAlm|M|/assets/images/galeria/airsoft/img2.png
+1640735406|BrunoAlm|M|/assets/images/galeria/airsoft/img3.png
+1640735406|BrunoAlm|M|/assets/images/galeria/airsoft/img4.png
+1640735406|BrunoAlm|M|/assets/images/galeria/airsoft/logo.png
+1640735406|BrunoAlm|A|/assets/pdf/janfie-apresentacao.pdf
+1640735406|BrunoAlm|A|/lib/pages/mobile/widgets/pdf_view/pdf.dart
+1640735406|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart
+1640735406|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640735406|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/galeria_content.dart
+1640735406|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640735406|BrunoAlm|M|/lib/pages/mobile/widgets/teste_videos/video.dart
+1640735406|BrunoAlm|M|/pubspec.lock
+1640735406|BrunoAlm|M|/pubspec.yaml
+1640735406|BrunoAlm|M|/windows/flutter/generated_plugin_registrant.cc
+1640735406|BrunoAlm|M|/windows/flutter/generated_plugins.cmake
+1640825238|BrunoAlm|M|/lib/main.dart
+1640825238|BrunoAlm|M|/lib/pages/desktop/desktop_page.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640825238|BrunoAlm|D|/lib/pages/mobile/widgets/pdf_view/pdf.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/galeria.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/galeria_content.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640825238|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/portfolio2.dart
+1640825238|BrunoAlm|A|/lib/pages/mobile/widgets/teste_pdf/pdf.dart
+1640825238|BrunoAlm|M|/pubspec.lock
+1640825238|BrunoAlm|M|/pubspec.yaml
+1640825238|BrunoAlm|M|/web/index.html
+1640825238|BrunoAlm|M|/windows/flutter/generated_plugin_registrant.cc
+1640825238|BrunoAlm|M|/windows/flutter/generated_plugins.cmake
+1640825808|BrunoAlm|A|/assets/images/galeria/janfie/logo.old.png
+1640825808|BrunoAlm|M|/assets/images/galeria/janfie/logo.png
+1640825808|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640825808|BrunoAlm|M|/lib/pages/mobile/widgets/teste_pdf/pdf.dart
+1640827274|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640827274|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1640879271|BrunoAlm|M|/lib/main.dart
+1640879271|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640879271|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1640879271|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/carrossel.old.dart
+1640879271|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/boxes.dart
+1640879271|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1640879271|BrunoAlm|M|/pubspec.lock
+1640879271|BrunoAlm|M|/pubspec.yaml
+1640907153|BrunoAlm|M|/lib/main.dart
+1640907153|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1640907153|BrunoAlm|A|/lib/pages/mobile/services/themes.dart
+1640907153|BrunoAlm|A|/lib/pages/mobile/widgets/drawer/drawerzin.dart
+1640907153|BrunoAlm|M|/lib/pages/mobile/widgets/portfolio/galeria/widgets/galeria_content.dart
+1640907153|BrunoAlm|M|/lib/pages/mobile/widgets/primeira_parte/boxes.dart
+1640907153|BrunoAlm|M|/pubspec.lock
+1640907153|BrunoAlm|M|/pubspec.yaml
+1640925571|BrunoAlm|D|/assets/images/carrossel/azardi_shop.png
+1640925571|BrunoAlm|D|/assets/images/carrossel/bortolotti.png
+1640925571|BrunoAlm|D|/assets/images/carrossel/cafe_sovertinho.png
+1640925571|BrunoAlm|D|/assets/images/carrossel/milky_cream.png
+1640925571|BrunoAlm|D|/assets/images/carrossel/quarta_chopp.png
+1640925571|BrunoAlm|D|/assets/images/galeria/airsoft/img1.png
+1640925571|BrunoAlm|A|/assets/images/galeria/airsoft/img1.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/airsoft/img2.png
+1640925571|BrunoAlm|A|/assets/images/galeria/airsoft/img2.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/airsoft/img3.png
+1640925571|BrunoAlm|A|/assets/images/galeria/airsoft/img3.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/airsoft/img4.png
+1640925571|BrunoAlm|A|/assets/images/galeria/airsoft/img4.webp
+1640925571|BrunoAlm|A|/assets/images/galeria/azardi/logo_preta.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img1.png
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img1.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img2.png
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img2.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img3.png
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img3.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img4.png
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img4.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img5.jpg
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img5.webp
+1640925571|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img6.jpg
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img6.webp
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img7.webp
+1640925571|BrunoAlm|A|/assets/images/galeria/flor_do_grao/img8.webp
+1640925571|BrunoAlm|A|/assets/images/galeria/janfie/logo_nova.png
+1640925571|BrunoAlm|A|/assets/svgs/whatsapp.svg
+1640925571|BrunoAlm|M|/lib/main.dart
+1640925571|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1640925571|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1640925571|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1640925571|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/AppBar/mobile_app_bar.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/drawer/drawerzin.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/galeria.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/services/galeria_content_list.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/azardi/azardi_content.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/galeria_content.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/portfolio.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/portfolio/portfolio2.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/primeira_parte/boxes.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/primeira_parte/primeira_parte.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/solucoes/solucoes.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela1/AppBar/mobile_app_bar.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela1/primeira_parte.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela2/boxes.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/galeria.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/services/galeria_content_list.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/azardi/azardi_content.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/galeria_content.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/portfolioIDV.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/portfolioSM.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/teste_pdf/pdf.dart
+1640925571|BrunoAlm|A|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/teste_pdf/pdf.dart
+1640925571|BrunoAlm|D|/lib/pages/mobile/widgets/teste_videos/video.dart
+1640925571|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1640925571|BrunoAlm|M|/pubspec.lock
+1640925571|BrunoAlm|M|/pubspec.yaml
+1640925571|BrunoAlm|M|/web/index.html
+1640925571|BrunoAlm|M|/web/manifest.json
+1640926116|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640926398|BrunoAlm|M|/web/index.html
+1640927106|BrunoAlm|M|/lib/main.dart
+1640927106|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1640927106|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/primeira_parte.dart
+1640927329|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/boxes.dart
+1640927329|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/azardi/azardi_content.dart
+1640927329|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/janfie/janfie_content.dart
+1640927510|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1641226670|Bruno Almeida de Matos|M|/lib/main.dart
+1641226670|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1641226670|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641226670|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart
+1641226670|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/drawer/widgets/darkmode_button.dart
+1641226670|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/drawer/widgets/lightmode_button.dart
+1641226670|Bruno Almeida de Matos|M|/pubspec.lock
+1641227458|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641231121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641231121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart
+1641231121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/widgets/darkmode_button.dart
+1641231121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/widgets/lightmode_button.dart
+1641236116|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1641236116|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1641236116|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641236116|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart
+1641238381|Bruno Almeida de Matos|M|/lib/pages/home_page_logic.dart
+1641238381|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641238381|Bruno Almeida de Matos|M|/pubspec.lock
+1641238381|Bruno Almeida de Matos|M|/pubspec.yaml
+1641239225|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641240943|Bruno Almeida de Matos|M|/lib/pages/home_page_logic.dart
+1641240943|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641240943|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/primeira_parte.dart
+1641240943|Bruno Almeida de Matos|A|/lib/pages/services/abrir_whatsapp.dart
+1641242066|Bruno Almeida de Matos|M|/lib/main.dart
+1641243491|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1641260471|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1641260471|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641260471|BrunoAlm|A|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_troca_modo.dart
+1641260471|BrunoAlm|D|/lib/pages/mobile/widgets/tela1/drawer/widgets/darkmode_button.dart
+1641260471|BrunoAlm|D|/lib/pages/mobile/widgets/tela1/drawer/widgets/lightmode_button.dart
+1641260471|BrunoAlm|M|/lib/pages/services/abrir_whatsapp.dart
+1641260471|BrunoAlm|M|/pubspec.lock
+1641260471|BrunoAlm|M|/windows/flutter/generated_plugin_registrant.cc
+1641260471|BrunoAlm|M|/windows/flutter/generated_plugins.cmake
+1641267480|BrunoAlm|A|/assets/images/galeria/italo/logo.png
+1641267480|BrunoAlm|A|/assets/svgs/seta_solucoes.svg
+1641267480|BrunoAlm|M|/lib/pages/mobile/mobile_page.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/galeria.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/services/galeria_content_list.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/azardi/azardi_content.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/galeria_content.dart
+1641267480|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/italo/italo_content.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/janfie/janfie_content.dart
+1641267480|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/lejaum/lejaum_content.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela3/portfolio/portfolioIDV.dart
+1641267480|BrunoAlm|A|/lib/pages/mobile/widgets/tela3/portfolio/portfolioWB.dart
+1641267480|BrunoAlm|M|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641267480|BrunoAlm|A|/lib/pages/mobile/widgets/tela4/widgets/icon_text.dart
+1641267480|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1641267480|BrunoAlm|M|/pubspec.yaml
+1641297193|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_troca_modo.dart
+1641297193|Bruno Almeida de Matos|M|/pubspec.lock
+1641298388|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641300651|Bruno Almeida de Matos|M|/lib/pages/mobile/services/styles_mobile.dart
+1641300651|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1641300651|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641300651|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela4/widgets/custom_bagulho_que_expande.dart
+1641302151|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641302151|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_troca_modo.dart
+1641319238|Bruno Almeida de Matos|M|/lib/pages/mobile/mobile_page.dart
+1641319238|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1641319238|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641319238|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela4/services/lista_de_textos.dart
+1641319238|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641319238|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela4/widgets/custom_bagulho_que_expande.dart
+1641319238|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela4/widgets/esse_tem_que_ir.dart
+1641319507|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641320192|Bruno Almeida de Matos|M|/assets/images/icons/logo_icon.svg
+1641320192|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641320192|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela4/widgets/custom_bagulho_que_expande.dart
+1641320192|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela4/widgets/esse_tem_que_ir.dart
+1641320192|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela4/widgets/expansivelzada.dart
+1641320192|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela4/widgets/icon_text.dart
+1641326420|Bruno Almeida de Matos|M|/lib/main.dart
+1641326420|Bruno Almeida de Matos|M|/lib/pages/home_page_logic.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/mobile_page.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/services/abrir_whatsapp.dart
+1641326420|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/view/mobile_page.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela1/AppBar/mobile_app_bar.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela1/drawer/drawerzin.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_texto.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela1/drawer/widgets/botao_troca_modo.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela1/primeira_parte.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/view/drawerzin.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/view/mobile_app_bar.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/widgets/botao_texto.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela2/boxes.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela2/view/oq_oferecemos.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela2/widgets/boxes.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioIDV.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioWB.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/galeria.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/services/galeria_content_list.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/airsoft/airsoft_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/azardi/azardi_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/flor_do_grao/grao_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/galeria_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/italo/italo_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/janfie/janfie_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/galeria/widgets/lejaum/lejaum_content.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/portfolioIDV.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/portfolioSM.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/portfolio/portfolioWB.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3/teste_pdf/pdf.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela4/services/lista_de_textos.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela4/solucoes/solucoes.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela4/widgets/expansivelzada.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela6/services/lista_de_textos.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641326420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela7/view/planos.dart
+1641326420|Bruno Almeida de Matos|D|/lib/pages/services/abrir_whatsapp.dart
+1641327181|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641336317|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1641336317|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641336317|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641336317|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641336317|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641336317|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1641337710|BrunoAlm|M|/assets/images/icons/favicon.svg
+1641337710|BrunoAlm|M|/assets/images/icons/logo_icon.svg
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/mobile_app_bar.dart
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641337710|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/view/mobile_page.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/drawerzin.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/view/oq_oferecemos.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/widgets/boxes.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioIDV.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641343506|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641344005|BrunoAlm|M|/assets/images/icons/logo_icon.svg
+1641344905|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf.dart
+1641388877|Bruno Almeida de Matos|M|/lib/main.dart
+1641388877|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1641388877|Bruno Almeida de Matos|M|/lib/pages/home_page_logic.dart
+1641388877|Bruno Almeida de Matos|M|/pubspec.lock
+1641388877|Bruno Almeida de Matos|M|/pubspec.yaml
+1641391449|Bruno Almeida de Matos|M|/lib/pages/mobile/services/styles_mobile.dart
+1641391449|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641393844|Bruno Almeida de Matos|M|/.github/workflows/main.yml
+1641393844|Bruno Almeida de Matos|M|/lib/pages/home_page_logic.dart
+1641393844|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641521310|BrunoAlm|A|/assets/images/galeria/italo/img1.png
+1641521310|BrunoAlm|A|/assets/images/galeria/italo/img2.png
+1641521310|BrunoAlm|A|/assets/images/galeria/italo/img3.png
+1641521310|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1641521310|BrunoAlm|M|/lib/pages/mobile/view/mobile_page.dart
+1641521310|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1641521310|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641521310|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641521310|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641521310|BrunoAlm|A|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641521310|BrunoAlm|D|/lib/pages/mobile/widgets/tela7/view/planos.dart
+1641521310|BrunoAlm|A|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1641521310|BrunoAlm|A|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1641576206|Bruno Almeida de Matos|A|/assets/images/planos_money.png
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/services/styles_mobile.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela2/view/oq_oferecemos.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1641576206|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1641576206|Bruno Almeida de Matos|M|/lib/widgets/botao_estilizado.dart
+1641576206|Bruno Almeida de Matos|M|/pubspec.yaml
+1641576684|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641576744|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641589122|Bruno Almeida|A|/lib/pages/mobile/widgets/tela6/services/teste_solucao_card_content.dart
+1641589122|Bruno Almeida|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641589122|Bruno Almeida|A|/lib/pages/mobile/widgets/tela6/view/teste_card_espand_solucao.dart
+1641589122|Bruno Almeida|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641589122|Bruno Almeida|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641605882|BrunoAlm|M|/lib/pages/mobile/view/mobile_page.dart
+1641618733|BrunoAlm|D|/assets/svgs/seta_solucoes.svg
+1641618733|BrunoAlm|A|/assets/svgs/seta_solucoes_baixo.svg
+1641618733|BrunoAlm|A|/assets/svgs/seta_solucoes_cima.svg
+1641618733|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1641618733|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1641618733|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641618733|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/lista_de_textos.dart
+1641618733|BrunoAlm|D|/lib/pages/mobile/widgets/tela6/services/teste_solucao_card_content.dart
+1641618733|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/view/card_solucao.dart
+1641618733|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641618733|BrunoAlm|D|/lib/pages/mobile/widgets/tela6/view/teste_card_espand_solucao.dart
+1641618733|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641618733|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1641618733|BrunoAlm|M|/pubspec.lock
+1641618733|BrunoAlm|M|/pubspec.yaml
+1641677107|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/lista_de_textos.dart
+1641677107|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/card_solucao.dart
+1641677107|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641677107|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1641677107|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641680822|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/card_solucao.dart
+1641680822|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641682096|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641699347|BrunoAlm|A|/assets/images/galeria/airsoft/img5.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/azardi/img1.jpg
+1641699347|BrunoAlm|A|/assets/images/galeria/azardi/img1.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/azardi/img2.jpg
+1641699347|BrunoAlm|A|/assets/images/galeria/azardi/img2.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/azardi/img3.jpg
+1641699347|BrunoAlm|A|/assets/images/galeria/azardi/img3.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/azardi/img4.png
+1641699347|BrunoAlm|D|/assets/images/galeria/italo/img1.png
+1641699347|BrunoAlm|A|/assets/images/galeria/italo/img1.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/italo/img2.png
+1641699347|BrunoAlm|A|/assets/images/galeria/italo/img2.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/italo/img3.png
+1641699347|BrunoAlm|A|/assets/images/galeria/italo/img3.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/janfie/img1.png
+1641699347|BrunoAlm|A|/assets/images/galeria/janfie/img1.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/janfie/img2.png
+1641699347|BrunoAlm|A|/assets/images/galeria/janfie/img2.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/janfie/img3.png
+1641699347|BrunoAlm|A|/assets/images/galeria/janfie/img3.webp
+1641699347|BrunoAlm|D|/assets/images/galeria/janfie/img4.png
+1641699347|BrunoAlm|D|/assets/images/galeria/janfie/logo.old.png
+1641699347|BrunoAlm|A|/assets/images/galeria/lejaum/img1.webp
+1641699347|BrunoAlm|A|/assets/images/galeria/lejaum/img2.webp
+1641699347|BrunoAlm|A|/assets/images/galeria/lejaum/img3.webp
+1641699347|BrunoAlm|M|/lib/main.dart
+1641699347|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641699347|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1641699347|BrunoAlm|M|/pubspec.yaml
+1641702060|BrunoAlm|A|/assets/pdf/azardi_shop.pdf
+1641702060|BrunoAlm|M|/assets/pdf/janfie-apresentacao.pdf
+1641702060|BrunoAlm|M|/lib/main.dart
+1641702060|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf.dart
+1641702060|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart
+1641702060|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1641702060|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641702060|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641702060|BrunoAlm|M|/pubspec.lock
+1641702859|BrunoAlm|M|/lib/pages/mobile/view/mobile_page.dart
+1641702859|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641702859|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641846809|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart
+1641857699|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1641857699|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1641857699|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1641858499|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1641867319|BrunoAlm|M|/lib/main.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/view/mobile_page.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/drawerzin.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/widgets/botao_texto.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/view/oq_oferecemos.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/widgets/boxes.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioIDV.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioWB.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/lista_de_textos.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1641867319|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1641867319|BrunoAlm|A|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1641867319|BrunoAlm|M|/pubspec.lock
+1641867319|BrunoAlm|M|/pubspec.yaml
+1641948564|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/mobile_app_bar.dart
+1641948564|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1641948564|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1641948564|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1641948564|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1641948564|BrunoAlm|M|/pubspec.lock
+1641948564|BrunoAlm|M|/pubspec.yaml
+1641949767|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1641950633|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1641950633|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1641950734|BrunoAlm|M|/lib/main.dart
+1641951583|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1641951583|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1641951583|BrunoAlm|M|/lib/widgets/botao_estilizado.dart
+1641953583|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1641953583|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1641953583|BrunoAlm|A|/web/google85099dfadeab4c5c.html
+1642040064|BrunoAlm|M|/assets/images/icons/logo_icon.svg
+1642040064|BrunoAlm|M|/lib/main.dart
+1642040064|BrunoAlm|D|/lib/pages/desktop/desktop_page.dart
+1642040064|BrunoAlm|A|/lib/pages/desktop/view/desktop_page.dart
+1642040064|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1642040064|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1642040064|BrunoAlm|A|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1642040064|BrunoAlm|D|/lib/pages/desktop/widgets/primeira_parte/primeira_parte.dart
+1642040064|BrunoAlm|A|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1642040064|BrunoAlm|A|/lib/pages/desktop/widgets/tela2/widgets/boxes.dart
+1642040064|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/view/mobile_page.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/drawerzin.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/view/oq_oferecemos.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642040064|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1642084081|Bruno Almeida de Matos|M|/lib/pages/desktop/view/desktop_page.dart
+1642084081|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1642084081|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/tela2/widgets/boxes.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/desktop/view/desktop_page.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/tela2/widgets/boxes.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/mobile/services/styles_mobile.dart
+1642092702|Bruno Almeida de Matos|M|/lib/pages/mobile/services/themes.dart
+1642092702|Bruno Almeida de Matos|M|/pubspec.yaml
+1642099954|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1642099954|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1642101951|Bruno Almeida de Matos|M|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1642210595|BrunoAlm|M|/lib/main.dart
+1642210595|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1642210595|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1642210595|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart
+1642434420|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1642434420|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1642434420|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_zoom_content.dart
+1642434420|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642434420|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1642466907|BrunoAlm|M|/lib/main.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/mobile_app_bar.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1642466907|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart
+1642466907|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_azardi.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1642466907|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1642466907|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/azardi/azardi_content.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642466907|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1642466907|BrunoAlm|M|/pubspec.lock
+1642466907|BrunoAlm|M|/pubspec.yaml
+1642471151|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1642557994|BrunoAlm|D|/assets/images/boxes/grafico_icon.png
+1642557994|BrunoAlm|A|/assets/images/boxes/grafico_icon.webp
+1642557994|BrunoAlm|D|/assets/images/boxes/like_insta_icon.png
+1642557994|BrunoAlm|A|/assets/images/boxes/like_insta_icon.webp
+1642557994|BrunoAlm|D|/assets/images/boxes/mao_icon.png
+1642557994|BrunoAlm|A|/assets/images/boxes/mao_icon.webp
+1642557994|BrunoAlm|D|/assets/images/boxes/sino_icon.png
+1642557994|BrunoAlm|A|/assets/images/boxes/sino_icon.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/airsoft/img1.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/airsoft/img2.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/airsoft/img3.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/airsoft/img4.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/airsoft/img5.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/airsoft/logo.png
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img1.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img2.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img3.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img4.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img5.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img6.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img7.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/img8.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/flor_do_grao/logo.png
+1642557994|BrunoAlm|M|/assets/images/galeria/janfie/img1.webp
+1642557994|BrunoAlm|M|/assets/images/galeria/janfie/img2.webp
+1642557994|BrunoAlm|M|/assets/images/galeria/janfie/img3.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/janfie/img4.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/janfie/logo.png
+1642557994|BrunoAlm|A|/assets/images/galeria/janfie/logo.webp
+1642557994|BrunoAlm|D|/assets/images/galeria/janfie/logo_nova.png
+1642557994|BrunoAlm|M|/assets/images/galeria/lejaum/img1.webp
+1642557994|BrunoAlm|M|/assets/images/galeria/lejaum/img2.webp
+1642557994|BrunoAlm|M|/assets/images/galeria/lejaum/img3.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/lejaum/img4.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img1.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img2.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img3.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img4.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img5.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img6.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img7.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media1/img8.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media2/img1.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media2/img2.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media2/img3.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media2/img4.webp
+1642557994|BrunoAlm|A|/assets/images/galeria/social_media2/img5.webp
+1642557994|BrunoAlm|M|/lib/main.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/widgets/boxes.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1642557994|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/airsoft/airsoft_content.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1642557994|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_content.dart
+1642557994|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/flor_do_grao/grao_zoom_content.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1642557994|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1642557994|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media1/social_media1_content.dart
+1642557994|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media1/social_media1_zoom_content.dart
+1642557994|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media2/social_media2_content.dart
+1642557994|BrunoAlm|M|/pubspec.lock
+1642557994|BrunoAlm|M|/pubspec.yaml
+1642561903|BrunoAlm|M|/assets/images/galeria/social_media2/img2.webp
+1642561903|BrunoAlm|M|/lib/pages/desktop/services/styles_desktop.dart
+1642561903|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1642561903|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1642561903|BrunoAlm|M|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1642561903|BrunoAlm|M|/lib/pages/desktop/widgets/tela2/widgets/boxes.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioIDV.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioWB.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media1/social_media1_content.dart
+1642561903|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media2/social_media2_content.dart
+1642612684|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642734061|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart
+1642734061|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642734061|BrunoAlm|M|/pubspec.lock
+1642734061|BrunoAlm|M|/pubspec.yaml
+1642734061|BrunoAlm|M|/web/index.html
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img1.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img2.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img3.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img4.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img5.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img6.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img7.webp
+1642736381|BrunoAlm|D|/assets/images/galeria/social_media1/img8.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img1.png
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img2.png
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img3.png
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img4.png
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img5.jpg
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img6.png
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img7.jpg
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/png/img8.png
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img1.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img2.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img3.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img4.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img5.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img6.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img7.webp
+1642736381|BrunoAlm|A|/assets/images/galeria/social_media1/webp/img8.webp
+1642736381|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1642736381|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642736381|BrunoAlm|M|/pubspec.yaml
+1642737219|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642738005|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642780911|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart
+1642780911|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1642780911|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1642780911|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642780911|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1642780911|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media1/social_media1_content.dart
+1642780911|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media1/social_media1_zoom_content.dart
+1642780911|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media2/social_media2_content.dart
+1642798685|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642818411|BrunoAlm|M|/lib/main.dart
+1642818411|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1642818411|BrunoAlm|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content.dart
+1642818411|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642818411|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_widgets.dart
+1642818411|BrunoAlm|M|/pubspec.lock
+1642818411|BrunoAlm|M|/pubspec.yaml
+1642818411|BrunoAlm|M|/web/index.html
+1642818919|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642821053|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642891125|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642896754|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart
+1642896754|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1642896754|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1642896754|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642896754|BrunoAlm|M|/pubspec.yaml
+1642896754|BrunoAlm|M|/web/index.html
+1642898754|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642899281|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642899281|BrunoAlm|M|/pubspec.lock
+1642899281|BrunoAlm|M|/pubspec.yaml
+1642899734|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642907615|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1642907615|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642908033|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642949231|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1642949231|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1642949231|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1642949231|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1642949231|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1642949414|BrunoAlm|M|/lib/main.dart
+1643070552|BrunoAlm|A|/assets/audio/avaliacao1.mp3
+1643070552|BrunoAlm|A|/assets/audio/juaaaaaaum.ogg
+1643070552|BrunoAlm|M|/lib/pages/desktop/view/desktop_page.dart
+1643070552|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1643070552|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1643070552|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1643070552|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643070552|BrunoAlm|M|/pubspec.lock
+1643070552|BrunoAlm|M|/pubspec.yaml
+1643071193|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643071691|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643076369|BrunoAlm|A|/assets/images/galeria/janfie/avatar.png
+1643076369|BrunoAlm|A|/assets/svgs/coracao.svg
+1643076369|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1643076369|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/drawerzin.dart
+1643076369|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643079102|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-hdpi/branding.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-hdpi/splash.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-mdpi/branding.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-mdpi/splash.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-night-v21/launch_background.xml
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-night/launch_background.xml
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-v21/background.png
+1643150875|BrunoAlm|M|/android/app/src/main/res/drawable-v21/launch_background.xml
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-xhdpi/branding.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-xhdpi/splash.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-xxhdpi/branding.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-xxhdpi/splash.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-xxxhdpi/branding.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable-xxxhdpi/splash.png
+1643150875|BrunoAlm|A|/android/app/src/main/res/drawable/background.png
+1643150875|BrunoAlm|M|/android/app/src/main/res/drawable/launch_background.xml
+1643150875|BrunoAlm|M|/android/app/src/main/res/values-night/styles.xml
+1643150875|BrunoAlm|M|/android/app/src/main/res/values/styles.xml
+1643150875|BrunoAlm|A|/flutter_native_splash.yaml
+1643150875|BrunoAlm|A|/ios/Runner/Assets.xcassets/BrandingImage.imageset/BrandingImage.png
+1643150875|BrunoAlm|A|/ios/Runner/Assets.xcassets/BrandingImage.imageset/BrandingImage@2x.png
+1643150875|BrunoAlm|A|/ios/Runner/Assets.xcassets/BrandingImage.imageset/BrandingImage@3x.png
+1643150875|BrunoAlm|A|/ios/Runner/Assets.xcassets/BrandingImage.imageset/Contents.json
+1643150875|BrunoAlm|A|/ios/Runner/Assets.xcassets/LaunchBackground.imageset/Contents.json
+1643150875|BrunoAlm|A|/ios/Runner/Assets.xcassets/LaunchBackground.imageset/background.png
+1643150875|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+1643150875|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+1643150875|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+1643150875|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+1643150875|BrunoAlm|M|/ios/Runner/Base.lproj/LaunchScreen.storyboard
+1643150875|BrunoAlm|M|/ios/Runner/Info.plist
+1643150875|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1643150875|BrunoAlm|M|/pubspec.lock
+1643150875|BrunoAlm|M|/pubspec.yaml
+1643150875|BrunoAlm|D|/web/google85099dfadeab4c5c.html
+1643150875|BrunoAlm|M|/web/index.html
+1643150875|BrunoAlm|A|/web/splash/img/dark-1x.png
+1643150875|BrunoAlm|A|/web/splash/img/dark-2x.png
+1643150875|BrunoAlm|A|/web/splash/img/dark-3x.png
+1643150875|BrunoAlm|A|/web/splash/img/dark-4x.png
+1643150875|BrunoAlm|A|/web/splash/img/light-1x.png
+1643150875|BrunoAlm|A|/web/splash/img/light-2x.png
+1643150875|BrunoAlm|A|/web/splash/img/light-3x.png
+1643150875|BrunoAlm|A|/web/splash/img/light-4x.png
+1643150875|BrunoAlm|A|/web/splash/style.css
+1643151601|BrunoAlm|M|/web/index.html
+1643151601|BrunoAlm|M|/web/splash/style.css
+1643151978|BrunoAlm|M|/web/index.html
+1643152984|BrunoAlm|M|/web/index.html
+1643156385|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1643156385|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1643156385|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1643156385|BrunoAlm|M|/web/index.html
+1643156454|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1643157671|BrunoAlm|M|/lib/pages/desktop/widgets/tela2/widgets/boxes.dart
+1643157671|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/widgets/boxes.dart
+1643162267|BrunoAlm|M|/lib/main.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioIDV.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioWB.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1643162267|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643162267|BrunoAlm|M|/pubspec.lock
+1643162267|BrunoAlm|M|/pubspec.yaml
+1643163558|BrunoAlm|A|/assets/images/galeria/italo/img1.png
+1643163558|BrunoAlm|A|/assets/images/galeria/italo/img2.png
+1643163558|BrunoAlm|A|/assets/images/galeria/italo/img3.png
+1643163558|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1643167535|BrunoAlm|M|/web/index.html
+1643168581|BrunoAlm|M|/web/index.html
+1643169266|BrunoAlm|M|/web/index.html
+1643213866|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643222403|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643222403|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1643222403|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1643222403|Bruno Almeida de Matos|M|/pubspec.lock
+1643222403|Bruno Almeida de Matos|M|/pubspec.yaml
+1643222792|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643381388|Bruno Almeida de Matos|M|/lib/main.dart
+1643381388|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643381388|Bruno Almeida de Matos|M|/pubspec.lock
+1643381388|Bruno Almeida de Matos|M|/pubspec.yaml
+1643381388|Bruno Almeida de Matos|M|/web/index.html
+1643383292|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643412909|BrunoAlm|M|/lib/main.dart
+1643412909|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643412909|BrunoAlm|M|/pubspec.lock
+1643412909|BrunoAlm|M|/pubspec.yaml
+1643412909|BrunoAlm|M|/windows/flutter/generated_plugin_registrant.cc
+1643412909|BrunoAlm|M|/windows/flutter/generated_plugins.cmake
+1643716979|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643716979|Bruno Almeida de Matos|M|/pubspec.lock
+1643716979|Bruno Almeida de Matos|M|/pubspec.yaml
+1643716979|Bruno Almeida de Matos|M|/web/index.html
+1643717950|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643718521|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart
+1643733121|Bruno Almeida de Matos|M|/lib/main.dart
+1643733121|Bruno Almeida de Matos|M|/lib/pages/mobile/view/mobile_page.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart
+1643733121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_arzadi.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643733121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioIDV.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioWB.dart
+1643733121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_content.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/galeria_widgets.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/social_media_2_image_list.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/social_media_2_view.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_widgets.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_view.dart
+1643733121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_view.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioIDV.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioSM.dart
+1643733121|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/portfolioWB.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_image_list.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1643733121|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela8/widgets/avaliacoes/avaliacao_janfie.dart
+1643733121|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela8/widgets/footer.dart
+1643760067|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643830705|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1643830705|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/teste_pdf/pdf_janfie.dart
+1643830705|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1643830705|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1643830705|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1643830705|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1643830705|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1643832585|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/view/galeria.dart
+1643832585|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/social_media_2_image_list.dart
+1643832585|Bruno Almeida de Matos|D|/lib/pages/mobile/widgets/tela3-4-5/widgets/galeria_content/social_media_2_view.dart
+1643832585|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1643832585|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_image_list.dart
+1643832585|Bruno Almeida de Matos|A|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_view.dart
+1644024294|BrunoAlm|A|/assets/images/galeria/italo/logo.svg
+1644024294|BrunoAlm|A|/assets/pdf/italo.pdf
+1644024294|BrunoAlm|M|/lib/main.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart
+1644024294|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_italo.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart
+1644024294|BrunoAlm|A|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_view.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_view.dart
+1644024294|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1644024294|BrunoAlm|M|/pubspec.lock
+1644024294|BrunoAlm|M|/pubspec.yaml
+1644024294|BrunoAlm|M|/web/index.html
+1644024294|BrunoAlm|M|/windows/flutter/generated_plugin_registrant.cc
+1644024294|BrunoAlm|M|/windows/flutter/generated_plugins.cmake
+1644031582|BrunoAlm|D|/assets/pdf/janfie-apresentacao.pdf
+1644031582|BrunoAlm|A|/assets/pdf/janfie.pdf
+1644031582|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart
+1644031582|BrunoAlm|M|/web/index.html
+1644038120|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1644038120|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart
+1644038120|BrunoAlm|M|/pubspec.lock
+1644038120|BrunoAlm|M|/web/index.html
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/lista_de_textos.dart
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1644072157|BrunoAlm|A|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1644072157|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1644083122|BrunoAlm|A|/assets/pdf/lejaum.pdf
+1644083122|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart
+1644106505|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1644106505|BrunoAlm|M|/pubspec.lock
+1644106505|BrunoAlm|M|/pubspec.yaml
+1644155952|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1644156769|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1644157021|BrunoAlm|M|/.github/workflows/main.yml
+1644157402|BrunoAlm|M|/.github/workflows/main.yml
+1644200197|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1644200197|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_view.dart
+1644200197|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1644200197|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1644200197|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1644200197|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1644887394|BrunoAlm|M|/lib/pages/mobile/widgets/tela2/widgets/boxes.dart
+1644887394|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1644887394|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1644887394|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1644887394|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1644979991|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1644979991|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1644979991|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1644979991|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1644979991|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1644979991|BrunoAlm|M|/pubspec.yaml
+1644980773|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1645015042|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1645015042|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1645015042|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1645015128|Bruno Almeida de Matos|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1645066830|BrunoAlm|A|/assets/images/galeria/janfie/gradient_image.png
+1645066830|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart
+1645066830|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1645066830|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_content.dart
+1645066830|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1645066830|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_content.dart
+1645284872|BrunoAlm|A|/.vscode/settings.json
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-hdpi/branding.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-hdpi/splash.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-mdpi/branding.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-mdpi/splash.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-xhdpi/branding.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-xhdpi/splash.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-xxhdpi/branding.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-xxhdpi/splash.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-xxxhdpi/branding.png
+1645284872|BrunoAlm|M|/android/app/src/main/res/drawable-xxxhdpi/splash.png
+1645284872|BrunoAlm|A|/assets/images/icons/logo_icon_png.png
+1645284872|BrunoAlm|M|/flutter_native_splash.yaml
+1645284872|BrunoAlm|M|/ios/Runner/Assets.xcassets/BrandingImage.imageset/BrandingImage.png
+1645284872|BrunoAlm|M|/ios/Runner/Assets.xcassets/BrandingImage.imageset/BrandingImage@2x.png
+1645284872|BrunoAlm|M|/ios/Runner/Assets.xcassets/BrandingImage.imageset/BrandingImage@3x.png
+1645284872|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+1645284872|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+1645284872|BrunoAlm|M|/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+1645284872|BrunoAlm|M|/ios/Runner/Base.lproj/LaunchScreen.storyboard
+1645284872|BrunoAlm|M|/pubspec.lock
+1645284872|BrunoAlm|A|/web/icons/logo_icon_png.png
+1645284872|BrunoAlm|M|/web/index.html
+1645284872|BrunoAlm|A|/web/splash.old/img/dark-1x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/dark-2x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/dark-3x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/dark-4x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/light-1x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/light-2x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/light-3x.png
+1645284872|BrunoAlm|A|/web/splash.old/img/light-4x.png
+1645284872|BrunoAlm|A|/web/splash.old/style.css
+1645284872|BrunoAlm|M|/web/splash/img/dark-1x.png
+1645284872|BrunoAlm|M|/web/splash/img/dark-2x.png
+1645284872|BrunoAlm|M|/web/splash/img/dark-3x.png
+1645284872|BrunoAlm|M|/web/splash/img/dark-4x.png
+1645284872|BrunoAlm|M|/web/splash/img/light-1x.png
+1645284872|BrunoAlm|M|/web/splash/img/light-2x.png
+1645284872|BrunoAlm|M|/web/splash/img/light-3x.png
+1645284872|BrunoAlm|M|/web/splash/img/light-4x.png
+1645284872|BrunoAlm|M|/web/splash/style.css
+1645285624|BrunoAlm|M|/web/index.html
+1645664457|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1645664457|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1645899372|BrunoAlm|A|/lib/pages/mobile/widgets/tela1/widgets/linha_botao_1.dart
+1645899372|BrunoAlm|A|/lib/pages/mobile/widgets/tela1/widgets/linha_botao_2.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1645899372|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_view.dart
+1646001797|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1646001797|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_view.dart
+1646001797|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1646001797|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_view.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_view.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_view.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_view.dart
+1646009089|BrunoAlm|D|/lib/pages/mobile/widgets/tela6/services/lista_de_textos.dart
+1646009089|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/services/textos_expansivo_1.dart
+1646009089|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/services/textos_expansivo_1_m.dart
+1646009089|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/services/textos_expansivo_2.dart
+1646009089|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/services/textos_expansivo_2_m.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1646009089|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1646095300|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/mobile_app_bar.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioIDV.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioWB.dart
+1646095300|BrunoAlm|A|/lib/pages/mobile/widgets/tela6/services/responsividade.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/textos_expansivo_1.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/textos_expansivo_2.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1646095300|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1646100015|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1646100015|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1646100015|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1646100015|BrunoAlm|A|/lib/pages/mobile/widgets/tela7/services/responsividade.dart
+1646100015|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1646100015|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1646100015|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1646432761|BrunoAlm|M|/lib/main.dart
+1646432761|BrunoAlm|M|/lib/pages/desktop/view/desktop_page.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioIDV.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioWB.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1646432761|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/widgets/footer.dart
+1646433088|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1646433263|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1646434119|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/view/avaliacoes.dart
+1646441300|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/widgets/footer.dart
+1646441518|BrunoAlm|M|/lib/pages/home_page_logic.dart
+1646489349|BrunoAlm|M|/web/index.html
+1646491120|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1646491120|BrunoAlm|M|/pubspec.lock
+1646491120|BrunoAlm|M|/pubspec.yaml
+1646491270|BrunoAlm|M|/web/index.html
+1646521775|BrunoAlm|M|/lib/pages/desktop/view/desktop_page.dart
+1646521775|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/services/styles_mobile.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioIDV.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/services/responsividade.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/view/solucoes.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela6/widgets/expansivelzada2.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/planos_list.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/services/responsividade.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/view/planos_screen.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_card.dart
+1646521775|BrunoAlm|M|/lib/pages/mobile/widgets/tela7/widgets/planos_options.dart
+1647746063|BrunoAlm|A|/android/app/src/main/kotlin/com/example/lejauminc_app/MainActivity.kt
+1647746063|BrunoAlm|A|/assets/images/astronauta.png
+1647746063|BrunoAlm|M|/assets/images/galeria/janfie/gradient_image.png
+1647746063|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/botoes_app_bar.dart
+1647746063|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1647746063|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela1/view/home_page_mobile.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/view/portfolioWB.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_view.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/italo/italo_view.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_view.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/lejaum/lejaum_view.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_1/social_media_1_view.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/social_media_2/social_media_2_view.dart
+1647746063|BrunoAlm|M|/lib/pages/mobile/widgets/tela8/widgets/footer.dart
+1647746063|BrunoAlm|M|/windows/CMakeLists.txt
+1647746063|BrunoAlm|M|/windows/flutter/CMakeLists.txt
+1647746063|BrunoAlm|M|/windows/runner/CMakeLists.txt
+1647746063|BrunoAlm|M|/windows/runner/Runner.rc
+1647746063|BrunoAlm|M|/windows/runner/main.cpp
+1647746703|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1647816192|BrunoAlm|A|/.vscode/launch.json
+1647816192|BrunoAlm|M|/lib/pages/desktop/view/desktop_page.dart
+1647816192|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1647816192|BrunoAlm|M|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/view/portfolioSM.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/widgets/galeria/galeria.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/widgets/galeria/widgets/galeria_widgets.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/widgets/social_media_1/social_media_1_image_list.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/widgets/social_media_1/social_media_1_view.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/widgets/social_media_2/social_media_2_image_list.dart
+1647816192|BrunoAlm|A|/lib/pages/desktop/widgets/tela3/widgets/social_media_2/social_media_2_view.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/services/styles_desktop.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/view/desktop_page.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/widgets/tela2/view/oq_oferecemos.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/widgets/tela3/view/portfolioSM.dart
+1647817212|BrunoAlm|M|/lib/pages/desktop/widgets/tela3/widgets/galeria/galeria.dart
+1647817212|BrunoAlm|M|/lib/pages/mobile/services/themes.dart
+1647912279|BrunoAlm|M|/lib/main.dart
+1647912279|BrunoAlm|M|/lib/pages/desktop/view/desktop_page.dart
+1647912279|BrunoAlm|M|/lib/pages/desktop/widgets/AppBar/desktop_app_bar.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/view/portfolioIDV.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/widgets/arzadi/arzadi_content.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/widgets/arzadi/arzadi_view.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/widgets/galeria/galeria.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/widgets/galeria/widgets/galeria_widgets.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/widgets/janfie/janfie_content.dart
+1647912279|BrunoAlm|A|/lib/pages/desktop/widgets/tela4/widgets/janfie/janfie_view.dart
+1647912279|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/arzadi/arzadi_content.dart
+1647912279|BrunoAlm|M|/lib/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart
+1647914001|BrunoAlm|A|/assets/images/astronauta2.png
+1647914001|BrunoAlm|M|/lib/pages/desktop/widgets/home_page/home_page_desktop.dart
+1647914001|BrunoAlm|M|/lib/pages/desktop/widgets/tela4/view/portfolioIDV.dart
