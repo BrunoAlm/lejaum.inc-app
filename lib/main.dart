@@ -1,4 +1,5 @@
 // PACKAGES INTERNOS
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -49,6 +50,14 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.dark,
         theme: Themes.light,
         darkTheme: Themes.dark,
+        scrollBehavior: MaterialScrollBehavior().copyWith(
+          dragDevices: {
+            PointerDeviceKind.mouse,
+            PointerDeviceKind.touch,
+            PointerDeviceKind.stylus,
+            PointerDeviceKind.unknown
+          },
+        ),
         initialRoute: '/',
         routes: {
           '/': (context) => const HomePage(),

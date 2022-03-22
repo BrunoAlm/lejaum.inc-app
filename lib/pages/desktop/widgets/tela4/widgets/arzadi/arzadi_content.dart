@@ -19,7 +19,7 @@ class LogoArzadi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(left: 10),
-      width: context.widthTransformer(reducedBy: 80),
+      width: context.widthTransformer(reducedBy: 20),
       // height: _altura,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -80,7 +80,7 @@ class Arzardi4 extends StatelessWidget {
   Widget build(BuildContext context) {
     var _altura = 37.h;
     return Container(
-      width: context.widthTransformer(reducedBy: 80),
+      width: context.widthTransformer(reducedBy: 20),
       height: _altura,
       // height: 198.79,
       child: Padding(

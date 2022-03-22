@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
+import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart';
@@ -115,7 +116,7 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
                 const SizedBox(width: 20.0),
                 BotaoAppBar(texto: 'Ver Planos', pressionado: () {}),
                 const SizedBox(width: 20.0),
-                BotaoAppBar(texto: 'Contato', pressionado: () {}),
+                BotaoAppBar(texto: 'Contato', pressionado: abrirWhatsApp),
                 const SizedBox(width: 20.0),
                 BotaoDarkModeDesktop(),
                 SizedBox(width: 10.w),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
-import 'package:lejaum/pages/desktop/widgets/tela2/view/oq_oferecemos.dart';
-import 'package:lejaum/pages/desktop/widgets/tela3/view/portfolioSM.dart';
-import 'package:lejaum/pages/mobile/services/themes.dart';
+import '../services/styles_desktop.dart';
+import '../widgets/tela2/view/oq_oferecemos.dart';
+import '../widgets/tela3/view/portfolioSM.dart';
+import '../widgets/tela4/view/portfolioIDV.dart';
 import '../widgets/home_page/home_page_desktop.dart';
 
 class DesktopPage extends StatefulWidget {
@@ -36,7 +36,7 @@ class _DesktopPageState extends State<DesktopPage> {
               HomePageDesktop(key: context.homeKey),
               TodasBoxesDesktop(key: context.boxesKey),
               PortfolioSM(key: context.portfolioKey),
-              // PortfolioIDV(),
+              PortfolioIDV(),
               // PortifolioWB(),
               // Solucoes(),
               // Planos(),
