@@ -4,10 +4,8 @@ import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/responsividade.dart';
-import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_1_m.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_2.dart';
 import 'package:lejaum/pages/mobile/widgets/tela6/services/textos_expansivo_2_m.dart';
-import '../services/textos_expansivo_1.dart';
 
 class Expansivelzada2 extends StatefulWidget {
   Expansivelzada2({Key? key}) : super(key: key);

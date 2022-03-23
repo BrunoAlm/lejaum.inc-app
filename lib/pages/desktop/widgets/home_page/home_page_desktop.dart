@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:google_tag_manager/google_tag_manager.dart' as gtm;
 
@@ -23,7 +22,6 @@ class _HomePageDesktopState extends State<HomePageDesktop>
       gtm.pushEvent('EventAppWeb', data: {'eventoApp': 'VerPlanosBtn'});
     }
 
-    var _largura_btn = 150;
     var _altura = MediaQuery.of(context).size.height;
     Get.put(DesktopListViewController());
 

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/widgets/botao_estilizado.dart';
-
 import '../janfie/janfie_content.dart';
 
 String _logo_image = "assets/images/galeria/azardi/logo_preta.webp";
@@ -19,7 +16,7 @@ class LogoArzadi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(left: 10),
-      width: context.widthTransformer(reducedBy: 20),
+      width: context.widthTransformer(reducedBy: 80),
       // height: _altura,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
@@ -80,7 +77,7 @@ class Arzardi4 extends StatelessWidget {
   Widget build(BuildContext context) {
     var _altura = 37.h;
     return Container(
-      width: context.widthTransformer(reducedBy: 20),
+      width: context.widthTransformer(reducedBy: 80),
       height: _altura,
       // height: 198.79,
       child: Padding(

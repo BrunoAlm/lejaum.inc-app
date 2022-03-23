@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:get/get.dart';
@@ -54,8 +53,8 @@ class Footer extends StatelessWidget {
   }
 }
 
-Future<Function()?> acessarRedesSociais(String link) async {
-  if (await canLaunch(link)) {
+Future<void> acessarRedesSociais(String? link) async {
+  if (await canLaunch(link!)) {
     await launch(link);
   } else {
     Get.showSnackbar(GetSnackBar(

@@ -7,7 +7,6 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/botao_troca_modo.dart';
 import 'package:seo_renderer/seo_renderer.dart';
 import 'package:sizer/sizer.dart';

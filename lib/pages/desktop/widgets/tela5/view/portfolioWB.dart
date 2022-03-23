@@ -2,16 +2,17 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
+
 import '../widgets/galeria/galeria.dart';
 
-class PortfolioIDV extends StatefulWidget {
-  const PortfolioIDV({Key? key}) : super(key: key);
+class PortifolioWB extends StatefulWidget {
+  const PortifolioWB({Key? key}) : super(key: key);
 
   @override
-  State<PortfolioIDV> createState() => _PortfolioIDVState();
+  _PortifolioWBState createState() => _PortifolioWBState();
 }
 
-class _PortfolioIDVState extends State<PortfolioIDV> {
+class _PortifolioWBState extends State<PortifolioWB> {
   @override
   Widget build(BuildContext context) {
     var _altura = MediaQuery.of(context).size.height;
@@ -27,14 +28,14 @@ class _PortfolioIDVState extends State<PortfolioIDV> {
           Padding(
             padding: const EdgeInsets.only(left: 160, top: 30.0),
             child: AutoSizeText(
-              'Identidade Visual',
+              'Web Design',
               maxLines: 1,
               style: Styles.tituloExtraBoldMenor,
               minFontSize: _altura <= motog4 ? 30 : 35,
             ),
           ),
           const SizedBox(height: 20),
-          GaleriaIDV(),
+          GaleriaWB(),
         ],
       ),
     );

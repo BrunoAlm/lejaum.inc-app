@@ -1,12 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lejaum/pages/desktop/widgets/tela3/widgets/galeria/widgets/galeria_widgets.dart';
+import '../galeria/widgets/galeria_widgets.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 // import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/galeria_widgets.dart';
 import 'package:sizer/sizer.dart';
-import 'package:zoom_pinch_overlay/zoom_pinch_overlay.dart';
 
 import 'social_media_1_image_list.dart';
 
