@@ -13,7 +13,7 @@ class Arzadi extends StatelessWidget {
     var _altura_do_slider = _largura_da_tela <= motog4 ? 35.h : 39.h;
     var _largura = MediaQuery.of(context).size.width;
     return GestureDetector(
-      onTap: () => Get.toNamed('/arzadi_pdf'),
+      onTap: () => Get.toNamed('/arzadi_pdf_mobile'),
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),
         height: _altura_do_slider,

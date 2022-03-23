@@ -18,7 +18,7 @@ class Lejaum extends StatelessWidget {
       width: _largura,
       margin: const EdgeInsets.only(top: 10),
       child: GestureDetector(
-        onTap: () => Get.toNamed('/lejaum_pdf'),
+        onTap: () => Get.toNamed('/lejaum_pdf_mobile'),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(), // this for snapping

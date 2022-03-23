@@ -16,11 +16,17 @@ import 'pages/home_page_logic.dart';
 import 'pages/mobile/services/styles_mobile.dart';
 import 'pages/mobile/services/themes.dart';
 
-// PÁGINAS DE PDF
+// PÁGINAS DE PDF MOBILE
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart';
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart';
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_italo.dart';
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart';
+
+// PÁGINAS DE PDF DESKTOP
+import 'pages/desktop/services/pdf_view/pdf_janfie.dart';
+import 'pages/desktop/services/pdf_view/pdf_arzadi.dart';
+import 'pages/desktop/services/pdf_view/pdf_italo.dart';
+import 'pages/desktop/services/pdf_view/pdf_lejaum.dart';
 
 void main() {
   // Altera statusBarColor do MOBILE
@@ -61,10 +67,14 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const HomePage(),
-          '/janfie_pdf': (context) => const PdfJanfie(),
-          '/arzadi_pdf': (context) => const PdfArzadi(),
-          '/italo_pdf': (context) => const PdfItalo(),
-          '/lejaum_pdf': (context) => const PdfLejaum(),
+          '/janfie_pdf_mobile': (context) => const PdfJanfie(),
+          '/arzadi_pdf_mobile': (context) => const PdfArzadi(),
+          '/italo_pdf_mobile': (context) => const PdfItalo(),
+          '/lejaum_pdf_mobile': (context) => const PdfLejaum(),
+          '/janfie_pdf': (context) => const PdfJanfieDesktop(),
+          '/arzadi_pdf': (context) => const PdfArzadiDesktop(),
+          '/italo_pdf': (context) => const PdfItaloDesktop(),
+          '/lejaum_pdf': (context) => const PdfLejaumDesktop(),
         },
       );
     });

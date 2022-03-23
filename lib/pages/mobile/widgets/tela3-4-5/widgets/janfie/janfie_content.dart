@@ -93,7 +93,7 @@ class Janfie5 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.roxinho,
-              rota: '/janfie_pdf',
+              rota: '/janfie_pdf_mobile',
             ),
             // height: 400,
             // width: 400,

@@ -14,7 +14,7 @@ class Italo extends StatelessWidget {
     var _altura_do_slider = _altura_da_tela <= motog4 ? 35.h : 39.h;
     // var _altura = 37.h;
     return GestureDetector(
-      onTap: () => Get.toNamed('/italo_pdf'),
+      onTap: () => Get.toNamed('/italo_pdf_mobile'),
       child: Container(
         height: _altura_do_slider,
         width: _largura,
