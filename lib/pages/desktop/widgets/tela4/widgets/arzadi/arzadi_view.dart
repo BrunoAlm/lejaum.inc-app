@@ -16,14 +16,12 @@ class Arzadi extends StatelessWidget {
     return GestureDetector(
       // onTap: () => Get.toNamed('/arzadi_pdf'),
       onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) {
-            return Stack(children: [
-            borrada(),
-            PdfArzadiDesktop(),
-          ]);
-          },
-        ));
+        Navigator.of(context).push(
+          PageRouteBuilder(
+            pageBuilder: (context, _, __) => PdfArzadiDesktop(),
+            opaque: false,
+          ),
+        );
       },
       child: Container(
         height: _altura_do_slider,
