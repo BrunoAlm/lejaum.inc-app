@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_janfie.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/galeria_widgets.dart';
 // import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
@@ -26,7 +27,7 @@ class _PdfArzadiDesktopState extends State<PdfArzadiDesktop> {
       Align(
         alignment: Alignment.center,
         child: Container(
-          color: Colors.pink,
+          // color: Colors.pink,
           height: _altura,
           width: _largura * 0.5,
           child: PdfDocumentLoader.openAsset(
@@ -76,7 +77,15 @@ class _PdfArzadiDesktopState extends State<PdfArzadiDesktop> {
             child: IconButton(
               padding: const EdgeInsets.all(12),
               alignment: Alignment.center,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.of(context).push(
+                  PageRouteBuilder(
+                    pageBuilder: (context, _, __) => PdfJanfieDesktop(),
+                    opaque: false,
+                  ),
+                );
+              },
               icon: Icon(Icons.arrow_forward_ios_rounded,
                   color: Styles.quaseWhite, size: 20),
             ),

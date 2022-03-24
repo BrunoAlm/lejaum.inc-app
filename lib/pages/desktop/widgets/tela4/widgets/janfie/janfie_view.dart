@@ -1,3 +1,5 @@
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_janfie.dart';
+
 import '../../../../services/galeria_content_list.dart';
 
 import 'package:sizer/sizer.dart';
@@ -13,7 +15,14 @@ class Janfie extends StatelessWidget {
     var _altura_do_slider = 35.h;
     var _largura = MediaQuery.of(context).size.width;
     return GestureDetector(
-      onTap: () => Get.toNamed('/janfie_pdf'),
+      onTap: () {
+        Navigator.of(context).push(
+          PageRouteBuilder(
+            pageBuilder: (context, _, __) => PdfJanfieDesktop(),
+            opaque: false,
+          ),
+        );
+      },
       child: Container(
         height: _altura_do_slider,
         width: _largura,
