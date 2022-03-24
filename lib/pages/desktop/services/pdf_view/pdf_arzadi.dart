@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/galeria_widgets.dart';
 // import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:pdf_render/pdf_render_widgets.dart';
@@ -25,8 +26,8 @@ class _PdfArzadiDesktopState extends State<PdfArzadiDesktop> {
       Align(
         alignment: Alignment.center,
         child: Container(
-          // color: Colors.pink,
-          height: _altura * 0.75,
+          color: Colors.pink,
+          height: _altura,
           width: _largura * 0.5,
           child: PdfDocumentLoader.openAsset(
             'assets/pdf/azardi_shop.pdf',
@@ -44,6 +45,40 @@ class _PdfArzadiDesktopState extends State<PdfArzadiDesktop> {
                   ),
                 ),
               ),
+            ),
+          ),
+        ),
+      ),
+      Positioned(
+        left: _largura * 0.20,
+        bottom: _altura - _altura * 0.95,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(50),
+          child: Material(
+            color: Color(0xFF696969),
+            child: IconButton(
+              padding: const EdgeInsets.all(12),
+              alignment: Alignment.center,
+              onPressed: () {},
+              icon: Icon(Icons.arrow_back_ios_new_rounded,
+                  color: Styles.quaseWhite, size: 20),
+            ),
+          ),
+        ),
+      ),
+      Positioned(
+        right: _largura * 0.20,
+        bottom: _altura - _altura * 0.95,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(50),
+          child: Material(
+            color: Color(0xFF696969),
+            child: IconButton(
+              padding: const EdgeInsets.all(12),
+              alignment: Alignment.center,
+              onPressed: () {},
+              icon: Icon(Icons.arrow_forward_ios_rounded,
+                  color: Styles.quaseWhite, size: 20),
             ),
           ),
         ),
