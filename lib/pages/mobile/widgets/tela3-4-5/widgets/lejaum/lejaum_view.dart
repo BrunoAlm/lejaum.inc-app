@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_arzadi.dart';
+import 'package:lejaum/pages/desktop/widgets/tela3/widgets/galeria/widgets/galeria_widgets.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/services/galeria_content_list.dart';
 import 'package:sizer/sizer.dart';
@@ -19,6 +21,7 @@ class Lejaum extends StatelessWidget {
       margin: const EdgeInsets.only(top: 10),
       child: GestureDetector(
         onTap: () => Get.toNamed('/lejaum_pdf_mobile'),
+        
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(), // this for snapping

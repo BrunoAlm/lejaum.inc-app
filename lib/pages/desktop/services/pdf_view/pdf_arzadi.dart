@@ -12,24 +12,23 @@ class PdfArzadiDesktop extends StatefulWidget {
 class _PdfArzadiDesktopState extends State<PdfArzadiDesktop> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Container(
-        height: 120,
-        width: 120,
-        child: PdfDocumentLoader.openAsset(
-          'assets/pdf/azardi_shop.pdf',
-          documentBuilder: (context, pdfDocument, pageCount) => LayoutBuilder(
-            builder: (context, constraints) => ListView.builder(
-              scrollDirection: Axis.vertical,
-              itemCount: pageCount,
-              itemBuilder: (context, index) => Container(
-                margin: EdgeInsets.all(2),
-                padding: EdgeInsets.all(0),
-                color: Colors.black12,
-                child: PdfPageView(
-                  pdfDocument: pdfDocument,
-                  pageNumber: index + 1,
-                ),
+    return Container(
+      color: Colors.pink,
+      height: 120,
+      width: 120,
+      child: PdfDocumentLoader.openAsset(
+        'assets/pdf/azardi_shop.pdf',
+        documentBuilder: (context, pdfDocument, pageCount) => LayoutBuilder(
+          builder: (context, constraints) => ListView.builder(
+            scrollDirection: Axis.vertical,
+            itemCount: pageCount,
+            itemBuilder: (context, index) => Container(
+              margin: EdgeInsets.all(2),
+              padding: EdgeInsets.all(0),
+              color: Colors.black12,
+              child: PdfPageView(
+                pdfDocument: pdfDocument,
+                pageNumber: index + 1,
               ),
             ),
           ),
