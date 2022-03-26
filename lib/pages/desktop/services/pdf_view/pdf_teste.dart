@@ -14,6 +14,7 @@ List<String> _pdfs = [
 class PdfTeste extends StatefulWidget {
   PdfTeste({Key? key, required this.pdfClicado}) : super(key: key);
   int pdfClicado;
+  bool carregamento = false;
   @override
   State<PdfTeste> createState() => _PdfTesteState();
 }
@@ -33,89 +34,155 @@ class _PdfTesteState extends State<PdfTeste> {
       Align(
         alignment: Alignment.center,
         child: Container(
-          color: widget.pdfClicado == 0
-              ? Colors.pink
-              : widget.pdfClicado == 1
-                  ? Colors.blue
-                  : widget.pdfClicado == 2
-                      ? Colors.yellow
-                      : Colors.green,
+          // color: widget.pdfClicado == 0
+          //     ? Colors.pink
+          //     : widget.pdfClicado == 1
+          //         ? Colors.blue
+          //         : widget.pdfClicado == 2
+          //             ? Colors.yellow
+          //             : Colors.green,
           height: _altura,
           width: _largura * 0.5,
-          child: PdfDocumentLoader.openAsset(
-            _pdfs[widget.pdfClicado],
-            documentBuilder: (context, pdfDocument, pageCount) =>
-                ListView.builder(
-              scrollDirection: Axis.vertical,
-              itemCount: pageCount,
-              itemBuilder: (context, index) => Container(
-                margin: EdgeInsets.all(2),
-                padding: EdgeInsets.all(0),
-                color: Colors.black12,
-                child: PdfPageView(
-                  pdfDocument: pdfDocument,
-                  pageNumber: index + 1,
+          child: widget.carregamento
+              ? SizedBox(
+                  height: 10,
+                  width: 10,
+                  child: Center(
+                    child: CircularProgressIndicator(
+                      color: Styles.laranjaum,
+                      strokeWidth: 5,
+                    ),
+                  ),
+                )
+              : PdfDocumentLoader.openAsset(
+                  _pdfs[widget.pdfClicado],
+                  documentBuilder: (context, pdfDocument, pageCount) =>
+                      ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemCount: pageCount,
+                    itemBuilder: (context, index) => Container(
+                      margin: EdgeInsets.all(2),
+                      padding: EdgeInsets.all(0),
+                      color: Colors.black12,
+                      child: PdfPageView(
+                        pdfDocument: pdfDocument,
+                        pageNumber: index + 1,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
-            ),
-          ),
         ),
       ),
       Positioned(
         left: _largura * 0.20,
         bottom: _altura - _altura * 0.95,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(50),
-          child: Material(
-            color: Color(0xFF696969),
-            child: IconButton(
-              padding: const EdgeInsets.all(12),
-              alignment: Alignment.center,
-              onPressed: () {
-                if (widget.pdfClicado == 0) {
-                  print('quantidade de pdfs na lista -> ${_pdfs.length - 1}');
-                  setState(() {
-                    widget.pdfClicado = _pdfs.length - 1;
-                  });
-                } else {
-                  print('pdf menos menos -> ${widget.pdfClicado}');
-
-                  setState(() {
-                    widget.pdfClicado--;
-                  });
-                }
-              },
-              icon: Icon(Icons.arrow_back_ios_new_rounded,
-                  color: Styles.quaseWhite, size: 20),
+        child: Column(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Material(
+                color: Color(0xFF696969),
+                child: IconButton(
+                  padding: const EdgeInsets.all(12),
+                  alignment: Alignment.center,
+                  onPressed: () {
+                    if (widget.pdfClicado == 0) {
+                      setState(() {
+                        widget.carregamento = true;
+                        widget.pdfClicado = _pdfs.length - 1;
+                        Future.delayed(
+                          Duration(seconds: 2),
+                          () {
+                            setState(() {});
+                            widget.carregamento = false;
+                          },
+                        );
+                      });
+                    } else {
+                      setState(() {
+                        widget.carregamento = true;
+                        widget.pdfClicado--;
+                        Future.delayed(
+                          Duration(seconds: 2),
+                          () {
+                            setState(() {
+                              widget.carregamento = false;
+                            });
+                          },
+                        );
+                      });
+                    }
+                  },
+                  icon: Icon(Icons.arrow_back_ios_new_rounded,
+                      color: Styles.quaseWhite, size: 20),
+                ),
+              ),
             ),
-          ),
+            const SizedBox(height: 5),
+            Material(
+              color: Colors.transparent,
+              child: Text(
+                'Anterior',
+                style: TextStyle(fontFamily: "Georama", color: Colors.white),
+              ),
+            ),
+          ],
         ),
       ),
       Positioned(
         right: _largura * 0.20,
         bottom: _altura - _altura * 0.95,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(50),
-          child: Material(
-            color: Color(0xFF696969),
-            child: IconButton(
-              padding: const EdgeInsets.all(12),
-              alignment: Alignment.center,
-              onPressed: () {
-                if (widget.pdfClicado == _pdfs.length - 1) {
-                  setState(() {
-                    widget.pdfClicado = 0;
-                  });
-                } else {
-                  setState(() {
-                    widget.pdfClicado++;
-                  });
-                }
-              },
-              icon: Icon(Icons.arrow_forward_ios_rounded,
-                  color: Styles.quaseWhite, size: 20),
+        child: Column(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Material(
+                color: Color(0xFF696969),
+                child: IconButton(
+                  padding: const EdgeInsets.all(12),
+                  alignment: Alignment.center,
+                  onPressed: () {
+                    if (widget.pdfClicado == _pdfs.length - 1) {
+                      setState(() {
+                        widget.carregamento = true;
+                        widget.pdfClicado = 0;
+                        Future.delayed(
+                          Duration(seconds: 2),
+                          () {
+                            setState(() {
+                              widget.carregamento = false;
+                            });
+                          },
+                        );
+                      });
+                    } else {
+                      setState(() {
+                        widget.carregamento = true;
+                        widget.pdfClicado++;
+                        Future.delayed(
+                          Duration(seconds: 2),
+                          () {
+                            setState(() {});
+                            widget.carregamento = false;
+                          },
+                        );
+                      });
+                    }
+                  },
+                  icon: Icon(Icons.arrow_forward_ios_rounded,
+                      color: Styles.quaseWhite, size: 20),
+                ),
+              ),
             ),
-          ),
+            const SizedBox(height: 5),
+            Material(
+              color: Colors.transparent,
+              child: Text(
+                'Próximo',
+                style: TextStyle(fontFamily: "Georama", color: Colors.white),
+              ),
+            ),
+          ],
         ),
       ),
     ]);
