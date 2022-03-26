@@ -91,7 +91,7 @@ class Arzardi4 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.laranjaum,
-              rota: '/arzadi_pdf',
+              rota: 0,
             ),
             // height: 400,
             // width: 400,

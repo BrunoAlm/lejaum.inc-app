@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_teste.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import '../../../../services/galeria_content_list.dart';
 
@@ -19,7 +20,14 @@ class Lejaum extends StatelessWidget {
       width: _largura,
       margin: const EdgeInsets.only(top: 10),
       child: GestureDetector(
-        onTap: () => Get.toNamed('/lejaum_pdf'),
+         onTap: () {
+        Navigator.of(context).push(
+          PageRouteBuilder(
+            pageBuilder: (context, _, __) => PdfTeste(pdfClicado: 3),
+            opaque: false,
+          ),
+        );
+      },
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(), // this for snapping

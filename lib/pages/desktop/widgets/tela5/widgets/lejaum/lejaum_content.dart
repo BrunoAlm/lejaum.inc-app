@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/widgets/tela4/widgets/janfie/janfie_content.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/widgets/janfie/janfie_content.dart';
+
 import 'package:sizer/sizer.dart';
 
 String _logo_image = "assets/images/icons/logo_icon.svg";
@@ -96,7 +97,7 @@ class Lejaum5 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.laranjaum,
-              rota: '/arzadi_pdf',
+              rota: 3,
             ),
             // height: 400,
             // width: 400,

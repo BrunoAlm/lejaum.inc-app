@@ -1,4 +1,6 @@
 // import 'package:lejaum/pages/mobile/services/themes.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_teste.dart';
+
 import '../../../../services/galeria_content_list.dart';
 
 import 'package:sizer/sizer.dart';
@@ -15,7 +17,14 @@ class Italo extends StatelessWidget {
     var _largura = MediaQuery.of(context).size.width;
     // var _altura = 37.h;
     return GestureDetector(
-      onTap: () => Get.toNamed('/italo_pdf'),
+       onTap: () {
+        Navigator.of(context).push(
+          PageRouteBuilder(
+            pageBuilder: (context, _, __) => PdfTeste(pdfClicado: 2),
+            opaque: false,
+          ),
+        );
+      },
       child: Container(
         height: _altura_do_slider,
         width: _largura,

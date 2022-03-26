@@ -27,7 +27,7 @@ class _PdfArzadiDesktopState extends State<PdfArzadiDesktop> {
       Align(
         alignment: Alignment.center,
         child: Container(
-          // color: Colors.pink,
+          color: Colors.pink,
           height: _altura,
           width: _largura * 0.5,
           child: PdfDocumentLoader.openAsset(

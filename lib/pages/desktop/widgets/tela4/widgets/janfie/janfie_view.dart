@@ -1,4 +1,5 @@
 import 'package:lejaum/pages/desktop/services/pdf_view/pdf_janfie.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_teste.dart';
 
 import '../../../../services/galeria_content_list.dart';
 
@@ -18,7 +19,7 @@ class Janfie extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(
           PageRouteBuilder(
-            pageBuilder: (context, _, __) => PdfJanfieDesktop(),
+           pageBuilder: (context, _, __) => PdfTeste(pdfClicado: 1),
             opaque: false,
           ),
         );

@@ -26,7 +26,7 @@ class _PdfJanfieDesktopState extends State<PdfJanfieDesktop> {
       Align(
         alignment: Alignment.center,
         child: Container(
-          // color: Colors.pink,
+          color: Colors.green,
           height: _altura,
           width: _largura * 0.5,
           child: PdfDocumentLoader.openAsset(

@@ -101,7 +101,7 @@ class Italo4 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.laranjaum,
-              rota: '/arzadi_pdf',
+              rota:2,
             ),
             // height: 400,
             // width: 400,

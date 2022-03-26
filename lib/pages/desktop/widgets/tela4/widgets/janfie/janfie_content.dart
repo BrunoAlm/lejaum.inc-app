@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_teste.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 import 'package:sizer/sizer.dart';
@@ -93,7 +94,7 @@ class Janfie5 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.roxinho,
-              rota: '/janfie_pdf',
+              rota:1,
             ),
             // height: 400,
             // width: 400,
@@ -111,7 +112,7 @@ class CliqueParaVerOProjetoCompleto extends StatelessWidget {
     required this.cor,
   }) : super(key: key);
 
-  final String rota;
+  final int rota;
   final Color cor;
   @override
   Widget build(BuildContext context) {
@@ -137,7 +138,14 @@ class CliqueParaVerOProjetoCompleto extends StatelessWidget {
           const SizedBox(height: 15),
           IconeBotaoEstilizado(
             texto: 'Ver Projeto',
-            pressionado: () => Get.toNamed(rota),
+            pressionado: () {
+              Navigator.of(context).push(
+          PageRouteBuilder(
+            pageBuilder: (context, _, __) => PdfTeste(pdfClicado: rota),
+            opaque: false,
+          ),
+        );
+            },
             icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
             cor: cor,
             tamanho_icone: 12,

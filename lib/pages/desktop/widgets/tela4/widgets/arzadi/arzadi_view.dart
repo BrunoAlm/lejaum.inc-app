@@ -1,4 +1,5 @@
 import 'package:lejaum/pages/desktop/services/pdf_view/pdf_arzadi.dart';
+import 'package:lejaum/pages/desktop/services/pdf_view/pdf_teste.dart';
 import 'package:lejaum/pages/desktop/widgets/tela3/widgets/galeria/widgets/galeria_widgets.dart';
 
 import '../../../../services/galeria_content_list.dart';
@@ -18,7 +19,7 @@ class Arzadi extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(
           PageRouteBuilder(
-            pageBuilder: (context, _, __) => PdfArzadiDesktop(),
+            pageBuilder: (context, _, __) => PdfTeste(pdfClicado: 0),
             opaque: false,
           ),
         );
