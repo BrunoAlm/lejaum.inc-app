@@ -7,8 +7,8 @@ import '../../../mobile/services/styles_mobile.dart';
 List<String> _pdfs = [
   'assets/pdf/azardi_shop.pdf',
   'assets/pdf/janfie.pdf',
-  'assets/pdf/lejaum.pdf',
   'assets/pdf/italo.pdf',
+  'assets/pdf/lejaum.pdf',
 ];
 
 class PdfTeste extends StatefulWidget {
@@ -34,6 +34,7 @@ class _PdfTesteState extends State<PdfTeste> {
       Align(
         alignment: Alignment.center,
         child: Container(
+          color: Styles.quaseBlack,
           // color: widget.pdfClicado == 0
           //     ? Colors.pink
           //     : widget.pdfClicado == 1
