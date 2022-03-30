@@ -46,7 +46,7 @@ class GaleriaWB extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Italo(),
+        // Italo(),
         Lejaum(),
       ],
     );

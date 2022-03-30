@@ -71,10 +71,10 @@ class MyApp extends StatelessWidget {
           '/arzadi_pdf_mobile': (context) => const PdfArzadi(),
           '/italo_pdf_mobile': (context) => const PdfItalo(),
           '/lejaum_pdf_mobile': (context) => const PdfLejaum(),
-          '/janfie_pdf': (context) => const PdfJanfieDesktop(),
+          // '/janfie_pdf': (context) => const PdfJanfieDesktop(),
           // '/arzadi_pdf': (context) => const PdfArzadiDesktop(),
-          '/italo_pdf': (context) => const PdfItaloDesktop(),
-          '/lejaum_pdf': (context) => const PdfLejaumDesktop(),
+          // '/italo_pdf': (context) => const PdfItaloDesktop(),
+          // '/lejaum_pdf': (context) => const PdfLejaumDesktop(),
         },
       );
     });
