@@ -56,6 +56,7 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.dark,
         theme: Themes.light,
         darkTheme: Themes.dark,
+        
         scrollBehavior: MaterialScrollBehavior().copyWith(
           dragDevices: {
             PointerDeviceKind.mouse,

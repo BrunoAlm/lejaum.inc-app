@@ -7,7 +7,7 @@ import '../../../mobile/services/styles_mobile.dart';
 List<String> _pdfs = [
   'assets/pdf/azardi_shop.pdf',
   'assets/pdf/janfie.pdf',
-  // 'assets/pdf/italo.pdf',
+  'assets/pdf/mustagrill.pdf',
   'assets/pdf/lejaum.pdf',
 ];
 

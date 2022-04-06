@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../italo/italo_view.dart';
+import '../mustagrill/mustagrill_view.dart';
 import '../lejaum/lejaum_view.dart';
 
-class GaleriaWB extends StatelessWidget {
-  const GaleriaWB({Key? key}) : super(key: key);
+class GaleriaIDV2 extends StatelessWidget {
+  const GaleriaIDV2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class GaleriaWB extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        // Italo(),
+        Mustagrill(),
         const SizedBox(height: 10),
         Lejaum(),
       ],

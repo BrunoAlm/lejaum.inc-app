@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/desktop/widgets/tela5/widgets/mustagrill/mustagrill_content.dart';
 import '../widgets/tela4/widgets/arzadi/arzadi_content.dart';
 import '../widgets/tela4/widgets/janfie/janfie_content.dart';
 import '../widgets/tela5/widgets/italo/italo_content.dart';
@@ -35,4 +36,12 @@ List<Widget> lejaum_list = [
   lejaum3(),
   lejaum4(),
   Lejaum5(),
+];
+List<Widget> mustagrill_list = [
+  LogoMustagrill(),
+  mustagrill1(),
+  mustagrill2(),
+  mustagrill3(),
+  mustagrill4(),
+  Mustagrill5(),
 ];
