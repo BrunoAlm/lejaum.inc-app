@@ -26,13 +26,13 @@ class _PortifolioWBState extends State<PortifolioWB> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           AutoSizeText(
-            'Web Design',
+            'Identidade Visual',
             maxLines: 1,
             style: Styles.tituloExtraBoldMenor,
             minFontSize: _altura <= motog4 ? 30 : 35,
           ),
           const SizedBox(height: 20),
-          GaleriaWB(),
+          GaleriaIDV2(),
         ],
       ),
     );

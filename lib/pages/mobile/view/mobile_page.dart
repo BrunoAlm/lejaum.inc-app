@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioIDV.dart';
 import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioSM.dart';
-import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioWB.dart';
+import 'package:lejaum/pages/mobile/widgets/tela3-4-5/view/portfolioIDV2.dart';
 import 'package:lejaum/pages/mobile/widgets/tela8/view/avaliacoes.dart';
 import '../widgets/tela1/view/home_page_mobile.dart';
 import '../widgets/tela2/view/oq_oferecemos.dart';

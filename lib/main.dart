@@ -19,7 +19,7 @@ import 'pages/mobile/services/themes.dart';
 // PÁGINAS DE PDF MOBILE
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_janfie.dart';
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_arzadi.dart';
-import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_italo.dart';
+import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_mustagrill.dart';
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart';
 
 // PÁGINAS DE PDF DESKTOP
@@ -34,6 +34,7 @@ void main() {
     statusBarColor: Styles.laranjaum,
     statusBarBrightness: Brightness.dark,
   ));
+
   // n sei
   WidgetsFlutterBinding.ensureInitialized();
   // Remove o # da url
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => const HomePage(),
           '/janfie_pdf_mobile': (context) => const PdfJanfie(),
           '/arzadi_pdf_mobile': (context) => const PdfArzadi(),
-          '/italo_pdf_mobile': (context) => const PdfItalo(),
+          '/mustagrill_pdf_mobile': (context) => const PdfMustagrill(),
           '/lejaum_pdf_mobile': (context) => const PdfLejaum(),
           // '/janfie_pdf': (context) => const PdfJanfieDesktop(),
           // '/arzadi_pdf': (context) => const PdfArzadiDesktop(),

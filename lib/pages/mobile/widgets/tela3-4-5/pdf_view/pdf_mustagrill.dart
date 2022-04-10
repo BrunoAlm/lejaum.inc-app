@@ -2,26 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:pdf_render/pdf_render_widgets.dart';
 
-class PdfItalo extends StatefulWidget {
-  const PdfItalo({Key? key}) : super(key: key);
+class PdfMustagrill extends StatefulWidget {
+  const PdfMustagrill({Key? key}) : super(key: key);
 
   @override
-  _PdfItaloState createState() => _PdfItaloState();
+  _PdfMustagrillState createState() => _PdfMustagrillState();
 }
 
-class _PdfItaloState extends State<PdfItalo> {
+class _PdfMustagrillState extends State<PdfMustagrill> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Styles.pretao,
-        title: const Text('Italo - Id. Visual e Site',
+        title: const Text('Mustagrill - Id. Visual',
             style: Styles.textoBrancoBold),
       ),
       // backgroundColor: Colors.grey,
       body: Center(
         child: PdfDocumentLoader.openAsset(
-          'assets/pdf/italo.pdf',
+          'assets/pdf/mustagrill.pdf',
           documentBuilder: (context, pdfDocument, pageCount) => LayoutBuilder(
             builder: (context, constraints) => ListView.builder(
               scrollDirection: Axis.vertical,

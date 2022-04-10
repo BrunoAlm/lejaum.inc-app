@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/arzadi/arzadi_content.dart';
-import '../widgets/italo/italo_content.dart';
+import '../widgets/mustagrill/mustagrill_content.dart';
 import '../widgets/janfie/janfie_content.dart';
 import '../widgets/lejaum/lejaum_content.dart';
 
@@ -21,13 +21,13 @@ List<Widget> janfie_list = [
   Janfie5(),
 ];
 
-List<Widget> italo_list = [
-  LogoItalo(),
-  italo1(),
-  italo2(),
-  italo3(),
-  Italo4(),
-];
+// List<Widget> italo_list = [
+//   LogoItalo(),
+//   italo1(),
+//   italo2(),
+//   italo3(),
+//   Italo4(),
+// ];
 List<Widget> lejaum_list = [
   LogoLejaum(),
   lejaum1(),
@@ -35,4 +35,13 @@ List<Widget> lejaum_list = [
   lejaum3(),
   lejaum4(),
   Lejaum5(),
+];
+
+List<Widget> mustagrill_list = [
+  LogoMustagrill(),
+  mustagrill1(),
+  mustagrill2(),
+  mustagrill3(),
+  mustagrill4(),
+  Mustagrill5(),
 ];
