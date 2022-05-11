@@ -43,9 +43,13 @@ class SocialMedia2 extends StatelessWidget {
                   );
                 },
                 child: Hero(
-                    tag: 'sm2_hero_$index',
-                    child: Image.asset(social_media2_images[index],
-                        fit: BoxFit.fill)),
+                  tag: 'sm2_hero_$index',
+                  child: Image.asset(
+                    social_media2_images[index],
+                    fit: BoxFit.fill,
+                    filterQuality: FilterQuality.medium,
+                  ),
+                ),
               ),
             ),
           ),

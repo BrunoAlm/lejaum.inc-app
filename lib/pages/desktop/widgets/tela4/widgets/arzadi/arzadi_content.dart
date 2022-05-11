@@ -23,7 +23,10 @@ class LogoArzadi extends StatelessWidget {
             bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
         color: Color(0xFF0E0D0C),
         image: DecorationImage(
-            image: AssetImage(_logo_image), fit: BoxFit.contain),
+          image: AssetImage(_logo_image),
+          fit: BoxFit.contain,
+          filterQuality: FilterQuality.medium,
+        ),
       ),
       // color: Colors.white,
       // child: Column(
@@ -50,12 +53,20 @@ class LogoArzadi extends StatelessWidget {
 Widget azardi1() => Container(
       // width: _largura,
       // height: _altura,
-      child: Image.asset(_img1, fit: BoxFit.fill),
+      child: Image.asset(
+        _img1,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget azardi2() => Container(
       // width: _largura,
       // height: _altura,
-      child: Image.asset(_img2, fit: BoxFit.fill),
+      child: Image.asset(
+        _img2,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget azardi3() => Padding(
       padding: const EdgeInsets.only(right: 10),
@@ -65,7 +76,11 @@ Widget azardi3() => Padding(
         child: Container(
           // width: _largura,
           // height: _altura,
-          child: Image.asset(_img3, fit: BoxFit.fill),
+          child: Image.asset(
+            _img3,
+            fit: BoxFit.fill,
+            filterQuality: FilterQuality.medium,
+          ),
         ),
       ),
     );

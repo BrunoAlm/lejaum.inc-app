@@ -26,8 +26,11 @@ class LogoJanfie extends StatelessWidget {
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(10), topLeft: Radius.circular(10)),
         color: Color(0xFF0E0D0C),
-        image:
-            DecorationImage(image: AssetImage(_logo_image), fit: BoxFit.cover),
+        image: DecorationImage(
+          image: AssetImage(_logo_image),
+          fit: BoxFit.cover,
+          filterQuality: FilterQuality.medium,
+        ),
       ),
       // child: Column(
       //   mainAxisAlignment: MainAxisAlignment.end,
@@ -51,13 +54,25 @@ class LogoJanfie extends StatelessWidget {
 }
 
 Widget janfie1() => Container(
-      child: Image.asset(_img1, fit: BoxFit.fill),
+      child: Image.asset(
+        _img1,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget janfie2() => Container(
-      child: Image.asset(_img2, fit: BoxFit.fill),
+      child: Image.asset(
+        _img2,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget janfie3() => Container(
-      child: Image.asset(_img3, fit: BoxFit.fill),
+      child: Image.asset(
+        _img3,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget janfie4() => Padding(
       padding: const EdgeInsets.only(right: 10),
@@ -65,7 +80,11 @@ Widget janfie4() => Padding(
         borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
-          child: Image.asset(_img4, fit: BoxFit.fill),
+          child: Image.asset(
+            _img4,
+            fit: BoxFit.fill,
+            filterQuality: FilterQuality.medium,
+          ),
         ),
       ),
     );
@@ -94,7 +113,7 @@ class Janfie5 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.roxinho,
-              rota:1,
+              rota: 1,
             ),
             // height: 400,
             // width: 400,
@@ -140,11 +159,11 @@ class CliqueParaVerOProjetoCompleto extends StatelessWidget {
             texto: 'Ver Projeto',
             pressionado: () {
               Navigator.of(context).push(
-          PageRouteBuilder(
-            pageBuilder: (context, _, __) => PdfTeste(pdfClicado: rota),
-            opaque: false,
-          ),
-        );
+                PageRouteBuilder(
+                  pageBuilder: (context, _, __) => PdfTeste(pdfClicado: rota),
+                  opaque: false,
+                ),
+              );
             },
             icone: FaIcon(FontAwesomeIcons.searchPlus).icon,
             cor: cor,

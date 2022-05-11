@@ -50,6 +50,7 @@ class SocialMedia1 extends StatelessWidget {
                   child: Image.asset(
                     social_media1_images[index],
                     fit: BoxFit.fill,
+                    filterQuality: FilterQuality.medium,
                   ),
                 ),
               ),

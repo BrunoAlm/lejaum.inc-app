@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 // PACKAGES EXTERNOS
 import 'package:get/get.dart';
+import 'package:lejaum/pages/desktop/widgets/bio/bio.dart';
 import 'package:sizer/sizer.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:seo_renderer/seo_renderer.dart';
@@ -73,6 +74,7 @@ class MyApp extends StatelessWidget {
           '/arzadi_pdf_mobile': (context) => const PdfArzadi(),
           '/mustagrill_pdf_mobile': (context) => const PdfMustagrill(),
           '/lejaum_pdf_mobile': (context) => const PdfLejaum(),
+          '/bio': (context) => const Bio(),
           // '/janfie_pdf': (context) => const PdfJanfieDesktop(),
           // '/arzadi_pdf': (context) => const PdfArzadiDesktop(),
           // '/italo_pdf': (context) => const PdfItaloDesktop(),

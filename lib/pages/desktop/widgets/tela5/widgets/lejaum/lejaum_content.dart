@@ -57,13 +57,25 @@ class LogoLejaum extends StatelessWidget {
 }
 
 Widget lejaum1() => Container(
-      child: Image.asset(_img1, fit: BoxFit.fill),
+      child: Image.asset(
+        _img1,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget lejaum2() => Container(
-      child: Image.asset(_img2, fit: BoxFit.fill),
+      child: Image.asset(
+        _img2,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget lejaum3() => Container(
-      child: Image.asset(_img3, fit: BoxFit.fill),
+      child: Image.asset(
+        _img3,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget lejaum4() => Padding(
       padding: const EdgeInsets.only(right: 10),
@@ -71,7 +83,11 @@ Widget lejaum4() => Padding(
         borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
-          child: Image.asset(_img4, fit: BoxFit.fill),
+          child: Image.asset(
+            _img4,
+            fit: BoxFit.fill,
+            filterQuality: FilterQuality.medium,
+          ),
         ),
       ),
     );

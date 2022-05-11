@@ -58,12 +58,14 @@ Widget italo1() => Container(
       child: Image.asset(
         _img1,
         fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
       ),
     );
 Widget italo2() => Container(
       child: Image.asset(
         _img2,
         fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
       ),
     );
 Widget italo3() => Padding(
@@ -75,6 +77,7 @@ Widget italo3() => Padding(
           child: Image.asset(
             _img3,
             fit: BoxFit.fill,
+            filterQuality: FilterQuality.medium,
           ),
         ),
       ),
@@ -101,7 +104,7 @@ class Italo4 extends StatelessWidget {
             ),
             child: CliqueParaVerOProjetoCompleto(
               cor: Styles.laranjaum,
-              rota:2,
+              rota: 2,
             ),
             // height: 400,
             // width: 400,

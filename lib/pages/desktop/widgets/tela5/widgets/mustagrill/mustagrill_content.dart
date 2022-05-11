@@ -40,7 +40,11 @@ class LogoMustagrill extends StatelessWidget {
               borderRadius: BorderRadius.circular(100),
               color: Styles.marromBase,
             ),
-            child: Image.asset(_logo_image, fit: BoxFit.cover),
+            child: Image.asset(
+              _logo_image,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.medium,
+            ),
             padding: const EdgeInsets.all(20),
           ),
         ],
@@ -50,13 +54,25 @@ class LogoMustagrill extends StatelessWidget {
 }
 
 Widget mustagrill1() => Container(
-      child: Image.asset(_img1, fit: BoxFit.fill),
+      child: Image.asset(
+        _img1,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget mustagrill2() => Container(
-      child: Image.asset(_img2, fit: BoxFit.fill),
+      child: Image.asset(
+        _img2,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget mustagrill3() => Container(
-      child: Image.asset(_img3, fit: BoxFit.fill),
+      child: Image.asset(
+        _img3,
+        fit: BoxFit.fill,
+        filterQuality: FilterQuality.medium,
+      ),
     );
 Widget mustagrill4() => Padding(
       padding: const EdgeInsets.only(right: 10),
@@ -64,7 +80,11 @@ Widget mustagrill4() => Padding(
         borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(10), topRight: Radius.circular(10)),
         child: Container(
-          child: Image.asset(_img4, fit: BoxFit.fill),
+          child: Image.asset(
+            _img4,
+            fit: BoxFit.fill,
+            filterQuality: FilterQuality.medium,
+          ),
         ),
       ),
     );
