@@ -28,6 +28,7 @@ class _ExpansivelzadaDesktopState extends State<ExpansivelzadaDesktop> {
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             child: ExpTeste1(
