@@ -28,3 +28,15 @@ abrirWhatsApp() async {
     }
   }
 }
+
+abrirSite(String link) async {
+  // var link = '';
+
+  if (await canLaunch(link)) {
+    await launch(link);
+  } else {
+    Get.showSnackbar(GetSnackBar(
+      message: 'Não foi possível acessar',
+    ));
+  }
+}

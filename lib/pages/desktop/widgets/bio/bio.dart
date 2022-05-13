@@ -5,6 +5,7 @@ import 'dart:html';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 
 class Bio extends StatelessWidget {
@@ -14,185 +15,100 @@ class Bio extends StatelessWidget {
   Widget build(BuildContext context) {
     var _altura_tela = MediaQuery.of(context).size.height;
     var _largura_tela = MediaQuery.of(context).size.width;
-
-    return LayoutBuilder(builder: (context, constraints) {
-      return constraints.biggest.width > 600
-          ? Scaffold(
-              body: Stack(
-                children: [
-                  generateBluredImage(),
-                  Center(
-                    child: SizedBox(
-                      width: _largura_tela,
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 40.0, horizontal: 20.0),
-                            child: SizedBox(
-                              height: _altura_tela,
-                              width: _largura_tela - 416,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    padding: const EdgeInsets.all(20),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(100),
-                                      color: Styles.laranjaum,
-                                    ),
-                                    child: SvgPicture.asset(
-                                      'assets/images/icons/logo_icon.svg',
-                                      height: 60,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  Text(
-                                    '@lejaum',
-                                    style: GoogleFonts.inter(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
-                                      color: Styles.quaseWhite,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 30),
-                                  BioButton(onPressed: () {}, texto: 'site'),
-                                  const SizedBox(height: 15),
-                                  BioButton(
-                                      onPressed: () {}, texto: 'whatsapp'),
-                                  const SizedBox(height: 15),
-                                  BioButton(
-                                      onPressed: () {}, texto: 'instagram'),
-                                  const SizedBox(height: 15),
-                                  BioButton(onPressed: () {}, texto: 'behance'),
-                                  const SizedBox(height: 25),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(
-                                          FontAwesomeIcons.whatsapp,
-                                          size: 30,
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(
-                                          FontAwesomeIcons.instagram,
-                                          size: 30,
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(
-                                          FontAwesomeIcons.envelope,
-                                          size: 30,
-                                        ),
-                                      ),
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          // Spacer(),
-                          Spotify(),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            )
-          : Scaffold(
-              body: SizedBox(
-                height: _altura_tela,
-                child: Stack(
-                  children: [
-                    generateBluredImage(),
-                    Center(
-                      child: SizedBox(
-                        width: _largura_tela,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 40.0, horizontal: 20.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.all(20),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(100),
-                                  color: Styles.laranjaum,
-                                ),
-                                child: SvgPicture.asset(
-                                  'assets/images/icons/logo_icon.svg',
-                                  height: 60,
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              Text(
-                                '@lejaum',
-                                style: GoogleFonts.inter(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                  color: Styles.quaseWhite,
-                                ),
-                              ),
-                              const SizedBox(height: 30),
-                              BioButton(onPressed: () {}, texto: 'site'),
-                              const SizedBox(height: 15),
-                              BioButton(onPressed: () {}, texto: 'whatsapp'),
-                              const SizedBox(height: 15),
-                              BioButton(onPressed: () {}, texto: 'instagram'),
-                              const SizedBox(height: 15),
-                              BioButton(onPressed: () {}, texto: 'behance'),
-                              const SizedBox(height: 25),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      FontAwesomeIcons.whatsapp,
-                                      size: 30,
-                                    ),
-                                  ),
-                                  const SizedBox(width: 10),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      FontAwesomeIcons.instagram,
-                                      size: 30,
-                                    ),
-                                  ),
-                                  const SizedBox(width: 10),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      FontAwesomeIcons.envelope,
-                                      size: 30,
-                                    ),
-                                  ),
-                                ],
-                              )
-                            ],
-                          ),
+    return Scaffold(
+      body: SizedBox(
+        height: _altura_tela,
+        child: Stack(
+          children: [
+            generateBluredImage(),
+            Center(
+              child: SizedBox(
+                width: _largura_tela,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 40.0, horizontal: 20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          color: Styles.laranjaum,
+                        ),
+                        child: SvgPicture.asset(
+                          'assets/images/icons/logo_icon.svg',
+                          height: 60,
                         ),
                       ),
-                    ),
-                  ],
+                      const SizedBox(height: 20),
+                      Text(
+                        '@lejaum',
+                        style: GoogleFonts.inter(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Styles.quaseWhite,
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                      BioButton(
+                        onPressed: () => abrirSite('https://lejaum.me/'),
+                        texto: 'site',
+                      ),
+                      const SizedBox(height: 15),
+                      BioButton(onPressed: abrirWhatsApp, texto: 'whatsapp'),
+                      const SizedBox(height: 15),
+                      BioButton(
+                        onPressed: () =>
+                            abrirSite('https://www.instagram.com/lejaum.me/'),
+                        texto: 'instagram',
+                      ),
+                      const SizedBox(height: 15),
+                      BioButton(
+                        onPressed: () =>
+                            abrirSite('https://www.behance.net/lejaum'),
+                        texto: 'behance',
+                      ),
+                      const SizedBox(height: 25),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            onPressed: abrirWhatsApp,
+                            icon: Icon(
+                              FontAwesomeIcons.whatsapp,
+                              size: 30,
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          IconButton(
+                            onPressed: () => abrirSite(
+                                'https://www.instagram.com/lejaum.me/'),
+                            icon: Icon(
+                              FontAwesomeIcons.instagram,
+                              size: 30,
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          IconButton(
+                            onPressed: () => abrirSite('mailto:head@lejaum.me'),
+                            icon: Icon(
+                              FontAwesomeIcons.envelope,
+                              size: 30,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
-            );
-    });
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -205,6 +121,7 @@ class BioButton extends StatelessWidget {
 
   final String texto;
   final Function()? onPressed;
+
   @override
   Widget build(BuildContext context) {
     var _largura = MediaQuery.of(context).size.width;
@@ -221,7 +138,8 @@ class BioButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
         primary: Colors.black.withOpacity(0.4),
-        minimumSize: Size(_largura / 2, 60),
+        minimumSize:
+            _largura > 400 ? Size(_largura / 3, 60) : Size(_largura / 2, 60),
       ),
     );
   }
