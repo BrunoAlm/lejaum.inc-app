@@ -121,7 +121,11 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                             altura: 35,
                             largura: 130,
                             pressionado: () {
-                              pushGtm();
+                              Scrollable.ensureVisible(
+                                controller.plasnosKey.currentContext!,
+                                duration: Duration(milliseconds: 500),
+                                curve: Curves.easeInOutQuart,
+                              );
                             },
                             icone: Icons.credit_card,
                           ),

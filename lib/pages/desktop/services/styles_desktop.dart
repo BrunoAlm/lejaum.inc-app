@@ -97,4 +97,5 @@ class DesktopListViewController extends GetxController {
   var homeKey = GlobalKey();
   var boxesKey = GlobalKey();
   var portfolioKey = GlobalKey();
+  var plasnosKey = GlobalKey();
 }

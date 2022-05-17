@@ -49,6 +49,8 @@ dependencies:
   # native_pdf_renderer: ^4.0.1
   pdf_render: ^1.0.23
   
+  # audio player
+  just_audio: ^0.9.21
 
   # pdf_render: ^1.0.21
 
@@ -62,6 +64,7 @@ dependencies:
   zoom_pinch_overlay: ^1.1.2
   universal_html: ^2.0.8
   google_tag_manager: ^0.1.0
+  rxdart: ^0.27.3
 
 dev_dependencies:
   flutter_test:
