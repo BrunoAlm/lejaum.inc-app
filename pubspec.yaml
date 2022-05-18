@@ -65,6 +65,7 @@ dependencies:
   universal_html: ^2.0.8
   google_tag_manager: ^0.1.0
   rxdart: ^0.27.3
+  animated_text_kit: ^4.2.1
 
 dev_dependencies:
   flutter_test:

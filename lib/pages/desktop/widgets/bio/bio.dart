@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -107,14 +108,23 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
                           SvgPicture.asset(
                             'assets/images/icons/logo_icon.svg',
                             height: 90,
+                            color: Styles.quaseWhite,
                           ),
-                          Text(
-                            'lejaum',
-                            style: TextStyle(
-                              fontFamily: 'Georama',
-                              fontSize: 90,
-                              fontStyle: FontStyle.italic,
-                            ),
+                          AnimatedTextKit(
+                            isRepeatingAnimation: false,
+                            animatedTexts: [
+                              TyperAnimatedText(
+                                'lejaum',
+                                speed: const Duration(milliseconds: 400),
+                                curve: Curves.fastOutSlowIn,
+                                textStyle: TextStyle(
+                                  fontFamily: 'Georama',
+                                  fontSize: 90,
+                                  fontStyle: FontStyle.italic,
+                                  color: Styles.quaseWhite,
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
