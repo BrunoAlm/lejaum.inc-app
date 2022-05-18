@@ -24,10 +24,6 @@ import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_mustagrill.dart';
 import 'pages/mobile/widgets/tela3-4-5/pdf_view/pdf_lejaum.dart';
 
 // PÁGINAS DE PDF DESKTOP
-import 'pages/desktop/services/pdf_view/pdf_janfie.dart';
-import 'pages/desktop/services/pdf_view/pdf_arzadi.dart';
-import 'pages/desktop/services/pdf_view/pdf_italo.dart';
-import 'pages/desktop/services/pdf_view/pdf_lejaum.dart';
 
 void main() {
   // Altera statusBarColor do MOBILE
@@ -58,7 +54,6 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.dark,
         theme: Themes.light,
         darkTheme: Themes.dark,
-        
         scrollBehavior: MaterialScrollBehavior().copyWith(
           dragDevices: {
             PointerDeviceKind.mouse,
