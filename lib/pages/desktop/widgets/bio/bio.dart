@@ -49,7 +49,6 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     var _altura_tela = MediaQuery.of(context).size.height;
     var _largura_tela = MediaQuery.of(context).size.width;
-
     return Scaffold(
       body: SizedBox(
         height: _altura_tela,
@@ -64,7 +63,7 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
                   color: Styles.laranjaum,
                   image: DecorationImage(
                     image: AssetImage('images/pattern_icons.png'),
-                    fit: BoxFit.contain,
+                    fit: BoxFit.fitHeight,
                   ),
                 ),
               ),
@@ -242,8 +241,8 @@ class BioButton extends StatelessWidget {
         primary: Colors.black.withOpacity(0.6),
         shape: StadiumBorder(),
         elevation: 0,
-        minimumSize:
-            _largura > 400 ? Size(_largura / 3, 60) : Size(_largura / 2, 60),
+        maximumSize: Size(400, 60),
+        minimumSize: Size(250, 60),
       ),
     );
   }
