@@ -141,7 +141,7 @@ class CliqueParaVerOProjetoCompleto extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Clique aqui para ver o ',
+            'Toque aqui para ver o ',
             style: TextStyle(
               fontFamily: 'Georama',
               fontSize: 18,
