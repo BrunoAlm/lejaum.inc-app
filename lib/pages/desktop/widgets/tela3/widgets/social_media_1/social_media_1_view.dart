@@ -133,6 +133,7 @@ class _SocialMedia1ZoomState extends State<SocialMedia1Zoom> {
                   child: Image.asset(
                     social_media1_images[swipe.imagemClicada],
                     fit: BoxFit.fitHeight,
+                    filterQuality: FilterQuality.medium,
                   ),
                 ),
               ),
