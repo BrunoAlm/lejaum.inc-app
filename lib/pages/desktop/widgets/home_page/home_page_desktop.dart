@@ -61,7 +61,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        Text( 
                           'NÃO VENDEMOS SERVIÇOS,',
                           style: Styles.tituloFinoLinethrough.merge(
                             TextStyle(fontSize: 48),
