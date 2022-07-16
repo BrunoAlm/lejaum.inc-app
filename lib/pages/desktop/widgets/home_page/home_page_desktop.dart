@@ -25,6 +25,8 @@ class _HomePageDesktopState extends State<HomePageDesktop>
     }
 
     var _altura = MediaQuery.of(context).size.height;
+    var _largura = MediaQuery.of(context).size.width;
+    var _pixelRatio = MediaQuery.of(context).devicePixelRatio;
     Get.put(DesktopListViewController());
 
     return GetBuilder<DesktopListViewController>(
@@ -34,7 +36,11 @@ class _HomePageDesktopState extends State<HomePageDesktop>
             height: _altura - 60,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/images/first_page_bg.png"),
+                image: ResizeImage(
+                  AssetImage("assets/images/first_page_bg.png"),
+                  width: (_largura * _pixelRatio).toInt(),
+                  height: (_altura * _pixelRatio).toInt(),
+                ),
                 colorFilter: ColorFilter.mode(
                     Styles.quaseBlack.withOpacity(0.2), BlendMode.overlay),
                 fit: BoxFit.cover,
@@ -61,7 +67,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text( 
+                        Text(
                           'NÃO VENDEMOS SERVIÇOS,',
                           style: Styles.tituloFinoLinethrough.merge(
                             TextStyle(fontSize: 48),
@@ -139,8 +145,13 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                       ],
                     ),
                     Center(
-                      child: Image.asset('assets/images/astronauta2.png',
-                          height: 450, alignment: Alignment.center),
+                      child: Image.asset(
+                        'assets/images/astronauta2.png',
+                        // height: 450,
+                        alignment: Alignment.center,
+                        cacheWidth: 245,
+                        cacheHeight: 450,
+                      ),
                     ),
                   ],
                 ),

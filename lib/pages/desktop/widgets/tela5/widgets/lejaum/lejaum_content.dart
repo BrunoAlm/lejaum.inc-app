@@ -60,6 +60,8 @@ Widget lejaum1() => Container(
       child: Image.asset(
         _img1,
         fit: BoxFit.fill,
+        cacheWidth: 403,
+        cacheHeight: 227,
         filterQuality: FilterQuality.medium,
       ),
     );
@@ -67,6 +69,8 @@ Widget lejaum2() => Container(
       child: Image.asset(
         _img2,
         fit: BoxFit.fill,
+        cacheWidth: 403,
+        cacheHeight: 227,
         filterQuality: FilterQuality.medium,
       ),
     );
@@ -74,6 +78,8 @@ Widget lejaum3() => Container(
       child: Image.asset(
         _img3,
         fit: BoxFit.fill,
+        cacheWidth: 403,
+        cacheHeight: 227,
         filterQuality: FilterQuality.medium,
       ),
     );
@@ -86,6 +92,8 @@ Widget lejaum4() => Padding(
           child: Image.asset(
             _img4,
             fit: BoxFit.fill,
+            cacheWidth: 403,
+            cacheHeight: 227,
             filterQuality: FilterQuality.medium,
           ),
         ),

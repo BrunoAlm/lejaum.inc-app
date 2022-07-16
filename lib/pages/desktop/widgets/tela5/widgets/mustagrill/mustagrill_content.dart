@@ -43,6 +43,8 @@ class LogoMustagrill extends StatelessWidget {
             child: Image.asset(
               _logo_image,
               fit: BoxFit.cover,
+              cacheWidth: 160,
+        cacheHeight: 160,
               filterQuality: FilterQuality.medium,
             ),
             padding: const EdgeInsets.all(20),
@@ -57,12 +59,16 @@ Widget mustagrill1() => Container(
       child: Image.asset(
         _img1,
         fit: BoxFit.fill,
+        cacheWidth: 404,
+        cacheHeight: 227,
         filterQuality: FilterQuality.medium,
       ),
     );
 Widget mustagrill2() => Container(
       child: Image.asset(
         _img2,
+        cacheWidth: 404,
+        cacheHeight: 227,
         fit: BoxFit.fill,
         filterQuality: FilterQuality.medium,
       ),
@@ -71,6 +77,8 @@ Widget mustagrill3() => Container(
       child: Image.asset(
         _img3,
         fit: BoxFit.fill,
+        cacheWidth: 404,
+        cacheHeight: 227,
         filterQuality: FilterQuality.medium,
       ),
     );
@@ -83,6 +91,8 @@ Widget mustagrill4() => Padding(
           child: Image.asset(
             _img4,
             fit: BoxFit.fill,
+            cacheWidth: 404,
+        cacheHeight: 227,
             filterQuality: FilterQuality.medium,
           ),
         ),
