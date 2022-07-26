@@ -2,17 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
-class AvaliacaoJanfie extends StatelessWidget {
-  const AvaliacaoJanfie({Key? key}) : super(key: key);
-  final _html = '''
+class CardAvaliacao extends StatefulWidget {
+  final String backgroundImage;
+  final String audio;
+  final String nomePessoa;
+  final String nomeEmpresa;
+  final String servico;
+  const CardAvaliacao({
+    Key? key,
+    required this.backgroundImage,
+    required this.audio,
+    required this.nomePessoa,
+    required this.nomeEmpresa,
+    required this.servico,
+  }) : super(key: key);
+
+  @override
+  State<CardAvaliacao> createState() => _CardAvaliacaoState();
+}
+
+class _CardAvaliacaoState extends State<CardAvaliacao> {
+  @override
+  Widget build(BuildContext context) {
+    final _html = '''
 <figure>
-  <audio preload controls class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3">
+  <audio preload controls class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/${widget.audio}.mp3">
     Sorry, <code>AUDIO</code> tag is not supported.
   </audio>
 </figure>
 ''';
-  @override
-  Widget build(BuildContext context) {
     return Card(
       color: Styles.quaseCinza,
       shape: RoundedRectangleBorder(
@@ -26,7 +44,7 @@ class AvaliacaoJanfie extends StatelessWidget {
             HtmlWidget(
               _html,
               key: Key(_html),
-              baseUrl: Uri.parse('avaliacao1.mp3'),
+              baseUrl: Uri.parse(widget.audio),
               customStylesBuilder: (element) {
                 if (element.classes.contains('audio')) {
                   return {
@@ -44,9 +62,10 @@ class AvaliacaoJanfie extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundImage:
-                      Image.asset('assets/images/galeria/janfie/avatar.png')
-                          .image,
+                  backgroundImage: Image.asset(
+                    widget.backgroundImage,
+                    filterQuality: FilterQuality.medium,
+                  ).image,
                 ),
                 const SizedBox(width: 10),
                 Column(
@@ -57,15 +76,15 @@ class AvaliacaoJanfie extends StatelessWidget {
                         style: Styles.avaliador,
                         children: [
                           TextSpan(
-                            text: 'Letícia | ',
+                            text: '${widget.nomePessoa} | ',
                             style: Styles.nome_avaliador,
                           ),
-                          TextSpan(text: 'Janfie Boutique'),
+                          TextSpan(text: widget.nomeEmpresa),
                         ],
                       ),
                     ),
                     Text(
-                      'Naming e Identidade Visual',
+                      widget.servico,
                       style: Styles.servico_avaliado,
                     ),
                   ],
