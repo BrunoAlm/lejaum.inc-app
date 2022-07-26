@@ -22,16 +22,15 @@ class CardAvaliacao extends StatefulWidget {
 }
 
 class _CardAvaliacaoState extends State<CardAvaliacao> {
-  final _html = '''
+  @override
+  Widget build(BuildContext context) {
+    final _html = '''
 <figure>
-  <audio preload controls class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/avaliacao1.mp3">
+  <audio preload controls class="audio" src="https://raw.githubusercontent.com/BrunoAlm/lejaum.inc-app/master/assets/audio/${widget.audio}.mp3">
     Sorry, <code>AUDIO</code> tag is not supported.
   </audio>
 </figure>
 ''';
-
-  @override
-  Widget build(BuildContext context) {
     return Card(
       color: Styles.quaseCinza,
       shape: RoundedRectangleBorder(
@@ -63,10 +62,10 @@ class _CardAvaliacaoState extends State<CardAvaliacao> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundImage: Image.asset(widget.backgroundImage
-                          // 'assets/images/galeria/janfie/avatar.png',
-                          )
-                      .image,
+                  backgroundImage: Image.asset(
+                    widget.backgroundImage,
+                    filterQuality: FilterQuality.medium,
+                  ).image,
                 ),
                 const SizedBox(width: 10),
                 Column(
