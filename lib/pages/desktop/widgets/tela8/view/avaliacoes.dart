@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:lejaum/pages/desktop/widgets/tela8/widgets/avaliacoes/avaliacao_janfie.dart';
+import 'package:lejaum/pages/desktop/widgets/tela8/widgets/avaliacoes/avaliacao_page.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/widgets/tela8/widgets/footer.dart';
 
