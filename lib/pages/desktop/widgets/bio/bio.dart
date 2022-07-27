@@ -138,11 +138,10 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
                       ),
                       const SizedBox(height: 30),
                       BioButton(
-                        onPressed: abrirWhatsApp,
-                        texto: 'Solicitar consultoria',
-                        icon: Icons.whatsapp,
+                        onPressed: () => abrirSite('https://lejaum.me/'),
+                        texto: 'Site Portfólio',
+                        icon: Icons.web,
                       ),
-                      const SizedBox(height: 15),
                       BioButton(
                         onPressed: abrirWhatsApp,
                         texto: 'Whatsapp',
@@ -154,12 +153,6 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
                             abrirSite('https://www.instagram.com/lejaum.me/'),
                         texto: 'Instagram',
                         icon: FontAwesomeIcons.instagram,
-                      ),
-                      const SizedBox(height: 15),
-                      BioButton(
-                        onPressed: () => abrirSite('https://lejaum.me/'),
-                        texto: 'Site Portfólio',
-                        icon: Icons.web,
                       ),
                       const SizedBox(height: 15),
                       BioButton(
