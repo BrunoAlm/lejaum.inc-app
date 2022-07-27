@@ -142,6 +142,7 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
                         texto: 'Site Portfólio',
                         icon: Icons.web,
                       ),
+                      const SizedBox(height: 15),
                       BioButton(
                         onPressed: abrirWhatsApp,
                         texto: 'Whatsapp',
