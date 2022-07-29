@@ -25,6 +25,10 @@ class HomePageMobile extends StatelessWidget {
           color: context.theme.backgroundColor,
           image: DecorationImage(
             image: AssetImage("assets/images/first_page_bg.png"),
+            colorFilter: ColorFilter.mode(
+              Styles.quaseBlack.withOpacity(0.9),
+              BlendMode.darken,
+            ),
             fit: BoxFit.cover,
           ),
         ),

@@ -16,11 +16,11 @@ class PlanosCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Plano1(),
+          Plano3(),
           const SizedBox(width: 5),
           Plano2(),
           const SizedBox(width: 5),
-          Plano3(),
+          Plano1(),
         ],
       ),
       // child: ListView.builder(

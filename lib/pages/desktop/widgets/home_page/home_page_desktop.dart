@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -42,23 +40,25 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                   height: (_altura * _pixelRatio).toInt(),
                 ),
                 colorFilter: ColorFilter.mode(
-                    Styles.quaseBlack.withOpacity(0.2), BlendMode.overlay),
+                  Styles.quaseBlack.withOpacity(0.9),
+                  BlendMode.darken,
+                ),
                 fit: BoxFit.cover,
               ),
             ),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
-              child: Container(
-                decoration: BoxDecoration(color: Colors.black.withOpacity(0.5)),
-              ),
-            ),
+            // child: BackdropFilter(
+            //   filter: ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
+            //   child: Container(
+            //     decoration: BoxDecoration(color: Colors.black.withOpacity(0.5)),
+            //   ),
+            // ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: _altura - 120,
+                height: _altura,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,

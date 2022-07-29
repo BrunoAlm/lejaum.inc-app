@@ -43,10 +43,11 @@ class IconeBotaoEstilizado extends StatelessWidget {
         ],
       ),
       child: ElevatedButton.icon(
-          style: ButtonStyle(
-            elevation: MaterialStateProperty.all(0),
-            backgroundColor: MaterialStateProperty.all(cor!),
-            shape: MaterialStateProperty.all(StadiumBorder()),
+          style: ElevatedButton.styleFrom(
+            elevation: 0,
+            // minimumSize: Size(largura!, altura!),
+            primary: cor,
+            shape: StadiumBorder(),
           ),
           onPressed: pressionado!,
           icon: Icon(icone, color: textColor!, size: tamanho_icone),
