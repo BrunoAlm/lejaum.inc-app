@@ -46,7 +46,8 @@ class IconeBotaoEstilizado extends StatelessWidget {
       child: ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
             elevation: 0,
-            backgroundColor: cor,
+            // backgroundColor: cor,
+            primary: cor,
             shape: StadiumBorder(),
           ),
           onPressed: pressionado!,
@@ -109,7 +110,8 @@ class OutlinedIconeBotaoEstilizado extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             elevation: 0,
             // minimumSize: Size(largura!, altura!),
-            backgroundColor: Colors.transparent,
+            primary: Colors.transparent,
+            // backgroundColor: Colors.transparent,
             shape: StadiumBorder(
               side: BorderSide(
                 color: StylesDesktop.quaseWhite,
