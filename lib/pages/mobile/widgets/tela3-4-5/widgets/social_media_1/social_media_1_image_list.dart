@@ -10,5 +10,4 @@ List<String> social_media1_images = [
   "assets/images/galeria/social_media1/webp/img9.webp",
   "assets/images/galeria/social_media1/webp/img10.webp",
   "assets/images/galeria/social_media1/webp/img11.webp",
-  "assets/images/galeria/social_media1/webp/img11.webp",
 ];

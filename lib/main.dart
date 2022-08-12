@@ -33,7 +33,7 @@ void main() {
   ));
 
   // n sei
-  WidgetsFlutterBinding?.ensureInitialized();
+  WidgetsFlutterBinding?.ensureInitialized(); 
   // Remove o # da url
   setPathUrlStrategy();
   // MaterialApp
