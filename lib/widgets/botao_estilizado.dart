@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
 import 'package:seo_renderer/seo_renderer.dart';
 
 class IconeBotaoEstilizado extends StatelessWidget {
@@ -45,9 +46,76 @@ class IconeBotaoEstilizado extends StatelessWidget {
       child: ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
             elevation: 0,
-            // minimumSize: Size(largura!, altura!),
-            primary: cor,
+            backgroundColor: cor,
             shape: StadiumBorder(),
+          ),
+          onPressed: pressionado!,
+          icon: Icon(icone, color: textColor!, size: tamanho_icone),
+          label: TextRenderer(
+            element: ParagraphElement(),
+            text: Text(
+              texto!,
+              style: TextStyle(
+                fontFamily: 'Georama',
+                color: textColor!,
+                fontSize: tamanho_fonte,
+              ),
+            ),
+          )),
+    );
+  }
+}
+
+class OutlinedIconeBotaoEstilizado extends StatelessWidget {
+  OutlinedIconeBotaoEstilizado({
+    Key? key,
+    required this.texto,
+    this.altura,
+    this.largura,
+    required this.pressionado,
+    required this.icone,
+    this.cor,
+    required this.textColor,
+    this.tamanho_fonte,
+    this.tamanho_icone,
+  }) : super(key: key);
+
+  final String? texto;
+  final Function()? pressionado;
+  final double? largura, altura;
+  final IconData? icone;
+  Color? cor = StylesDesktop.quaseWhite;
+  final Color? textColor;
+  final double? tamanho_fonte;
+  final double? tamanho_icone;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: altura,
+      width: largura,
+      decoration: BoxDecoration(
+        color: cor,
+        borderRadius: BorderRadius.circular(50),
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: cor!,
+        //     spreadRadius: 1,
+        //     blurRadius: 8,
+        //     offset: Offset(0, 2),
+        //   ),
+        // ],
+      ),
+      child: ElevatedButton.icon(
+          style: ElevatedButton.styleFrom(
+            elevation: 0,
+            // minimumSize: Size(largura!, altura!),
+            backgroundColor: Colors.transparent,
+            shape: StadiumBorder(
+              side: BorderSide(
+                color: StylesDesktop.quaseWhite,
+                width: 2,
+              ),
+            ),
           ),
           onPressed: pressionado!,
           icon: Icon(icone, color: textColor!, size: tamanho_icone),

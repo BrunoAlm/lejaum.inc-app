@@ -33,19 +33,19 @@ class _HomePageDesktopState extends State<HomePageDesktop>
           Container(
             height: _altura - 60,
             decoration: BoxDecoration(
-              image: DecorationImage(
-                image: ResizeImage(
-                  AssetImage("assets/images/first_page_bg.png"),
-                  width: (_largura * _pixelRatio).toInt(),
-                  height: (_altura * _pixelRatio).toInt(),
+                // image: DecorationImage(
+                //   image: ResizeImage(
+                //     AssetImage("assets/images/first_page_bg.png"),
+                //     width: (_largura * _pixelRatio).toInt(),
+                //     height: (_altura * _pixelRatio).toInt(),
+                //   ),
+                //   colorFilter: ColorFilter.mode(
+                //     Styles.quaseBlack.withOpacity(0.9),
+                //     BlendMode.darken,
+                //   ),
+                //   fit: BoxFit.cover,
+                // ),
                 ),
-                colorFilter: ColorFilter.mode(
-                  Styles.quaseBlack.withOpacity(0.9),
-                  BlendMode.darken,
-                ),
-                fit: BoxFit.cover,
-              ),
-            ),
             // child: BackdropFilter(
             //   filter: ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
             //   child: Container(
@@ -83,7 +83,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            IconeBotaoEstilizado(
+                            OutlinedIconeBotaoEstilizado(
                               textColor: Colors.white,
                               texto: "Saber Mais",
                               altura: 35,
@@ -96,11 +96,10 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                                 );
                               },
                               icone: Icons.arrow_circle_down_outlined,
-                              cor: Styles.lowBlueGray,
                             ),
                             SizedBox(width: 20),
-                            IconeBotaoEstilizado(
-                              textColor: Styles.pretao,
+                            OutlinedIconeBotaoEstilizado(
+                              textColor: Styles.quaseWhite,
                               texto: "Portfólio",
                               altura: 35,
                               largura: 130,
@@ -112,12 +111,10 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                                 );
                               },
                               icone: Icons.arrow_circle_down_outlined,
-                              cor: Styles.mareloMostarda,
                             ),
                             SizedBox(width: 20),
-                            IconeBotaoEstilizado(
+                            OutlinedIconeBotaoEstilizado(
                               textColor: Colors.white,
-                              cor: Styles.laranjaum,
                               texto: "Ver Planos",
                               altura: 35,
                               largura: 130,
@@ -131,9 +128,8 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                               icone: Icons.credit_card,
                             ),
                             SizedBox(width: 20),
-                            IconeBotaoEstilizado(
+                            OutlinedIconeBotaoEstilizado(
                               textColor: Colors.white,
-                              cor: Styles.verdeGood,
                               texto: "Whatsapp",
                               altura: 35,
                               largura: 130,

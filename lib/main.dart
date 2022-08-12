@@ -29,7 +29,7 @@ void main() {
   // Altera statusBarColor do MOBILE
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Styles.laranjaum,
-    statusBarBrightness: Brightness.dark,
+    statusBarBrightness: Brightness.dark, 
   ));
 
   // n sei

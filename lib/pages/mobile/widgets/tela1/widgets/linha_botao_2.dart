@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
-import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/widgets/botao_estilizado.dart';
 
@@ -19,9 +18,8 @@ class LinhaBotao2 extends StatelessWidget {
       builder: (_pageController) => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          IconeBotaoEstilizado(
+          OutlinedIconeBotaoEstilizado(
             textColor: Colors.white,
-            cor: Styles.laranjaum,
             texto: "Ver Planos",
             altura: _altura_do_botao,
             largura: _largura_do_botao,
@@ -33,9 +31,8 @@ class LinhaBotao2 extends StatelessWidget {
             icone: Icons.credit_card,
           ),
           SizedBox(width: 20),
-          IconeBotaoEstilizado(
+          OutlinedIconeBotaoEstilizado(
             textColor: Colors.white,
-            cor: Styles.verdeGood,
             texto: "Whatsapp",
             altura: _altura_do_botao,
             largura: _largura_do_botao,

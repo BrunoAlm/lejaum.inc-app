@@ -16,7 +16,7 @@ class LinhaBotao1 extends StatelessWidget {
       builder: (_pageController) => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          IconeBotaoEstilizado(
+          OutlinedIconeBotaoEstilizado(
             textColor: Colors.white,
             texto: "Saber Mais",
             altura: _altura_do_botao,
@@ -26,11 +26,10 @@ class LinhaBotao1 extends StatelessWidget {
               curve: Curves.easeInOutQuart,
             ),
             icone: Icons.arrow_circle_down_outlined,
-            cor: Styles.lowBlueGray,
           ),
           SizedBox(width: 20),
-          IconeBotaoEstilizado(
-            textColor: Styles.pretao,
+          OutlinedIconeBotaoEstilizado(
+            textColor: Styles.quaseWhite,
             texto: "Portfólio",
             altura: _altura_do_botao,
             largura: _largura_do_botao,
@@ -40,7 +39,6 @@ class LinhaBotao1 extends StatelessWidget {
               curve: Curves.easeInOutQuart,
             ),
             icone: Icons.arrow_circle_down_outlined,
-            cor: Styles.mareloMostarda,
           ),
         ],
       ),

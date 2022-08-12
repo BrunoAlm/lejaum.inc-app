@@ -23,14 +23,14 @@ class HomePageMobile extends StatelessWidget {
         height: _altura,
         decoration: BoxDecoration(
           color: context.theme.backgroundColor,
-          image: DecorationImage(
-            image: AssetImage("assets/images/first_page_bg.png"),
-            colorFilter: ColorFilter.mode(
-              Styles.quaseBlack.withOpacity(0.9),
-              BlendMode.darken,
-            ),
-            fit: BoxFit.cover,
-          ),
+          // image: DecorationImage(
+          //   image: AssetImage("assets/images/first_page_bg.png"),
+          //   colorFilter: ColorFilter.mode(
+          //     Styles.quaseBlack.withOpacity(0.9),
+          //     BlendMode.darken,
+          //   ),
+          //   fit: BoxFit.cover,
+          // ),
         ),
         child: Padding(
           padding: const EdgeInsets.all(20),
