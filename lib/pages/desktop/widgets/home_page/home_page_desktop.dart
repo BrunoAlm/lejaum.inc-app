@@ -25,6 +25,7 @@ class _HomePageDesktopState extends State<HomePageDesktop>
     var _altura = MediaQuery.of(context).size.height;
     var _largura = MediaQuery.of(context).size.width;
     var _pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    var corDoTextoBotao = Theme.of(context).colorScheme.secondary;
     Get.put(DesktopListViewController());
 
     return GetBuilder<DesktopListViewController>(
@@ -84,7 +85,8 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             OutlinedIconeBotaoEstilizado(
-                              textColor: Colors.white,
+                              corDaBorda: corDoTextoBotao,
+                              textColor: corDoTextoBotao,
                               texto: "Saber Mais",
                               altura: 35,
                               largura: 130,
@@ -99,7 +101,8 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                             ),
                             SizedBox(width: 20),
                             OutlinedIconeBotaoEstilizado(
-                              textColor: Styles.quaseWhite,
+                              corDaBorda: corDoTextoBotao,
+                              textColor: corDoTextoBotao,
                               texto: "Portfólio",
                               altura: 35,
                               largura: 130,
@@ -114,7 +117,8 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                             ),
                             SizedBox(width: 20),
                             OutlinedIconeBotaoEstilizado(
-                              textColor: Colors.white,
+                              corDaBorda: corDoTextoBotao,
+                              textColor: corDoTextoBotao,
                               texto: "Ver Planos",
                               altura: 35,
                               largura: 130,
@@ -129,7 +133,8 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                             ),
                             SizedBox(width: 20),
                             OutlinedIconeBotaoEstilizado(
-                              textColor: Colors.white,
+                              corDaBorda: corDoTextoBotao,
+                              textColor: corDoTextoBotao,
                               texto: "Whatsapp",
                               altura: 35,
                               largura: 130,

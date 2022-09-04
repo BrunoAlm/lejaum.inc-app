@@ -31,6 +31,7 @@ class Plano1 extends StatelessWidget {
           Text(
             'Relacionamento Basic',
             style: Styles.TitleTextPlanosCardMoney.copyWith(
+              color: Theme.of(context).colorScheme.secondary,
               fontSize: mudarFonteTituloCard(_largura_da_tela),
             ),
           ),
@@ -103,6 +104,7 @@ class Plano2 extends StatelessWidget {
         Text(
           'Visibilidade Plus',
           style: Styles.TitleTextPlanosCardMoney.copyWith(
+            color: Theme.of(context).colorScheme.secondary,
             fontSize: mudarFonteTituloCard(_largura_da_tela),
           ),
         ),

@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
       child: LayoutBuilder(
         builder: (context, constraints) {
           return Scaffold(
-            backgroundColor: Color(0xFF1A1918),
+            backgroundColor: Theme.of(context).backgroundColor,
             appBar: constraints.maxWidth < 892
                 ? PreferredSize(
                     child: MobileAppBar(),

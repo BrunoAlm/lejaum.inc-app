@@ -40,7 +40,9 @@ class _AvaliacoesDesktopState extends State<AvaliacoesDesktop> {
               padding: const EdgeInsets.only(left: 25),
               child: Text(
                 'Veja algumas avaliações de nossos clientes:',
-                style: Styles.subtitulo,
+                style: Styles.subtitulo.copyWith(
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
               ),
             ),
             // Expanded(child: SizedBox()),
