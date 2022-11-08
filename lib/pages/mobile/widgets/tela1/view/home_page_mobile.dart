@@ -5,6 +5,9 @@ import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/linha_botao_1.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/linha_botao_2.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lejaum/widgets/botao_estilizado.dart';
+import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({Key? key}) : super(key: key);
