@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
 import 'package:lejaum/pages/mobile/services/themes.dart';
-import 'package:lejaum/pages/mobile/widgets/tela1/widgets/linha_botao_1.dart';
 import 'package:lejaum/pages/mobile/widgets/tela1/widgets/linha_botao_2.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lejaum/widgets/botao_estilizado.dart';
-import 'package:lejaum/pages/mobile/services/abrir_whatsapp.dart';
+
+import '../widgets/linha_botao_1.dart';
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({Key? key}) : super(key: key);
@@ -73,14 +71,14 @@ class HomePageMobile extends StatelessWidget {
               const SizedBox(height: 35),
               LinhaBotao1(),
               SizedBox(height: 20),
-OutlinedIconeBotaoEstilizado(
-            textColor: Colors.white,
-            texto: "Whatsapp",
-            altura: 35,
-            largura: 140,
-            pressionado: abrirWhatsApp,
-            icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
-          ),
+              // OutlinedIconeBotaoEstilizado(
+              //   textColor: Colors.white,
+              //   texto: "Whatsapp",
+              //   altura: 35,
+              //   largura: 140,
+              //   pressionado: abrirWhatsApp,
+              //   icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
+              // ),
               LinhaBotao2(),
             ],
           ),

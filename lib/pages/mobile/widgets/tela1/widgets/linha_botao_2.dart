@@ -11,7 +11,7 @@ class LinhaBotao2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(MobilePageViewController());
-
+    var corDoTextoBotao = Theme.of(context).colorScheme.secondary;
     double _altura_do_botao = 35;
     double _largura_do_botao = 140;
     return GetBuilder<MobilePageViewController>(
@@ -19,20 +19,21 @@ class LinhaBotao2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //OutlinedIconeBotaoEstilizado(
-            //textColor: Colors.white,
-            //texto: "Ver Planos",
-            //altura: _altura_do_botao,
-            //largura: _largura_do_botao,
-            //pressionado: () => _pageController.controller.animateToPage(
-             // 6,
-              //duration: Duration(milliseconds: 500),
-              //curve: Curves.easeInOutQuart,
-            //),
-            //icone: Icons.credit_card,
+          //textColor: Colors.white,
+          //texto: "Ver Planos",
+          //altura: _altura_do_botao,
+          //largura: _largura_do_botao,
+          //pressionado: () => _pageController.controller.animateToPage(
+          // 6,
+          //duration: Duration(milliseconds: 500),
+          //curve: Curves.easeInOutQuart,
+          //),
+          //icone: Icons.credit_card,
           //),
           //SizedBox(width: 20),
           OutlinedIconeBotaoEstilizado(
-            textColor: Colors.white,
+            textColor: corDoTextoBotao,
+            corDaBorda: corDoTextoBotao,
             texto: "Whatsapp",
             altura: _altura_do_botao,
             largura: _largura_do_botao,
