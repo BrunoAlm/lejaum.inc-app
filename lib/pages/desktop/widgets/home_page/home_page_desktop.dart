@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/desktop/services/styles_desktop.dart';
@@ -115,22 +115,22 @@ class _HomePageDesktopState extends State<HomePageDesktop>
                               },
                               icone: Icons.arrow_circle_down_outlined,
                             ),
-                            SizedBox(width: 20),
-                            OutlinedIconeBotaoEstilizado(
-                              corDaBorda: corDoTextoBotao,
-                              textColor: corDoTextoBotao,
-                              texto: "Ver Planos",
-                              altura: 35,
-                              largura: 130,
-                              pressionado: () {
-                                Scrollable.ensureVisible(
-                                  controller.plasnosKey.currentContext!,
-                                  duration: Duration(milliseconds: 500),
-                                  curve: Curves.easeInOutQuart,
-                                );
-                              },
-                              icone: Icons.credit_card,
-                            ),
+                            //SizedBox(width: 20),
+                            //OutlinedIconeBotaoEstilizado(
+                              //corDaBorda: corDoTextoBotao,
+                              //textColor: corDoTextoBotao,
+                              //texto: "Ver Planos",
+                              //altura: 35,
+                              //largura: 130,
+                              //pressionado: () {
+                                //Scrollable.ensureVisible(
+                                  //controller.plasnosKey.currentContext!,
+                                  //duration: Duration(milliseconds: 500),
+                                  //curve: Curves.easeInOutQuart,
+                                //);
+                              //},
+                              //icone: Icons.credit_card,
+                            //),
                             SizedBox(width: 20),
                             OutlinedIconeBotaoEstilizado(
                               corDaBorda: corDoTextoBotao,

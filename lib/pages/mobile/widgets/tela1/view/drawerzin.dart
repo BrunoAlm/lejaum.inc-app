@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
@@ -66,18 +66,18 @@ class _DrawerLejaumState extends State<DrawerLejaum> {
                 Navigator.of(context).pop();
               },
             ),
-            const SizedBox(height: 20),
-            BotaoDrawer(
-              texto: 'Ver Planos',
-              pressionado: () {
-                _pageController.controller.animateToPage(
-                  6,
-                  duration: Duration(milliseconds: 500),
-                  curve: Curves.easeInOutQuart,
-                );
-                Navigator.of(context).pop();
-              },
-            ),
+            //const SizedBox(height: 20),
+            //BotaoDrawer(
+              //texto: 'Ver Planos',
+              //pressionado: () {
+               // _pageController.controller.animateToPage(
+                 // 6,
+                //  duration: Duration(milliseconds: 500),
+                //  curve: Curves.easeInOutQuart,
+               // );
+              //  Navigator.of(context).pop();
+              //},
+           // ),
             const SizedBox(height: 20),
             BotaoDrawer(
               texto: 'Avaliações',

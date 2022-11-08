@@ -1,4 +1,4 @@
-import 'dart:html';
+﻿import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -113,15 +113,15 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
                       );
                     }),
                 const SizedBox(width: 20.0),
-                BotaoAppBar(
-                    texto: 'Ver Planos',
-                    pressionado: () {
-                      Scrollable.ensureVisible(
-                        controller.plasnosKey.currentContext!,
-                        duration: Duration(milliseconds: 500),
-                        curve: Curves.easeInOutQuart,
-                      );
-                    }),
+                //BotaoAppBar(
+                    //texto: 'Ver Planos',
+                    //pressionado: () {
+                      //Scrollable.ensureVisible(
+                        //controller.plasnosKey.currentContext!,
+                        //duration: Duration(milliseconds: 500),
+                        //curve: Curves.easeInOutQuart,
+                      //);
+                    //}),
                 const SizedBox(width: 20.0),
                 BotaoAppBar(texto: 'Contato', pressionado: abrirWhatsApp),
                 const SizedBox(width: 20.0),

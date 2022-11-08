@@ -37,7 +37,7 @@ class _MobilePageState extends State<MobilePage> {
             PortfolioIDV(),
             PortifolioWB(),
             Solucoes(),
-            Planos(),
+            // Planos(),
             Avaliacoes(),
           ],
           scrollDirection: Axis.vertical,

@@ -43,7 +43,7 @@ class _DesktopPageState extends State<DesktopPage> {
               PortfolioIDV(),
               PortifolioIDV2(),
               SolucoesDesktop(),
-              PlanosDesktop(key: context.plasnosKey),
+              // PlanosDesktop(key: context.plasnosKey),
               AvaliacoesDesktop(),
             ],
           ),

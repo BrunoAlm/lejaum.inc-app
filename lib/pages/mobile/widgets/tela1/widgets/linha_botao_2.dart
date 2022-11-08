@@ -18,19 +18,19 @@ class LinhaBotao2 extends StatelessWidget {
       builder: (_pageController) => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          OutlinedIconeBotaoEstilizado(
-            textColor: Colors.white,
-            texto: "Ver Planos",
-            altura: _altura_do_botao,
-            largura: _largura_do_botao,
-            pressionado: () => _pageController.controller.animateToPage(
-              6,
-              duration: Duration(milliseconds: 500),
-              curve: Curves.easeInOutQuart,
-            ),
-            icone: Icons.credit_card,
-          ),
-          SizedBox(width: 20),
+          //OutlinedIconeBotaoEstilizado(
+            //textColor: Colors.white,
+            //texto: "Ver Planos",
+            //altura: _altura_do_botao,
+            //largura: _largura_do_botao,
+            //pressionado: () => _pageController.controller.animateToPage(
+             // 6,
+              //duration: Duration(milliseconds: 500),
+              //curve: Curves.easeInOutQuart,
+            //),
+            //icone: Icons.credit_card,
+          //),
+          //SizedBox(width: 20),
           OutlinedIconeBotaoEstilizado(
             textColor: Colors.white,
             texto: "Whatsapp",
