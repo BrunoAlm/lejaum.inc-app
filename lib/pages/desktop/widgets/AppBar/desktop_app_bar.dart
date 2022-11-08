@@ -112,7 +112,7 @@ class _DesktopAppBarState extends State<DesktopAppBar> {
                         curve: Curves.easeInOutQuart,
                       );
                     }),
-                const SizedBox(width: 20.0),
+                //const SizedBox(width: 20.0),
                 //BotaoAppBar(
                     //texto: 'Ver Planos',
                     //pressionado: () {

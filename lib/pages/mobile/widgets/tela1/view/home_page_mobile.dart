@@ -1,4 +1,4 @@
-import 'package:auto_size_text/auto_size_text.dart';
+﻿import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lejaum/pages/mobile/services/styles_mobile.dart';
@@ -70,6 +70,14 @@ class HomePageMobile extends StatelessWidget {
               const SizedBox(height: 35),
               LinhaBotao1(),
               SizedBox(height: 20),
+OutlinedIconeBotaoEstilizado(
+            textColor: Colors.white,
+            texto: "Whatsapp",
+            altura: 35,
+            largura: 140,
+            pressionado: abrirWhatsApp,
+            icone: FaIcon(FontAwesomeIcons.whatsapp).icon,
+          ),
               LinhaBotao2(),
             ],
           ),
