@@ -17,7 +17,7 @@ jobs:
         - name: Construindo Site
           run: |
             flutter pub get
-            flutter build web
+            flutter build web --release
         # flutter config --enable-web
         # flutter pub get
         # flutter build web --release 

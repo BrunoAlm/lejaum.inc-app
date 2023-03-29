@@ -146,7 +146,7 @@ class _BioState extends State<Bio> with SingleTickerProviderStateMixin {
                       BioButton(
                         onPressed: abrirWhatsApp,
                         texto: 'Whatsapp',
-                        icon: Icons.whatsapp,
+                        icon: FontAwesomeIcons.whatsapp,
                       ),
                       const SizedBox(height: 15),
                       BioButton(
@@ -232,7 +232,7 @@ class BioButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
-        primary: Colors.black.withOpacity(0.6),
+        backgroundColor: Colors.black.withOpacity(0.6),
         shape: StadiumBorder(),
         elevation: 0,
         maximumSize: Size(400, 60),
